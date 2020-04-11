@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2020/4/11
+ * Time: 10:40
+ */
+/**
+ * 政采云平台商品管理 v3-b12
+ *
+ */
+defined('InShopNC') or exit('Access Invalid!');
+class zcy_commonControl extends Model {
+    public function aa()
+    {
+        $data = Model('zcy_config')->getSellerInfo(array('store_id'=>$_SESSION['store_id']));
+        if(empty($data)){
+            $res = false;
+        }elseif($data['status'] != 1){
+            $res = false;
+        }else{
+            return $data;
+        }
+        if($res==false){
+            exit("当前店铺没有此权限！请<a href=\"/shop/index.php?act=seller_center&op=index\">返回</a>");
+        }
+    }
+}

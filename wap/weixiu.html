@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>维修</title>
+		<link rel="stylesheet" href="csst/common.css" />
+		<link rel="stylesheet" href="csst/weixiu.css" />
+		<script type="text/javascript" src="jst/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="jst/common.js"></script>
+		<script type="text/javascript" src="jst/weixiu.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GGRyYkRIpCH3nUxV2yceh9a4"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_nav">
+				<div class="header_left">
+					<a  href="javascript:history.go(-1);"><img src="img/back.png"></a>
+				</div>
+				<div class="header_center">
+					<h2>维修</h2></div>
+				<div class="header_right">
+					<a href="tmpl/member/chat_list.html"><img src="img/xiaox.png"></a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="indexsum " style="width: 100%;position: fixed;top: 0.75rem;">
+				<div id="allmap"></div>
+				<!--下拉-->
+				<form action="/mobile/index.php?act=index&op=setorders" method="post" >
+					<input type="hidden" name="num" id='cost' value="0.0">
+					<div id="firstpane" class="menu_list">
+						<p class="menu_head current img_1">现在维修</p>
+						<!--2-->
+						<p class="menu_head current img_2">预约时间</p>
+						<div style="display: none;" class="menu_body">
+							<input id="yysj" type="text" name="time" placeholder="输入预约时间"/>
+						</div>
+						<!--3-->
+						<p class="menu_head current img_3">维修地址</p>
+						<div style="display: none;" class="menu_body">
+							<input id="wz" type="text" name="address" placeholder="输入维修地址" />
+						</div>
+						<!--4-->
+						<p class="menu_head current img_4">物品类型</p>
+						<div style="display: none;" class="menu_body">
+							<input id="xh" type="text" name="type" placeholder="输入您要维修的设备" />
+						</div>
+						<!--5-->
+						<p class="menu_head current img_5">联系电话</p>
+						<div style="display: none;" class="menu_body">
+							<input id="tel" type="tel" name="tel" placeholder="输入联系人手机号" />
+						</div>
+						<!--结束-->
+					</div>
+					
+
+					<div class="xb">
+						<input id="radio" type="radio" name="mone">加小费
+						<input type="hidden" id="nums" value="0">
+						<label>上门服务费：￥<span id="num" >0</span></label>
+						<!-- <input id="qdbtn" type="button" value="确定" /> -->
+						<input id="submit" type="submit" value="提交订单"/>
+					</div>
+					<script type="text/javascript">
+						$.ajax({
+					        url: "/mobile/index.php?act=index&op=tip",
+					        type: 'get',
+					        dataType: 'json',
+					        success: function(result){
+					            var data = result.datas;
+					            $("#num").html(data);
+					            $("#nums").val(data);
+					            $("#cost").val(data);
+					        }
+					    });
+					</script>
+				</form>
+				<div class="sming">
+					<dl><dt>服务说明</dt>
+						<dd>本公司支持终身服务，您的一键点击，我们为您服务解决您的后顾之忧</dd>
+					</dl>
+				</div>
+			</div>	
+		</section>
+		<footer id="footer" class="fixed-Width"></footer>
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/swipe.js"></script> 
+		<script type="text/javascript" src="js/index.js"></script> 
+		<script type="text/javascript" src="js/tmpl/footer1.js"></script>
+
+		<script type="text/javascript" src="js/addtohomescreen.js"></script>
+		<script>
+			addToHomescreen({
+				message:'如要把应用程式加至主屏幕,请点击%icon, 然后<strong>加至主屏幕</strong>'
+			});
+		</script>
+	<!--弹窗-->
+	<div id="zhemu" class="zhemu"></div>
+	<div id="alert" class="alert">
+		<input id="close" type="button"value="取消"/><input id="tr" type="button"value="确定">
+		<table cellpadding="0"cellspacing="0">			
+			<tr><td colspan="2">20</td></tr>
+			<tr><td colspan="2">35</td></tr>
+			<tr><td colspan="2">50</td></tr>
+			<tr><td colspan="2">10</td></tr>
+		</table>
+	</div>
+	</body>
+
+</html>

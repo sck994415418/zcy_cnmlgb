@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>维修评价</title>
+		<link rel="stylesheet" href="csst/common.css" />
+		<link rel="stylesheet" href="csst/weixiupingjia.css" />
+		<script type="text/javascript" src="jst/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="jst/common.js"></script>
+		<script type="text/javascript" src="jst/weixiupingjia.js"></script>
+		<style type="text/css">
+            .stars{color:#ff6600;height:30px;line-height: 30px;font-size: 13px;margin: 0 0 20px}
+            .tip{position:absolute;top:0;left:0;z-index:9999;border: 1px solid #D6D6D6;padding:5px 12px;background-color: #FFF;display: none;color:#FF6600;}
+            .intro{margin-left:8px;color:#1B1B1B}
+            .stars img{vertical-align: top;position: relative;top:4px;cursor:pointer;}
+            .stars label{width:70px;display: inline-block;color:#333}
+            .comment_title{width:45px;display: inline-block}
+        </style>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_nav">
+				<div class="header_left">
+					<a href="javascript:history.go(-1);"><img src="img/back.png"></a>
+				</div>
+				<div class="header_center">
+					<h2>维修评价</h2>
+				</div>
+
+			</div>
+		</header>
+
+		<section>
+			<input type="hidden" name="star" id="stat" value="">
+			<script type="text/javascript">
+				$("#order_id").val(getQueryString("order_id"));
+			</script>
+			<div class="indexsum">
+				<div class="pj">
+					<textarea id="textarea" name='content' placeholder="在这里留下您的宝贵意见吧"></textarea>
+					<div>
+						<p>评价不能为空</p>
+					</div>
+				</div>
+				<div class="fw clear">
+					<!-- <p>服务等级</p> -->
+					<!-- <div id="mydiv2" currentIndex="0">
+						<ul class="star_ul">
+							<li num="1"><img src="img/star_empty.png" /></li>
+							<li num="2"><img src="img/star_empty.png" /></li>
+							<li num="3"><img src="img/star_empty.png" /></li>
+							<li num="4"><img src="img/star_empty.png" /></li>
+							<li num="5"><img src="img/star_empty.png" /></li>
+						</ul>
+					</div>
+					<div>
+						<p id="alet">您还没有选</p>
+					</div> -->
+					<div class="container" style="padding-left:20px;">
+			            <div class="demo">
+			                <div class="stars">
+			                	<label>服务等级：</label>
+			                    <img src="images/star_gray.png"/>
+			                    <img src="images/star_gray.png"/>
+			                    <img src="images/star_gray.png"/>
+			                    <img src="images/star_gray.png"/>
+			                    <img src="images/star_gray.png"/>
+			                </div>
+			            </div>
+			        </div>
+			        <script type="text/javascript" src="http://www.sucaihuo.com/Public/js/other/jquery.js"></script> 
+			        <script type="text/javascript">
+			            $(function() {
+			                //定义三维数组
+			                var data = [
+			                    [
+			                        ['很差', ''],
+			                        ['一般', ''],
+			                        ['好', ''],
+			                        ['很好', ''],
+			                        ['非常好', '']
+			                    ]
+			                ];
+			                //定义悬浮每行各个星星图片
+			                var stars = [
+			                    ['star_hover.png', 'star_gray.png', 'star_gray.png', 'star_gray.png', 'star_gray.png'],
+			                    ['star_hover.png', 'star_hover.png', 'star_gray.png', 'star_gray.png', 'star_gray.png'],
+			                    ['star_gold.png', 'star_gold.png', 'star_gold.png', 'star_gray.png', 'star_gray.png'],
+			                    ['star_gold.png', 'star_gold.png', 'star_gold.png', 'star_gold.png', 'star_gray.png'],
+			                    ['star_gold.png', 'star_gold.png', 'star_gold.png', 'star_gold.png', 'star_gold.png'],
+			                ];
+
+			                $(".stars").find("img").hover(function() { //星星悬浮触发
+			                    var obj = $(this);//当前对象
+			                    var star_area = obj.parent(".stars"); //当前父级.stars
+			                    var star_area_index = star_area.parent().find(".stars").index(star_area);//当前父级.stars索引
+			                    var index = star_area.find("img").index(obj);//当前星星索引
+			                    
+			                    var left = obj.position().left;
+			                    var top = obj.position().top + 25;
+			                    var comment_title = data[star_area_index][index][0];//标题
+			                    var comment_description = data[star_area_index][index][1];//描述
+			                    $("#tip").css({"left": left, "top": top}).show().html(comment_title);//显示定位提示信息
+			                    for (var i = 0; i < 5; i++) {
+			                        star_area.find("img").eq(i).attr("src", "images/" + stars[index][i]);//切换每个星星
+			                    }
+			                    star_area.find(".comment_description").remove();//星星右侧切换描述
+			                    star_area.append("<span class='comment_description'><span class='comment_title'>" + comment_title + "</span><span class='intro'>" + comment_description + "</span></span>");
+
+			                }, function() { //鼠标离开星星
+			                    $("#tip").hide();//隐藏提示
+			                    var obj = $(this);//当前对象
+			                    var star_area = obj.parent(".stars");//当前父级.stars
+			                    var star_area_index = star_area.parent().find(".stars").index(star_area);//当前父级.stars索引
+			                    var index = star_area.attr("data-default-index");//点击后的索引
+			                    if (index >= 0) { //若该行点击后的索引大于等于0，说明该行星星已被点击
+			                        var comment_title = data[star_area_index][index][0];//标题
+			                        var comment_description = data[star_area_index][index][1];//描述
+			                        star_area.find(".comment_description").remove();//显示切换描述
+			                        star_area.append("<span class='comment_description'><span class='comment_title'>" + comment_title + "</span><span class='intro'>" + comment_description + "</span></span>");
+			                        for (var i = 0; i < 5; i++) {
+			                            star_area.find("img").eq(i).attr("src", "images/" + stars[index][i]);//更新该行星星
+			                        }
+			                    } else {
+			                        var obj = $(this);
+			                        var star_area = obj.parent(".stars");
+			                        star_area.find(".comment_description").remove();
+			                        for (var i = 0; i < 5; i++) {
+			                            star_area.find("img").eq(i).attr("src", "images/star_gray.png");//更新该行星星都变初始状态
+			                        }
+			                    }
+			                })
+			                $(".stars").find("img").click(function() { //当点击每颗星星
+			                    var obj = $(this);//当前对象
+			                    var star_area = obj.parent(".stars"); //当前父级.stars
+			                    var star_area_index = star_area.parent().find(".stars").index(star_area);//当前父级.stars索引
+			                    var index = obj.parent(".stars").find("img").index($(this));//当前星星索引
+
+			                    var comment_title = data[star_area_index][index][0];//标题
+			                    var comment_description = data[star_area_index][index][1];//描述
+			                    star_area.attr("data-default-index", index);
+			                    $("#stat").val(index+1);
+			                    //记录点击后的索引，用来鼠标移出星星后，获取之前点击后的星星索引
+			                    star_area.find(".comment_description").remove();//显示切换描述
+			                    star_area.append("<span class='comment_description'><span class='comment_title'>" + comment_title + "</span><span class='intro'>" + comment_description + "</span></span>");
+			                })
+			            })
+			        </script>
+				</div>
+				<div class="zhushi">
+					<p>注：如果您有其他问题，请及时拨打0311-524694</p>
+				</div>
+				<div class="divbtn">
+					<input id="subt" type="submit" value="提交" />
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+		    $("#subt").click(function() {
+		    	var content  = $("#textarea").val();
+		    	var stat     = $("#stat").val();
+		    	if(content == ''){
+		    		alert('请填写评价内容');
+		    	}else if(stat == ''){
+		    		alert('请打分！');
+		    	}else{
+		    		$.ajax({
+				        url: "/mobile/index.php?act=index&op=setevaluates",
+				        type: 'post',
+				        data: {order_id:getQueryString("order_id"),content:content,star:stat},
+				        dataType: 'json',
+				        success: function(result){
+				            var data = result.datas;
+				            if(data == 1){
+				            	$("#zhemu").show();
+								$("#successdiv").show();
+								window.location.href="tmpl/member/vr_order_list.html";
+				            }
+				        }
+				    });
+		    	}
+		    	
+		    });
+		</script>
+		<!--脚部-->
+		<footer id="footer" class="fixed-Width"></footer>
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/swipe.js"></script> 
+		<script type="text/javascript" src="js/index.js"></script> 
+		<script type="text/javascript" src="js/tmpl/footer1.js"></script>
+
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/simple-plugin.js"></script> 
+		<script type="text/javascript" src="js/tmpl/order_payment_common.js"></script>
+		<script type="text/javascript" src="js/tmpl/buy_step1.js"></script>
+
+		<script type="text/javascript" src="js/addtohomescreen.js"></script>
+		<script>
+			addToHomescreen({
+				message:'如要把应用程式加至主屏幕,请点击%icon, 然后<strong>加至主屏幕</strong>'
+			});
+		</script>
+		<div id="zhemu" class="zhemu"></div>
+		<div id="successdiv" class="successdiv">
+			<ul>
+				<li><img src="img/succe.png"></li>
+				<li>评价成功</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

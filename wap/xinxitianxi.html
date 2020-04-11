@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>信息填写</title>
+		<link rel="stylesheet" href="csst/common.css" />
+		<link rel="stylesheet" href="csst/xinxitianxi.css" />
+		<script type="text/javascript" src="jst/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="jst/common.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_nav">
+				<div class="header_left">
+					<a  href="javascript:history.go(-1);"><img src="img/back.png"></a>
+				</div>
+				<div class="header_center">
+					<h2>信息填写</h2></div>
+				<div class="header_right">
+					<a href="tmpl/member/chat_list.html"><img src="img/xiaox.png"></a>
+				</div>
+			</div>
+		</header>
+		<!--中间部分-->
+		<section>
+			<div class="indexsum">
+				<div class="infor clear">
+					<ul>
+						<li>
+							<dl>
+								<dd>
+									<dl>
+										<dd class="img_1" id="names"><span>佳能　Canon</span>
+										</dd>
+										<dd class="img_2" id='imgs'>
+										</dd>
+									</dl>
+								</dd>
+							</dl>
+						</li>
+						<li id='info'>
+						</li>
+						<script type="text/javascript">
+							$.ajax({
+						        url: "/mobile/index.php?act=index&op=shebeiinfo",
+						        type: 'get',
+						        data: {goods_id:getQueryString("goods_id")},
+						        dataType: 'json',
+						        success: function(result) {
+						            var data = result.datas;
+						            $("#info").html(data.str);
+						            $("#imgs").html(data.imgs);
+						            $("#names").html(data.names);
+						        }
+						    });
+
+						</script>
+					</ul>
+				</div>
+				<div class="table">
+					<div class="container">
+						<form id="contact" action="/mobile/index.php?act=index&op=setorder" method="post">
+							<input type="hidden" name="goods_id" id="goods_id" value="">
+							<fieldset>
+								<span>姓名</span>
+								<input placeholder="姓名" type="text" name="buyer_name" tabindex="1" required autofocus>
+							</fieldset>
+
+							<fieldset>
+								<span>电话</span>
+								<input placeholder="电话号码" type="tel" name="buyer_phone" tabindex="2" required>
+							</fieldset>
+
+							<fieldset>
+								<span>地址</span>
+								<input placeholder="地址" type="text" name="buyer_address" tabindex="3" required>
+							</fieldset>
+
+							<fieldset>
+								<span>型号</span>
+								<input placeholder="型号" type="text" name="model" tabindex="4" required>
+							</fieldset>
+
+							<div>
+								<textarea placeholder="补充说明" name="other" tabindex="4" required></textarea>
+							</div>
+
+							<fieldset>
+								<input name="submit" type="submit" id="contact-submit" value="提交订单">
+							</fieldset>
+						</form>
+						<script type="text/javascript">
+							$("#goods_id").val(getQueryString("goods_id"));
+						</script>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--脚部-->
+		<footer id="footer" class="fixed-Width"></footer>
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/swipe.js"></script> 
+		<script type="text/javascript" src="js/index.js"></script> 
+		<script type="text/javascript" src="js/tmpl/footer1.js"></script>
+		<script type="text/javascript" src="js/addtohomescreen.js"></script>
+		<script>
+			addToHomescreen({
+				message:'如要把应用程式加至主屏幕,请点击%icon, 然后<strong>加至主屏幕</strong>'
+			});
+		</script>
+	</body>
+
+</html>

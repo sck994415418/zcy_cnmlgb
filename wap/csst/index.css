@@ -1,0 +1,49 @@
+/*头部搜索模块*/
+.search_border {background-color: #b2ebf2;height: 0.52rem;border-radius: 0.2rem;padding-left: 0.12rem;	float: left;left: 0.6rem;position: relative;top:16%;}
+.search {float: left;background-image: url(../img/s.png);background-size: 0.34rem 0.34rem;background-repeat: no-repeat;background-position: 0 0.1rem;width: 0.44rem;height: 0.52rem;border: 0;background-color: #b2ebf2;display:inline-block;}
+.search_text {float: left;border-radius: 0.2rem;display: inline-block;width: 2.96rem;padding-left: 0.13rem;background-color: #b2ebf2;border:0;height:0.52rem;font-size: 0.26rem;}
+/*轮播*/
+.content_banner {	width: 100%;height: 2.73rem;}
+.swiper-container {	}
+.swiper-wrapper {	width: 100%;height: 100%;}
+.swiper-slide {	width: 100%;height: 100%;}
+.content_banner img{height: 2.73rem;width: 100%; z-index: 10;}
+.swiper-container1{width: 100%;height: 100%;overflow: hidden; position: relative;}
+.swiper-pagination{position: absolute; bottom:10px;left:0;}
+.swiper-pagination .swiper-pagination-bullet
+{width:0.2rem;height:0.2rem;  background: #fff;}
+/*小图标*/
+.logo_2{width: 100%;height: 1.49rem;border-top: 0.1rem solid#f1f2f6;font-size: 0.2rem; }
+.logo_2 li{float:left;width: 20%; color: #cbcbcb;}
+.logo_border{ text-align: center;padding: 0 0.2rem;padding-top: 0.1rem;}
+.logo_border img{width: 0.9rem;	height: 0.9rem;}
+.clear{zoom:1;}
+.clear:after{content:""; display:block;clear:both;}
+/*广播*/
+.ad{ width: 100%; height: 0.59rem;border-top:0.07rem solid#f1f2f6;border-bottom:0.07rem solid#f1f2f6;font-size: 0.2rem;}
+.ad_border marquee{height: 0.4rem;scrollamount:1;}
+.ad_border li{float: left;margin-left: 0.08rem;}
+.ad_border dd{margin-top: 0.4rem;}
+.ad_border a{color: #6e6e6e;}
+.ad_border img{width: 0.32rem; height: 0.32rem;}
+.ad_border span{color:#ec8a25;}
+.ad_border{width: 70%;margin-top: 0.08rem;margin-bottom: 0.08rem;}
+.pic li{float: left;vertical-align: middle;}
+.pic li dl{width:100%; }
+.pic dd{float: left;width: 46%;margin-left: 0.2rem; }
+.pic img{width:2.5rem;padding-left: 0.2rem;height: 1.7rem;}
+.pic  dl img{height:2.4rem; border-bottom: 0.1rem solid#f1f2f6;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

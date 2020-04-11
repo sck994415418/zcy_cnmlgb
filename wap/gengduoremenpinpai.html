@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>更多热门品牌</title>
+		<link rel="stylesheet" href="csst/common.css" />
+		<link rel="stylesheet" href="csst/shebeizulin.css" />
+		<script type="text/javascript" src="jst/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="jst/common.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_nav">
+				<div class="header_left">
+					<a href="shebeizulin.html"><img src="img/back.png"></a>
+				</div>
+				<div class="header_center">
+					<h2>更多热门品牌</h2></div>
+				<div class="header_right">
+					<a href="tmpl/member/chat_list.html"><img src="img/xiaox.png"></a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="indexsum">
+				<div class="table">
+					<table id='all'>
+						
+					</table>
+					<script type="text/javascript">
+						$.ajax({
+					        url: "/mobile/index.php?act=index&op=allpinpai",
+					        type: 'get',
+					        dataType: 'json',
+					        success: function(result) {
+					            var data = result.datas;
+					            $("#all").html(data);
+					        }
+					    });
+					</script>
+				</div>
+		</section>
+	</body>
+
+</html>

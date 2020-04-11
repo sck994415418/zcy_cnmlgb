@@ -1,0 +1,29 @@
+.clear{zoom:1;}
+.clear:after{content:""; display:block;clear:both;}
+.infor{ width: 100%; font-size: 0.18rem;border-bottom: 0.2rem solid#E5E5E5;border-top: 0.2rem solid#E5E5E5;}
+.infor li{ margin-left:0.2rem; width: 46%; float: left;text-align: left;/*border-right: 0.05rem solid#fff;*/ }
+.infor img{ width: 2.38rem;height: 1.36rem;}
+.infor_right{padding-top: 0.2rem;}
+.infor_right dd{border-bottom: 0.08rem solid#fff;}
+.img_1{width: 100%;height: 0.66rem;background-image: url(../img/bg.png);background-size:2.38rem ;0.56rem; background-repeat: no-repeat;}
+.img_1 span{color: #fff;display: block;line-height: 0.53rem;text-align:left;}
+.img_3 img{width: 100%; width:0.34rem;height: 0.34rem;vertical-align: middle;}
+.table{width: 100%;font-size: 0.26rem;}
+.table p{font-size: 0.36rem;}
+.table dl{padding-left: 0.3rem;}
+.table dd{margin-top: 0.2rem;border-bottom: 0.01rem solid#E5E5E5;line-heightheight: 0.3rem;}
+.tx input{bor}
+.tx{color: #fff; background-color: red; width:1.48rem; text-align: right;  font-size: 0.16rem;border-radius: 0.1rem; }
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+.container {width: 100%;}
+#contact {	padding: 0.25rem;	margin: 0.05rem 0;}
+fieldset { border: medium none !important;	margin: 0 0 0.2rem;	min-width: 100%;padding: 0;	width: 100%;}
+#contact input[type="text"],#contact input[type="tel"]{	border: 0.01rem solid #CCC;	background: #FFF;margin: 0 0 0.05rem;padding: 0.1rem;}
+#contact input[type="text"]:active,#contact input[type="tel"]:active,#contact input[type="url"]:active,
+#contact textarea:active {	transition: border-color 0.3s ease-in-out;border: 0.01rem solid #AAA;}
+#contact textarea {	height:3.2rem;	width: 100%;}
+#contact input[type="submit"] {border-radius: 0.2rem; cursor: pointer;width: 80%;border: none;background: #0CF;color: #FFF;margin: 0 0 1.2rem 0.5rem;font-size: 0.3rem;height: 1.0rem;}
+#contact input[type="submit"]:active {	background: #09C;transition: background-color 0.3s ease-in-out;}
+#contact input[type="submit"]:active {	box-shadow: inset 0 0.01rem 0.03rem rgba(0, 0, 0, 0.5);}
+#contact input:focus,#contact textarea:focus {	outline: 0;	border: 0.01rem solid #999;}
+textarea{width: 100%;border: 0.04rem solid#E5E5E5;margin-bottom: 0.5rem; }

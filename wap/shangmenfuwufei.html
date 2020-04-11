@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>上门服务费</title>
+		<link rel="stylesheet" href="csst/common.css" />
+		<link rel="stylesheet" href="csst/shangmenfuwufei.css" />
+		<script type="text/javascript" src="jst/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="jst/common.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_nav">
+				<div class="header_left">
+					<a  href="javascript:history.go(-1);"><img src="img/back.png"></a>
+				</div>
+				<div class="header_center">
+					<h2>上门服务费</h2></div>
+				<div class="header_right">
+					<a href="tmpl/member/chat_list.html"><img src="img/xiaox.png"></a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="indexsum">
+				<div class="yfje">
+					应付金额：￥<span id="onlineTotal"></span>
+				</div>
+				<!--付款-->
+				<div class="fkuan">
+					<h2>付款方式</h2>
+					<dl>
+						<dd>
+							<input type="radio" checked name="zffs" value="支付宝">
+							<img src="img/zhifubao.png" alt="支付宝">支付宝
+						</dd>
+						<!-- <dd>
+							<input type="radio" name="wx" value="微信"><img src="img/wx.png" alt="微信">微　信
+						</dd> -->
+					</dl>
+				</div>
+				<!--按钮-->
+				<div class="anniu">
+					<input type="hidden" id="pay_sn" value="">
+					<input type="submit" value="确认支付" id="toPay"/>
+					<input type="submit" value="线下支付" id="offpay"/>
+				</div>
+
+			</div>
+			<script type="text/javascript">
+				$.ajax({
+			        url: "/mobile/index.php?act=index&op=tippay",
+			        type: 'get',
+			        data: {order_id:getQueryString("order_id")},
+			        dataType: 'json',
+			        success: function(result){
+			            var data = result.datas;
+			            $("#onlineTotal").html(data.scost);
+			            $("#pay_sn").val(data.pay_sn);
+			        }
+			    });
+			    $("#toPay").click(function() {
+			    	var payment_code = 'alipay';
+			    	var key = getCookie("key");
+			    	var a = $("#pay_sn").val();
+	                location.href = ApiUrl + "/index.php?act=member_payment&op=pay_new" + "&payment_code=" + payment_code + "&pay_sn=" + a + "&key=" + key;
+	            })
+	            $("#offpay").click(function(){
+	            	var pay_sn    = $("#pay_sn").val();
+	            	location.href = ApiUrl + "/index.php?act=index&op=offpay" + "&pay_sn=" + pay_sn;
+	            });
+			</script>
+		</section>
+		<footer id="footer" class="fixed-Width"></footer>
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/swipe.js"></script> 
+		<script type="text/javascript" src="js/index.js"></script> 
+		<script type="text/javascript" src="js/tmpl/footer1.js"></script>
+
+
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/simple-plugin.js"></script> 
+		<script type="text/javascript" src="js/tmpl/order_payment_common.js"></script>
+		<script type="text/javascript" src="js/tmpl/buy_step1.js"></script>
+
+
+		<script type="text/javascript" src="js/addtohomescreen.js"></script>
+		<script>
+			addToHomescreen({
+				message:'如要把应用程式加至主屏幕,请点击%icon, 然后<strong>加至主屏幕</strong>'
+			});
+		</script>
+	</body>
+
+</html>

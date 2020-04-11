@@ -1,0 +1,254 @@
+<?php
+
+
+//模板制作测试页
+
+defined('InShopNC') or exit('Access Invalid!');
+class aaControl extends BaseHomeControl{
+
+    public function __construct() {
+        parent::__construct();
+        Tpl::output('index_sign','special');
+    }
+
+    public function indexOp() {
+		$temp = $_REQUEST['te'];
+        $action = isset($_POST['action'])?$_POST['action']:'';
+        if($action == 'sbwx'){
+
+        }
+        if($temp == 'shebeiweixiu'){
+            $smcost = Model()->table("setting")->where("name='smcost'")->find();
+            $dj = $smcost['value'];
+            Tpl::output('scost', $dj);
+        }
+        if($temp == 'zlremenpinpai'){
+        	$p = isset($_GET['p'])?$_GET['p']:1;
+        	$start = ($p-1)*42;
+        	$str = $start.",42";
+            $map['brand_recommend'] = 1;
+            $map['brand_apply'] = 1;
+            $zong = Model()->table("brand")->where($map)->select();
+            $brand = Model()->table("brand")->where($map)->limit($str)->select();
+            $page = ceil(count($zong)/42);
+            foreach ($brand as $key => $value) {
+                if($value['brand_pic'] != ''){
+                    $brand[$key]['brand_pic'] = '../data/upload/shop/brand/'.$value['brand_pic'];
+                }
+            }
+            Tpl::output('brand', $brand);
+            Tpl::output('page', $page);
+            Tpl::output('p', $p);
+        }
+		Tpl::output('nav_link_list', $nav_link);
+        Tpl::showpage($temp);
+    }
+
+    public function zlremenpinpaiOp(){
+
+        Language::read('home_brand_index');
+        $lang   = Language::getLangContent();
+        /**
+         * 验证品牌
+         */
+        $model_brand = Model('brand');
+        $brand_info = $model_brand->getBrandInfo(array('brand_id' => intval($_GET['brand'])));
+        if(!$brand_info){
+            showMessage($lang['wrong_argument'],'index.php','html','error');
+        }
+
+        /**
+         * 获得推荐品牌
+         */
+        $brand_r_list = Model('brand')->getBrandPassedList(array('brand_recommend'=>1) ,'brand_id,brand_name,brand_pic', 0, 'brand_sort asc, brand_id desc', 10);
+        Tpl::output('brand_r',$brand_r_list);
+
+        // 得到排序方式
+        $order = 'is_own_shop desc,goods_id desc';
+        if (!empty($_GET['key'])) {
+            $order_tmp = trim($_GET['key']);
+            $sequence = $_GET['order'] == 1 ? 'asc' : 'desc';
+            switch ($order_tmp) {
+                case '1' : // 销量
+                    $order = 'goods_salenum' . ' ' . $sequence;
+                    break;
+                case '2' : // 浏览量
+                    $order = 'goods_click' . ' ' . $sequence;
+                    break;
+                case '3' : // 价格
+                    $order = 'goods_promotion_price' . ' ' . $sequence;
+                    break;
+            }
+        }
+
+        // 字段
+        $fieldstr = "goods_id,goods_commonid,goods_name,goods_jingle,store_id,store_name,goods_price,goods_promotion_price,goods_promotion_type,goods_marketprice,goods_storage,goods_image,goods_freight,goods_salenum,color_id,evaluation_good_star,evaluation_count,is_virtual,is_fcode,is_appoint,is_presell,have_gift";
+        // 条件
+        $where = array();
+        $where['brand_id'] = $brand_info['brand_id'];
+        if (intval($_GET['area_id']) > 0) {
+            $where['areaid_1'] = intval($_GET['area_id']);
+        }
+        if ($_GET['type'] == 1) {
+            $where['is_own_shop'] = 1;
+        }
+        if ($_GET['gift'] == 1) {
+            $where['have_gift'] = 1;
+        }
+        $where['goods_state']  = 1;
+        $where['goods_verify'] = 1;
+        $model_goods = Model('goods_rent');
+        // $goods_list = $model_goods->getGoodsListByColorDistinct($where, $fieldstr, $order, 24);
+        $goods_list = Model()->table("goods_rent")->field($fieldstr)->where($where)->order($order)->select();
+        Tpl::output('show_page1', $model_goods->showpage(4));
+        Tpl::output('show_page', $model_goods->showpage(5));
+        // 商品多图
+        if (!empty($goods_list)) {
+            $commonid_array = array(); // 商品公共id数组
+                $storeid_array = array();       // 店铺id数组
+            foreach ($goods_list as $value) {
+                $commonid_array[] = $value['goods_commonid'];
+                $storeid_array[] = $value['store_id'];
+            }
+            $commonid_array = array_unique($commonid_array);
+            $storeid_array = array_unique($storeid_array);
+            // 商品多图
+            $goodsimage_more = $model_goods->getGoodsImageList(array('goods_commonid' => array('in', $commonid_array)));
+            // 店铺
+            $store_list = Model('store')->getStoreMemberIDList($storeid_array);
+
+            foreach ($goods_list as $key => $value) {
+                // 商品多图
+                foreach ($goodsimage_more as $v) {
+                    if ($value['goods_commonid'] == $v['goods_commonid'] && $value['store_id'] == $v['store_id'] && $value['color_id'] == $v['color_id']) {
+                        $goods_list[$key]['image'][] = $v;
+                    }
+                }
+                // 店铺的开店会员编号
+                $store_id = $value['store_id'];
+                $goods_list[$key]['member_id'] = $store_list[$store_id]['member_id'];
+                $goods_list[$key]['store_domain'] = $store_list[$store_id]['store_domain'];
+                //将关键字置红
+                $goods_list[$key]['goods_name_highlight'] = $value['goods_name'];
+            }
+        }
+        Tpl::output('goods_list', $goods_list);
+
+        // 地区
+        $province_array = Model('area')->getTopLevelAreas();
+        Tpl::output('province_array', $province_array);
+
+        loadfunc('search');
+        /**
+         * 取浏览过产品的cookie(最大四组)
+         */
+        $viewed_goods = Model('goods_browse')->getViewedGoodsList($_SESSION['member_id'],20);
+        Tpl::output('viewed_goods',$viewed_goods);
+
+        /**
+         * 分类导航
+         */
+        $nav_link = array(
+            0=>array(
+                'title'=>$lang['homepage'],
+                'link'=>SHOP_SITE_URL
+            ),
+            1=>array(
+                'title'=>$lang['brand_index_all_brand'],
+                'link'=>urlShop('brand', 'index')
+            ),
+            2=>array(
+                'title'=>$brand_info['brand_name']
+            )
+        );
+        Tpl::output('nav_link_list',$nav_link);
+        /**
+         * 页面输出
+         */
+        Tpl::output('index_sign','brand');
+
+        Tpl::showpage('aa_goods');
+    }
+
+    public function goodsOp(){
+
+        Language::read('store_goods_index');
+
+        $goods_id = intval($_GET['goods_id']);
+
+        // 商品详细信息
+        $model_goods = Model('goods_rent');
+        $mapaa['goods_id'] = $goods_id;
+        $mapaa['goods_state']  = 1;
+        $mapaa['goods_verify'] = 1;
+        // $goods_detail = $model_goods->getGoodsDetail($goods_id);
+        $goods_detail = Model()->table("goods_rent")->where($mapaa)->find();
+        $goods_info = $goods_detail;
+
+        $store_model = Model('store');
+        $store_info = $store_model->getStoreInfoByID($goods_info['store_id']);
+        // 看了又看（同分类本店随机商品）v3-b12
+        $size = $goods_info['is_own_shop']?8:4;
+        $goods_rand_list = Model('goods_rent')->getGoodsGcStoreRandList($goods_info['gc_id_1'], $goods_info['store_id'], $goods_info['goods_id'], $size);
+
+        Tpl::output('goods_rand_list', $goods_rand_list);
+        Tpl::output('goods_image',cthumb($goods_detail['goods_image'], 240, $goods_detail['store_id']));
+
+        Tpl::output('goods', $goods_info);
+        Tpl::output('store_info', $store);
+
+        $model_plate = Model('store_plate');
+        // 顶部关联版式
+        if ($goods_info['plateid_top'] > 0) {
+            $plate_top = $model_plate->getStorePlateInfoByID($goods_info['plateid_top']);
+            Tpl::output('plate_top', $plate_top);
+        }
+        // 底部关联版式
+        if ($goods_info['plateid_bottom'] > 0) {
+            $plate_bottom = $model_plate->getStorePlateInfoByID($goods_info['plateid_bottom']);
+            Tpl::output('plate_bottom', $plate_bottom);
+        }
+        Tpl::output('store_id', $goods_info['store_id']);
+        
+        //推荐商品 v3-b12
+        $goods_commend_list = $model_goods->getGoodsOnlineList(array('store_id' => $goods_info['store_id'], 'goods_commend' => 1), 'goods_id,goods_name,goods_jingle,goods_image,store_id,goods_price', 0, 'rand()', 5, 'goods_commonid');
+        Tpl::output('goods_commend',$goods_commend_list);
+
+
+        // 当前位置导航
+        $nav_link_list = Model('goods_class')->getGoodsClassNav($goods_info['gc_id'], 0);
+        $nav_link_list[] = array('title' => $goods_info['goods_name']);
+        Tpl::output('nav_link_list', $nav_link_list);
+
+
+        $seo_param = array();
+        $seo_param['name'] = $goods_info['goods_name'];
+        $seo_param['key'] = $goods_info['goods_keywords'];
+        $seo_param['description'] = $goods_info['goods_description'];
+        Model('seo')->type('product')->param($seo_param)->show();
+        Tpl::showpage('aa_goodsinfo');
+    }
+
+
+    public function editgoodsOp(){
+        $user_id = isset($_SESSION['member_id'])?$_SESSION['member_id']:'';
+        if($_SESSION['is_login'] != 1){
+            showDialog('请登录！');
+        }
+        $map['buyer_id']       = $user_id;
+        $map['goods_id']      = isset($_POST['id'])?$_POST['id']:'';
+        $map['buyer_name']    = isset($_POST['name'])?$_POST['name']:'';
+        $map['buyer_phone']   = isset($_POST['tel'])?$_POST['tel']:'';
+        $map['buyer_address'] = isset($_POST['address'])?$_POST['address']:'';
+        $map['model']         = isset($_POST['model'])?$_POST['model']:'';
+        $map['other']         = isset($_POST['other'])?$_POST['other']:'';
+        $map['add_time']      = time();
+        $result = Model()->table("rent_order")->insert($map);
+        if($result){
+            showDialog('申请已提交！','','succ');
+        }else{
+            showDialog('提交失败！');
+        }
+    }
+
+}

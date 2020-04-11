@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="20">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>维修详情</title>
+		<meta http-equiv="refresh" content="20">
+		<link rel="stylesheet" href="csst/common.css" />
+		<link rel="stylesheet" href="csst/ystep.css" />
+		<link rel="stylesheet" href="csst/weixiuxiangqing.css" />
+		<script type="text/javascript" src="jst/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="jst/common.js"></script>
+		<script type="text/javascript" src="jst/ystep.js"></script>
+		<script type="text/javascript" src="jst/weixiuxiangqing.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_nav">
+				<div class="header_left">
+					<a  href="javascript:history.go(-1);"><img src="img/back.png"></a>
+				</div>
+				<div class="header_center">
+					<h2>维修详情</h2></div>
+				<div class="header_right_w">
+					<input id="qxbtn" type="button" value="取消订单">
+
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="indexsum">
+				<div class="nav_w">
+					<p>已为您匹配维修师傅</p>
+				</div>
+				<div class="infor">
+					<ul>
+						<li><img src="img/pic.png" id="img"></li>
+						<li>
+							<dl>
+								<dd id="name">张师傅</dd>
+								<dd><img src="img/tel2.png"><span id="tel">18225235970</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="langan">
+					<div class="box">
+						<div class="ystep1"></div>
+					</div>
+				</div>
+				<!--订单详情-->
+				<div class="dingdan">
+					<p class="dg"><span>订单跟踪</span></p>
+					<!--详情列表-->
+					<div class="ddgz">
+						<p><span>处理时间</span><span>处理信息</span></p>
+						<ul id="ddgz">
+
+						</ul>
+					</div>
+				</div>
+				<!--完成按钮-->
+				<div class="aniu">
+					<input id="submit" type="button" style="background:#00BCD5;" value="维修完成，进行评价"/>
+				</div>
+			</div>
+
+		</section>
+		<footer id="footer" class="fixed-Width"></footer>
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/swipe.js"></script> 
+		<script type="text/javascript" src="js/index.js"></script> 
+		<script type="text/javascript" src="js/tmpl/footer1.js"></script>
+
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/simple-plugin.js"></script> 
+		<script type="text/javascript" src="js/tmpl/order_payment_common.js"></script>
+		<script type="text/javascript" src="js/tmpl/buy_step1.js"></script>
+
+		<script type="text/javascript" src="js/addtohomescreen.js"></script>
+		<script>
+			addToHomescreen({
+				message:'如要把应用程式加至主屏幕,请点击%icon, 然后<strong>加至主屏幕</strong>'
+			});
+		</script>
+		<script type="text/javascript">
+			$.ajax({
+		        url: "/mobile/index.php?act=index&op=order_info",
+		        type: 'get',
+		        data: {order_id:getQueryString("order_id")},
+		        dataType: 'json',
+		        success: function(result){
+		            var data = result.datas;
+		            $("#ddgz").html(data.str);
+		            $("#tel").html(data.tel);
+		            if(data.master_name == ''){
+		            	$("#name").html(data.master_name);
+		            	$("#img").attr('src', data.master_img);
+		            }else{
+		            	$("#name").html('未接单');
+		            }
+		        }
+		    });
+		    $("#submit").click(function() {
+		    	var order_id = getQueryString("order_id");
+		    	window.location.href='weixiupingjia.html?order_id='+order_id;
+		    });
+		</script>
+		<!--取消订单-->
+		<div id="zhemu" class="zhemu"></div>
+		<div id="quxiaodiv" class="quxiao">
+			<table>
+				<tr>
+					<td colspan="3"><img id="close" src="img/closeqx.png"></td>
+				</tr>
+				<tr>
+					<td colspan="3">确认取消订单</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="是" />
+					</td>
+					<td>|</td>
+					<td>
+						<input id="fbtn" type="button" value="否">
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</body>
+
+</html>

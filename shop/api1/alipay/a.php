@@ -1,0 +1,43 @@
+Array
+(
+    [order_id] => 39
+    [order_sn] => 8000000000003901
+    [pay_sn] => 400531256137172004
+    [store_id] => 0
+    [store_name] => 
+    [buyer_id] => 4
+    [buyer_name] => aaaaaa
+    [buyer_email] => 
+    [add_time] => 1477912137
+    [payment_code] => online
+    [payment_time] => 0
+    [finnshed_time] => 0
+    [goods_amount] => 0.00
+    [order_amount] => 0.00
+    [rcb_amount] => 0.00
+    [pd_amount] => 0.00
+    [shipping_fee] => 0.00
+    [evaluation_state] => 0
+    [order_state] => 20
+    [refund_state] => 0
+    [lock_state] => 0
+    [delete_state] => 0
+    [refund_amount] => 0.00
+    [delay_time] => 0
+    [order_from] => 1
+    [shipping_code] => 
+    [master_id] => 113
+    [is_master] => 1
+    [scost] => 0.0
+    [tel] => 15896324568
+    [type] => 咯哈
+    [address] => 空
+    [nowtime] => 
+    [apptime] => 今天-19点-30分
+    [wxstate] => 1
+    [jdtime] => 1477912243
+    [cftime] => 
+    [wxtime] => 
+    [schedule_id] => 
+    [city] => 北京市
+)

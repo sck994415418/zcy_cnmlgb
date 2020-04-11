@@ -1,0 +1,45 @@
+/*初始化*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {	margin: 0;	padding: 0;}
+body,button,input,select,textarea {	font-family: "微软雅黑";}
+h1,h2,h3,h4,h5,h6 {	font-size: 100%;}
+address,cite,dfn,em,var {	font-style: normal;}
+code,kbd,pre,samp {	font-family: couriernew, courier, monospace;}
+ul,ol {	list-style: none;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+legend {color: #000;}
+fieldset,img {border: 0;}
+button,input,select,textarea {	font-size: 100%;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+dd{	list-style: none;	text-decoration: none;}
+/*头部*/
+.header_nav {width: 100%;height: 0.75rem;background-color:#00bcd5;position: fixed;top: 0;}
+/*头部右侧*/
+.header_right{float: right;position: relative;top:-0.43rem;right:0.2rem;}
+.header_right img{width: 0.44rem;height: 0.44rem;}
+.header_left{float: left;position: relative;left:0.3rem; top:-0.43rem; }
+.header_left img{width: 0.44rem;height: 0.44rem;}
+.header_center{ color:#fff; float: left;position: relative;left: 2.26rem; top:0.12rem;font-size: 0.35rem;}
+
+/*脚部*/
+.footer_nav {width: 100%;height: 0.84rem;background-color:#00bcd5;position: fixed;bottom: 0;}
+.footer_nav a{float: left;font-size: 0.22rem;	color: #fff;width: 20%;	height: 0.84rem;}
+.footer_dw{	padding: 0.09rem 0.4rem 0 0.4rem;text-align: center;}
+.footer_dw img{	width: 0.4rem;	height: 0.4rem;}
+.indexsum {	width: 100%;position: fixed;top: 0.75rem;bottom: 0.84rem;overflow: scroll;}
+
+/*测试*/
+.test{
+	width: 100%;
+	height: 2rem;
+	background-color: yellow;
+}
+.test_1{
+	width: 80%;
+	border:0.5rem solid red;
+}
+/*遮幕*/
+.zhemu{position: absolute;float: left;background-color: #000;top: 0;height: 100%;width: 100%;opacity: 0.5;
+display: none;}

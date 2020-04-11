@@ -1,0 +1,44 @@
+Array
+(
+    [order_state] => 20
+)
+Array
+(
+    [pay_sn] => 190526843609164061
+)
+orderModel Object
+(
+    [name:protected] => 
+    [table_prefix:protected] => zmkj_
+    [init_table:protected] => 
+    [table_name:protected] => 
+    [options:protected] => Array
+        (
+        )
+
+    [pk:protected] => id
+    [db:protected] => ModelDb Object
+        (
+            [comparison:protected] => Array
+                (
+                    [eq] => =
+                    [neq] => <>
+                    [gt] => >
+                    [egt] => >=
+                    [lt] => <
+                    [elt] => <=
+                    [notlike] => NOT LIKE
+                    [like] => LIKE
+                    [in] => IN
+                    [not in] => NOT IN
+                )
+
+            [selectSql:protected] => SELECT%DISTINCT% %FIELD% FROM %TABLE%%INDEX%%JOIN%%WHERE%%GROUP%%HAVING%%ORDER%%LIMIT% %UNION%
+        )
+
+    [fields:protected] => Array
+        (
+        )
+
+    [unoptions:protected] => 1
+)

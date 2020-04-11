@@ -1,0 +1,21 @@
+body{background-color: #eee;}
+.clear{zoom: 1;}
+.clear:after{content: "";display: block;clear: both;}
+.pj{width: 100%;height: 4.28rem;}
+.pj p{display: none; font-size: 0.26rem;color: #fff;background-color: red;width: 2rem;position: absolute;float: left;top: 5%;left: 50%;border-radius: 0.2rem;text-align: center;}
+ textarea{ margin-left: 0.38rem;margin-top: 0.26rem; font-size: 0.26rem;border-radius: 0.16rem;width: 90%;width: 5.3rem;height: 3.67rem;}
+.fw{width: 100%;font-size: 0.18rem;}
+ .fw p{margin-left: 0.3rem;font-weight: bold;font-family: 0.3rem;color:#606060; float: left;height: 0.34rem;line-height: 0.34rem;margin-right: 0.2rem;}
+#alet{background-color: red;color: #fff;width: 1.2rem;border-radius: 0.2rem;text-align: center;display: none;}
+.zhushi{width: 100%;padding-top: 0.3rem;}
+.zhushi p{margin-left: 0.3rem;font-size: 0.19rem;color: #808080;}
+.divbtn{  width: 100%;margin-top: 0.3rem;margin-left: 0.5rem;}
+.divbtn input{ background-color: #00a9be;color: #fff;border-radius: 0.2rem;border: 0;width: 4.46rem;height: 0.82rem;font-size: 0.34rem;}
+/*星星*/
+.star_ul{margin-left: 0.3rem;}
+ ul{list-style-type: none;}
+.star_ul li{ float:left;margin-right: 0.2rem;}
+.star_ul img{width: 0.34rem;height: 0.33rem;}
+/*星星结束*/
+.successdiv{ position: absolute;font-size: 0.3rem;top: 26%;	left: 30%;display: none;}
+.successdiv li{color: #fff;text-align: center;}

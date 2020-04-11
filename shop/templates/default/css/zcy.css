@@ -1,0 +1,22 @@
+/* 
+ 商家中心-政采云-样式
+*/
+
+/*	商品列表  */
+#content{ padding:20px 0px;}
+.list_title{ font-size:14px; font-weight:600;}
+.list_title li{ line-height:25px; float:left;}
+.goods_line{ list-style:none; word-break:break-all; clear:both;}
+.goods_line li{ line-height:25px; float:left;}
+li.itemcode{ width:110px;}
+li.category{ width:120px;}
+li.brandname{ width:100px;}
+li.goodname{ width:480px;}
+li.goodstorage{ width:50px;}
+#pageinfo{ padding:30px; text-align:center;clear:both;}
+
+
+/*	更新商品分类 */
+#cat{width:600px;overflow: hidden;display: inline-block;}
+#cc{display: inline-block;}
+.del{text-decoration: line-through;}

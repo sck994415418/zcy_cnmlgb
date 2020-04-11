@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>品牌</title>
+		<link rel="stylesheet" href="csst/common.css" />
+		<link rel="stylesheet" href="csst/pinpai.css" />
+		<script type="text/javascript" src="jst/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="jst/common.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_nav">
+				<div class="header_left">
+					<a  href="javascript:history.go(-1);"><img src="img/back.png"></a>
+				</div>
+				<div class="header_center">
+					<h2 id='names'></h2></div>
+				<div class="header_right">
+					<a href="tmpl/member/chat_list.html"><img src="img/xiaox.png"></a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="indexsum">
+				<div class="table">
+					<div class="hot">
+						<div class="section_left">品牌设备</div>
+					</div>
+					<div class="pic clear">
+						<ul>
+							<li>
+								<dl id='ppsb'>
+								</dl>
+								<script type="text/javascript">
+									$.ajax({
+								        url: "/mobile/index.php?act=index&op=ppshebei",
+								        type: 'get',
+								        data: {brand_id:getQueryString("brand_id")},
+								        dataType: 'json',
+								        success: function(result) {
+								            var data = result.datas;
+								            $("#ppsb").html(data.str);
+								            $("#names").html(data.names);
+								        }
+								    });
+								</script>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</section>
+		<!--脚部-->
+		<footer id="footer" class="fixed-Width"></footer>
+		<script type="text/javascript" src="js/config.js"></script> 
+		<script type="text/javascript" src="js/zepto.min.js"></script> 
+		<script type="text/javascript" src="js/template.js"></script> 
+		<script type="text/javascript" src="js/common.js"></script> 
+		<script type="text/javascript" src="js/swipe.js"></script> 
+		<script type="text/javascript" src="js/index.js"></script> 
+		<script type="text/javascript" src="js/tmpl/footer1.js"></script>
+		<script type="text/javascript" src="js/addtohomescreen.js"></script>
+		<script>
+			addToHomescreen({
+				message:'如要把应用程式加至主屏幕,请点击%icon, 然后<strong>加至主屏幕</strong>'
+			});
+		</script>
+	</body>
+
+</html>

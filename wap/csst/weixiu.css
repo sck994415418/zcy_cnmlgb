@@ -1,0 +1,27 @@
+.clear {zoom: 1;}
+.clear:after {	content: "";	display: block;	clear: both;}
+#allmap {overflow: hidden;	background-color: yellow;	width: 100%;height: 2.73rem;border-top: 0.01rem solid#eee;border-bottom: 0.01rem solid#eee;}
+.menu_list {height:4.00rem;width: 100%;background-color: #fff;font-size: 0.29rem;color: #606060;border-top: 0.15rem solid#f1f2f6}
+.menu_head {font-size:0.29rem; border-bottom: 0.02rem solid#c3f0f6;font-family: "微软雅黑";height: 0.68rem;	line-height: 0.68rem;background-size: 0.4rem 0.4rem;text-align: center;}
+.img_1{background-image: url(../img/now.png);background-repeat: no-repeat;background-position: 0 0.1rem;}
+.img_2{background-image: url(../img/yuyue.png);	background-repeat: no-repeat;background-position: 0 0.1rem;}
+.img_3{background-image: url(../img/tel.png);	background-repeat: no-repeat;background-position: 0 0.1rem;}
+.img_4{background-image:url(../img/wupin.png);	background-repeat: no-repeat;background-position: 0 0.1rem;}
+.img_5{background-image:url(../img/dianhua.png);	background-repeat: no-repeat;background-position: 0 0.1rem;}	
+.menu_body input{width: 98.5%;height: 0.5rem;padding: 0.02rem 0.02rem;vertical-align: middle;border: 0.03rem solid red;}
+.xb{width: 100%;font-size: 0.24rem;padding-top: 0.6rem;background-color: #eee;}
+.xb label{margin-left:2.6rem ;}
+.xb span{color: red;}
+.xb input[type="radio"]{width: 0.2rem;height: 0.2rem;}
+#qdbtn{border: 0; margin-top: 0.8rem; margin-left: 0.75rem; display: block;background-color:#c3f0f6;color: #fff;width: 4.43rem;height: 0.88rem;border-radius: 0.2rem;}
+.xb input[type="submit"]{ border: 0; margin-top: 0.8rem; margin-left: 0.75rem; display: block;background-color:#dcdcdc;color: #fff;width: 4.43rem;height: 0.88rem;border-radius: 0.2rem;}
+.sming{width: 100%;background-color: #eee;padding-top: 0.8rem;}
+.sming dt{font-size: 0.26rem;}
+.sming dl{font-size: 0.16rem;padding-bottom: 0.5rem;padding-left: 0.3rem;padding-right: 0.3rem;}
+.zhemu{background-color: #000; opacity: 0.5;float: left;top: 0;	display: none;position: absolute;width: 100%;height: 100%;}
+.alert{display: none;  background-color: #fff;width: 100%;float: left;position: absolute;font-size: 0.34rem;bottom: 0;}
+.alert td{height: 0.8rem;padding-left: 2.5rem;border-top: 0.02rem;color: #b6b6b6;}
+#tr{margin-left: 4.3rem;color: #59cadc;border: 0;background-color: #fff;}
+.alert input[type="button"]{background-color: #fff;border: 0;color: #b6b6b6;}
+
+
