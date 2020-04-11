@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * 租赁推荐
+ */
+class rent_goodsControl {
+
+    public function indexOp() {
+        $model_rent = Model('goods_rent');
+        $condition = array();
+        $goods_list = $model_rent->field('*')->page("10")->select();
+//		var_dump($goods_list);exit;
+//		$goods_list = $model_rent->getGoodsList();
+        Tpl::output('goods_list', $goods_list);
+        Tpl::output('page', $model_rent->showpage());
+        //print_r($model_rent->showpage());
+        Tpl::showpage('rent_index');
+    }
+
+    public function recommendOp() {
+        $data = array();
+        $data['goods_id'] = $_GET['goods_id'];
+        $data['recommend'] = isset($_GET['value']) ? $_GET['value'] : 0;
+        //$rs=Model("goods_rent")->update($data);
+        $sql = "update zmkj_goods_rent set recommend=" . $data['recommend'] . " where goods_id=" . $data['goods_id'];
+        $rs = Model()->execute($sql);
+        if ($rs) {
+            echo 1;
+//            $data['msg'] = '编辑成功';
+//            $data['code'] = 1;
+//            exit(json_encode($data));
+        } else {
+            echo 0;
+//            $data['msg'] = '编辑失败';
+//            $data['code'] = 0;
+//            exit(json_encode($data));
+        }
+
+//        $model_rent = Model('goods_rent');
+//        $condition['goods_id'] = $goods_id;
+//        $recommend = $model_rent->field('recommend')->where($condition)->find();
+//        $recommend['recommend']; //0:不推荐；1：推荐
+//        if ($recommend['recommend'] == 0) {
+//            $condition['goods_id'] = $goods_id;
+//            $update['recommend'] = 1;
+//            $updates = $model_rent->where($condition)->update($update);
+//            if ($updates) {
+//                //echo $updates;
+//                exit(json_encode($updates));
+//            }
+//        } else {
+//            $condition['goods_id'] = $goods_id;
+//            $update['recommend'] = 0;
+//            $data = $model_rent->where($condition)->update($update);
+//            if ($data) {
+//                //echo $data;
+//                exit(json_encode($updates));
+//            }
+//        }
+    }
+
+}
