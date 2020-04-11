@@ -1,0 +1,33 @@
+[2016-07-03 03:51:29] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1467489089' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-07-03 11:57:07] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1467518227' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-07-03 16:36:30] /mobile/index.php?act=member_favorites&op=favorites_list&key=b6e2be0a89a14391e4ede3ff3529fcb2&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 16:36:49] /mobile/index.php?act=member_favorites&op=favorites_list&key=b6e2be0a89a14391e4ede3ff3529fcb2&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 16:36:54] /mobile/index.php?act=member_favorites&op=favorites_list&key=b6e2be0a89a14391e4ede3ff3529fcb2&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 17:14:05] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 17:14:11] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 17:14:35] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 17:14:37] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 17:14:38] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-03 20:02:07] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1467547327' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  

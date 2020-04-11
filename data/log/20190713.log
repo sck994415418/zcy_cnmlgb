@@ -1,0 +1,21 @@
+[2019-07-13 05:22:49] /shop/index.php?act=search&op=index&cate_id=2190 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2190' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2019-07-13 08:18:24] /shop/index.php?act=goods&goods_id=107589&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '107589' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-07-13 08:18:24] /shop/index.php?act=goods&goods_id=107120&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '107120' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-07-13 08:19:08] /shop/index.php?act=goods&op=comments_list&goods_id=105514 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '105514' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-07-13 08:21:22] /shop/index.php?act=goods&op=comments_list&goods_id=105513 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '105513' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-07-13 11:21:36] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and goods_state=1' at line 1
+select * from zmkj_goods where goods_id in () and goods_state=1
+[2019-07-13 11:21:36] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 

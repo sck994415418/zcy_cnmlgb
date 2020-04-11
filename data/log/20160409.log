@@ -1,0 +1,3 @@
+[2016-04-09 15:45:51] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1460187951' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  

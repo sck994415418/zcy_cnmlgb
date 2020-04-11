@@ -1,0 +1,33 @@
+[2019-06-12 05:26:28] /shop/index.php?act=goods&goods_id=106755&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '106755' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-06-12 05:26:28] /shop/index.php?act=goods&goods_id=102051&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102051' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-06-12 05:26:31] /shop/index.php?act=goods&goods_id=108051&op=comments_list&type=3 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '108051' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-06-12 08:52:45] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and goods_state=1' at line 1
+select * from zmkj_goods where goods_id in () and goods_state=1
+[2019-06-12 08:52:45] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 
+[2019-06-12 11:18:20] /shop/index.php?act=goods&op=comments_list&goods_id=105185 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '105185' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-06-12 14:11:09] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and goods_state=1' at line 1
+select * from zmkj_goods where goods_id in () and goods_state=1
+[2019-06-12 14:11:09] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 
+[2019-06-12 15:12:27] /shop/index.php?act=search&op=index&cate_id=2178 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2178' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2019-06-12 15:12:51] /shop/index.php?act=search&op=index&cate_id=2112 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2112' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2019-06-12 19:19:14] /shop/index.php?act=goods&op=comments_list&goods_id=105512 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '105512' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

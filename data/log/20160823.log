@@ -1,0 +1,453 @@
+[2016-08-23 06:50:44] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1471906244' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-23 08:31:47] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471912307','1126','1124','1125','1126')
+[2016-08-23 10:53:10] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '459' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '459' ) AND ( buyer_id = '37' )
+[2016-08-23 11:09:58] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:10:08] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=e00d4659722668eb4a52ad2de2e3da14 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471921808' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:20:14] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=631b2febfb31769aa70076424014450e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471922414' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:20:18] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:20:27] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:20:30] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:20:32] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=631b2febfb31769aa70076424014450e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471922432' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:09] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:26:10] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-23 11:31:30] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923090' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:31:44] /mobile/index.php?act=goods&op=goods_detail&goods_id=100124&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923104' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:32:25] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000045901','400525267145183043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923145','online','10','100','0','100','2')
+[2016-08-23 11:32:32] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046001','950525267152804043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923152','online','10','100','0','100','2')
+[2016-08-23 11:32:40] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046101','490525267160870043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923160','online','10','100','0','100','2')
+[2016-08-23 11:32:44] /mobile/index.php?act=goods&op=goods_detail&goods_id=100124&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923164' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:32:47] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923167' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:33:35] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:33:37] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923217' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:33:44] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046201','370525267224118043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923224','online','10','100','0','100','2')
+[2016-08-23 11:33:50] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046301','910525267230833043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923230','online','10','100','0','100','2')
+[2016-08-23 11:34:26] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046401','610525267266836043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923266','online','10','100','0','100','2')
+[2016-08-23 11:34:37] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046501','650525267277123043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923277','online','10','100','0','100','2')
+[2016-08-23 11:34:40] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046601','510525267280660043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923280','online','10','100','0','100','2')
+[2016-08-23 11:34:48] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046701','200525267288040043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923287','online','10','100','0','100','2')
+[2016-08-23 11:35:18] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923318' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:35:20] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:35:53] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:35:55] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923355' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:36:13] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046801','330525267373617043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923373','online','10','50','0','50','2')
+[2016-08-23 11:36:18] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923378' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:36:30] /mobile/index.php?act=member_buy&op=buy_step2 ( act=member_buy&op=buy_step2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (order_sn,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,goods_amount,order_from) VALUES ('8000000000046901','960525267390102043','1','追梦科技官方旗舰店','43','18332930699',NULL,'1471923390','online','10','100','0','100','2')
+[2016-08-23 11:36:35] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=412a8b21ee378a24813e117978b9a58e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923395' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:36:37] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:37:17] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:39:16] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=e063d4f9bc385148a630a826b6009cc9 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923556' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:39:18] /mobile/index.php?act=goods&op=goods_detail&goods_id=100081&key=e063d4f9bc385148a630a826b6009cc9 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923558' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:39:22] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=e063d4f9bc385148a630a826b6009cc9 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923562' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:39:23] /mobile/index.php?act=goods&op=goods_detail&goods_id=100072&key=e063d4f9bc385148a630a826b6009cc9 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471923563' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:52:57] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-23 11:52:58] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=9e0277787c6e8535f62686bcb06d7900 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471924378' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 11:53:33] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=9e0277787c6e8535f62686bcb06d7900 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471924413' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 16:29:50] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471940990','1126','1124','1125','1126')
+[2016-08-23 16:31:44] /mobile/index.php?act=goods&op=goods_detail&goods_id=231&key=d7fe36640f7a2d952cfa37727e4a1150 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471941104' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 16:31:52] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=d7fe36640f7a2d952cfa37727e4a1150 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471941112' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-23 16:46:42] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1471942002','1099','888','1094','1099')
+[2016-08-23 16:49:22] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471942162','1126','1124','1125','1126')
+[2016-08-23 16:57:20] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471942640','1126','1124','1125','1126')
+[2016-08-23 17:03:33] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471943013','1126','1124','1125','1126')
+[2016-08-23 17:04:27] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471943067','1126','1124','1125','1126')
+[2016-08-23 17:05:17] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100073-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100073','4','1471943117','1126','1124','1125','1126')
+[2016-08-23 17:06:10] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1471943170','1099','888','1094','1099')
+[2016-08-23 17:07:15] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471943235','1126','1124','1125','1126')
+[2016-08-23 17:13:59] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471943639','1126','1124','1125','1126')
+[2016-08-23 17:16:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1471943803','1099','888','1094','1099')
+[2016-08-23 17:34:27] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100073-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100073','4','1471944867','1126','1124','1125','1126')
+[2016-08-23 17:35:19] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471944919','1126','1124','1125','1126')
+[2016-08-23 17:36:24] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471944984','1126','1124','1125','1126')
+[2016-08-23 17:40:01] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471945201','1126','1124','1125','1126')
+[2016-08-23 17:40:53] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471945253','1126','1124','1125','1126')
+[2016-08-23 17:45:40] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471945540','1126','1124','1125','1126')
+[2016-08-23 17:49:24] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471945764','1126','1124','1125','1126')
+[2016-08-23 17:50:38] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471945838','1126','1124','1125','1126')
+[2016-08-23 17:53:57] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946037','1126','1124','1125','1126')
+[2016-08-23 17:55:18] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946118','1126','1124','1125','1126')
+[2016-08-23 17:55:55] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946155','1126','1124','1125','1126')
+[2016-08-23 17:58:49] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946329','1126','1124','1125','1126')
+[2016-08-23 17:59:36] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946376','1126','1124','1125','1126')
+[2016-08-23 18:00:56] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946456','1126','1124','1125','1126')
+[2016-08-23 18:01:50] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946510','1126','1124','1125','1126')
+[2016-08-23 18:03:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946580','1126','1124','1125','1126')
+[2016-08-23 18:03:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946632','1126','1124','1125','1126')
+[2016-08-23 18:06:10] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946770','1126','1124','1125','1126')
+[2016-08-23 18:06:50] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471946810','1126','1124','1125','1126')
+[2016-08-23 19:35:36] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471952136','1126','1124','1125','1126')
+[2016-08-23 19:37:18] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471952238','1126','1124','1125','1126')
+[2016-08-23 19:43:07] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471952587','1126','1124','1125','1126')
+[2016-08-23 19:46:21] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471952781','1126','1124','1125','1126')
+[2016-08-23 19:47:21] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1471952841','1099','888','1094','1099')

@@ -1,0 +1,99 @@
+[2016-07-17 10:26:05] /mobile/index.php?act=goods&op=goods_list&keyword=%E7%B4%A2%E5%B0%BC&page=10&curpage=1&keyword=%E7%B4%A2%E5%B0%BC ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-17 10:26:09] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=394622a194fcc93d2a9a9a9749d394eb ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468722369' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-17 10:26:09] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=394622a194fcc93d2a9a9a9749d394eb ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468722369' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-17 10:26:18] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=394622a194fcc93d2a9a9a9749d394eb ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468722378' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-17 10:26:25] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=394622a194fcc93d2a9a9a9749d394eb ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468722385' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-17 10:26:30] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=394622a194fcc93d2a9a9a9749d394eb ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468722390' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-17 10:50:57] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-17 10:54:49] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=3&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'nc_distinct' in 'group statement'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_price desc LIMIT 1  
+[2016-07-17 11:09:50] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=1&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_salenum' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 1  
+[2016-07-17 11:09:52] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=1&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_salenum' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 1  
+[2016-07-17 11:09:52] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=1&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_salenum' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 1  
+[2016-07-17 11:09:54] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-17 11:45:48] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=394622a194fcc93d2a9a9a9749d394eb ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468727148' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-17 15:53:19] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-17 15:53:29] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=2&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_click' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_click desc LIMIT 1  
+[2016-07-17 15:53:56] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=1&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_salenum' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 1  
+[2016-07-17 15:54:15] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=2&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_click' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_click desc LIMIT 1  
+[2016-07-17 15:55:49] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-17 15:55:52] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=2&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_click' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_click desc LIMIT 1  
+[2016-07-17 15:58:52] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-17 15:59:15] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=2&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_click' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_click desc LIMIT 1  
+[2016-07-17 16:00:30] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-17 16:01:14] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=3&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'nc_distinct' in 'group statement'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_price desc LIMIT 1  
+[2016-07-17 16:01:28] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=3&order=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'nc_distinct' in 'group statement'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_price asc LIMIT 1  
+[2016-07-17 16:05:28] /mobile/index.php?act=goods&op=goods_detail&goods_id=100073&key=1f7020d6de7ffaecf5aaa76b2432cabd ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468742728' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-17 16:06:05] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1468742765','1126','1124','1125','1126')
+[2016-07-17 16:11:15] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-17 16:27:30] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1468744050','1126','1124','1125','1126')
+[2016-07-17 16:28:12] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1468744092','1126','1124','1125','1126')
+[2016-07-17 16:30:03] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1468744203','1126','1124','1125','1126')
+[2016-07-17 16:31:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1468744260','1126','1124','1125','1126')
+[2016-07-17 16:31:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1468744312','1126','1124','1125','1126')
+[2016-07-17 16:36:09] /mobile/index.php?act=goods&op=goods_detail&goods_id=100070&key=1f7020d6de7ffaecf5aaa76b2432cabd ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1468744569' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  

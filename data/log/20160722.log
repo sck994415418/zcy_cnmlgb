@@ -1,0 +1,204 @@
+[2016-07-22 08:25:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147143','1126','1124','1125','1126')
+[2016-07-22 08:27:17] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-22 08:28:32] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1469147312','1126','1124','1125','1126')
+[2016-07-22 08:29:04] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147344','1126','1124','1125','1126')
+[2016-07-22 08:29:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147383','1126','1124','1125','1126')
+[2016-07-22 08:33:16] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147596','1126','1124','1125','1126')
+[2016-07-22 08:33:58] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147638','1126','1124','1125','1126')
+[2016-07-22 08:34:41] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147681','1126','1124','1125','1126')
+[2016-07-22 08:35:10] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147710','1126','1124','1125','1126')
+[2016-07-22 08:35:41] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147741','1126','1124','1125','1126')
+[2016-07-22 08:36:18] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147778','1126','1124','1125','1126')
+[2016-07-22 08:38:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147880','1126','1124','1125','1126')
+[2016-07-22 08:38:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469147932','1126','1124','1125','1126')
+[2016-07-22 08:49:57] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469148597','1126','1124','1125','1126')
+[2016-07-22 08:50:55] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469148655','1126','1124','1125','1126')
+[2016-07-22 09:11:56] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469149916','1126','1124','1125','1126')
+[2016-07-22 09:12:45] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469149965','1126','1124','1125','1126')
+[2016-07-22 09:25:07] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469150707','1126','1124','1125','1126')
+[2016-07-22 09:25:41] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469150741','1126','1124','1125','1126')
+[2016-07-22 09:26:12] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469150772','1126','1124','1125','1126')
+[2016-07-22 09:26:41] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469150801','1126','1124','1125','1126')
+[2016-07-22 09:31:28] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151088','1126','1124','1125','1126')
+[2016-07-22 09:35:03] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151303','1126','1124','1125','1126')
+[2016-07-22 09:36:34] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151394','1126','1124','1125','1126')
+[2016-07-22 09:38:03] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151483','1126','1124','1125','1126')
+[2016-07-22 09:39:03] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151543','1126','1124','1125','1126')
+[2016-07-22 09:40:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151600','1126','1124','1125','1126')
+[2016-07-22 09:41:27] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151687','1126','1124','1125','1126')
+[2016-07-22 09:43:09] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469151789','1126','1124','1125','1126')
+[2016-07-22 09:49:38] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469152178','1126','1124','1125','1126')
+[2016-07-22 10:31:42] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469154702','1126','1124','1125','1126')
+[2016-07-22 10:32:57] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469154777','1126','1124','1125','1126')
+[2016-07-22 10:52:46] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469155966','1126','1124','1125','1126')
+[2016-07-22 11:17:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469157472','1126','1124','1125','1126')
+[2016-07-22 11:21:11] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469157671','1126','1124','1125','1126')
+[2016-07-22 11:27:59] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469158079','1126','1124','1125','1126')
+[2016-07-22 11:29:22] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469158162','1126','1124','1125','1126')
+[2016-07-22 11:32:42] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1469158362','1126','1124','1125','1126')
+[2016-07-22 11:33:27] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469158407','1126','1124','1125','1126')
+[2016-07-22 11:34:08] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469158448','1126','1124','1125','1126')
+[2016-07-22 11:35:50] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469158550','1126','1124','1125','1126')
+[2016-07-22 11:36:46] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469158606','1126','1124','1125','1126')
+[2016-07-22 11:38:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1469158680','1126','1124','1125','1126')
+[2016-07-22 14:09:38] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469167778','1126','1124','1125','1126')
+[2016-07-22 14:17:37] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469168257','1126','1124','1125','1126')
+[2016-07-22 14:18:14] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('39',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-22 14:24:29] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469168669','1126','1124','1125','1126')
+[2016-07-22 14:25:30] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469168730','1126','1124','1125','1126')
+[2016-07-22 14:55:25] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-22 14:55:28] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=ddc0178f10ca714122fe38a5b5a76113 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469170528' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-22 15:00:56] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469170856','1126','1124','1125','1126')
+[2016-07-22 15:01:34] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469170894','1126','1124','1125','1126')
+[2016-07-22 15:13:40] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469171620','1126','1124','1125','1126')
+[2016-07-22 15:18:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469171932','1126','1124','1125','1126')
+[2016-07-22 15:35:18] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469172918','1126','1124','1125','1126')
+[2016-07-22 15:39:56] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469173196','1126','1124','1125','1126')
+[2016-07-22 16:01:38] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469174498','1126','1124','1125','1126')
+[2016-07-22 16:20:16] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469175616','1126','1124','1125','1126')
+[2016-07-22 16:21:02] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469175662','1126','1124','1125','1126')
+[2016-07-22 16:21:56] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469175716','1126','1124','1125','1126')
+[2016-07-22 16:30:51] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469176251','1126','1124','1125','1126')
+[2016-07-22 16:34:25] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469176465','1126','1124','1125','1126')
+[2016-07-22 17:24:44] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469179484','1126','1124','1125','1126')
+[2016-07-22 17:25:55] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469179555','1126','1124','1125','1126')
+[2016-07-22 17:28:40] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469179720','1126','1124','1125','1126')
+[2016-07-22 17:33:19] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469179999','1126','1124','1125','1126')
+[2016-07-22 17:35:38] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469180138','1126','1124','1125','1126')
+[2016-07-22 17:40:19] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=ddc0178f10ca714122fe38a5b5a76113 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469180419' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  

@@ -1,0 +1,24 @@
+[2018-04-28 01:22:38] /shop/index.php?act=goods&op=comments_list&goods_id=103060 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103060' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-28 08:58:46] /shop/index.php?act=goods&goods_id=100570&op=comments_list&type=3 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100570' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-28 11:21:56] /shop/index.php?act=goods&goods_id=100885&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100885' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-28 11:21:57] /shop/index.php?act=goods&goods_id=100463&op=comments_list&type=1 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100463' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-28 14:38:14] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=1035960 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by title_sort asc,title_id asc' at line 1
+select * from zmkj_title where class_id =  order by title_sort asc,title_id asc
+[2018-04-28 16:45:38] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=ML-3750ND ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: Unknown column 'ML' in 'where clause'
+select goods_param,gc_id from zmkj_goods where goods_id = ML-3750ND
+[2018-04-28 16:45:38] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=ML-3750ND ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by title_sort asc,title_id asc' at line 1
+select * from zmkj_title where class_id =  order by title_sort asc,title_id asc
+[2018-04-28 19:49:05] /shop/index.php?act=goods&op=comments_list&goods_id=101349 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101349' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

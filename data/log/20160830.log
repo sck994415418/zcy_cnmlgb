@@ -1,0 +1,96 @@
+[2016-08-30 14:04:14] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472537054','1126','1124','1125','1126')
+[2016-08-30 14:06:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472537160','1126','1124','1125','1126')
+[2016-08-30 14:11:10] /shop/index.php?act=mobile&op=credchange ( act=mobile&op=credchange ) 
+ERR: Db Error: Column 'point_goodsname' cannot be null
+INSERT  INTO `zmkj_points_ordergoods` (point_orderid,point_goodsid,point_goodsname,point_goodspoints,point_goodsnum,point_goodsimage) VALUES ('3','',NULL,NULL,'1',NULL)
+[2016-08-30 14:14:20] /shop/index.php?act=mobile&op=credchange ( act=mobile&op=credchange ) 
+ERR: Db Error: Column 'point_goodsname' cannot be null
+INSERT  INTO `zmkj_points_ordergoods` (point_orderid,point_goodsid,point_goodsname,point_goodspoints,point_goodsnum,point_goodsimage) VALUES ('4','',NULL,NULL,'1',NULL)
+[2016-08-30 14:18:48] /shop/index.php?act=mobile&op=credchange ( act=mobile&op=credchange ) 
+ERR: Db Error: Column 'point_goodsname' cannot be null
+INSERT  INTO `zmkj_points_ordergoods` (point_orderid,point_goodsid,point_goodsname,point_goodspoints,point_goodsnum,point_goodsimage) VALUES ('5','',NULL,NULL,'1',NULL)
+[2016-08-30 14:37:09] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-30 14:37:09] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1000' at line 1
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,master_id,scost,tel,type,address,nowtime,apptime,wxstate,jdtime,cftime,wxtime,finnshed_time,payment_code FROM `zmkj_order` WHERE master_id= LIMIT 1000  
+[2016-08-30 14:37:16] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-30 14:37:16] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1000' at line 1
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,master_id,scost,tel,type,address,nowtime,apptime,wxstate,jdtime,cftime,wxtime,finnshed_time,payment_code FROM `zmkj_order` WHERE master_id= LIMIT 1000  
+[2016-08-30 14:44:35] /shop/index.php?act=mobile&op=image ( act=mobile&op=image ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+UPDATE `zmkj_member` SET member_avatar='avatar_AA.jpg' WHERE member_id=
+[2016-08-30 14:56:25] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472540185','1099','888','1094','1099')
+[2016-08-30 15:35:04] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1472542504','1099','888','1094','1099')
+[2016-08-30 15:48:33] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-30 15:48:33] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1000' at line 1
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,master_id,scost,tel,type,address,nowtime,apptime,wxstate,jdtime,cftime,wxtime,finnshed_time,payment_code FROM `zmkj_order` WHERE master_id= LIMIT 1000  
+[2016-08-30 15:54:17] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472543657','1126','1124','1125','1126')
+[2016-08-30 15:57:51] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472543871','1126','1124','1125','1126')
+[2016-08-30 15:59:17] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-30 15:59:26] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=eca94c67fb2af69be77e3d98be1ec279 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472543966' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-30 16:45:13] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472546713','1126','1124','1125','1126')
+[2016-08-30 16:50:48] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472547048','1126','1124','1125','1126')
+[2016-08-30 16:51:16] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472547076','1126','1124','1125','1126')
+[2016-08-30 16:53:47] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472547227','1126','1124','1125','1126')
+[2016-08-30 16:53:54] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472547234','1099','888','1094','1099')
+[2016-08-30 16:54:03] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472547243','1099','888','1094','1099')
+[2016-08-30 16:54:28] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=eca94c67fb2af69be77e3d98be1ec279 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472547268' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-30 17:04:08] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472547848','1126','1124','1125','1126')
+[2016-08-30 17:04:16] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472547856','1099','888','1094','1099')
+[2016-08-30 17:04:36] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472547876','1126','1124','1125','1126')
+[2016-08-30 17:19:38] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-30 17:19:39] /mobile/index.php?act=goods&op=goods_detail&goods_id=100074&key=eca94c67fb2af69be77e3d98be1ec279 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472548779' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-30 17:47:42] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100074&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100074' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-08-30 17:47:42] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100074&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100074' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) ORDER BY geval_id desc LIMIT 0,10  

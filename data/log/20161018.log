@@ -1,0 +1,9 @@
+[2016-10-18 14:22:49] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','57','1476771769','1098','888','1094','1098')
+[2016-10-18 14:22:58] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','57','1476771778','630','593','598','630')
+[2016-10-18 18:17:08] /shop/index.php?act=member_order&op=change_state&state_type=order_cancel&order_id=1105&inajax=1 ( act=member_order&op=change_state ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1476785828' WHERE ( goods_id IN ('100075') )

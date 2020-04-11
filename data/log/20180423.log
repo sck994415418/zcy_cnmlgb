@@ -1,0 +1,18 @@
+[2018-04-23 11:07:13] /shop/index.php?act=goods&goods_id=101529&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101529' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-23 11:07:17] /shop/index.php?act=goods&goods_id=100994&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100994' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-23 11:07:33] /shop/index.php?act=goods&goods_id=101023&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101023' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-23 12:47:54] /shop/index.php?act=goods&goods_id=101684&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101684' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-23 15:42:37] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=102505 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by title_sort asc,title_id asc' at line 1
+select * from zmkj_title where class_id =  order by title_sort asc,title_id asc
+[2018-04-23 16:23:47] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=103189 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by title_sort asc,title_id asc' at line 1
+select * from zmkj_title where class_id =  order by title_sort asc,title_id asc

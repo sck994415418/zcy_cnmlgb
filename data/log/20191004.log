@@ -1,0 +1,48 @@
+[2019-10-04 03:09:57] /shop/index.php?act=goods&goods_id=103037&op=comments_list&type=1 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103037' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-10-04 15:51:24] /shop/index.php?act=show_store'&op=goods_all'&store_id=51'&curpage=4'" ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:28] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store2121121121212.1 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:29] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%20and%201%3D1 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:31] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%20and%201%3E1 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:34] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%27%20and%20%27x%27%3D%27x ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:36] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%27%20and%20%27x%27%3D%27y ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:38] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store"%20and%20"x"%3D"x ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:40] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%22%20and%20%22x%22%3D%22y ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:51:42] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%20AND%201=1 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:52:52] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%27%20AnD%20sLeep%283%29%20ANd%20%271 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:52:56] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%27%26%26sLEEp%283%29%26%26%271 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:52:56] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%00%27%7C%7CSLeeP%283%29%26%26%271 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:52:57] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%27%20aND%20BeNChMaRK%282999999%2CMd5%28NoW%28%29%29%29%20AnD%20%271 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:52:58] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%27%26%26BeNChMaRK%282999999%2CmD5%28NOW%28%29%29%29%26%26%271 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  
+[2019-10-04 15:52:58] /shop/index.php?op=goods_all&store_id=51&curpage=4&act=show_store%27%20AnD%20sLeep%283%29%20ANd%20%270%27%3D%270 ( act=index&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid <> NULL ) AND ( geval_goodsname <> NULL ) AND ( geval_ordergoodsid <> NULL ) ORDER BY geval_id desc LIMIT -6,6  

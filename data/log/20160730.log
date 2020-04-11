@@ -1,0 +1,6 @@
+[2016-07-30 09:06:45] /mobile/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_id = '44' ) AND ( buyer_id = '4' ) AND ( order_type = '1' ) LIMIT 1  
+[2016-07-30 09:06:50] /mobile/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_id = '45' ) AND ( buyer_id = '4' ) AND ( order_type = '1' ) LIMIT 1  

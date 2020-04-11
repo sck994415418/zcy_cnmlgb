@@ -1,0 +1,6 @@
+[2018-06-24 06:38:47] /shop/index.php?act=goods&op=comments&goods_commonid=100752&curpage=3 ( act=goods&op=comments ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_orderno = '1000000000084201' ) AND ( geval_goodsid = '0' ) ORDER BY geval_id desc LIMIT -10,10  
+[2018-06-24 07:54:34] /shop/index.php?act=goods&op=comments&goods_commonid=100752&curpage=2 ( act=goods&op=comments ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 1
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_orderno = '1000000000084201' ) AND ( geval_goodsid = '0' ) ORDER BY geval_id desc LIMIT -10,10  

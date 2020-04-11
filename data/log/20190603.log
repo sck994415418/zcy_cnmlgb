@@ -1,0 +1,9 @@
+[2019-06-03 04:18:53] /shop/index.php?act=search&op=index&cate_id=1588&area_id=30 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '1588' ) AND ( areaid_1 = '30' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2019-06-03 10:07:08] /shop/index.php?act=goods&op=comments_list&goods_id=107421 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '107421' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-06-03 11:35:16] /admin/index.php?act=goods_orm&op=edit&id=1906 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='b61346d1-e576-42fc-a57e-501c839e8da9 and id !=1906'

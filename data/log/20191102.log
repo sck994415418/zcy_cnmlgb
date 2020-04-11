@@ -1,0 +1,9 @@
+[2019-11-02 11:49:14] /admin/index.php?act=goods_orm&op=edit&id=2814 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a086abde-9cca-4984-b316-796eea954196 and id !=2814'
+[2019-11-02 22:00:47] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and goods_state=1' at line 1
+select * from zmkj_goods where goods_id in () and goods_state=1
+[2019-11-02 22:00:47] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 

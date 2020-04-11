@@ -1,0 +1,144 @@
+[2018-07-17 00:03:18] /shop/index.php?act=search&op=index&cate_id=2149 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2149' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-07-17 00:54:28] /shop/index.php?act=goods&op=comments_list&goods_id=102114 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102114' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 01:48:21] /shop/index.php?act=search&op=index&cate_id=2184 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2184' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-07-17 05:04:14] /shop/index.php?act=goods&op=comments_list&goods_id=102673 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102673' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 05:06:12] /shop/index.php?act=goods&op=comments_list&goods_id=102673&type=1 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102673' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 05:07:54] /shop/index.php?act=goods&op=comments_list&goods_id=102673&type=2 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102673' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 05:10:11] /shop/index.php?act=goods&op=comments_list&goods_id=102673&type=3 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102673' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 05:12:28] /shop/index.php?act=search&op=index&cate_id=1582 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '1582' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-07-17 05:26:14] /shop/index.php?act=goods&op=comments_list&goods_id=103059 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103059' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 06:10:15] /shop/index.php?act=goods&op=comments_list&goods_id=103051 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103051' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 06:10:24] /shop/index.php?act=search&op=index&cate_id=2173 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2173' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-07-17 09:00:59] /shop/index.php?act=search&op=index&cate_id=2139 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2139' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-07-17 10:23:44] /shop/index.php?act=goods&op=comments_list&goods_id=102059 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102059' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 10:46:13] /shop/index.php?act=search&op=index&cate_id=2120 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2120' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-07-17 11:47:39] /admin/index.php?act=goods_orm&op=edit&id=24 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='50287c76-914e-489a-bffc-d895c8d1ef81 and id !=24'
+[2018-07-17 11:48:01] /admin/index.php?act=goods_orm&op=edit&id=24 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='50287c76-914e-489a-bffc-d895c8d1ef81 and id !=24'
+[2018-07-17 11:57:36] /shop/index.php?act=goods&op=comments_list&goods_id=102147 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102147' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 14:30:15] /shop/index.php?act=search&op=index&cate_id=2201 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2201' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-07-17 15:13:20] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time') values ('','','0',1531811600)' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time') values ('','','0',1531811600)
+[2018-07-17 15:14:05] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time') values ('','','0',1531811645)' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time') values ('','','0',1531811645)
+[2018-07-17 15:17:09] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time') values ('','','0',1531811829)' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time') values ('','','0',1531811829)
+[2018-07-17 15:19:29] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time') values ('','','1',1531811969)' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time') values ('','','1',1531811969)
+[2018-07-17 15:20:55] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time') values ('A02010105','便携式' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time') values ('A02010105','便携式计算机','0',1531812055)
+[2018-07-17 15:21:39] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time') values ('A02010105','便携式' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time') values ('A02010105','便携式计算机','0',1531812099)
+[2018-07-17 15:21:55] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time') values ('A02010105','便携式' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time') values ('A02010105','便携式计算机','0',1531812115)
+[2018-07-17 15:48:55] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id','class_name','parent_id','add_time','goods_num','deep') values ('A020' at line 1
+insert into zmkj_zf_class ('class_id','class_name','parent_id','add_time','goods_num','deep') values ('A02010105','便携式计算机',0,1531813735,0,1)
+[2018-07-17 15:49:53] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''zmkj_zf_class' ('class_id','class_name','parent_id','add_time','goods_num','dee' at line 1
+insert into 'zmkj_zf_class' ('class_id','class_name','parent_id','add_time','goods_num','deep') values ('A02010105','便携式计算机',0,1531813793,0,1)
+[2018-07-17 15:50:38] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''zmkj_zf_class' (class_id,class_name,parent_id,add_time,goods_num,deep) values (' at line 1
+insert into 'zmkj_zf_class' (class_id,class_name,parent_id,add_time,goods_num,deep) values ('A02010105','便携式计算机',0,1531813838,0,1)
+[2018-07-17 15:50:47] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''zmkj_zf_class' (class_id,class_name,parent_id,add_time,goods_num,deep) values (' at line 1
+insert into 'zmkj_zf_class' (class_id,class_name,parent_id,add_time,goods_num,deep) values ('A02010105','便携式计算机',1,1531813847,0,)
+[2018-07-17 15:51:18] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''zmkj_zf_class' (class_id,class_name,parent_id,add_time,goods_num,deep) values (' at line 1
+insert into 'zmkj_zf_class' (class_id,class_name,parent_id,add_time,goods_num,deep) values ('A02010105','便携式计算机',2,1531813878,0,)
+[2018-07-17 16:41:16] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+INSERT INTO `zmkj_zf_class`(`class_id`, `class_name`, `goods_num`, `parent_id`, `deep`, `add_time`) VALUES ('A02010105','便携式计算机',1,1531816876,0,)
+[2018-07-17 16:43:49] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in (1,2)' at line 1
+select * from zmkj_zf_class deep in (1,2)
+[2018-07-17 16:43:59] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in (1,2)' at line 1
+select * from zmkj_zf_class deep in (1,2)
+[2018-07-17 16:44:56] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+INSERT INTO `zmkj_zf_class`(`class_id`, `class_name`, `goods_num`, `parent_id`, `deep`, `add_time`) VALUES ('A02010105','便携式计算机',1,1531817096,0,)
+[2018-07-17 16:56:53] /admin/index.php?act=zf_class&op=add ( act=zf_class&op=add ) 
+ERR: Db Error: Column count doesn't match value count at row 1
+INSERT INTO `zmkj_zf_class`(`class_id`, `class_name`, `goods_num`,`add_time`) VALUES ('A02010105','便携式计算机',1531817813,0,1531817813)
+[2018-07-17 17:17:23] /admin/index.php?act=goods_orm&op=edit&id=89 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='fba96bd2-27f9-4a6a-bfd5-96ed45c6ffdb and id !=89'
+[2018-07-17 17:20:53] /admin/index.php?act=zf_class&op=edit ( act=zf_class&op=edit ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id'='A02010105','class_name='便携式计算机12333','edit_time'=1531819' at line 1
+Update zmkj_zf_class set 'class_id'='A02010105','class_name='便携式计算机12333','edit_time'=1531819253 where id = 10
+[2018-07-17 17:24:15] /admin/index.php?act=zf_class&op=edit ( act=zf_class&op=edit ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''class_id'='A02010105','class_name'='便携式计算','edit_time'=1531819455 whe' at line 1
+Update zmkj_zf_class set 'class_id'='A02010105','class_name'='便携式计算','edit_time'=1531819455 where id = 8
+[2018-07-17 17:25:53] /admin/index.php?act=zf_class&op=edit ( act=zf_class&op=edit ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''zmkj_zf_class' set 'class_id'='A02010105','class_name'='便携式','edit_time'=' at line 1
+Update 'zmkj_zf_class' set 'class_id'='A02010105','class_name'='便携式','edit_time'=1531819553 where id = 8
+[2018-07-17 19:48:18] /shop/index.php?act=goods&op=comments_list&goods_id=102750 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102750' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 21:27:46] /shop/index.php?act=goods&op=comments_list&goods_id=102906 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102906' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 22:07:04] /shop/index.php?act=goods&op=comments_list&goods_id=103720 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103720' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 22:11:18] /shop/index.php?act=goods&op=comments_list&goods_id=104883 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '104883' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 22:26:42] /shop/index.php?act=goods&op=comments_list&goods_id=102081 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102081' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 22:36:58] /shop/index.php?act=goods&op=comments_list&goods_id=100696 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100696' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 22:46:21] /shop/index.php?act=goods&op=comments_list&goods_id=103356 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103356' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 23:35:38] /shop/index.php?act=goods&op=comments_list&goods_id=105195 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '105195' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-07-17 23:36:11] /shop/index.php?act=goods&op=comments_list&goods_id=102900 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102900' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

@@ -1,0 +1,9 @@
+[2016-08-25 17:05:11] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-25 17:05:12] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1000' at line 1
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,master_id,scost,tel,type,address,nowtime,apptime,wxstate,jdtime,cftime,wxtime,finnshed_time,payment_code FROM `zmkj_order` WHERE master_id= LIMIT 1000  
+[2016-08-25 18:42:38] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1472121758','1099','888','1094','1099')

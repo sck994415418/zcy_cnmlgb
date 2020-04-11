@@ -1,0 +1,99 @@
+[2016-08-05 09:25:25] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','37','1470360325','1098','888','1094','1098')
+[2016-08-05 09:41:56] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','37','1470361316','1126','1124','1125','1126')
+[2016-08-05 09:42:05] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','37','1470361325','1126','1124','1125','1126')
+[2016-08-05 09:45:35] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361535' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:45:41] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361541' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:45:52] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361552' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:46:13] /mobile/index.php?act=goods&op=goods_list&gc_id=1099&page=10&curpage=1&gc_id=1099 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-05 09:46:15] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361575' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:46:28] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361588' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:46:30] /mobile/index.php?act=goods&op=goods_list&gc_id=1099&page=10&curpage=1&gc_id=1099 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-05 09:46:36] /mobile/index.php?act=goods&op=goods_list&gc_id=1098&page=10&curpage=1&gc_id=1098 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-05 09:46:37] /mobile/index.php?act=goods&op=goods_detail&goods_id=100124&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361597' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:46:59] /mobile/index.php?act=goods&op=goods_list&gc_id=1098&page=10&curpage=1&gc_id=1098 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-05 09:48:35] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361715' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:48:52] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361732' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:49:15] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361755' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:49:21] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','37','1470361761','1098','888','1094','1098')
+[2016-08-05 09:49:36] /mobile/index.php?act=goods&op=goods_list&gc_id=1098&page=10&curpage=1&gc_id=1098 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-05 09:50:04] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','37','1470361804','1098','888','1094','1098')
+[2016-08-05 09:50:24] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361824' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:50:32] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361832' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:50:42] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361842' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 09:51:36] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470361896' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 10:02:00] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','37','1470362520','1098','888','1094','1098')
+[2016-08-05 10:29:09] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','37','1470364149','1098','888','1094','1098')
+[2016-08-05 10:55:45] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100102-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100102','4','1470365745','1129','1124','1125','1129')
+[2016-08-05 11:01:01] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100123-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100123','37','1470366061','1098','888','1094','1098')
+[2016-08-05 11:02:23] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100123-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100123','37','1470366143','1098','888','1094','1098')
+[2016-08-05 11:17:04] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470367024' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 11:17:08] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470367028' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 11:17:11] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470367031' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-05 17:26:58] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100076-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100076','4','1470389218','1128','1124','1125','1128')
+[2016-08-05 17:31:34] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','37','1470389494','1098','888','1094','1098')

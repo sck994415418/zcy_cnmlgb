@@ -1,0 +1,76 @@
+<script type="text/javascript" src="http://www.nrwspt.com/data/resource/js/jquery.nc_slider.js" charset="utf-8"></script>
+<script type="text/javascript">
+//图片延迟加载
+(function($) {
+    $.fn.nc_lazyload_init = function() {
+        this.each(function() {
+            $(this).after($(this).val().replace(/src=/gi, 'data-src='));
+        }).remove();
+    };
+})(jQuery);
+
+//图片延迟加载
+(function($) {
+    $.fn.nc_lazyload = function() {
+        var lazy_items = [];
+        this.each(function() {
+            if($(this).attr("data-src") !== undefined){
+                var lazy_item = {
+                    object: $(this),
+                    url: $(this).attr("data-src")
+                };
+                lazy_items.push(lazy_item);
+            }
+        });
+
+        var load_img = function() {
+            var window_height = $(window).height();
+            var scroll_top = $(window).scrollTop();
+
+            $.each(lazy_items, function(i, lazy_item) {
+                if(lazy_item.object) {
+                    item_top = lazy_item.object.offset().top - scroll_top;
+                    if(item_top >= 0 && item_top < window_height) {
+                        if(lazy_item.url) {
+                            lazy_item.object.attr("src",lazy_item.url);
+                        }
+                        lazy_item.object = null;
+                    }
+                }
+            });
+        };
+        load_img();
+        $(window).bind("scroll", load_img);
+    };
+})(jQuery);
+</script>
+<div id="store_decoration_area" class="store-decoration-page">
+<textarea class="lazyload_container" rows="10" cols="30" style="display:none;">
+            <div id="block_13" data-block-id="13" nctype="store_decoration_block" class="ncsc-decration-block store-decoration-block-1  tip" title="">
+    <div nctype="store_decoration_block_content" class="ncsc-decration-block-content store-decoration-block-1-content">
+        <div nctype="store_decoration_block_module" class="store-decoration-block-1-module">
+                        
+<ul class="goods-list">
+    <li nctype="goods_item" data-goods-id="100541" data-goods-name="亚都空气加湿器小型办公室桌面大容量静音迷你加湿SZK-J262WIFI 黑色 SZK-J262WIF" data-goods-price="1399.00"  data-goods-image="2018/01/52_05697589236731534.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100541" target="_blank" title="亚都空气加湿器小型办公室桌面大容量静音迷你加湿SZK-J262WIFI 黑色 SZK-J262WIF"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/52/2018/01/52_05697589236731534_240.jpg"/ alt="亚都空气加湿器小型办公室桌面大容量静音迷你加湿SZK-J262WIFI 黑色 SZK-J262WIF"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100541" target="_blank" title="亚都空气加湿器小型办公室桌面大容量静音迷你加湿SZK-J262WIFI 黑色 SZK-J262WIF">亚都空气加湿器小型办公室桌面大容量静音迷你加湿SZK-J262WIFI 黑色 SZK-J262WIF</a></dt>
+      <dd>&yen;1399.00</dd>
+    </dl>
+      </li>
+  </ul>
+                    </div>
+            </div>
+    </div>
+        </textarea>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //图片延迟加载
+        $(".lazyload_container").nc_lazyload_init();
+        $("img").nc_lazyload();
+
+        //幻灯片
+        $('[nctype="store_decoration_slide"]').nc_slider();
+    });
+</script>

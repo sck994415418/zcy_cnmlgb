@@ -1,0 +1,405 @@
+[2016-11-02 09:09:07] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:12:07] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:12:55] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:17:52] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:18:48] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:18:53] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:18:57] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:27:43] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:27:59] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:41:51] /shop/index.php?act=master&op=kiting ( act=master&op=kiting ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:41:52] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:41:53] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:41:57] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:42:46] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 09:42:49] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','146','1478050969','630','593','598','630')
+[2016-11-02 10:25:58] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 10:33:45] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 10:41:12] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1478054472','630','593','598','630')
+[2016-11-02 10:41:27] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1478054487','630','593','598','630')
+[2016-11-02 10:45:51] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 10:46:36] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1478054796','630','593','598','630')
+[2016-11-02 10:49:54] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '77' ) AND ( buyer_id = '135' )
+[2016-11-02 10:49:54] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1478054994' WHERE ( goods_id IN ('100121') )
+[2016-11-02 10:49:57] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '76' ) AND ( buyer_id = '135' )
+[2016-11-02 10:49:57] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 4)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+4,goods_salenum=goods_salenum-4,goods_edittime='1478054997' WHERE ( goods_id IN ('100125') )
+[2016-11-02 10:50:10] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','135','1478055010','1126','1124','1125','1126')
+[2016-11-02 10:51:27] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-139' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','139','1478055087','1126','1124','1125','1126')
+[2016-11-02 10:51:32] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('88',NULL,NULL,NULL,NULL,NULL,NULL,'追梦科技官方旗舰店||300.0|0.00|100123','130',NULL)
+[2016-11-02 10:51:40] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','135','1478055100','1099','888','1094','1099')
+[2016-11-02 10:58:24] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','135','1478055504','1126','1124','1125','1126')
+[2016-11-02 10:59:34] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','135','1478055574','1126','1124','1125','1126')
+[2016-11-02 11:00:06] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','135','1478055606','630','593','598','630')
+[2016-11-02 11:04:57] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','135','1478055897','1126','1124','1125','1126')
+[2016-11-02 11:12:43] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100144-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100144','130','1478056363','1126','1124','1125','1126')
+[2016-11-02 11:12:47] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100140-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100140','130','1478056367','1126','1124','1125','1126')
+[2016-11-02 11:19:39] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '135' ) LIMIT 1000  
+[2016-11-02 11:21:47] /mobile/index.php?act=goods&op=goods_list&gc_id=1129&page=10&curpage=1&gc_id=1129 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 11:21:52] /mobile/index.php?act=goods&op=goods_list&gc_id=1129&page=10&curpage=1&gc_id=1129 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 11:24:00] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '47' ) AND ( buyer_id = '148' )
+[2016-11-02 11:25:27] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '99' ) AND ( buyer_id = '148' )
+[2016-11-02 11:25:49] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','148','1478057149','1098','888','1094','1098')
+[2016-11-02 11:26:52] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '102' ) AND ( buyer_id = '148' )
+[2016-11-02 11:37:22] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '102' ) AND ( buyer_id = '148' )
+[2016-11-02 11:38:37] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','148','1478057917','1098','888','1094','1098')
+[2016-11-02 11:39:12] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '105' ) AND ( buyer_id = '148' )
+[2016-11-02 11:41:22] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','148','1478058082','1126','1124','1125','1126')
+[2016-11-02 11:42:15] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '106' ) AND ( buyer_id = '148' )
+[2016-11-02 11:42:15] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 2)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+2,goods_salenum=goods_salenum-2,goods_edittime='1478058135' WHERE ( goods_id IN ('100141') )
+[2016-11-02 11:43:05] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','148','1478058185','1126','1124','1125','1126')
+[2016-11-02 11:52:09] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','148','1478058729','630','593','598','630')
+[2016-11-02 11:57:33] /mobile/index.php?act=goods&op=goods_list&keyword=%E6%B5%8B%E8%AF%95&page=10&curpage=1&keyword=%E6%B5%8B%E8%AF%95 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 11:57:35] /mobile/index.php?act=goods&op=goods_detail&goods_id=100141&key=0e98fcc1b57ea8624cf5ec9ed37c225b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478059055' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-02 11:58:26] /mobile/index.php?act=goods&op=goods_detail&goods_id=100141&key=0e98fcc1b57ea8624cf5ec9ed37c225b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478059106' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-02 12:19:52] /mobile/index.php?act=index&op=shebeiinfo&goods_id=100017 ( act=index&op=shebeiinfo ) 
+ERR: Db Error: Table 'bangongshi.zmkj_table' doesn't exist
+SELECT * FROM `zmkj_table` WHERE ( store_id = '1' ) LIMIT 1  
+[2016-11-02 12:20:05] /mobile/index.php?act=index&op=shebeiinfo&goods_id=100059 ( act=index&op=shebeiinfo ) 
+ERR: Db Error: Table 'bangongshi.zmkj_table' doesn't exist
+SELECT * FROM `zmkj_table` WHERE ( store_id = '1' ) LIMIT 1  
+[2016-11-02 12:22:28] /mobile/index.php?act=goods&op=goods_list&keyword=&page=10&curpage=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 12:22:35] /mobile/index.php?act=goods&op=goods_list&keyword=&page=10&curpage=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 12:22:47] /mobile/index.php?act=goods&op=goods_list&keyword=&page=10&curpage=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 12:23:43] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-153' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','153','1478060623','630','593','598','630')
+[2016-11-02 12:52:49] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 13:13:35] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 13:15:04] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1478063704','630','593','598','630')
+[2016-11-02 13:50:12] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','146','1478065812','630','593','598','630')
+[2016-11-02 13:50:23] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','146','1478065823','630','593','598','630')
+[2016-11-02 13:50:35] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','146','1478065835','630','593','598','630')
+[2016-11-02 13:50:51] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','146','1478065851','1126','1124','1125','1126')
+[2016-11-02 13:50:57] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','146','1478065857','630','593','598','630')
+[2016-11-02 13:51:11] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','146','1478065871','265','256','258','265')
+[2016-11-02 13:51:18] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','146','1478065878','265','256','258','265')
+[2016-11-02 13:51:27] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','146','1478065887','265','256','258','265')
+[2016-11-02 13:55:28] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','146','1478066128','265','256','258','265')
+[2016-11-02 13:55:37] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-146' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','146','1478066137','265','256','258','265')
+[2016-11-02 13:56:17] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','4','1478066177','630','593','598','630')
+[2016-11-02 13:59:22] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','4','1478066362','630','593','598','630')
+[2016-11-02 13:59:35] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','4','1478066375','1126','1124','1125','1126')
+[2016-11-02 14:02:05] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','4','1478066525','630','593','598','630')
+[2016-11-02 14:02:14] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','4','1478066534','1126','1124','1125','1126')
+[2016-11-02 14:02:20] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','4','1478066540','265','256','258','265')
+[2016-11-02 14:02:30] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','4','1478066550','630','593','598','630')
+[2016-11-02 14:15:31] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','4','1478067331','630','593','598','630')
+[2016-11-02 14:15:35] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','4','1478067335','1126','1124','1125','1126')
+[2016-11-02 15:29:24] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','4','1478071764','265','256','258','265')
+[2016-11-02 15:30:02] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '109' ) AND ( buyer_id = '4' )
+[2016-11-02 15:30:02] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1478071802' WHERE ( goods_id IN ('100011') )
+[2016-11-02 15:30:30] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '110' ) AND ( buyer_id = '4' )
+[2016-11-02 15:30:30] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1478071830' WHERE ( goods_id IN ('100011') )
+[2016-11-02 15:37:02] /mobile/index.php?act=goods&op=goods_list&keyword=%E6%B5%8B%E8%AF%95&page=10&curpage=1&keyword=%E6%B5%8B%E8%AF%95 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 15:37:03] /mobile/index.php?act=goods&op=goods_detail&goods_id=100141&key=0e98fcc1b57ea8624cf5ec9ed37c225b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478072223' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-02 15:37:40] /mobile/index.php?act=goods&op=goods_list&keyword=%E6%B5%8B%E8%AF%95&page=10&curpage=1&keyword=%E6%B5%8B%E8%AF%95 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 15:39:04] /mobile/index.php?act=goods&op=goods_list&keyword=%E6%B5%8B%E8%AF%95&page=10&curpage=1&keyword=%E6%B5%8B%E8%AF%95 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 15:39:06] /mobile/index.php?act=goods&op=goods_detail&goods_id=100141&key=0e98fcc1b57ea8624cf5ec9ed37c225b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478072346' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-02 15:40:09] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100144-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100144','130','1478072409','1126','1124','1125','1126')
+[2016-11-02 15:42:54] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-02 15:42:58] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-02 16:07:18] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:07:27] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:10:16] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:10:16] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:11:13] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:13:19] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','4','1478074399','265','256','258','265')
+[2016-11-02 16:14:07] /mobile/index.php?act=goods&op=goods_list&keyword=%E6%B5%8B%E8%AF%95&page=10&curpage=1&keyword=%E6%B5%8B%E8%AF%95 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 16:14:09] /mobile/index.php?act=goods&op=goods_detail&goods_id=100141&key=0e98fcc1b57ea8624cf5ec9ed37c225b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478074449' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-02 16:14:18] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '113' ) AND ( buyer_id = '4' )
+[2016-11-02 16:14:22] /mobile/index.php?act=goods&op=goods_list&keyword=%E6%B5%8B%E8%AF%95&page=10&curpage=1&keyword=%E6%B5%8B%E8%AF%95 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 16:20:47] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '116' ) AND ( buyer_id = '60' )
+[2016-11-02 16:21:26] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-02 16:34:41] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:36:00] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:41:42] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) LIMIT 1  
+[2016-11-02 16:41:42] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-11-02 16:51:51] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','4','1478076711','1126','1124','1125','1126')
+[2016-11-02 16:54:55] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:54:56] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 16:57:10] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','4','1478077030','1126','1124','1125','1126')
+[2016-11-02 17:00:10] /mobile/index.php?act=member_return&op=get_return_info&key=0e98fcc1b57ea8624cf5ec9ed37c225b&return_id=2 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '2' ) LIMIT 1  
+[2016-11-02 17:24:22] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100011-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100011','4','1478078662','265','256','258','265')
+[2016-11-02 17:36:05] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 17:48:49] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=bcf18b007dd08461916b686b09000521 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478080129' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-02 17:53:45] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) LIMIT 1  
+[2016-11-02 17:53:45] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-11-02 17:54:29] /mobile/index.php?act=member_return&op=get_return_info&key=bcf18b007dd08461916b686b09000521&return_id=3 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '3' ) LIMIT 1  
+[2016-11-02 17:56:41] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 18:19:29] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 18:19:30] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 18:23:51] /mobile/index.php?act=goods&op=goods_list&keyword=%E6%B5%8B%E8%AF%95&page=10&curpage=1&keyword=%E6%B5%8B%E8%AF%95 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-02 18:23:53] /mobile/index.php?act=goods&op=goods_detail&goods_id=100141&key=cb56133b6a3b90c49583ca1e2a9eb0ca ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478082233' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-02 18:47:06] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 18:49:47] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 18:49:47] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-02 19:52:11] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('128',NULL,NULL,NULL,NULL,NULL,NULL,'追梦科技官方旗舰店||50.0|0.00|100100','135',NULL)
+[2016-11-02 19:52:13] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('131',NULL,NULL,NULL,NULL,NULL,NULL,'梦科技官方旗舰店||50.0|0.00|100100','135',NULL)
+[2016-11-02 19:52:15] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('135',NULL,NULL,NULL,NULL,NULL,NULL,'科技官方旗舰店||50.0|0.00|100100','135',NULL)
+[2016-11-02 19:52:17] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('140',NULL,NULL,NULL,NULL,NULL,NULL,'技官方旗舰店||50.0|0.00|100100','135',NULL)
+[2016-11-02 19:53:19] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '135' ) LIMIT 1000  
+[2016-11-02 22:08:06] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-139' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','139','1478095686','1126','1124','1125','1126')

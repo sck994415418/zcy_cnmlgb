@@ -1,0 +1,357 @@
+[2016-08-01 04:08:46] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1469995726' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-01 09:15:05] /mobile/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_id = '44' ) AND ( buyer_id = '4' ) AND ( order_type = '1' ) LIMIT 1  
+[2016-08-01 10:12:13] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-01 10:12:17] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-01 10:12:32] /mobile/index.php?act=goods&op=goods_list&gc_id=1129&page=10&curpage=1&gc_id=1129 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-01 10:12:39] /mobile/index.php?act=goods&op=goods_list&gc_id=1131&page=10&curpage=1&gc_id=1131 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-01 15:18:09] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4',NULL,'劳斯莱斯了','急急急','1470035889','很急急急',NULL,'郭敬明')
+[2016-08-01 15:18:09] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4',NULL,'劳斯莱斯了','急急急','1470035889','很急急急',NULL,'郭敬明')
+[2016-08-01 15:21:38] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036098','1','1','1')
+[2016-08-01 15:21:40] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036100','1','1','1')
+[2016-08-01 15:21:40] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036100','1','1','1')
+[2016-08-01 15:21:41] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036101','1','1','1')
+[2016-08-01 15:21:41] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036101','1','1','1')
+[2016-08-01 15:21:41] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036101','1','1','1')
+[2016-08-01 15:21:41] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036101','1','1','1')
+[2016-08-01 15:21:41] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036101','1','1','1')
+[2016-08-01 15:21:42] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036102','1','1','1')
+[2016-08-01 15:21:42] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036102','1','1','1')
+[2016-08-01 15:21:42] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036102','1','1','1')
+[2016-08-01 15:21:43] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036103','1','1','1')
+[2016-08-01 15:21:43] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036103','1','1','1')
+[2016-08-01 15:22:15] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES (NULL,NULL,NULL,NULL,'1470036135',NULL,NULL,NULL)
+[2016-08-01 15:22:54] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036174','1','1','1')
+[2016-08-01 15:25:07] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 15:25:09] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '43' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '43' ) AND ( buyer_id = '4' )
+[2016-08-01 15:25:17] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 15:25:20] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 15:25:22] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '43' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '43' ) AND ( buyer_id = '4' )
+[2016-08-01 15:25:34] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '45' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '45' ) AND ( buyer_id = '4' )
+[2016-08-01 15:26:37] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036397','1','1','1')
+[2016-08-01 15:26:41] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036401','1','1','1')
+[2016-08-01 15:26:42] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036402','1','1','1')
+[2016-08-01 15:26:42] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036402','1','1','1')
+[2016-08-01 15:26:42] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036402','1','1','1')
+[2016-08-01 15:26:43] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036403','1','1','1')
+[2016-08-01 15:26:43] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036403','1','1','1')
+[2016-08-01 15:26:44] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036404','1','1','1')
+[2016-08-01 15:26:44] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036404','1','1','1')
+[2016-08-01 15:26:45] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036405','1','1','1')
+[2016-08-01 15:27:19] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036439','1','1','1')
+[2016-08-01 15:27:20] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036440','1','1','1')
+[2016-08-01 15:27:20] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036440','1','1','1')
+[2016-08-01 15:27:20] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036440','1','1','1')
+[2016-08-01 15:27:20] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036440','1','1','1')
+[2016-08-01 15:27:21] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036441','1','1','1')
+[2016-08-01 15:27:21] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036441','1','1','1')
+[2016-08-01 15:27:21] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036441','1','1','1')
+[2016-08-01 15:27:22] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036442','1','1','1')
+[2016-08-01 15:27:22] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036442','1','1','1')
+[2016-08-01 15:28:22] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','10008','1','1','1470036502','1','1','1')
+[2016-08-01 15:28:55] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100008','1','1','1470036535','1','1','1')
+[2016-08-01 15:28:58] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100008','1','1','1470036538','1','1','1')
+[2016-08-01 15:28:58] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100008','1','1','1470036538','1','1','1')
+[2016-08-01 15:28:58] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100008','1','1','1470036538','1','1','1')
+[2016-08-01 15:29:11] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036551','1','1','1')
+[2016-08-01 15:29:12] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036552','1','1','1')
+[2016-08-01 15:29:12] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036552','1','1','1')
+[2016-08-01 15:29:12] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036552','1','1','1')
+[2016-08-01 15:29:12] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036552','1','1','1')
+[2016-08-01 15:29:12] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036552','1','1','1')
+[2016-08-01 15:29:13] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036553','1','1','1')
+[2016-08-01 15:30:46] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036646','1','1','1')
+[2016-08-01 15:31:16] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036676','1','1','1')
+[2016-08-01 15:31:51] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Unknown column 'model' in 'field list'
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','100005','1','1','1470036711','1','1','1')
+[2016-08-01 15:37:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100076-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100076','4','1470037072','1128','1124','1125','1128')
+[2016-08-01 15:37:52] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '3' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '3' ) AND ( buyer_id = '4' )
+[2016-08-01 15:42:01] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '3' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '3' ) AND ( buyer_id = '4' )
+[2016-08-01 15:42:01] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1470037321' WHERE ( goods_id IN ('100074') )
+[2016-08-01 15:42:03] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '3' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '3' ) AND ( buyer_id = '4' )
+[2016-08-01 15:42:03] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1470037323' WHERE ( goods_id IN ('100074') )
+[2016-08-01 15:46:30] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470037590','1126','1124','1125','1126')
+[2016-08-01 15:47:06] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-01 15:47:07] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=392b53973f4809fa223e01dff79efb52 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470037627' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-01 15:54:21] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 15:54:23] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '43' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '43' ) AND ( buyer_id = '4' )
+[2016-08-01 15:54:26] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '42' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '42' ) AND ( buyer_id = '4' )
+[2016-08-01 15:54:31] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '45' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '45' ) AND ( buyer_id = '4' )
+[2016-08-01 15:54:31] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1470038071' WHERE ( goods_id IN ('100074') )
+[2016-08-01 15:54:45] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100072-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100072','4','1470038085','1126','1124','1125','1126')
+[2016-08-01 16:20:17] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100073-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100073','4','1470039617','1126','1124','1125','1126')
+[2016-08-01 16:23:01] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470039781','1126','1124','1125','1126')
+[2016-08-01 16:31:34] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1470040294','1126','1124','1125','1126')
+[2016-08-01 16:35:21] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100073-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100073','4','1470040521','1126','1124','1125','1126')
+[2016-08-01 16:46:11] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100073-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100073','4','1470041171','1126','1124','1125','1126')
+[2016-08-01 16:49:09] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1470041349','1126','1124','1125','1126')
+[2016-08-01 16:51:53] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1470041513','1126','1124','1125','1126')
+[2016-08-01 17:01:33] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470042093','1126','1124','1125','1126')
+[2016-08-01 17:15:00] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 17:15:32] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 17:15:36] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 17:15:40] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 17:15:46] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 17:15:54] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '43' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '43' ) AND ( buyer_id = '4' )
+[2016-08-01 17:15:58] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '43' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '43' ) AND ( buyer_id = '4' )
+[2016-08-01 17:16:03] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 17:16:57] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '44' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '44' ) AND ( buyer_id = '4' )
+[2016-08-01 17:17:57] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '45' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '45' ) AND ( buyer_id = '4' )
+[2016-08-01 17:17:57] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1470043077' WHERE ( goods_id IN ('100074') )
+[2016-08-01 17:21:12] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470043272','1126','1124','1125','1126')
+[2016-08-01 17:26:48] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470043608','1126','1124','1125','1126')
+[2016-08-01 17:30:09] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470043809','1126','1124','1125','1126')
+[2016-08-01 17:39:20] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470044360','1126','1124','1125','1126')
+[2016-08-01 17:43:08] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470044588','1126','1124','1125','1126')
+[2016-08-01 17:59:46] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470045586','1126','1124','1125','1126')
+[2016-08-01 19:17:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470050263','1126','1124','1125','1126')
+[2016-08-01 20:28:27] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470054507','1126','1124','1125','1126')
+[2016-08-01 20:30:22] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470054622','1126','1124','1125','1126')
+[2016-08-01 20:30:47] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '41' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '41' ) AND ( buyer_id = '4' )
+[2016-08-01 20:30:50] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '39' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '39' ) AND ( buyer_id = '4' )
+[2016-08-01 20:30:53] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '40' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '40' ) AND ( buyer_id = '4' )
+[2016-08-01 20:30:55] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '38' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '38' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:02] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '35' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '35' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:05] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '31' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '31' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:07] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '30' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '30' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:10] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '29' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '29' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:11] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '34' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '34' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:13] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '36' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '36' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:15] /shop/index.php?act=mobile&op=ordercancel ( act=mobile&op=ordercancel ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '28' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_` SET  WHERE ( order_id = '28' ) AND ( buyer_id = '4' )
+[2016-08-01 20:31:30] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1470054690','1126','1124','1125','1126')

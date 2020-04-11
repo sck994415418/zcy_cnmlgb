@@ -1,0 +1,24 @@
+[2016-07-02 08:20:39] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-02 08:20:39] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'ecbefc3862de718d0390ab7696c82b25','1467418839',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'ecbefc3862de718d0390ab7696c82b25','1467418839',NULL)
+[2016-07-02 08:40:46] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-02 08:40:46] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'16a9080fa8d750838679e7eb888fda8c','1467420046',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'16a9080fa8d750838679e7eb888fda8c','1467420046',NULL)
+[2016-07-02 08:41:18] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-02 08:41:18] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'ae706d24a0c72630a2d65e83ebe5b1fa','1467420078',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'ae706d24a0c72630a2d65e83ebe5b1fa','1467420078',NULL)
+[2016-07-02 15:16:45] /mobile/index.php?act=goods&op=goods_list&gc_id=265&page=10&curpage=1&gc_id=265 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-02 20:46:27] /mobile/index.php?act=goods&op=goods_list&page=10&curpage=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  

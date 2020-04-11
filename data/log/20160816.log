@@ -1,0 +1,132 @@
+[2016-08-16 06:54:12] /mobile/index.php?act=goods&op=goods_list&page=10&curpage=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-16 09:05:09] /mobile/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_id = '305' ) AND ( buyer_id = '4' ) AND ( order_type = '1' ) LIMIT 1  
+[2016-08-16 09:11:37] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '4' ) LIMIT 1  
+[2016-08-16 09:11:37] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '4' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-08-16 11:59:28] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=359' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=359
+[2016-08-16 12:05:01] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=363' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=363
+[2016-08-16 12:09:44] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '366' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '366' ) AND ( buyer_id = '37' )
+[2016-08-16 12:10:13] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '366' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '366' ) AND ( buyer_id = '37' )
+[2016-08-16 13:26:09] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_num' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('367','38','正品 2015春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色','189.00',NULL,'1_04418207207476705.jpg',NULL,'1','40','0','14')
+[2016-08-16 13:28:52] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('368','38','正品 2015春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色','189.00','1','1_04418207207476705.jpg',NULL,'1','40','0','14')
+[2016-08-16 13:30:08] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('369','38','正品 2015春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色','189.00','1','1_04418207207476705.jpg',NULL,'1','40','0','14')
+[2016-08-16 13:30:13] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('370','38','正品 2015春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色','189.00','1','1_04418207207476705.jpg',NULL,'1','40','0','14')
+[2016-08-16 13:30:13] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('371','38','正品 2015春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色','189.00','1','1_04418207207476705.jpg',NULL,'1','40','0','14')
+[2016-08-16 13:30:13] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('372','38','正品 2015春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色','189.00','1','1_04418207207476705.jpg',NULL,'1','40','0','14')
+[2016-08-16 13:30:44] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('373','38','正品 2015春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色','189.00','1','1_04418207207476705.jpg',NULL,'1','40','0','14')
+[2016-08-16 13:44:41] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=376' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=376
+[2016-08-16 13:45:42] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '4' ) LIMIT 1  
+[2016-08-16 13:45:42] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '4' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-08-16 13:46:01] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=379' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=379
+[2016-08-16 13:50:08] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=380' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=380
+[2016-08-16 13:51:06] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=381' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=381
+[2016-08-16 14:27:31] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=382' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=382
+[2016-08-16 14:28:24] /mobile/index.php?act=goods&op=goods_detail&goods_id=100114&key=9423d0b9fc5780cc1d1fcb17547cb10b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471328904' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-16 14:31:07] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1000' at line 1
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,master_id,scost,tel,type,address,nowtime,apptime,wxstate,jdtime,cftime,wxtime,finnshed_time FROM `zmkj_order` WHERE master_id= LIMIT 1000  
+[2016-08-16 14:40:40] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=1' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=1
+[2016-08-16 14:44:56] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=383' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=383
+[2016-08-16 14:45:26] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:45:38] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:45:39] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:45:43] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:45:45] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:45:47] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:45:47] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:45:48] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=384' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=384
+[2016-08-16 14:50:10] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','37','1471330210','1098','888','1094','1098')
+[2016-08-16 14:50:21] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1471330221','1099','888','1094','1099')
+[2016-08-16 14:50:29] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100123-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100123','37','1471330229','1098','888','1094','1098')
+[2016-08-16 15:06:36] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=388' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=388
+[2016-08-16 15:07:05] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=389' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=389
+[2016-08-16 15:10:26] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=390' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=390
+[2016-08-16 15:25:50] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=391' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=391
+[2016-08-16 15:27:46] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=392' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=392
+[2016-08-16 15:29:20] /shop/index.php?act=repair&op=compay ( act=repair&op=compay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `order_id`=393' at line 1
+UPDATE `zmkj_order` SET  WHERE `order_id`=393
+[2016-08-16 19:17:09] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1471346229','1099','888','1094','1099')

@@ -1,0 +1,51 @@
+[2016-08-10 05:28:56] /shop/index.php?act=promotion&gc_id=470&curpage=2 ( act=promotion&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-16,16' at line 1
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time <= '1470778136' ) AND ( end_time > '1470778136' ) AND ( gc_id_1 = '470' ) ORDER BY xianshi_goods_id desc LIMIT -16,16  
+[2016-08-10 07:31:12] /shop/index.php?act=promotion&gc_id=1124&curpage=2 ( act=promotion&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-16,16' at line 1
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time <= '1470785472' ) AND ( end_time > '1470785472' ) AND ( gc_id_1 = '1124' ) ORDER BY xianshi_goods_id desc LIMIT -16,16  
+[2016-08-10 07:31:13] /shop/index.php?act=promotion&gc_id=1137&curpage=2 ( act=promotion&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-16,16' at line 1
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time <= '1470785473' ) AND ( end_time > '1470785473' ) AND ( gc_id_1 = '1137' ) ORDER BY xianshi_goods_id desc LIMIT -16,16  
+[2016-08-10 07:43:56] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1470786236' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-10 10:09:46] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470794986' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-10 10:09:56] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100125&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-08-10 10:09:56] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100125&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) ORDER BY geval_id desc LIMIT 0,10  
+[2016-08-10 10:10:01] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470795001' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-10 10:10:16] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470795016' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-10 10:10:25] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470795025' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-10 10:12:46] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470795166' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-10 10:12:56] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100125&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-08-10 10:12:56] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100125&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) ORDER BY geval_id desc LIMIT 0,10  
+[2016-08-10 12:03:53] /mobile/index.php?act=goods&op=goods_list&page=10&curpage=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-10 15:50:10] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470815410' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-10 15:53:18] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=666d25f9f5fbd23d331d7bb6d03f365e ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470815598' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-10 17:32:13] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES (NULL,NULL,'太乱了','呼叫了','1470821533',NULL,NULL,'兔兔')

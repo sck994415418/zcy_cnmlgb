@@ -1,0 +1,648 @@
+[2016-11-21 01:02:27] /shop/index.php?act=goods&goods_id=100254&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100254' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 01:22:15] /shop/index.php?act=goods&goods_id=100233&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100233' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 01:47:59] /shop/index.php?act=goods&op=comments_list&goods_id=100143 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100143' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 01:50:08] /shop/index.php?act=goods&op=comments_list&goods_id=100143&type=3 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100143' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 01:52:00] /shop/index.php?act=goods&op=comments_list&goods_id=100143&type=1 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100143' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 01:53:30] /shop/index.php?act=goods&op=comments_list&goods_id=100143&type=2 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100143' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 02:16:28] /shop/index.php?act=goods&goods_id=100168&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100168' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 02:47:53] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1479667673' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-21 02:53:47] /shop/index.php?act=goods&op=index&goods_id=100012 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100012' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:03:28] /shop/index.php?act=goods&op=index&goods_id=100014 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100014' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:14:32] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:14] /shop/index.php?act=goods&op=comments_list&goods_id=100151 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100151' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:17] /shop/index.php?act=goods&op=comments_list&goods_id=100164 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100164' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:21] /shop/index.php?act=goods&op=comments_list&goods_id=100128 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100128' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:25] /shop/index.php?act=goods&op=comments_list&goods_id=100126 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100126' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:29] /shop/index.php?act=goods&op=comments_list&goods_id=100133 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100133' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:33] /shop/index.php?act=goods&op=index&goods_id=100214 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100214' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:37] /shop/index.php?act=goods&op=comments_list&goods_id=100134 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100134' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:41] /shop/index.php?act=goods&op=comments_list&goods_id=100136 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100136' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:15:50] /shop/index.php?act=goods&op=comments_list&goods_id=100213 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100213' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:16:12] /shop/index.php?act=goods&op=comments_list&goods_id=100216 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100216' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:16:22] /shop/index.php?act=goods&op=comments_list&goods_id=100190 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100190' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:16:33] /shop/index.php?act=goods&op=comments_list&goods_id=100144 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100144' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:16:44] /shop/index.php?act=goods&op=comments_list&goods_id=100285 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100285' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:16:55] /shop/index.php?act=goods&op=comments_list&goods_id=100135 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100135' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:17:06] /shop/index.php?act=goods&op=comments_list&goods_id=100145 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100145' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:17:17] /shop/index.php?act=goods&op=comments_list&goods_id=100166 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100166' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:17:27] /shop/index.php?act=goods&op=comments_list&goods_id=100192 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100192' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:17:38] /shop/index.php?act=goods&op=index&goods_id=100219 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100219' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:17:49] /shop/index.php?act=goods&op=comments_list&goods_id=100191 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100191' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:18:11] /shop/index.php?act=goods&op=comments_list&goods_id=100289 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100289' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:18:22] /shop/index.php?act=goods&op=comments_list&goods_id=100142 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100142' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:18:33] /shop/index.php?act=goods&op=comments_list&goods_id=100215 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100215' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:18:44] /shop/index.php?act=goods&op=comments_list&goods_id=100163 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100163' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:18:55] /shop/index.php?act=goods&op=index&goods_id=100218 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100218' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:19:07] /shop/index.php?act=goods&op=comments_list&goods_id=100140 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100140' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:37:20] /shop/index.php?act=goods&op=index&goods_id=100011 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100011' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:49:10] /shop/index.php?act=goods&op=index&goods_id=100013 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100013' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 03:57:50] /shop/index.php?act=goods&goods_id=100193&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100193' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 04:35:31] /shop/index.php?act=goods&goods_id=100284&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100284' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 04:35:49] /shop/index.php?act=goods&op=index&goods_id=100337 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100337' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 05:36:30] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 05:50:29] /shop/index.php?act=goods&goods_id=100112 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100112' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 05:51:40] /shop/index.php?act=goods&op=index&goods_id=100012 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100012' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:02:50] /shop/index.php?act=goods&goods_id=100331&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100331' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:20:21] /shop/index.php?act=goods&goods_id=100284&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100284' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:27:10] /shop/index.php?act=goods&op=comments_list&goods_id=100237 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100237' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:31:28] /shop/index.php?act=goods&op=comments_list&goods_id=100237&type=3 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100237' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:32:22] /shop/index.php?act=goods&op=comments_list&goods_id=100237&type=2 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100237' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:33:59] /shop/index.php?act=goods&op=comments_list&goods_id=100237&type=1 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100237' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:56:21] /shop/index.php?act=goods&goods_id=100340&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100340' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 06:59:41] /shop/index.php?act=goods&goods_id=100168&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100168' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 07:08:32] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 07:13:29] /shop/index.php?act=goods&op=index&goods_id=100012 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100012' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 07:37:20] /shop/index.php?act=goods&goods_id=100283&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100283' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 07:45:01] /shop/index.php?act=goods&goods_id=100235&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100235' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 07:48:41] /shop/index.php?act=goods&op=index&goods_id=100040 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100040' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 08:15:01] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '241' ) LIMIT 1000  
+[2016-11-21 08:19:35] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 08:21:05] /shop/index.php?act=goods&goods_id=100252&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100252' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 08:29:52] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 08:37:35] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 08:37:42] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 08:38:11] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 08:39:44] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 08:39:49] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 08:39:56] /shop/index.php ( act=repair&op=userzl ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_store` WHERE store_id =  LIMIT 1  
+[2016-11-21 08:39:56] /shop/index.php ( act=repair&op=userzl ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_store` WHERE store_id =  LIMIT 1  
+[2016-11-21 08:40:02] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 08:44:56] /shop/index.php?act=goods&op=index&goods_id=100012 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100012' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:03:47] /shop/index.php?act=goods&op=index&goods_id=100354 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100354' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:05:19] /shop/index.php?act=goods&goods_id=100124 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100124' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:07:35] /shop/index.php?act=goods&op=index&goods_id=100065 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100065' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:07:43] /shop/index.php?act=goods&op=index&goods_id=100066 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100066' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:07:49] /shop/index.php?act=goods&op=index&goods_id=100075 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100075' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:07:58] /shop/index.php?act=goods&op=index&goods_id=100062 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100062' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:13:06] /shop/index.php?act=goods&op=index&goods_id=100014 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100014' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:13:48] /shop/index.php?act=goods&op=index&goods_id=100172 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100172' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:15:23] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:17:12] /shop/index.php?act=goods&op=index&goods_id=100075 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100075' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:17:12] /shop/index.php?act=goods&op=index&goods_id=100075 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100075' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:22:53] /shop/index.php?act=goods&op=index&goods_id=100014 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100014' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:22:53] /shop/index.php?act=goods&op=index&goods_id=100014 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100014' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:21] /shop/index.php?act=goods&op=index&goods_id=100066 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100066' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:22] /shop/index.php?act=goods&op=index&goods_id=100066 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100066' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:28] /shop/index.php?act=goods&op=index&goods_id=100062 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100062' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:28] /shop/index.php?act=goods&op=index&goods_id=100062 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100062' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:34] /shop/index.php?act=goods&op=index&goods_id=100062 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100062' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:34] /shop/index.php?act=goods&op=index&goods_id=100066 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100066' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:34] /shop/index.php?act=goods&op=index&goods_id=100062 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100062' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:26:36] /shop/index.php?act=goods&op=index&goods_id=100066 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100066' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:28:17] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:28:17] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:28:27] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:28:27] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:31:00] /shop/index.php?act=goods&op=index&goods_id=100038 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100038' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:32:09] /shop/index.php?act=goods&op=index&goods_id=100012 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100012' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:32:27] /shop/index.php?act=goods&op=index&goods_id=100012 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100012' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:33:44] /shop/index.php?act=goods&op=index&goods_id=100172 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100172' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:33:45] /shop/index.php?act=goods&op=index&goods_id=100172 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100172' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:33:50] /shop/index.php?act=goods&op=index&goods_id=100172 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100172' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:33:51] /shop/index.php?act=goods&op=index&goods_id=100172 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100172' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:37:38] /shop/index.php?act=goods&goods_id=100124 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100124' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:37:38] /shop/index.php?act=goods&goods_id=100124 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100124' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:37:43] /shop/index.php?act=goods&goods_id=100124 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100124' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:37:44] /shop/index.php?act=goods&goods_id=100124 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100124' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:42:53] /shop/index.php?act=goods&op=index&goods_id=100065 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100065' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:42:54] /shop/index.php?act=goods&op=index&goods_id=100065 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100065' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:43:02] /shop/index.php?act=goods&op=index&goods_id=100065 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100065' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:43:02] /shop/index.php?act=goods&op=index&goods_id=100065 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100065' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 09:54:23] /shop/index.php?act=goods&goods_id=100167&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100167' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 10:05:43] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 10:07:57] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 10:09:23] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-21 10:21:01] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100157-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100157','57','1479694861','1139','1137','1138','1139')
+[2016-11-21 10:21:49] /mobile/api/alipay/notify_url.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:30:17] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key= ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100059' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 10:31:05] /mobile/api/alipay/notify_url.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:39:18] /mobile/api/alipay/notify_url.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:47:17] /mobile/api/alipay/notify_url.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:47:57] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:48:06] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:48:24] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:48:55] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 10:51:58] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 11:12:50] /shop/index.php?act=goods&op=index&goods_id=100025 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100025' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 11:16:25] /shop/index.php?act=goods&goods_id=100251&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100251' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 11:22:00] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 11:27:51] /shop/index.php?act=goods&op=comments_list&goods_id=100144 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100144' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 11:45:50] /mobile/api/alipay/notify_url.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 11:52:04] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 12:17:24] /shop/index.php?act=goods&goods_id=100250&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100250' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 12:22:09] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 12:41:26] /shop/index.php?act=goods&goods_id=100253&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100253' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 12:43:42] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 12:51:04] /shop/index.php?act=goods&goods_id=100163&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100163' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 12:52:10] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 12:59:00] /shop/index.php?act=goods&op=index&goods_id=100021 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100021' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 13:29:10] /shop/index.php?act=goods&op=index&goods_id=100043 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100043' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 13:33:05] /shop/index.php?act=goods&goods_id=100262&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100262' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 13:46:30] /mobile/api/alipay/notify_url.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 13:52:13] /mobile/api/weixin/respond.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 14:08:04] /shop/index.php?act=goods&goods_id=100264&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100264' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:30:10] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:31:37] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:32:18] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:33:17] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-21 14:33:17] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100141' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:46:05] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:46:06] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:46:16] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:46:16] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:47:33] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:48:25] /shop/index.php?act=goods&goods_id=100255&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100255' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:48:52] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-21 14:48:52] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100141' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:48:52] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-21 14:48:52] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100141' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:49:00] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-21 14:49:00] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100141' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:49:00] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'is_default' in 'where clause'
+SELECT * FROM `zmkj_transport_extend` WHERE ( transport_id = '1' ) AND ( is_default = '1' ) LIMIT 1000  
+[2016-11-21 14:49:00] /shop/index.php?act=goods&op=index&goods_id=100141 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100141' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:49:58] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 14:52:07] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 15:15:33] /shop/index.php?act=goods&goods_id=100183&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100183' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 15:15:47] /shop/index.php?act=goods&op=index&goods_id=100371 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100371' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 15:21:09] /shop/index.php?act=goods&op=index&goods_id=100025 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100025' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 15:26:53] /shop/index.php?act=goods&goods_id=100282&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100282' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 15:31:21] /shop/index.php?act=goods&op=index&goods_id=100033 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100033' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 15:46:09] /shop/index.php?act=goods&op=index&goods_id=100395 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100395' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 15:47:46] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:03:34] /shop/index.php?act=goods&goods_id=100193&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100193' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:12:06] /shop/index.php?act=goods&op=index&goods_id=100410 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100410' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:22:46] /shop/index.php?act=goods&op=index&goods_id=100395 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100395' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:22:46] /shop/index.php?act=goods&op=index&goods_id=100395 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100395' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:22:49] /shop/index.php?act=goods&op=index&goods_id=100395 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100395' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:22:49] /shop/index.php?act=goods&op=index&goods_id=100395 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100395' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:26:24] /shop/index.php?act=goods&goods_id=100340&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100340' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:27:25] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:27:25] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:27:31] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:27:31] /shop/index.php?act=goods&op=index&goods_id=100125 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:30:19] /shop/index.php?act=goods&op=index&goods_id=100413 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100413' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:31:18] /shop/index.php?act=goods&op=index&goods_id=100410 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100410' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:32:35] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:51:15] /shop/index.php?act=goods&op=index&goods_id=100410 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100410' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:51:16] /shop/index.php?act=goods&op=index&goods_id=100410 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100410' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:51:19] /shop/index.php?act=goods&op=index&goods_id=100410 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100410' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 16:51:19] /shop/index.php?act=goods&op=index&goods_id=100410 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100410' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:05:20] /admin/index.php?act=db&op=db&step=1 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SHOW CREATE TABLE `zmkj_`
+[2016-11-21 17:05:20] /admin/index.php?act=db&op=db&step=1 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SHOW CREATE TABLE `zmkj_`
+[2016-11-21 17:05:20] /admin/index.php?act=db&op=db&step=1 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SHOW CREATE TABLE `zmkj_`
+[2016-11-21 17:05:20] /admin/index.php?act=db&op=db&step=1 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SHOW CREATE TABLE `zmkj_`
+[2016-11-21 17:05:22] /admin/index.php?act=db&op=db&step=2 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SELECT * FROM `zmkj_` as ``   limit 0,300
+[2016-11-21 17:05:22] /admin/index.php?act=db&op=db&step=2 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SELECT * FROM `zmkj_` as ``   limit 0,300
+[2016-11-21 17:05:22] /admin/index.php?act=db&op=db&step=2 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SELECT * FROM `zmkj_` as ``   limit 0,300
+[2016-11-21 17:05:22] /admin/index.php?act=db&op=db&step=2 ( act=db&op=db ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SELECT * FROM `zmkj_` as ``   limit 0,300
+[2016-11-21 17:17:22] /shop/index.php?act=goods&op=index&goods_id=100413 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100413' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:17:22] /shop/index.php?act=goods&op=index&goods_id=100413 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100413' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:18:24] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:23:22] /shop/index.php?act=goods&op=index&goods_id=100012 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100012' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:40:24] /shop/index.php?act=goods&goods_id=100236&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100236' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:53:38] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:53:39] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:53:42] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:53:42] /shop/index.php?act=goods&op=index&goods_id=100153 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100153' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 17:55:44] /shop/index.php?act=goods&goods_id=100339&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100339' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 18:42:25] /shop/index.php?act=goods&goods_id=100244&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100244' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 18:57:13] /shop/index.php?act=goods&goods_id=100341&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100341' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 19:07:44] /shop/index.php?act=goods&goods_id=100357&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100357' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 19:24:46] /shop/index.php?act=goods&goods_id=100348&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100348' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 19:50:18] /mobile/api/alipay/notify_url.php ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+update zmkj_goods set `goods_salenum`=`goods_salenum`+1 where goods_id in ()
+[2016-11-21 21:02:00] /shop/index.php?act=goods&op=index&goods_id=100337 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100337' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 21:12:10] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 22:22:32] /shop/index.php?act=goods&goods_id=100152&op=index ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100152' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-11-21 22:59:22] /shop/index.php?act=goods&op=index&goods_id=100049 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100049' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

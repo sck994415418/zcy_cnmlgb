@@ -1,0 +1,18 @@
+[2018-03-29 04:12:51] /mobile/index.php?act=goods&op=goods_detail&goods_id=101774&key= ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101774' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-03-29 11:25:20] /shop/index.php?act=goods&goods_id=102270&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102270' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-03-29 17:24:32] /shop/index.php?act=goods&goods_id=101178&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101178' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-03-29 21:48:04] /mobile/index.php?act=goods&op=goods_detail&goods_id=101904&key= ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101904' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-03-29 23:15:35] /mobile/index.php?act=goods&op=goods_detail&goods_id=102317&key= ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102317' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-03-29 23:48:29] /mobile/index.php?act=goods&op=goods_detail&goods_id=101251&key= ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101251' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

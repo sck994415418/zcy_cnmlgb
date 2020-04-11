@@ -1,0 +1,6 @@
+[2016-07-05 09:39:58] /admin/index.php?act=rent&op=type_del&gc_id=1060 ( act=rent&op=type_del ) 
+ERR: Db Error: Unknown column 'goods_stateremark' in 'field list'
+SELECT goods_commonid,store_id,goods_stateremark FROM `zmkj_goods_rent` WHERE ( gc_id IN ('1060') ) ORDER BY goods_commonid desc LIMIT 1000  
+[2016-07-05 10:29:11] /admin/index.php?act=rent&op=type_del&gc_id=662 ( act=rent&op=type_del ) 
+ERR: Db Error: Unknown column 'goods_stateremark' in 'field list'
+SELECT goods_commonid,store_id,goods_stateremark FROM `zmkj_goods_rent` WHERE ( gc_id IN ('662') ) ORDER BY goods_commonid desc LIMIT 1000  

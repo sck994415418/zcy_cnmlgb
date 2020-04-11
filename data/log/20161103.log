@@ -1,0 +1,384 @@
+[2016-11-03 08:24:31] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '97' ) AND ( buyer_id = '139' )
+[2016-11-03 08:24:31] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 20)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+20,goods_salenum=goods_salenum-20,goods_edittime='1478132671' WHERE ( goods_id IN ('100124') )
+[2016-11-03 09:21:35] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) LIMIT 1  
+[2016-11-03 09:21:35] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-11-03 09:23:10] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) LIMIT 1  
+[2016-11-03 09:23:10] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '60' ) AND ( is_master <> '1' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-11-03 09:24:03] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','135','1478136243','1126','1124','1125','1126')
+[2016-11-03 09:24:09] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','135','1478136249','630','593','598','630')
+[2016-11-03 09:31:25] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','135','1478136685','1126','1124','1125','1126')
+[2016-11-03 09:31:28] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100150-138' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100150','138','1478136688','1130','1124','1125','1130')
+[2016-11-03 09:39:46] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100150-138' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100150','138','1478137186','1130','1124','1125','1130')
+[2016-11-03 09:40:59] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100150-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100150','135','1478137259','1130','1124','1125','1130')
+[2016-11-03 09:44:54] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','135','1478137494','1126','1124','1125','1126')
+[2016-11-03 09:45:04] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','135','1478137504','1126','1124','1125','1126')
+[2016-11-03 10:18:28] /mobile/index.php?act=member_refund&op=get_refund_info&key=075036d9395612b7443ceb96ab61e7b9&refund_id=5 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '5' ) LIMIT 1  
+[2016-11-03 10:18:37] /mobile/index.php?act=member_return&op=get_return_info&key=075036d9395612b7443ceb96ab61e7b9&return_id=3 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '3' ) LIMIT 1  
+[2016-11-03 10:20:03] /mobile/index.php?act=member_refund&op=get_refund_info&key=075036d9395612b7443ceb96ab61e7b9&refund_id=5 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '5' ) LIMIT 1  
+[2016-11-03 10:20:10] /mobile/index.php?act=member_return&op=get_return_info&key=075036d9395612b7443ceb96ab61e7b9&return_id=3 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '3' ) LIMIT 1  
+[2016-11-03 10:20:18] /mobile/index.php?act=member_refund&op=get_refund_info&key=075036d9395612b7443ceb96ab61e7b9&refund_id=5 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '5' ) LIMIT 1  
+[2016-11-03 10:20:26] /mobile/index.php?act=member_return&op=get_return_info&key=075036d9395612b7443ceb96ab61e7b9&return_id=3 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '3' ) LIMIT 1  
+[2016-11-03 10:20:34] /mobile/index.php?act=member_refund&op=get_refund_info&key=075036d9395612b7443ceb96ab61e7b9&refund_id=5 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '5' ) LIMIT 1  
+[2016-11-03 10:28:58] /mobile/index.php?act=member_return&op=get_return_info&key=075036d9395612b7443ceb96ab61e7b9&return_id=6 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '6' ) LIMIT 1  
+[2016-11-03 10:29:03] /mobile/index.php?act=member_refund&op=get_refund_info&key=075036d9395612b7443ceb96ab61e7b9&refund_id=5 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '5' ) LIMIT 1  
+[2016-11-03 10:51:52] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100150-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100150','130','1478141512','1130','1124','1125','1130')
+[2016-11-03 10:56:20] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100150-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100150','148','1478141780','1130','1124','1125','1130')
+[2016-11-03 10:57:50] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '156' ) AND ( buyer_id = '148' )
+[2016-11-03 10:57:50] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1478141870' WHERE ( goods_id IN ('100150') )
+[2016-11-03 13:41:57] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 13:56:49] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 13:56:58] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 14:10:49] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 14:12:59] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 14:15:05] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 14:17:58] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 14:27:30] /mobile/index.php?act=member_return&op=get_return_info&key=0e98fcc1b57ea8624cf5ec9ed37c225b&return_id=6 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '6' ) LIMIT 1  
+[2016-11-03 14:28:21] /mobile/index.php?act=member_return&op=get_return_info&key=0e98fcc1b57ea8624cf5ec9ed37c225b&return_id=9 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '9' ) LIMIT 1  
+[2016-11-03 16:47:49] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:47:59] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:48:00] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:48:32] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:48:35] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:48:35] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:48:35] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:49:14] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:49:46] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:24] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:26] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:27] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:27] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:27] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:28] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:30] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:30] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:30] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:31] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:31] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:31] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:31] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:31] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:32] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:32] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:32] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:48] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:48] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:50:48] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:51:35] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Column 'order_id' in where clause is ambiguous
+SELECT * FROM `zmkj_order` AS `order` LEFT JOIN `zmkj_order_goods` AS `order_goods` ON order.order_id=order_goods.order_id WHERE ( order_id = '155' ) LIMIT 1  
+[2016-11-03 16:52:52] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( o.order_id = '155' ) LIMIT 1  
+[2016-11-03 16:52:53] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( o.order_id = '155' ) LIMIT 1  
+[2016-11-03 16:52:53] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( o.order_id = '155' ) LIMIT 1  
+[2016-11-03 16:52:53] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( o.order_id = '155' ) LIMIT 1  
+[2016-11-03 16:52:54] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( o.order_id = '155' ) LIMIT 1  
+[2016-11-03 16:52:54] /shop/index.php?act=example&op=refund ( act=example&op=refund ) 
+ERR: Db Error: Table 'bangongshi.zmkj_order as o' doesn't exist
+SELECT * FROM `zmkj_order as o` AS `order as o` LEFT JOIN `zmkj_order_goods as g` AS `order_goods as g` ON o.order_id=g.order_id WHERE ( o.order_id = '155' ) LIMIT 1  
+[2016-11-03 18:24:55] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-03 19:10:34] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=103 LIMIT 1  
+[2016-11-03 19:10:34] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:10:34] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:11:00] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=103 LIMIT 1  
+[2016-11-03 19:11:00] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:11:00] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:11:17] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:11:17] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:11:17] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:11:18] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:11:33] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:11:33] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:11:33] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:11:38] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:11:38] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:11:38] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:12:13] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:12:13] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:12:13] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:12:13] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:12:13] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:12:13] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:12:14] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:12:14] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:12:14] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:12:45] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:12:45] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:12:45] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:12:48] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:12:48] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:12:48] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:13:31] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:13:31] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:13:31] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:14:03] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:14:03] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:14:03] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:14:04] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=0 LIMIT 1  
+[2016-11-03 19:14:04] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:14:04] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:16:44] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'brand' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand=103 LIMIT 1  
+[2016-11-03 19:16:44] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store' in 'where clause'
+SELECT member_id,store_phone FROM `zmkj_store` WHERE store=1 LIMIT 1  
+[2016-11-03 19:16:44] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = NULL ) LIMIT 1  
+[2016-11-03 19:17:39] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = '1' ) LIMIT 1  
+[2016-11-03 19:17:39] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = '1' ) LIMIT 1  
+[2016-11-03 19:17:39] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = '1' ) LIMIT 1  
+[2016-11-03 19:17:40] /shop/index.php?act=repair&op=rent_info ( act=repair&op=rent_info ) 
+ERR: Db Error: Unknown column 'store_phone' in 'field list'
+SELECT store_phone FROM `zmkj_member` WHERE ( member_id = '1' ) LIMIT 1  

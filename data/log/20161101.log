@@ -1,0 +1,243 @@
+[2016-11-01 08:27:52] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477960072' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 08:29:29] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:29:31] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477960171' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 08:29:31] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477960171' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 08:29:39] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:30:18] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:30:22] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477960222' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 08:30:22] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477960222' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 08:30:28] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:30:30] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:31:33] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:31:34] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:35:39] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-01 08:35:54] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:35:55] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:36:33] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:36:48] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:37:01] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:37:36] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:37:40] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:38:28] /shop/index.php?act=master&op=setorder ( act=master&op=setorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 08:39:07] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-55' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','55','1477960747','630','593','598','630')
+[2016-11-01 09:49:47] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477964987' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 09:56:13] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477965373' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 09:56:13] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477965373' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 10:40:53] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-105' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','105','1477968053','630','593','598','630')
+[2016-11-01 10:47:19] /mobile/index.php?act=goods&op=goods_list&keyword=%E5%BE%97%E5%8A%9B&page=10&curpage=1&keyword=%E5%BE%97%E5%8A%9B ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-01 10:47:24] /mobile/index.php?act=goods&op=goods_list&keyword=%E5%BE%97%E5%8A%9B&page=10&curpage=2&keyword=%E5%BE%97%E5%8A%9B ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-01 10:47:25] /mobile/index.php?act=goods&op=goods_detail&goods_id=100117&key=a1999d05178f07cd21e4f854ce8c4b19 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1477968445' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-11-01 10:50:13] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-11-01 10:50:23] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-11-01 10:50:25] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','37','1477968625','630','593','598','630')
+[2016-11-01 10:52:57] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id=25 LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=5,order_id=25 LIMIT 1000  
+[2016-11-01 10:53:12] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-105' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','105','1477968792','630','593','598','630')
+[2016-11-01 10:54:07] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id=25 LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=5,order_id=25 LIMIT 1000  
+[2016-11-01 10:54:38] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id=25 LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=5,order_id=25 LIMIT 1000  
+[2016-11-01 11:11:22] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477969882' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-01 11:49:17] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-106' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','106','1477972157','630','593','598','630')
+[2016-11-01 13:45:41] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','148','1477979141','1098','888','1094','1098')
+[2016-11-01 13:58:54] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-100' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','100','1477979934','1126','1124','1125','1126')
+[2016-11-01 14:57:26] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 14:58:14] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 15:01:50] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 15:02:37] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 15:03:58] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 15:10:43] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 15:10:43] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 15:20:32] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1477984832','630','593','598','630')
+[2016-11-01 15:21:03] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1477984863','630','593','598','630')
+[2016-11-01 15:22:53] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1477984973','630','593','598','630')
+[2016-11-01 15:23:13] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-130' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','130','1477984993','630','593','598','630')
+[2016-11-01 15:29:34] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '127' ) LIMIT 1000  
+[2016-11-01 15:30:39] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '127' ) LIMIT 1000  
+[2016-11-01 15:31:26] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '127' ) LIMIT 1000  
+[2016-11-01 15:36:19] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '127' ) LIMIT 1000  
+[2016-11-01 15:56:13] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-127' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','127','1477986973','630','593','598','630')
+[2016-11-01 15:57:23] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100140-127' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100140','127','1477987043','1126','1124','1125','1126')
+[2016-11-01 15:57:59] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100140-127' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100140','127','1477987079','1126','1124','1125','1126')
+[2016-11-01 15:58:17] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-127' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','127','1477987097','630','593','598','630')
+[2016-11-01 16:05:52] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100076-127' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100076','127','1477987552','1128','1124','1125','1128')
+[2016-11-01 16:12:55] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 16:22:52] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100079-148' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100079','148','1477988572','1103','662','1102','1103')
+[2016-11-01 16:23:58] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 16:26:49] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 16:26:57] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 16:39:32] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 16:49:17] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 16:51:46] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-11-01 19:07:18] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100144-60' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100144','60','1477998438','1126','1124','1125','1126')
+[2016-11-01 19:08:13] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-149' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','149','1477998493','1126','1124','1125','1126')
+[2016-11-01 19:15:11] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100133-60' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100133','60','1477998911','1126','1124','1125','1126')
+[2016-11-01 19:15:30] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-60' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','60','1477998930','1126','1124','1125','1126')
+[2016-11-01 19:53:45] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 19:54:07] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 19:54:12] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 19:54:17] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 19:54:28] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 19:55:30] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 19:55:43] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 19:57:08] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '153' ) LIMIT 1000  
+[2016-11-01 21:53:06] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-110' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','110','1478008386','630','593','598','630')

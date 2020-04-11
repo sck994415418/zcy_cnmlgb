@@ -1,0 +1,9 @@
+[2018-06-28 15:02:08] /shop/index.php?act=goods&op=comments_list&goods_id=102772 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102772' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-06-28 15:03:18] /shop/index.php?act=goods&op=comments_list&goods_id=102771 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102771' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-06-28 15:04:06] /shop/index.php?act=goods&op=comments_list&goods_id=102773 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102773' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

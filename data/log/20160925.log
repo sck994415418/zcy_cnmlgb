@@ -1,0 +1,30 @@
+[2016-09-25 08:58:32] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','57','1474765112','1126','1124','1125','1126')
+[2016-09-25 08:59:59] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','57','1474765199','1126','1124','1125','1126')
+[2016-09-25 09:00:09] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','57','1474765209','1126','1124','1125','1126')
+[2016-09-25 09:49:13] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','57','1474768153','1126','1124','1125','1126')
+[2016-09-25 09:52:19] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','57','1474768339','1126','1124','1125','1126')
+[2016-09-25 09:56:51] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '69' ) LIMIT 1000  
+[2016-09-25 15:16:51] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','57','1474787811','1126','1124','1125','1126')
+[2016-09-25 15:24:51] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '1012' ) AND ( buyer_id = '68' )
+[2016-09-25 15:25:54] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '1015' ) AND ( buyer_id = '68' )
+[2016-09-25 15:25:54] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`bangongshi`.`zmkj_goods`.`goods_salenum` - 1)'
+UPDATE `zmkj_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1474788354' WHERE ( goods_id IN ('100125') )

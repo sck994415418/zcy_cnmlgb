@@ -1,0 +1,165 @@
+[2018-05-17 00:32:40] /shop/index.php?act=goods&op=comments_list&goods_id=102146 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102146' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 01:02:16] /shop/index.php?act=goods&op=comments_list&goods_id=102106 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102106' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 01:04:34] /shop/index.php?act=goods&op=comments_list&goods_id=102217 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102217' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 01:05:20] /shop/index.php?act=goods&op=comments_list&goods_id=102191 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102191' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 01:10:55] /shop/index.php?act=goods&op=comments_list&goods_id=102220 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102220' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 02:23:34] /shop/index.php?act=goods&op=comments_list&goods_id=102234 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102234' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 03:39:21] /shop/index.php?act=goods&op=comments_list&goods_id=102179 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102179' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 16:09:44] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526544584' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526544584',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526544584' ) AND ( order_state = '30' )
+[2018-05-17 16:11:59] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526544719' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526544719',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526544719' ) AND ( order_state = '30' )
+[2018-05-17 16:22:08] /index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545328' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545328',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545328' ) AND ( order_state = '30' )
+[2018-05-17 16:22:10] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545330' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545330',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545330' ) AND ( order_state = '30' )
+[2018-05-17 16:22:11] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545331' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545331',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545331' ) AND ( order_state = '30' )
+[2018-05-17 16:22:15] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545335' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545335',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545335' ) AND ( order_state = '30' )
+[2018-05-17 16:22:17] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545337' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545337',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545337' ) AND ( order_state = '30' )
+[2018-05-17 16:23:13] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545393' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545393',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545393' ) AND ( order_state = '30' )
+[2018-05-17 16:23:21] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545401' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545401',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545401' ) AND ( order_state = '30' )
+[2018-05-17 16:23:22] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545402' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545402',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545402' ) AND ( order_state = '30' )
+[2018-05-17 16:23:32] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545412' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545412',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545412' ) AND ( order_state = '30' )
+[2018-05-17 16:26:42] /index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545602' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545602',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545602' ) AND ( order_state = '30' )
+[2018-05-17 16:26:47] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545607' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545607',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545607' ) AND ( order_state = '30' )
+[2018-05-17 16:26:53] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545613' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545613',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545613' ) AND ( order_state = '30' )
+[2018-05-17 16:27:10] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545630' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545630',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545630' ) AND ( order_state = '30' )
+[2018-05-17 16:27:28] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545648' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545648',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545648' ) AND ( order_state = '30' )
+[2018-05-17 16:30:40] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545840' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545840',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545840' ) AND ( order_state = '30' )
+[2018-05-17 16:31:56] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545916' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526545916',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526545916' ) AND ( order_state = '30' )
+[2018-05-17 16:39:13] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546353' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546353',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546353' ) AND ( order_state = '30' )
+[2018-05-17 16:39:17] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546357' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546357',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546357' ) AND ( order_state = '30' )
+[2018-05-17 16:39:21] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546361' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546361',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546361' ) AND ( order_state = '30' )
+[2018-05-17 16:39:27] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546367' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546367',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546367' ) AND ( order_state = '30' )
+[2018-05-17 16:39:30] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546370' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546370',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546370' ) AND ( order_state = '30' )
+[2018-05-17 16:40:04] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546404' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546404',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546404' ) AND ( order_state = '30' )
+[2018-05-17 16:40:09] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546409' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546409',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546409' ) AND ( order_state = '30' )
+[2018-05-17 16:40:09] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546409' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546409',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546409' ) AND ( order_state = '30' )
+[2018-05-17 16:40:24] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546424' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546424',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546424' ) AND ( order_state = '30' )
+[2018-05-17 16:40:27] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546427' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546427',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546427' ) AND ( order_state = '30' )
+[2018-05-17 16:40:51] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546451' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546451',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546451' ) AND ( order_state = '30' )
+[2018-05-17 16:40:59] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546459' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546459',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546459' ) AND ( order_state = '30' )
+[2018-05-17 16:40:59] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546459' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546459',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546459' ) AND ( order_state = '30' )
+[2018-05-17 16:41:14] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546474' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526546474',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526546474' ) AND ( order_state = '30' )
+[2018-05-17 17:10:39] /shop/index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526548238' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526548238',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526548238' ) AND ( order_state = '30' )
+[2018-05-17 17:30:22] /index.php?act=store_task&op=load_task ( act=store_task&op=load_task ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526549422' ) AND ( order_s' at line 1
+UPDATE `zmkj_order` SET finnshed_time='1526549422',='40' WHERE ( is_yanchi = '1' ) AND ( delay_time <= '1526549422' ) AND ( order_state = '30' )
+[2018-05-17 17:32:10] /shop/index.php?act=show_store&op=ajax_flowstat_record&store_id=47&goods_id=&act_param=show_store&op_param=goods_all ( act=show_store&op=ajax_flowstat_record ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `zmkj_goods_class` WHERE ( is_show = '1' ) ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2018-05-17 17:32:22] / ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `zmkj_goods_class` WHERE ( is_show = '1' ) ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2018-05-17 17:32:26] / ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `zmkj_goods_class` WHERE ( is_show = '1' ) ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2018-05-17 17:32:27] / ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `zmkj_goods_class` WHERE ( is_show = '1' ) ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2018-05-17 17:32:29] / ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'is_show' in 'where clause'
+SELECT * FROM `zmkj_goods_class` WHERE ( is_show = '1' ) ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2018-05-17 17:44:39] /shop/index.php?act=goods&op=comments_list&goods_id=101788 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101788' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 17:48:12] /shop/index.php?act=goods&op=comments_list&goods_id=102176 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102176' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 18:39:58] /shop/index.php?act=goods&op=comments_list&goods_id=102213 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102213' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 19:07:28] /shop/index.php?act=goods&op=comments_list&goods_id=102178 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102178' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 19:12:26] /shop/index.php?act=goods&op=comments_list&goods_id=103181&type=3 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103181' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 23:20:15] /shop/index.php?act=goods&op=comments_list&goods_id=102113 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102113' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 23:24:29] /shop/index.php?act=search&op=index&cate_id=1582 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '1582' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-05-17 23:46:03] /shop/index.php?act=goods&op=comments_list&goods_id=102231 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102231' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-17 23:50:12] /shop/index.php?act=goods&op=comments_list&goods_id=103181 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103181' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

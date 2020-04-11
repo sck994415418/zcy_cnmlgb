@@ -1,0 +1,24 @@
+[2019-11-01 06:14:50] /shop/index.php?act=goods&op=comments_list&goods_id=101244 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101244' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2019-11-01 11:12:28] /admin/index.php?act=goods_orm&op=edit&id=2799 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='dc02b7cf-1917-4605-8f06-27906c2577aa and id !=2799'
+[2019-11-01 11:13:07] /admin/index.php?act=goods_orm&op=edit&id=2798 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='ce2506b3-eb3b-443b-8647-945d2beba110 and id !=2798'
+[2019-11-01 11:53:58] /admin/index.php?act=goods_orm&op=edit&id=2794 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='b9bec192-add6-4ad3-8730-34b43201d6ee and id !=2794'
+[2019-11-01 13:53:56] /admin/index.php?act=goods_orm&op=edit&id=2802 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='4cf2a5a2-4bea-4d4b-84ec-a908b7f701c7 and id !=2802'
+[2019-11-01 13:54:05] /admin/index.php?act=goods_orm&op=edit&id=2802 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='4cf2a5a2-4bea-4d4b-84ec-a908b7f701c7 and id !=2802'
+[2019-11-01 14:01:45] /admin/index.php?act=goods_orm&op=edit&id=1541 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='c58376e6-7b1f-4693-825a-f29185dbda06 and id !=1541'
+[2019-11-01 17:12:39] /admin/index.php?act=goods_orm&op=edit&id=2812 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a71594e9-f131-4733-93a9-0a89de5e19a0 and id !=2812'

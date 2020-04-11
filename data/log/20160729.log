@@ -1,0 +1,45 @@
+[2016-07-29 09:44:02] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-29 09:44:03] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=c3935de05fb89473fd3f1e0075e2d154 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469756643' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-29 09:44:26] /mobile/index.php?act=goods&op=goods_detail&goods_id=100074&key=c3935de05fb89473fd3f1e0075e2d154 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469756666' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-29 09:45:09] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('40',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-29 09:45:10] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('41',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-29 09:45:10] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('42',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-29 09:45:10] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('43',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-29 09:46:17] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('44',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-29 17:00:01] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-29 17:00:02] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=c3935de05fb89473fd3f1e0075e2d154 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469782802' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-29 17:33:28] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-29 17:33:30] /mobile/index.php?act=goods&op=goods_detail&goods_id=100074&key=c2773cb2ff9e9975e6fcac0290818a8a ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469784810' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-29 17:43:24] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469785404','1126','1124','1125','1126')
+[2016-07-29 17:44:24] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1469785464','1126','1124','1125','1126')
+[2016-07-29 17:49:11] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1469785751','1126','1124','1125','1126')

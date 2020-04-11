@@ -1,0 +1,150 @@
+[2016-07-04 08:12:13] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 08:12:15] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 08:12:26] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 08:12:53] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 08:13:05] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467591185' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 08:13:35] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 08:13:39] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467591219' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 08:14:31] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 08:14:41] /mobile/index.php?act=goods&op=goods_list&gc_id=265&page=10&curpage=1&gc_id=265 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-04 08:14:42] /mobile/index.php?act=goods&op=goods_detail&goods_id=100017&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467591282' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 08:15:13] /mobile/index.php?act=goods&op=goods_detail&goods_id=100017&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467591313' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 08:20:48] /mobile/index.php?act=goods&op=goods_detail&goods_id=100017&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467591648' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 08:22:03] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:26:55] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:35:49] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:35:53] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467596153' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 09:36:02] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100058') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:36:05] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100058') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:36:13] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100058') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:36:25] /mobile/index.php?act=member_favorites&op=favorites_list&key=7569e1843a86641a2ec5423c0b6ff61b&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100058') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:37:49] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467596269' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 09:39:20] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=dee520fbfc2329264a078a24610564c3 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467596360' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 09:40:26] /mobile/index.php?act=member_favorites&op=favorites_list&key=dee520fbfc2329264a078a24610564c3&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:40:29] /mobile/index.php?act=member_favorites&op=favorites_list&key=dee520fbfc2329264a078a24610564c3&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:40:33] /mobile/index.php?act=member_favorites&op=favorites_list&key=dee520fbfc2329264a078a24610564c3&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:40:36] /mobile/index.php?act=member_favorites&op=favorites_list&key=dee520fbfc2329264a078a24610564c3&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:41:38] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=dee520fbfc2329264a078a24610564c3 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467596498' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 09:41:45] /mobile/index.php?act=member_favorites&op=favorites_list&key=dee520fbfc2329264a078a24610564c3&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100058','100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:42:07] /mobile/index.php?act=member_favorites&op=favorites_list&key=dee520fbfc2329264a078a24610564c3&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100058','100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:43:00] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN('') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:45:14] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=48c519f91ca6f566877929202a63b095 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467596714' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 09:45:33] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:46:09] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:46:10] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:46:10] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:46:11] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:46:12] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:46:12] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:46:14] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:47:32] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:47:32] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:47:34] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:48:10] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:48:11] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:48:11] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:48:14] /mobile/index.php?act=member_favorites&op=favorites_list&key=48c519f91ca6f566877929202a63b095&curpage=1&page=10 ( act=member_favorites&op=favorites_list ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT goods_id,goods_name,goods_price,goods_image,store_id FROM `zmkj_goods` WHERE ( goods_id IN ('100059') ) AND ( is_book = '0' ) LIMIT 1000  
+[2016-07-04 09:49:29] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=dee520fbfc2329264a078a24610564c3 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467596969' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-04 11:34:43] /mobile/index.php?act=goods&op=goods_list&gc_id=265&page=10&curpage=1&gc_id=265 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-04 16:54:54] /mobile/index.php?act=goods&op=goods_list&gc_id=265&page=10&curpage=1&gc_id=265 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-04 17:27:08] /mobile/index.php?act=goods&op=goods_detail&goods_id=100017&key=7569e1843a86641a2ec5423c0b6ff61b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467624428' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  

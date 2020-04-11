@@ -1,0 +1,153 @@
+[2016-10-24 09:54:14] /shop/index.php?act=example&op=setuser ( act=example&op=setuser ) 
+ERR: Db Error: Column 'token' cannot be null
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time) VALUES ('97','1',NULL,'1477274054')
+[2016-10-24 10:58:51] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (pay_sn,order_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,goods_amount,order_amount,shipping_fee) VALUES ('730530621931576102','8000000000113401','','诺融科技','102','一个人的乐普',NULL,'1477277931','online','','0','0.00')
+[2016-10-24 10:58:51] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-24 10:58:51] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";' at line 1
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('',,'',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-24 10:58:51] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jp' at line 1
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES (,'100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jpg',NULL,'','102','0','1098')
+[2016-10-24 11:09:47] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-24 11:09:47] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'reciver_name' cannot be null
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('','1131','',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-24 11:12:27] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-102' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','102','1477278747','1098','888','1094','1098')
+[2016-10-24 11:12:37] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (pay_sn,order_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,goods_amount,order_amount,shipping_fee) VALUES ('590530622757346102','8000000000113601','','诺融科技','102','一个人的乐普',NULL,'1477278757','online','','0','0.00')
+[2016-10-24 11:12:37] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-24 11:12:37] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";' at line 1
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('',,'',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-24 11:12:37] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jp' at line 1
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES (,'100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jpg',NULL,'','102','0','1098')
+[2016-10-24 11:12:43] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (pay_sn,order_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,goods_amount,order_amount,shipping_fee) VALUES ('220530622763457102','8000000000113701','','诺融科技','102','一个人的乐普',NULL,'1477278763','online','','0','0.00')
+[2016-10-24 11:12:43] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-24 11:12:43] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";' at line 1
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('',,'',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-24 11:12:43] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jp' at line 1
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES (,'100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jpg',NULL,'','102','0','1098')
+[2016-10-24 11:28:29] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (pay_sn,order_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,goods_amount,order_amount,shipping_fee) VALUES ('470530623709433103','8000000000113801','','诺融科技','103','贱萌Mr. Li',NULL,'1477279709','online','','0','0.00')
+[2016-10-24 11:28:29] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-24 11:28:29] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";' at line 1
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('',,'',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-24 11:28:29] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''100141','测试商品','0.01','1','1_05306225546760532.jpg',NULL,'','103','0','' at line 1
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES (,'100141','测试商品','0.01','1','1_05306225546760532.jpg',NULL,'','103','0','1126')
+[2016-10-24 11:30:33] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-103' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','103','1477279833','1126','1124','1125','1126')
+[2016-10-24 11:30:43] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-103' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','103','1477279843','1126','1124','1125','1126')
+[2016-10-24 11:35:22] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-103' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','103','1477280122','1126','1124','1125','1126')
+[2016-10-24 11:35:28] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (pay_sn,order_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,goods_amount,order_amount,shipping_fee) VALUES ('810530624128324103','8000000000114001','','诺融科技','103','贱萌Mr. Li',NULL,'1477280128','online','','0','0.00')
+[2016-10-24 11:35:28] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-24 11:35:28] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";' at line 1
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('',,'',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-24 11:35:28] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''100141','测试商品','0.01','1','1_05306225546760532.jpg',NULL,'','103','0','' at line 1
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES (,'100141','测试商品','0.01','1','1_05306225546760532.jpg',NULL,'','103','0','1126')
+[2016-10-24 11:41:09] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-103' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','103','1477280469','1126','1124','1125','1126')
+[2016-10-24 11:41:28] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-103' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','103','1477280488','1126','1124','1125','1126')
+[2016-10-24 11:42:37] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-103' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','103','1477280557','1126','1124','1125','1126')
+[2016-10-24 11:43:50] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-103' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','103','1477280630','1126','1124','1125','1126')
+[2016-10-24 11:43:53] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-24 11:43:53] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'reciver_name' cannot be null
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('','1133','',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-24 15:01:34] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-91' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','91','1477292494','1126','1124','1125','1126')
+[2016-10-24 15:22:20] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','37','1477293740','1126','1124','1125','1126')
+[2016-10-24 15:29:05] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-102' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','102','1477294145','1098','888','1094','1098')
+[2016-10-24 15:53:17] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-91' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','91','1477295597','1126','1124','1125','1126')
+[2016-10-24 16:16:25] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-91' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','91','1477296985','1126','1124','1125','1126')
+[2016-10-24 16:18:28] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-91' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','91','1477297108','1126','1124','1125','1126')
+[2016-10-24 16:33:58] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-106' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','106','1477298038','1126','1124','1125','1126')
+[2016-10-24 16:35:42] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '106' ) LIMIT 1000  
+[2016-10-24 16:41:12] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-106' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','106','1477298472','1126','1124','1125','1126')
+[2016-10-24 16:41:38] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-106' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','106','1477298498','1126','1124','1125','1126')
+[2016-10-24 16:41:46] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-106' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','106','1477298506','630','593','598','630')
+[2016-10-24 16:43:36] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-106' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','106','1477298616','630','593','598','630')
+[2016-10-24 16:49:15] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-105' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','105','1477298955','1098','888','1094','1098')
+[2016-10-24 16:49:43] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-105' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','105','1477298983','1098','888','1094','1098')
+[2016-10-24 16:50:13] /shop/index.php ( act=mobile&op=ordercancel ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+UPDATE `zmkj_` SET order_state='0',delete_state='1' WHERE ( order_id = '1141' ) AND ( buyer_id = '105' )
+[2016-10-24 16:55:06] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','4','1477299306','630','593','598','630')
+[2016-10-24 16:58:18] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-104' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','104','1477299498','1126','1124','1125','1126')
+[2016-10-24 17:43:59] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100141-91' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100141','91','1477302239','1126','1124','1125','1126')

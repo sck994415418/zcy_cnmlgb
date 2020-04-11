@@ -1,0 +1,12 @@
+[2016-09-20 09:52:39] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('540527680359843000',NULL)
+[2016-09-20 09:52:39] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'540527680359843000','8000000000000001',NULL,'1474336359',NULL,NULL,NULL,NULL,'0','1')
+[2016-09-20 10:49:13] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1474339753' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-09-20 17:16:09] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '37' ) LIMIT 1000  

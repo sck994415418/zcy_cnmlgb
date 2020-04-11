@@ -1,0 +1,138 @@
+[2018-01-13 09:03:33] /shop/index.php?act=goods&op=index&goods_id=100434 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100434' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 09:59:29] /shop/index.php?act=goods&op=index&goods_id=100155 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100155' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 10:27:39] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1515810459' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2018-01-13 10:27:50] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1515810470' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2018-01-13 10:28:58] /shop/index.php?act=goods&goods_id=100430 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100430' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 10:29:56] /shop/index.php?act=goods&goods_id=100430 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100430' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 11:16:41] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1515813401' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2018-01-13 11:18:02] /shop/index.php?act=goods&goods_id=100430 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100430' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 11:35:05] /shop/index.php?act=goods&goods_id=100434 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100434' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 11:35:12] /shop/index.php?act=goods&op=index&goods_id=100436 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100436' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 11:35:15] /shop/index.php?act=goods&goods_id=100434 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100434' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 12:27:23] /shop/index.php?act=show_store&op=index&store_id=40 ( act=show_store&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct LIMIT 0,10  
+[2018-01-13 12:27:31] /shop/index.php?act=show_store&op=ajax_flowstat_record&store_id=40&goods_id=&act_param=show_store&op_param=index ( act=show_store&op=ajax_flowstat_record ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct LIMIT 0,10  
+[2018-01-13 12:27:45] /shop/index.php?act=show_store&op=goods_all&store_id=40&key=3&order=2 ( act=show_store&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct LIMIT 0,10  
+[2018-01-13 12:27:51] /shop/index.php?act=show_store&op=goods_all&store_id=40&key=3&order=2 ( act=show_store&op=goods_all ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct LIMIT 0,10  
+[2018-01-13 12:27:52] /shop/index.php?act=show_store&op=index&store_id=40 ( act=show_store&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct LIMIT 0,10  
+[2018-01-13 12:28:00] /shop/index.php?act=show_store&op=ajax_flowstat_record&store_id=40&goods_id=&act_param=show_store&op_param=index ( act=show_store&op=ajax_flowstat_record ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct LIMIT 0,10  
+[2018-01-13 12:28:46] /shop/index.php?act=show_store&op=index&store_id=40 ( act=show_store&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,5  
+[2018-01-13 12:28:54] /shop/index.php?act=show_store&op=ajax_flowstat_record&store_id=40&goods_id=&act_param=show_store&op_param=index ( act=show_store&op=ajax_flowstat_record ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,5  
+[2018-01-13 12:37:01] /shop/index.php?act=show_store&op=index&store_id=40 ( act=show_store&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,5  
+[2018-01-13 12:37:08] /shop/index.php?act=show_store&op=ajax_flowstat_record&store_id=40&goods_id=&act_param=show_store&op_param=index ( act=show_store&op=ajax_flowstat_record ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,5  
+[2018-01-13 12:37:37] /shop/index.php?act=show_store&op=index&store_id=40 ( act=show_store&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,5  
+[2018-01-13 12:37:45] /shop/index.php?act=show_store&op=ajax_flowstat_record&store_id=40&goods_id=&act_param=show_store&op_param=index ( act=show_store&op=ajax_flowstat_record ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( go' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct ,* FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,5  
+[2018-01-13 12:48:14] /shop/index.php?act=goods&op=index&goods_id=100430 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100430' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 12:48:41] /shop/index.php?act=goods&op=index&goods_id=100430 ( act=goods&op=index ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100430' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-01-13 13:18:15] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '25' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '25' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:18:15] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:18:15] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '38' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '38' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:18:36] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:18:36] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:18:36] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:21:50] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:21:50] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:21:50] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:22:23] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:22:23] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:22:23] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:23:46] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:23:46] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '9' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 13:23:46] /shop/index.php?act=store_list&op=index ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '10' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,8  
+[2018-01-13 16:57:54] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '25' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '25' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,3  
+[2018-01-13 16:57:54] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,3  
+[2018-01-13 16:57:54] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '38' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '38' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,3  
+[2018-01-13 17:00:05] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '25' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '25' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,3  
+[2018-01-13 17:00:05] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '40' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,3  
+[2018-01-13 17:00:05] /shop/index.php?act=store_list&op=index&curpage=3 ( act=store_list&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `zmkj_goods` WHERE ( store_id = '38' ) AND ( goods_state = '1' ) AND ( good' at line 1
+SELECT CONCAT(goods_commonid) as nc_distinct , FROM `zmkj_goods` WHERE ( store_id = '38' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 0,3  

@@ -1,0 +1,136 @@
+<script type="text/javascript" src="http://www.nrwspt.com/data/resource/js/jquery.nc_slider.js" charset="utf-8"></script>
+<script type="text/javascript">
+//图片延迟加载
+(function($) {
+    $.fn.nc_lazyload_init = function() {
+        this.each(function() {
+            $(this).after($(this).val().replace(/src=/gi, 'data-src='));
+        }).remove();
+    };
+})(jQuery);
+
+//图片延迟加载
+(function($) {
+    $.fn.nc_lazyload = function() {
+        var lazy_items = [];
+        this.each(function() {
+            if($(this).attr("data-src") !== undefined){
+                var lazy_item = {
+                    object: $(this),
+                    url: $(this).attr("data-src")
+                };
+                lazy_items.push(lazy_item);
+            }
+        });
+
+        var load_img = function() {
+            var window_height = $(window).height();
+            var scroll_top = $(window).scrollTop();
+
+            $.each(lazy_items, function(i, lazy_item) {
+                if(lazy_item.object) {
+                    item_top = lazy_item.object.offset().top - scroll_top;
+                    if(item_top >= 0 && item_top < window_height) {
+                        if(lazy_item.url) {
+                            lazy_item.object.attr("src",lazy_item.url);
+                        }
+                        lazy_item.object = null;
+                    }
+                }
+            });
+        };
+        load_img();
+        $(window).bind("scroll", load_img);
+    };
+})(jQuery);
+</script>
+<div id="store_decoration_area" class="store-decoration-page">
+<textarea class="lazyload_container" rows="10" cols="30" style="display:none;">
+            <div id="block_9" data-block-id="9" nctype="store_decoration_block" class="ncsc-decration-block store-decoration-block-1  tip" title="">
+    <div nctype="store_decoration_block_content" class="ncsc-decration-block-content store-decoration-block-1-content">
+        <div nctype="store_decoration_block_module" class="store-decoration-block-1-module">
+                        <ul nctype="store_decoration_slide" style="height:250px; overflow:hidden;">
+                <li data-image-name="51_05701951847595334.jpg" data-image-url="http://www.nrwspt.com/data/upload/shop/store/decoration/51/51_05701951847595334.jpg" data-image-link="" style="height:250px; background: url(http://www.nrwspt.com/data/upload/shop/store/decoration/51/51_05701951847595334.jpg) no-repeat scroll center top transparent;">
+    <a href="" target="_blank" style="display:block;width:100%;height:100%;"></a>
+    </li>
+        </ul>
+                    </div>
+            </div>
+    </div>
+        <div id="block_8" data-block-id="8" nctype="store_decoration_block" class="ncsc-decration-block store-decoration-block-1  tip" title="">
+    <div nctype="store_decoration_block_content" class="ncsc-decration-block-content store-decoration-block-1-content">
+        <div nctype="store_decoration_block_module" class="store-decoration-block-1-module">
+                        
+<ul class="goods-list">
+    <li nctype="goods_item" data-goods-id="100619" data-goods-name="得力画板磁钉7824 白板磁扣/吸铁石/磁粒磁力办公生活用品φ20mm" data-goods-price="6.00"  data-goods-image="2018/01/51_05701261033567375.png">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100619" target="_blank" title="得力画板磁钉7824 白板磁扣/吸铁石/磁粒磁力办公生活用品φ20mm"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05701261033567375_240.png"/ alt="得力画板磁钉7824 白板磁扣/吸铁石/磁粒磁力办公生活用品φ20mm"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100619" target="_blank" title="得力画板磁钉7824 白板磁扣/吸铁石/磁粒磁力办公生活用品φ20mm">得力画板磁钉7824 白板磁扣/吸铁石/磁粒磁力办公生活用品φ20mm</a></dt>
+      <dd>&yen;6.00</dd>
+    </dl>
+      </li>
+    <li nctype="goods_item" data-goods-id="100613" data-goods-name="得力有机直尺30/60 1米长尺工程测量塑料尺 透明 塑料 1m" data-goods-price="20.00"  data-goods-image="2018/01/51_05701094765740986.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100613" target="_blank" title="得力有机直尺30/60 1米长尺工程测量塑料尺 透明 塑料 1m"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05701094765740986_240.jpg"/ alt="得力有机直尺30/60 1米长尺工程测量塑料尺 透明 塑料 1m"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100613" target="_blank" title="得力有机直尺30/60 1米长尺工程测量塑料尺 透明 塑料 1m">得力有机直尺30/60 1米长尺工程测量塑料尺 透明 塑料 1m</a></dt>
+      <dd>&yen;20.00</dd>
+    </dl>
+      </li>
+    <li nctype="goods_item" data-goods-id="100607" data-goods-name="得力0576卷笔刀 双孔削笔器 迷你转笔刀学习用品铅笔刀 白色 塑料" data-goods-price="8.80"  data-goods-image="2018/01/51_05701049097303314.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100607" target="_blank" title="得力0576卷笔刀 双孔削笔器 迷你转笔刀学习用品铅笔刀 白色 塑料"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05701049097303314_240.jpg"/ alt="得力0576卷笔刀 双孔削笔器 迷你转笔刀学习用品铅笔刀 白色 塑料"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100607" target="_blank" title="得力0576卷笔刀 双孔削笔器 迷你转笔刀学习用品铅笔刀 白色 塑料">得力0576卷笔刀 双孔削笔器 迷你转笔刀学习用品铅笔刀 白色 塑料</a></dt>
+      <dd>&yen;8.80</dd>
+    </dl>
+      </li>
+    <li nctype="goods_item" data-goods-id="100609" data-goods-name="得力回形针凭证针锁针插票固定针回形区别针凭证装订针 金属色 金属" data-goods-price="2.00"  data-goods-image="2018/01/51_05701067833804143.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100609" target="_blank" title="得力回形针凭证针锁针插票固定针回形区别针凭证装订针 金属色 金属"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05701067833804143_240.jpg"/ alt="得力回形针凭证针锁针插票固定针回形区别针凭证装订针 金属色 金属"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100609" target="_blank" title="得力回形针凭证针锁针插票固定针回形区别针凭证装订针 金属色 金属">得力回形针凭证针锁针插票固定针回形区别针凭证装订针 金属色 金属</a></dt>
+      <dd>&yen;2.00</dd>
+    </dl>
+      </li>
+    <li nctype="goods_item" data-goods-id="100608" data-goods-name="得力 9052彩色百事贴 记事贴 即时贴 N次贴 便利贴 方形 纸+胶" data-goods-price="2.00"  data-goods-image="2018/01/51_05701054563051178.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100608" target="_blank" title="得力 9052彩色百事贴 记事贴 即时贴 N次贴 便利贴 方形 纸+胶"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05701054563051178_240.jpg"/ alt="得力 9052彩色百事贴 记事贴 即时贴 N次贴 便利贴 方形 纸+胶"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100608" target="_blank" title="得力 9052彩色百事贴 记事贴 即时贴 N次贴 便利贴 方形 纸+胶">得力 9052彩色百事贴 记事贴 即时贴 N次贴 便利贴 方形 纸+胶</a></dt>
+      <dd>&yen;2.00</dd>
+    </dl>
+      </li>
+    <li nctype="goods_item" data-goods-id="100610" data-goods-name="得力黑色长尾夹燕尾夹票夹票据夹小夹子办公用品 黑色 金属" data-goods-price="12.00"  data-goods-image="2018/01/51_05701077419198697.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100610" target="_blank" title="得力黑色长尾夹燕尾夹票夹票据夹小夹子办公用品 黑色 金属"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05701077419198697_240.jpg"/ alt="得力黑色长尾夹燕尾夹票夹票据夹小夹子办公用品 黑色 金属"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100610" target="_blank" title="得力黑色长尾夹燕尾夹票夹票据夹小夹子办公用品 黑色 金属">得力黑色长尾夹燕尾夹票夹票据夹小夹子办公用品 黑色 金属</a></dt>
+      <dd>&yen;12.00</dd>
+    </dl>
+      </li>
+    <li nctype="goods_item" data-goods-id="100603" data-goods-name="得力 来电显示办公家用电话机 固定电话 座机 水晶按键 白色 白色" data-goods-price="66.60"  data-goods-image="2018/01/51_05701027985594172.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100603" target="_blank" title="得力 来电显示办公家用电话机 固定电话 座机 水晶按键 白色 白色"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05701027985594172_240.jpg"/ alt="得力 来电显示办公家用电话机 固定电话 座机 水晶按键 白色 白色"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100603" target="_blank" title="得力 来电显示办公家用电话机 固定电话 座机 水晶按键 白色 白色">得力 来电显示办公家用电话机 固定电话 座机 水晶按键 白色 白色</a></dt>
+      <dd>&yen;66.60</dd>
+    </dl>
+      </li>
+    <li nctype="goods_item" data-goods-id="100581" data-goods-name="Deli美工刀 裁纸刀 得力办公文具大号美工刀 黄色 塑料" data-goods-price="9.90"  data-goods-image="2018/01/51_05699488261796740.jpg">
+        <div class="goods-thumb"> <a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100581" target="_blank" title="Deli美工刀 裁纸刀 得力办公文具大号美工刀 黄色 塑料"> <img src="http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/01/51_05699488261796740_240.jpg"/ alt="Deli美工刀 裁纸刀 得力办公文具大号美工刀 黄色 塑料"> </a> </div>
+    <dl class="goods-info">
+      <dt><a href="http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=100581" target="_blank" title="Deli美工刀 裁纸刀 得力办公文具大号美工刀 黄色 塑料">Deli美工刀 裁纸刀 得力办公文具大号美工刀 黄色 塑料</a></dt>
+      <dd>&yen;9.90</dd>
+    </dl>
+      </li>
+  </ul>
+                    </div>
+            </div>
+    </div>
+        </textarea>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //图片延迟加载
+        $(".lazyload_container").nc_lazyload_init();
+        $("img").nc_lazyload();
+
+        //幻灯片
+        $('[nctype="store_decoration_slide"]').nc_slider();
+    });
+</script>

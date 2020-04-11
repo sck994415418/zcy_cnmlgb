@@ -1,0 +1,111 @@
+[2018-06-30 07:03:14] /shop/index.php?act=search&cate_id=2125&op=index ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2125' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-06-30 08:16:45] /shop/index.php?act=search&cate_id=2155&op=index ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2155' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-06-30 09:26:46] /shop/index.php?act=search&cate_id=2185&op=index ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2185' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  
+[2018-06-30 10:40:28] /shop/index.php?act=goods&op=comments_list&goods_id=104324 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '104324' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-06-30 17:06:54] /admin/index.php?act=goods_orm&op=add ( act=goods_orm&op=add ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=103665
+[2018-06-30 17:06:54] /admin/index.php?act=goods_orm&op=add ( act=goods_orm&op=add ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1'
+[2018-06-30 17:51:35] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=103665
+[2018-06-30 17:51:35] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1'
+[2018-06-30 17:51:35] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Update zmkj_goods_orm set skuid=103665,productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1',productName='联想(Lenovo) LD4636 黑色硒鼓 LD4636 硒鼓',productUrl='http://www.hebzfcgwssc.com/Mall/HeBei/detail.aspx?product_id=80a79b22-ce26-453c-ad87-d5bf71c4a8e1',productNameEC='',productUrlEC='http://www.nrwspt.com/shop/index.php?act=goods&op=index&goods_id=103665',add_time=1530352295,average_price='960' where id=
+[2018-06-30 17:52:07] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=103665
+[2018-06-30 17:52:07] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1'
+[2018-06-30 17:52:38] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=103665
+[2018-06-30 17:52:38] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1'
+[2018-06-30 17:52:53] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=103665 and id !=103665
+[2018-06-30 17:52:53] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1 and id !=103665'
+[2018-06-30 17:53:42] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=103665 and id !=103665
+[2018-06-30 17:53:42] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1 and id !=103665'
+[2018-06-30 17:53:49] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=102998
+[2018-06-30 17:53:49] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=102998'
+[2018-06-30 17:54:06] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=102998
+[2018-06-30 17:54:06] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=102998'
+[2018-06-30 17:55:23] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=102998
+[2018-06-30 17:55:23] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=102998'
+[2018-06-30 17:57:36] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=1
+[2018-06-30 17:57:36] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=1'
+[2018-06-30 18:07:05] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=103665 and id !=2
+[2018-06-30 18:07:05] /admin/index.php?act=goods_orm&op=edit&id=2 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='80a79b22-ce26-453c-ad87-d5bf71c4a8e1 and id !=2'
+[2018-06-30 18:32:37] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=1
+[2018-06-30 18:32:37] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=1'
+[2018-06-30 18:33:11] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=1
+[2018-06-30 18:33:11] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=1'
+[2018-06-30 18:35:25] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=1
+[2018-06-30 18:35:25] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=1'
+[2018-06-30 18:36:58] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where goods_id=102998 and id !=1
+[2018-06-30 18:36:58] /admin/index.php?act=goods_orm&op=edit&id=1 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='a007bf02-da75-4a4f-956a-f4feca717801 and id !=1'
+[2018-06-30 18:37:19] /admin/index.php?act=goods_orm&op=del&id=2 ( act=goods_orm&op=del ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=2' at line 1
+delete zmkj_goods_orm where id=2
+[2018-06-30 20:18:44] /shop/index.php?act=search&cate_id=2150&op=index ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2150' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  

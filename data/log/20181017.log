@@ -1,0 +1,24 @@
+[2018-10-17 08:46:53] /admin/index.php?act=goods_orm&op=ajax_show&goods_id=106326 ( act=goods_orm&op=ajax_show ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+select * from zmkj_goods_bind where goods_id={$goods_id}
+[2018-10-17 09:19:10] /shop/index.php?act=goods&op=comments_list&goods_id=102111 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102111' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-10-17 16:23:25] /shop/index.php?act=goods&op=comments_list&goods_id=103912 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103912' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-10-17 16:39:47] /admin/index.php?act=goods_orm&op=ajax_show&goods_id=106330 ( act=goods_orm&op=ajax_show ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+select * from zmkj_goods_bind where goods_id={$goods_id}
+[2018-10-17 17:52:49] /admin/index.php?act=goods_orm&op=edit&id=605 ( act=goods_orm&op=edit ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+select goods_id from zmkj_goods_orm where productId='5df294a9-a8ce-4d7f-a920-02c556f391cf and id !=605'
+[2018-10-17 21:19:30] /shop/index.php?act=goods&op=comments_list&goods_id=103571 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103571' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-10-17 22:24:15] /shop/index.php?act=goods&op=comments_list&goods_id=103374 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103374' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-10-17 23:42:57] /shop/index.php?act=goods&op=comments_list&goods_id=103371 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103371' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

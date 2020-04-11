@@ -1,0 +1,831 @@
+[2016-08-15 09:20:40] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1471224040','1099','888','1094','1099')
+[2016-08-15 09:20:44] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('290','100125','å¾—åŠ›ï¼ˆDELIï¼‰33179æ¡£æ¡ˆç›’','50.00','1','1_05222617961719044.jpg',NULL,'','37','0','1099')
+[2016-08-15 09:26:21] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1471224381','1099','888','1094','1099')
+[2016-08-15 09:26:25] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('292','100125','å¾—åŠ›ï¼ˆDELIï¼‰33179æ¡£æ¡ˆç›’','50.00','1','1_05222617961719044.jpg',NULL,'','37','0','1099')
+[2016-08-15 09:35:00] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1471224900','1099','888','1094','1099')
+[2016-08-15 09:35:17] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('293','100125','å¾—åŠ›ï¼ˆDELIï¼‰33179æ¡£æ¡ˆç›’','50.00','1','1_05222617961719044.jpg',NULL,'','37','0','1099')
+[2016-08-15 09:35:36] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_pay_price' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES ('294','100125','å¾—åŠ›ï¼ˆDELIï¼‰33179æ¡£æ¡ˆç›’','50.00','1','1_05222617961719044.jpg',NULL,'','37','0','1099')
+[2016-08-15 09:52:20] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1471225940','1099','888','1094','1099')
+[2016-08-15 11:08:03] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-15 11:29:15] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:15] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:15] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:29:15] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:29:15] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:29:15] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:29:15] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:29:17] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:29:18] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:29:18] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:29:18] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:09] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:30:09] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:30:09] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:09] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:09] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:09] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:09] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:34] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:34] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:34] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:34] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:34] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:34] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:34] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:35] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:36] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:42] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:43] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:43] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:43] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:43] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:43] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:43] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:43] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:44] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=å LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:30:45] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:31:00] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:00] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:00] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:31:00] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:31:00] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:31:00] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:31:00] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:31:01] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:01] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:01] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:31:01] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:31:01] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:31:01] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:31:01] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:31:40] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:40] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:40] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:31:40] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:31:40] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:31:40] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:31:40] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=æ LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:31:41] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=, LIMIT 1  
+[2016-08-15 11:32:28] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:32:54] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:33:20] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=ç LIMIT 1  
+[2016-08-15 11:33:20] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:33:20] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:33:20] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:33:20] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'N' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=N LIMIT 1  
+[2016-08-15 11:33:20] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:33:20] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 11:35:46] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=ç LIMIT 1  
+[2016-08-15 11:35:46] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:35:46] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=è LIMIT 1  
+[2016-08-15 11:35:46] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'a' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=a LIMIT 1  
+[2016-08-15 11:35:46] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'N' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=N LIMIT 1  
+[2016-08-15 11:35:46] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'h' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id=h LIMIT 1  
+[2016-08-15 11:35:46] /shop/index.php?act=repair&op=goods ( act=repair&op=goods ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT brand_name FROM `zmkj_brand` WHERE brand_id= LIMIT 1  
+[2016-08-15 17:13:19] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('130524596399928000',NULL)
+[2016-08-15 17:13:19] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'130524596399928000','8000000000000001','1471252378','1471252399','å®¶','éž¥','110','5.0','0','1')
+[2016-08-15 17:16:55] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('860524596615143000',NULL)
+[2016-08-15 17:16:55] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'860524596615143000','8000000000000001','1471252605','1471252615','1111','1111','1111','5.0','0','1')
+[2016-08-15 19:51:43] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-15 19:51:43] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-15 19:51:43] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-15 19:52:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-15 19:52:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-15 19:52:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-15 20:34:47] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('630524608487997000',NULL)
+[2016-08-15 20:34:47] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'630524608487997000','8000000000000001','åŽå¤©-07ç‚¹-00åˆ†','1471264487','11111','11111','11111111','0.0','0','1')
+[2016-08-15 20:55:52] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=13c649502fe5701258207c894021697a ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471265752' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-15 20:59:00] /mobile/index.php?act=goods&op=goods_detail&goods_id=100125&key=13c649502fe5701258207c894021697a ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471265940' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  

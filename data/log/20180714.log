@@ -1,0 +1,3 @@
+[2018-07-14 20:11:58] /shop/index.php?act=search&op=index&cate_id=2156 ( act=search&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid)) AS nc_count FROM `zmkj_goods` WHERE ( gc_id_ = '2156' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 1  

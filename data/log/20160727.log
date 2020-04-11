@@ -1,0 +1,45 @@
+[2016-07-27 06:30:04] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1469572204' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-07-27 11:05:56] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=685d68d8a1faa7438df068c936d8b242 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469588756' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-27 11:05:59] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=685d68d8a1faa7438df068c936d8b242 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469588759' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-27 11:06:02] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=685d68d8a1faa7438df068c936d8b242 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469588762' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-27 11:08:17] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=685d68d8a1faa7438df068c936d8b242 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469588897' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-27 11:38:34] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=a64204ca17c521447e0d1b57ccb9081d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469590714' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-27 11:38:34] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=a64204ca17c521447e0d1b57ccb9081d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469590714' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-27 11:38:34] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=a64204ca17c521447e0d1b57ccb9081d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469590714' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-27 18:03:22] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-27 18:03:37] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-27 18:05:23] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-27 18:05:39] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-27 18:07:01] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-27 18:12:04] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-27 18:36:54] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  

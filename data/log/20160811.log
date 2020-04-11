@@ -1,0 +1,174 @@
+[2016-08-11 08:42:00] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 08:42:00] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_order` WHERE order_id= LIMIT 1  
+[2016-08-11 08:42:00] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+UPDATE `zmkj_order` SET cftime='1470876120',wxstate='2',master_id=NULL WHERE order_id=
+[2016-08-11 08:42:02] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 08:42:02] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_order` WHERE order_id= LIMIT 1  
+[2016-08-11 08:42:02] /shop/index.php?act=master&op=cforder ( act=master&op=cforder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+UPDATE `zmkj_order` SET cftime='1470876122',wxstate='2',master_id=NULL WHERE order_id=
+[2016-08-11 09:09:55] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4',NULL,'Ghhhhhhhgggg','Shsvbz','1470877795',NULL,NULL,'Shsh')
+[2016-08-11 09:13:33] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_rent_order` (buyer_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES (NULL,NULL,NULL,'1470878013',NULL,NULL,NULL)
+[2016-08-11 09:19:13] /shop/index.php?act=repair&op=rentinfo ( act=repair&op=rentinfo ) 
+ERR: Db Error: Column 'other' cannot be null
+INSERT  INTO `zmkj_rent_order` (buyer_id,goods_id,buyer_name,buyer_phone,add_time,model,other,buyer_address) VALUES ('4','43','Had','Shsh','1470878353','Check',NULL,'Hdbd')
+[2016-08-11 09:55:12] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1000' at line 1
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,master_id,scost,tel,type,address,nowtime,apptime,wxstate,jdtime,cftime,wxtime,finnshed_time FROM `zmkj_order` WHERE master_id= LIMIT 1000  
+[2016-08-11 10:11:17] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: Table 'bangongshi.zmkj_' doesn't exist
+SELECT member_name,member_mobile FROM `zmkj_` WHERE member_id=4 LIMIT 1  
+[2016-08-11 10:11:17] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_` WHERE member_id= LIMIT 1  
+[2016-08-11 10:15:03] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 11:04:30] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 13:56:13] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 13:57:13] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 13:58:51] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:20:18] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:20:57] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:21:43] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:22:06] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:25:30] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:26:22] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:34:48] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:35:31] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 14:38:20] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 15:11:54] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1470899514','1099','888','1094','1099')
+[2016-08-11 15:15:04] /shop/index.php?act=master&op=qxorder ( act=master&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_order` WHERE order_id= LIMIT 1  
+[2016-08-11 15:15:04] /shop/index.php?act=master&op=qxorder ( act=master&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+DELETE  FROM `zmkj_order` WHERE order_id=
+[2016-08-11 15:15:58] /shop/index.php?act=master&op=qxorder&atool_timestamp=1470899758 ( act=master&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_order` WHERE order_id= LIMIT 1  
+[2016-08-11 15:15:58] /shop/index.php?act=master&op=qxorder&atool_timestamp=1470899758 ( act=master&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+DELETE  FROM `zmkj_order` WHERE order_id=
+[2016-08-11 15:15:59] /shop/index.php?act=master&op=qxorder&atool_timestamp=1470899759 ( act=master&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_order` WHERE order_id= LIMIT 1  
+[2016-08-11 15:15:59] /shop/index.php?act=master&op=qxorder&atool_timestamp=1470899759 ( act=master&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+DELETE  FROM `zmkj_order` WHERE order_id=
+[2016-08-11 15:46:46] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('270524245606779000',NULL)
+[2016-08-11 15:46:46] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'270524245606779000','8000000000000001','1470901607','1470901606','ejius','tiyix','ziyiws','20','0','1')
+[2016-08-11 15:46:52] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('140524245612949000',NULL)
+[2016-08-11 15:46:52] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'140524245612949000','8000000000000001','1470901607','1470901612','ejius','tiyix','ziyiws','20','0','1')
+[2016-08-11 15:46:53] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('960524245613135000',NULL)
+[2016-08-11 15:46:53] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'960524245613135000','8000000000000001','1470901607','1470901613','ejius','tiyix','ziyiws','20','0','1')
+[2016-08-11 15:46:53] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('610524245613303000',NULL)
+[2016-08-11 15:46:53] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'610524245613303000','8000000000000001','1470901607','1470901613','ejius','tiyix','ziyiws','20','0','1')
+[2016-08-11 15:46:53] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('400524245613451000',NULL)
+[2016-08-11 15:46:53] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'400524245613451000','8000000000000001','1470901607','1470901613','ejius','tiyix','ziyiws','20','0','1')
+[2016-08-11 15:47:22] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('780524245642896000',NULL)
+[2016-08-11 15:47:22] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'780524245642896000','8000000000000001','1470901607','1470901642','ejius','tiyix','ziyiws','20','0','1')
+[2016-08-11 16:12:49] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 16:13:37] /shop/index.php?act=repair&op=userzl ( act=repair&op=userzl ) 
+ERR: Db Error: Unknown column 'order_id' in 'field list'
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,goods_id FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) LIMIT 1000  
+[2016-08-11 16:14:34] /shop/index.php?act=repair&op=userzl ( act=repair&op=userzl ) 
+ERR: Db Error: Unknown column 'order_id' in 'field list'
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,goods_id FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) LIMIT 1000  
+[2016-08-11 16:14:53] /shop/index.php?act=repair&op=userzl ( act=repair&op=userzl ) 
+ERR: Db Error: Unknown column 'order_id' in 'field list'
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,goods_id FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) LIMIT 1000  
+[2016-08-11 17:22:40] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-11 17:38:04] /circle/index.php?act=circle&op=themelist ( act=circle&op=themelist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_circle` WHERE circle_id= LIMIT 1  
+[2016-08-11 17:41:09] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,repassword,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_13582912381','邓志恒','aaaaaa','aaaaaa','13582912381','9767369955594664','976734999634694','','1')
+[2016-08-11 17:50:08] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,repassword,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_17739393','Hhshs','aaaaaa','aaaaaa','17739393','7172882828288282829929299','17178282828283828','71818','1')
+[2016-08-11 17:54:18] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,repassword,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_CB','Fab','Cv','Fog','CB','Baghdad','Bhangra','High','1')
+[2016-08-11 17:56:04] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,repassword,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_Hans','Habsburg','High','Shush','Hans','Bonds','Bob','Bunch','1')
+[2016-08-11 18:00:47] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,repassword,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_13582912381','邓志恒','aaaaaa','aaaaaa','13582912381','9797664611884','79763618484543','','1')
+[2016-08-11 18:01:41] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,repassword,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_17273837493','bbbbb','aaaaaa','aaaaaa','17273837493','82828288292919','1717177171','71818','1')
+[2016-08-11 19:24:11] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_13582912381','邓志恒','0b4e7a0e5fe84ad35fb5f95b9ceeac79','13582912381','99734391876737354','664343566494643','','1')

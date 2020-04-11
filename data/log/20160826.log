@@ -1,0 +1,327 @@
+[2016-08-26 05:25:05] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472160305' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-26 11:25:16] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )
+[2016-08-26 11:25:18] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )
+[2016-08-26 11:25:19] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )
+[2016-08-26 11:25:19] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )
+[2016-08-26 11:25:20] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )
+[2016-08-26 11:25:20] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )
+[2016-08-26 11:25:22] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:52:07] /shop/index.php?act=repair&op=userwx ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-26 11:53:30] /shop/index.php?act=repair&op=qxorder ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )
+[2016-08-26 11:53:45] /shop/index.php?act=repair&op=qxorder ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )
+[2016-08-26 11:53:46] /shop/index.php?act=repair&op=qxorder ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )
+[2016-08-26 11:53:47] /shop/index.php?act=repair&op=qxorder ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )
+[2016-08-26 11:53:47] /shop/index.php?act=repair&op=qxorder ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )
+[2016-08-26 11:53:48] /shop/index.php?act=repair&op=qxorder ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )
+[2016-08-26 11:53:48] /shop/index.php?act=repair&op=qxorder ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '(null)' ) AND ( buyer_id = '4' )
+[2016-08-26 11:54:38] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('870525527678286000',NULL)
+[2016-08-26 11:54:38] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'870525527678286000','8000000000000001','1472183653','1472183678','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:42] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('470525527682966000',NULL)
+[2016-08-26 11:54:42] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'470525527682966000','8000000000000001','1472183653','1472183682','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:48] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('700525527688737000',NULL)
+[2016-08-26 11:54:48] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'700525527688737000','8000000000000001','1472183653','1472183688','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:50] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('680525527690040000',NULL)
+[2016-08-26 11:54:50] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'680525527690040000','8000000000000001','1472183653','1472183690','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:51] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('510525527691355000',NULL)
+[2016-08-26 11:54:51] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'510525527691355000','8000000000000001','1472183653','1472183691','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:51] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('190525527691995000',NULL)
+[2016-08-26 11:54:51] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'190525527691995000','8000000000000001','1472183653','1472183691','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:52] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('740525527692490000',NULL)
+[2016-08-26 11:54:52] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'740525527692490000','8000000000000001','1472183653','1472183692','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:52] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('360525527692802000',NULL)
+[2016-08-26 11:54:52] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'360525527692802000','8000000000000001','1472183653','1472183692','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 11:54:53] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES ('800525527693131000',NULL)
+[2016-08-26 11:54:53] /shop/index.php ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'buyer_id' cannot be null
+INSERT  INTO `zmkj_order` (buyer_id,buyer_name,pay_sn,order_sn,nowtime,add_time,address,type,tel,scost,wxstate,is_master) VALUES (NULL,NULL,'800525527693131000','8000000000000001','1472183653','1472183693','擦擦','小菜逼','110','0.0','0','1')
+[2016-08-26 14:07:59] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '575' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '575' ) AND ( buyer_id = '37' )

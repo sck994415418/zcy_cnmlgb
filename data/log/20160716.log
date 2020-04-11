@@ -1,0 +1,6 @@
+[2016-07-16 10:40:26] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1468636826','1126','1124','1125','1126')
+[2016-07-16 14:42:52] /mobile/index.php?act=goods&op=goods_list&keyword=%E7%B4%A2%E5%B0%BC&page=10&curpage=1&keyword=%E7%B4%A2%E5%B0%BC ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  

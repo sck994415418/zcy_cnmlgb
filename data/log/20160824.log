@@ -1,0 +1,846 @@
+[2016-08-24 08:16:21] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471997781','1126','1124','1125','1126')
+[2016-08-24 08:22:07] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:22:09] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=015b7dc06cbd89504cf5b855fbb94b9c ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471998129' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 08:23:59] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=015b7dc06cbd89504cf5b855fbb94b9c ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471998239' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 08:24:02] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:31:48] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471998708','1126','1124','1125','1126')
+[2016-08-24 08:38:15] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:38:39] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1471999119','1126','1124','1125','1126')
+[2016-08-24 08:38:40] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=b7215856bd40351068544569477cf8e2 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471999120' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 08:40:37] /mobile/index.php?act=goods&op=goods_list&gc_id=1099&page=10&curpage=1&gc_id=1099 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:40:44] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:40:46] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=b7215856bd40351068544569477cf8e2 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471999246' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 08:41:04] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:41:25] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:41:40] /mobile/index.php?act=goods&op=goods_detail&goods_id=100076&key=b7215856bd40351068544569477cf8e2 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471999300' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 08:43:37] /mobile/index.php?act=goods&op=goods_list&gc_id=1099&page=10&curpage=1&gc_id=1099 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:43:44] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 08:43:52] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=b7215856bd40351068544569477cf8e2 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1471999432' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 08:56:32] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472000192','1126','1124','1125','1126')
+[2016-08-24 09:00:56] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472000456','1126','1124','1125','1126')
+[2016-08-24 09:01:32] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472000492','1126','1124','1125','1126')
+[2016-08-24 09:03:24] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 09:03:53] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 09:03:54] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=121ca4fdad861cb320305a5fdd06c299 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472000634' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 09:05:37] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472000737','1126','1124','1125','1126')
+[2016-08-24 09:11:52] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1472001112','1099','888','1094','1099')
+[2016-08-24 09:16:58] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472001418','1126','1124','1125','1126')
+[2016-08-24 09:17:11] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472001431' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 09:19:07] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472001547','1126','1124','1125','1126')
+[2016-08-24 09:20:36] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472001636','1126','1124','1125','1126')
+[2016-08-24 09:23:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472001780','1126','1124','1125','1126')
+[2016-08-24 09:27:35] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_avatar,moneycard,member_mobile,member_truename FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 09:27:35] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1000' at line 1
+SELECT order_id,order_sn,pay_sn,buyer_name,buyer_id,add_time,master_id,scost,tel,type,address,nowtime,apptime,wxstate,jdtime,cftime,wxtime,finnshed_time,payment_code FROM `zmkj_order` WHERE master_id= LIMIT 1000  
+[2016-08-24 09:27:42] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472002062' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 09:27:46] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472002066' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 09:27:47] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472002067' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 09:28:19] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472002099','1126','1124','1125','1126')
+[2016-08-24 09:29:53] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472002193' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 09:30:10] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472002210' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 09:30:28] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472002228' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 09:34:19] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472002459','1126','1124','1125','1126')
+[2016-08-24 09:42:09] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472002929','1126','1124','1125','1126')
+[2016-08-24 09:43:42] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472003022','1099','888','1094','1099')
+[2016-08-24 09:45:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472003143','1126','1124','1125','1126')
+[2016-08-24 09:56:02] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472003762','1126','1124','1125','1126')
+[2016-08-24 09:58:36] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472003916','1126','1124','1125','1126')
+[2016-08-24 10:04:54] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472004294','1126','1124','1125','1126')
+[2016-08-24 10:05:14] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 10:05:14] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=121ca4fdad861cb320305a5fdd06c299 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472004314' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 10:07:47] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472004467','1126','1124','1125','1126')
+[2016-08-24 10:09:16] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472004556','1099','888','1094','1099')
+[2016-08-24 10:15:59] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472004959','1099','888','1094','1099')
+[2016-08-24 10:16:46] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472005006','1099','888','1094','1099')
+[2016-08-24 10:23:21] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472005401','1126','1124','1125','1126')
+[2016-08-24 10:30:55] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472005855' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 10:30:56] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472005856' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 10:41:08] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472006468','1126','1124','1125','1126')
+[2016-08-24 10:43:42] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100071-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100071','4','1472006622','1126','1124','1125','1126')
+[2016-08-24 10:44:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100072-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100072','4','1472006683','1126','1124','1125','1126')
+[2016-08-24 10:45:30] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 10:45:31] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=121ca4fdad861cb320305a5fdd06c299 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472006731' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 10:53:11] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472007191','1126','1124','1125','1126')
+[2016-08-24 10:57:39] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472007459','1126','1124','1125','1126')
+[2016-08-24 10:58:11] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472007491','1099','888','1094','1099')
+[2016-08-24 10:59:02] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472007542','1126','1124','1125','1126')
+[2016-08-24 11:00:58] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100076-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100076','4','1472007658','1128','1124','1125','1128')
+[2016-08-24 11:04:36] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472007876','1126','1124','1125','1126')
+[2016-08-24 11:05:26] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100073-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100073','4','1472007926','1126','1124','1125','1126')
+[2016-08-24 11:06:28] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472007988','1126','1124','1125','1126')
+[2016-08-24 11:10:24] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100074-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100074','4','1472008224','1126','1124','1125','1126')
+[2016-08-24 11:12:57] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100102-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100102','4','1472008377','1129','1124','1125','1129')
+[2016-08-24 11:22:16] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472008936','1126','1124','1125','1126')
+[2016-08-24 11:23:33] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472009013','1126','1124','1125','1126')
+[2016-08-24 11:27:06] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472009226','1126','1124','1125','1126')
+[2016-08-24 11:29:26] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472009366','1126','1124','1125','1126')
+[2016-08-24 11:35:36] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100076-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100076','4','1472009736','1128','1124','1125','1128')
+[2016-08-24 11:38:53] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','37','1472009933','1126','1124','1125','1126')
+[2016-08-24 11:40:38] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472010038','1126','1124','1125','1126')
+[2016-08-24 11:41:41] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 11:41:47] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=121ca4fdad861cb320305a5fdd06c299 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472010107' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 11:41:52] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100075&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100075' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-08-24 11:41:52] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100075&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100075' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) ORDER BY geval_id desc LIMIT 0,10  
+[2016-08-24 11:43:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472010232','1099','888','1094','1099')
+[2016-08-24 11:50:31] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472010631','1099','888','1094','1099')
+[2016-08-24 11:50:45] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=121ca4fdad861cb320305a5fdd06c299 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472010645' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 11:54:41] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472010881','1126','1124','1125','1126')
+[2016-08-24 11:55:00] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','37','1472010900','1126','1124','1125','1126')
+[2016-08-24 11:55:41] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 11:55:42] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=121ca4fdad861cb320305a5fdd06c299 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472010942' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 11:55:54] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100075&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100075' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-08-24 11:55:54] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100075&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100075' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) ORDER BY geval_id desc LIMIT 0,10  
+[2016-08-24 11:56:35] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100059&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100059' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2016-08-24 11:56:35] /mobile/index.php?act=goods&op=goods_evaluate&goods_id=100059&type=4&curpage=1&page=10 ( act=goods&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100059' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) ORDER BY geval_id desc LIMIT 0,10  
+[2016-08-24 11:57:49] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=121ca4fdad861cb320305a5fdd06c299 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1472011069' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-24 11:58:56] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 11:58:56] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126&key=1&order=2 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_salenum' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY goods_salenum desc LIMIT 1  
+[2016-08-24 12:00:41] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472011241','1099','888','1094','1099')
+[2016-08-24 12:00:46] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472011246','1126','1124','1125','1126')
+[2016-08-24 12:02:56] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','37','1472011376','1099','888','1094','1099')
+[2016-08-24 12:03:01] /shop/index.php ( act=mobile&op=goods_evaluate ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT * FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100125' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) ORDER BY geval_id desc LIMIT 1000  
+[2016-08-24 12:07:24] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472011644','1126','1124','1125','1126')
+[2016-08-24 13:07:50] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472015270' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 14:09:47] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472018987' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 14:09:47] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472018987' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 14:10:31] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472019031','1126','1124','1125','1126')
+[2016-08-24 14:15:49] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472019349','1126','1124','1125','1126')
+[2016-08-24 14:17:18] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472019438','1126','1124','1125','1126')
+[2016-08-24 14:40:41] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472020841','1126','1124','1125','1126')
+[2016-08-24 14:44:09] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472021049','1126','1124','1125','1126')
+[2016-08-24 14:59:07] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472021947','1126','1124','1125','1126')
+[2016-08-24 15:02:00] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1472022120','1126','1124','1125','1126')
+[2016-08-24 16:02:25] /mobile/index.php?act=goods&op=goods_list&keyword=&area_id=&page=10&curpage=1 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 16:16:12] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472026572','1099','888','1094','1099')
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=2 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=3 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1137 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=308 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=470 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=662 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=730 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=888 LIMIT 1  
+[2016-08-24 16:28:47] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1124 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=2 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=3 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1137 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=308 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=470 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=662 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=730 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=888 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1124 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=2 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=3 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1137 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=308 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=470 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=662 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=730 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=888 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1124 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=2 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=3 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1137 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=308 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=470 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=662 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=730 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=888 LIMIT 1  
+[2016-08-24 16:30:50] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1124 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=2 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=3 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1137 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=308 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=470 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=662 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=730 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=888 LIMIT 1  
+[2016-08-24 16:30:51] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE gc_id=1124 LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:31:35] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:31:36] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:32:02] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:32:02] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:32:02] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:32:02] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:32:02] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:32:02] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:32:02] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '2' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '3' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1137' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '308' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '470' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '662' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '730' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '888' ) LIMIT 1  
+[2016-08-24 16:32:03] /shop/index.php?act=mobile&op=goodsclass ( act=mobile&op=goodsclass ) 
+ERR: Db Error: Table 'bangongshi.zmkj_mb_categroy' doesn't exist
+SELECT * FROM `zmkj_mb_categroy` WHERE ( gc_id = '1124' ) LIMIT 1  
+[2016-08-24 16:34:17] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-08-24 17:47:27] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100125-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100125','4','1472032047','1099','888','1094','1099')
+[2016-08-24 18:34:09] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472034849' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 18:35:46] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472034946' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 18:35:46] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1472034946' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:49:29] /shop/index.php ( act=repair&op=userwx ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT member_name,member_mobile FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-24 23:56:40] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '573' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '573' ) AND ( buyer_id = '37' )
+[2016-08-24 23:56:42] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '573' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '573' ) AND ( buyer_id = '37' )
+[2016-08-24 23:56:44] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '573' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '573' ) AND ( buyer_id = '37' )
+[2016-08-24 23:56:48] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '573' ) AND ( buyer_id = '37' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '573' ) AND ( buyer_id = '37' )
+[2016-08-24 23:57:33] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-37' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','37','1472054253','1126','1124','1125','1126')

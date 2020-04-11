@@ -1,0 +1,132 @@
+[2016-10-25 08:41:05] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-108' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','108','1477356065','1098','888','1094','1098')
+[2016-10-25 08:42:50] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100124-108' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100124','108','1477356170','1098','888','1094','1098')
+[2016-10-25 09:12:02] /circle/index.php ( act=circle&op=savetheme ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `zmkj_circle_theme` (theme_name,theme_content,circle_id,circle_name,member_id,member_name,is_identity,theme_addtime,lastspeak_time,lastspeak_name,theme_special) VALUES ('。。。。','。。。。。','1','办工师维修师傅讨论区',NULL,NULL,'1','1477357922','1477357922',NULL,'0')
+[2016-10-25 09:12:04] /circle/index.php ( act=circle&op=savetheme ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `zmkj_circle_theme` (theme_name,theme_content,circle_id,circle_name,member_id,member_name,is_identity,theme_addtime,lastspeak_time,lastspeak_name,theme_special) VALUES ('。。。。','。。。。。','1','办工师维修师傅讨论区',NULL,NULL,'1','1477357924','1477357924',NULL,'0')
+[2016-10-25 09:12:05] /circle/index.php ( act=circle&op=savetheme ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `zmkj_circle_theme` (theme_name,theme_content,circle_id,circle_name,member_id,member_name,is_identity,theme_addtime,lastspeak_time,lastspeak_name,theme_special) VALUES ('。。。。','。。。。。','1','办工师维修师傅讨论区',NULL,NULL,'1','1477357925','1477357925',NULL,'0')
+[2016-10-25 09:12:05] /circle/index.php ( act=circle&op=savetheme ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `zmkj_circle_theme` (theme_name,theme_content,circle_id,circle_name,member_id,member_name,is_identity,theme_addtime,lastspeak_time,lastspeak_name,theme_special) VALUES ('。。。。','。。。。。','1','办工师维修师傅讨论区',NULL,NULL,'1','1477357925','1477357925',NULL,'0')
+[2016-10-25 10:17:20] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '110' ) LIMIT 1000  
+[2016-10-25 10:26:40] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477362400' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-25 10:27:42] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '110' ) LIMIT 1000  
+[2016-10-25 11:02:27] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','4','1477364547','1126','1124','1125','1126')
+[2016-10-25 11:16:37] /circle/index.php?act=circle&op=membcircle ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '64' ) LIMIT 1000  
+[2016-10-25 11:19:51] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'reciver_name' cannot be null
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('1','1151','1',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'(null)','不需要发票')
+[2016-10-25 11:20:26] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '57' ) LIMIT 1000  
+[2016-10-25 11:20:39] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '57' ) LIMIT 1000  
+[2016-10-25 11:21:28] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '57' ) LIMIT 1000  
+[2016-10-25 11:27:14] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '64' ) LIMIT 1000  
+[2016-10-25 12:52:29] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477371149' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-25 14:15:17] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-110' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','110','1477376117','630','593','598','630')
+[2016-10-25 14:16:34] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-110' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','110','1477376194','630','593','598','630')
+[2016-10-25 15:11:18] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477379478' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-25 16:31:09] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477384269' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-25 16:31:09] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1477384269' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-25 17:19:55] /shop/index.php?act=aa&op=editgoods ( act=aa&op=editgoods ) 
+ERR: Db Error: Unknown column 'user_id' in 'field list'
+INSERT  INTO `zmkj_rent_order` (user_id,goods_id,buyer_name,buyer_phone,buyer_address,model,other,add_time) VALUES ('5','44','fgsfdg','13245698745','胡同，胡同，小胡同','111','','1477387195')
+[2016-10-25 17:20:44] /shop/index.php?act=aa&op=editgoods ( act=aa&op=editgoods ) 
+ERR: Db Error: Unknown column 'user_id' in 'field list'
+INSERT  INTO `zmkj_rent_order` (user_id,goods_id,buyer_name,buyer_phone,buyer_address,model,other,add_time) VALUES ('5','44','dfdf','13245698745','胡同，胡同，小胡同','111','','1477387244')
+[2016-10-25 17:20:57] /shop/index.php?act=aa&op=editgoods ( act=aa&op=editgoods ) 
+ERR: Db Error: Unknown column 'user_id' in 'field list'
+INSERT  INTO `zmkj_rent_order` (user_id,goods_id,buyer_name,buyer_phone,buyer_address,model,other,add_time) VALUES ('5','44','dfdf','13245698745','胡同，胡同，小胡同','111','','1477387257')
+[2016-10-25 18:00:39] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:00:41] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:00:52] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:22] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:23] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:23] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:24] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:24] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:24] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:24] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:24] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:24] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:25] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:01:25] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:02:19] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:02:20] /shop/index.php?act=aa&op=index&te=zlremenpinpai ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0,42'' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT '0,42'  
+[2016-10-25 18:13:30] /shop/index.php?act=aa&op=index&te=zlremenpinpai&p=pa ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-42,42' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT -42,42  
+[2016-10-25 18:57:20] /shop/index.php?act=aa&op=index&te=zlremenpinpai&p=pa ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-42,42' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT -42,42  
+[2016-10-25 18:57:20] /shop/index.php?act=aa&op=index&te=zlremenpinpai&p=pa ( act=aa&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-42,42' at line 1
+SELECT * FROM `zmkj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) LIMIT -42,42  

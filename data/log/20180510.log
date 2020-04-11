@@ -1,0 +1,51 @@
+[2018-05-10 01:23:03] /shop/index.php?act=goods&op=comments_list&goods_id=103057 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103057' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-10 06:18:30] /shop/index.php?act=goods&goods_id=103604&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103604' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-10 06:21:40] /shop/index.php?act=goods&op=comments_list&goods_id=103573 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103573' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-10 06:46:32] /shop/index.php?act=goods&op=comments_list&goods_id=103573&type=2 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103573' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-10 09:11:37] /shop/index.php?act=time_limit&op=index&curpage=2 ( act=time_limit&op=index ) 
+ERR: Db Error: Unknown column '100' in 'group statement'
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1525914697' ) AND ( end_time > '1525914697' ) GROUP BY 100 ORDER BY xianshi_recommend desc LIMIT 9,9  
+[2018-05-10 09:12:40] /shop/index.php?act=time_limit&op=index&curpage=2 ( act=time_limit&op=index ) 
+ERR: Db Error: Unknown column '100' in 'group statement'
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1525914760' ) AND ( end_time > '1525914760' ) GROUP BY 100 ORDER BY xianshi_recommend desc LIMIT 9,9  
+[2018-05-10 09:12:41] /shop/index.php?act=time_limit&op=index ( act=time_limit&op=index ) 
+ERR: Db Error: Unknown column '100' in 'group statement'
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1525914761' ) AND ( end_time > '1525914761' ) GROUP BY 100 ORDER BY xianshi_recommend desc LIMIT 0,9  
+[2018-05-10 09:12:43] /shop/index.php?act=time_limit&op=index ( act=time_limit&op=index ) 
+ERR: Db Error: Unknown column '100' in 'group statement'
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1525914763' ) AND ( end_time > '1525914763' ) GROUP BY 100 ORDER BY xianshi_recommend desc LIMIT 0,9  
+[2018-05-10 09:16:16] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by goods_salenum desc limit 10' at line 1
+select * from zmkj_goods where goods_id in () order by goods_salenum desc limit 10
+[2018-05-10 09:16:16] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 
+[2018-05-10 09:16:42] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by goods_salenum desc limit 10' at line 1
+select * from zmkj_goods where goods_id in () order by goods_salenum desc limit 10
+[2018-05-10 09:16:42] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 
+[2018-05-10 09:26:13] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by goods_salenum desc limit 10' at line 1
+select * from zmkj_goods where goods_id in () order by goods_salenum desc limit 10
+[2018-05-10 09:26:13] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 
+[2018-05-10 10:26:12] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by goods_salenum desc limit 10' at line 1
+select * from zmkj_goods where goods_id in () order by goods_salenum desc limit 10
+[2018-05-10 10:26:12] /shop/index.php?act=hot_sale&op=index ( act=hot_sale&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select `member_id` from zmkj_store where store_id = 
+[2018-05-10 22:39:03] /shop/index.php?act=goods&goods_id=103585&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103585' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

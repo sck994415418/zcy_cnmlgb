@@ -1,0 +1,207 @@
+[2016-11-04 08:45:45] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '4' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-04 09:38:16] /mobile/index.php?act=index&op=shebeiinfo&goods_id=100075 ( act=index&op=shebeiinfo ) 
+ERR: Db Error: Table 'bangongshi.zmkj_table' doesn't exist
+SELECT * FROM `zmkj_table` WHERE ( store_id = '1' ) LIMIT 1  
+[2016-11-04 09:55:35] /mobile/index.php?act=member_refund&op=get_refund_info&key=15ce693dfbc88d5ee0a3a5b55d0fafbf&refund_id=5 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '5' ) LIMIT 1  
+[2016-11-04 11:06:03] /mobile/index.php?act=index&op=shebeiinfo&goods_id=100067 ( act=index&op=shebeiinfo ) 
+ERR: Db Error: Table 'bangongshi.zmkj_table' doesn't exist
+SELECT * FROM `zmkj_table` WHERE ( store_id = '1' ) LIMIT 1  
+[2016-11-04 11:13:06] /mobile/index.php?act=mobile_payment&op=orderpay ( act=mobile_payment&op=orderpay ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_order` WHERE pay_sn= LIMIT 1  
+[2016-11-04 11:32:39] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478230359' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 13:14:05] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478236445' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 14:07:47] /shop/index.php ( act=repair&op=goods ) 
+ERR: Db Error: Unknown column 'goods_state' in 'where clause'
+SELECT brand_name FROM `zmkj_brand` WHERE ( goods_state = '1' ) AND ( goods_verify = '1' ) AND ( brand_id = '0' ) LIMIT 1  
+[2016-11-04 15:24:36] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100151-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100151','135','1478244276','1126','1124','1125','1126')
+[2016-11-04 15:26:26] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100127-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100127','135','1478244386','1126','1124','1125','1126')
+[2016-11-04 15:27:00] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100151-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100151','135','1478244420','1126','1124','1125','1126')
+[2016-11-04 15:27:25] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100151-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100151','135','1478244445','1126','1124','1125','1126')
+[2016-11-04 15:27:40] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100151-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100151','135','1478244460','1126','1124','1125','1126')
+[2016-11-04 15:31:31] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100127-135' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100127','135','1478244691','1126','1124','1125','1126')
+[2016-11-04 15:33:17] /mobile/index.php?act=member_refund&op=get_refund_info&key=15ce693dfbc88d5ee0a3a5b55d0fafbf&refund_id=5 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '5' ) LIMIT 1  
+[2016-11-04 15:38:44] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '7' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-04 15:38:46] /mobile/index.php?act=goods&op=goods_detail&goods_id=100151&key=b582c6e78e40f450345c34f7d4ccb15c ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478245126' ) AND ( voucher_t_store_id IN ('7') ) LIMIT 1000  
+[2016-11-04 15:38:54] /mobile/index.php?act=goods&op=goods_detail&goods_id=100151&key=b582c6e78e40f450345c34f7d4ccb15c ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1478245134' ) AND ( voucher_t_store_id IN ('7') ) LIMIT 1000  
+[2016-11-04 15:38:56] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '7' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-11-04 15:49:48] /mobile/index.php?act=member_refund&op=get_refund_info&key=15ce693dfbc88d5ee0a3a5b55d0fafbf&refund_id=12 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '12' ) LIMIT 1  
+[2016-11-04 15:49:50] /mobile/index.php?act=member_refund&op=get_refund_info&key=15ce693dfbc88d5ee0a3a5b55d0fafbf&refund_id=12 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '12' ) LIMIT 1  
+[2016-11-04 15:49:52] /mobile/index.php?act=member_refund&op=get_refund_info&key=15ce693dfbc88d5ee0a3a5b55d0fafbf&refund_id=12 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '12' ) LIMIT 1  
+[2016-11-04 16:07:15] /mobile/index.php?act=member_refund&op=get_refund_info&key=15ce693dfbc88d5ee0a3a5b55d0fafbf&refund_id=12 ( act=member_refund&op=get_refund_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '12' ) LIMIT 1  
+[2016-11-04 16:43:38] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478249018' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 16:43:54] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478249034' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:25:14] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251514' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:25:49] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251549' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:26:27] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251587' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:26:57] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251617' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:26:59] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251619' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:27:17] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251637' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:27:18] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251638' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:27:19] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251639' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:27:33] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1478251653' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-11-04 17:57:02] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:57:02] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:57:04] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:57:04] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:57:06] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate < '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:57:06] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate < '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:57:07] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate = '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:57:07] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate = '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:57:08] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate < '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:57:08] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate < '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:58:06] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate < '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:58:06] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'wxstate' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( wxstate < '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:59:04] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:59:04] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:59:05] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state = '10' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:59:05] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state = '10' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:59:07] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state > '10' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:59:07] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state > '10' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:59:07] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state = '10' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:59:07] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state = '10' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 17:59:10] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 17:59:10] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 18:14:28] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 18:14:28] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 18:14:29] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state = '10' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 18:14:29] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state = '10' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 18:14:30] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state > '10' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 18:14:30] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( order_state > '10' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 18:14:57] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-11-04 18:14:57] /mobile/index.php?act=member_rent_order&op=order_list&page=10&curpage=1 ( act=member_rent_order&op=order_list ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_rent_order` WHERE ( buyer_id = '4' ) AND ( is_master = '1' ) ORDER BY order_id desc LIMIT 0,10  
+[2016-11-04 18:39:52] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '55' ) AND ( is_master <> '1' ) LIMIT 1  
+[2016-11-04 18:39:52] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '55' ) AND ( is_master <> '1' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-11-04 18:39:57] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '55' ) AND ( is_master <> '1' ) LIMIT 1  
+[2016-11-04 18:39:57] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '55' ) AND ( is_master <> '1' ) ORDER BY order_id desc LIMIT 0,20  
+[2016-11-04 19:57:19] /mobile/index.php?act=member_return&op=get_return_info&key=57864a21df6846607e572e96214091a4&return_id=9 ( act=member_return&op=get_return_info ) 
+ERR: Db Error: Table 'bangongshi.zmkj_refund_detail' doesn't exist
+SELECT * FROM `zmkj_refund_detail` WHERE ( refund_id = '9' ) LIMIT 1  

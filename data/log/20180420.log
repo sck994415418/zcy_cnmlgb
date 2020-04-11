@@ -1,0 +1,15 @@
+[2018-04-20 09:48:10] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=10102174 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by title_sort asc,title_id asc' at line 1
+select * from zmkj_title where class_id =  order by title_sort asc,title_id asc
+[2018-04-20 14:55:49] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=74-645Y ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: Unknown column '645Y' in 'where clause'
+select goods_param,gc_id from zmkj_goods where goods_id = 74-645Y
+[2018-04-20 14:55:49] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=74-645Y ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by title_sort asc,title_id asc' at line 1
+select * from zmkj_title where class_id =  order by title_sort asc,title_id asc
+[2018-04-20 16:59:36] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=102665] ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ']' at line 1
+select goods_param,gc_id from zmkj_goods where goods_id = 102665]
+[2018-04-20 16:59:36] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=102665] ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by title_sort asc,title_id asc' at line 1
+select * from zmkj_title where class_id =  order by title_sort asc,title_id asc

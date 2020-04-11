@@ -1,0 +1,60 @@
+[2016-10-17 07:23:28] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1476660208' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-17 14:03:29] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-81' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','81','1476684209','630','593','598','630')
+[2016-10-17 14:03:44] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-17 14:03:44] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'reciver_name' cannot be null
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('','1108','',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-17 14:04:12] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-17 14:04:12] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'reciver_name' cannot be null
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('','1109','',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-17 14:04:41] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-17 14:04:41] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'reciver_name' cannot be null
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('','1110','',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-17 14:33:43] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:33:43] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:34:35] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:34:44] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:34:52] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:34:57] /mobile/index.php?act=goods&op=goods_list&gc_id=1128&page=10&curpage=1&gc_id=1128 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:36:54] /mobile/index.php?act=goods&op=goods_list&gc_id=1103&page=10&curpage=1&gc_id=1103 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:37:33] /mobile/index.php?act=goods&op=goods_list&gc_id=1103&page=10&curpage=1&gc_id=1103 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-10-17 14:52:15] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-17 14:52:15] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'reciver_name' cannot be null
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('','1111','',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-17 14:59:49] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-81' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','81','1476687589','630','593','598','630')
+[2016-10-17 16:19:29] /shop/index.php ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '231-57' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('231','57','1476692369','630','593','598','630')

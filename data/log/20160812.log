@@ -1,0 +1,39 @@
+[2016-08-12 09:16:42] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('phone_568754787','aaaaa','594f803b380a41396ed63dca39503542','568754787','775776','66646855','86468566777','1')
+[2016-08-12 09:42:24] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18010169346','aaaaaa','0b4e7a0e5fe84ad35fb5f95b9ceeac79','18010169346','764666','65576','5456467','1')
+[2016-08-12 10:09:24] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'member_password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,member_password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18010169346','asffffgg','0b4e7a0e5fe84ad35fb5f95b9ceeac79','18010169346','873737738382','6728828283838','717177383849','1')
+[2016-08-12 10:09:31] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'member_password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,member_password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18010169346','asffffgg','0b4e7a0e5fe84ad35fb5f95b9ceeac79','18010169346','873737738382','6728828283838','717177383849','1')
+[2016-08-12 10:25:56] /circle/index.php?act=circle&op=membcircle ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '37' ) LIMIT 1000  
+[2016-08-12 10:29:33] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '37' ) LIMIT 1000  
+[2016-08-12 10:29:46] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'member_password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,member_password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18045173824','456789','96e79218965eb72c92a549dd5a330112','18045173824','1111111111111','1','1','1')
+[2016-08-12 10:31:22] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'member_password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,member_password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18045173824','456789','96e79218965eb72c92a549dd5a330112','18045173824','1111111111111','1','1','1')
+[2016-08-12 10:31:35] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'member_password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,member_password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18045173824','456789','96e79218965eb72c92a549dd5a330112','18045173824','1111111111111','1','12354','1')
+[2016-08-12 10:35:52] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '37' ) LIMIT 1000  
+[2016-08-12 10:36:56] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'member_password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,member_password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18045173824','456789','96e79218965eb72c92a549dd5a330112','18045173824','1111111111111','15652468','12354','1')
+[2016-08-12 10:40:17] /shop/index.php?act=master&op=registe ( act=master&op=registe ) 
+ERR: Db Error: Unknown column 'member_password' in 'field list'
+INSERT  INTO `zmkj_member` (member_name,member_truename,member_password,member_mobile,moneycard,card,member_qq,is_master) VALUES ('18045173824','456789','96e79218965eb72c92a549dd5a330112','18045173824','1111111111111','15652468','12354','1')
+[2016-08-12 10:40:20] /circle/index.php ( act=circle&op=membcircle ) 
+ERR: Db Error: Unknown column 'el_itemid' in 'where clause'
+SELECT * FROM `zmkj_circle_theme` WHERE ( el_itemid LIKE '%3%' ) AND ( member_id = '37' ) LIMIT 1000  

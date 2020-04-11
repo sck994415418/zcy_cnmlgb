@@ -1,0 +1,99 @@
+[2018-04-15 04:55:59] /shop/index.php?act=goods&goods_id=102582&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102582' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 06:11:30] /shop/index.php?act=goods&goods_id=102596&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102596' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 08:37:30] /shop/index.php?act=goods&goods_id=100885&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100885' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 08:37:33] /shop/index.php?act=goods&goods_id=102391&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102391' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 08:37:35] /shop/index.php?act=goods&goods_id=100647&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100647' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 09:22:53] /admin/index.php?act=type1&op=type1_add ( act=type1&op=type1_add ) 
+ERR: Db Error: Unknown column 'type_id' in 'field list'
+INSERT INTO `zmkj_type1` (`type1_name`,`type1_sort`,`type_id`,`type_name`) VALUES('测试333','0','42','打印机')
+[2018-04-15 09:23:24] /admin/index.php?act=type1&op=type1_add ( act=type1&op=type1_add ) 
+ERR: Db Error: Unknown column 'type_id' in 'field list'
+INSERT INTO `zmkj_type1` (`type1_name`,`type1_sort`,`type_id`,`type_name`) VALUES('主体111111','0','','')
+[2018-04-15 10:35:28] /shop/index.php?act=goods&op=comments_list&goods_id=102603 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102603' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 11:57:53] /shop/index.php?act=store_goods_add&op=extendSpec&goods_id=103116 ( act=store_goods_add&op=extendspec ) 
+ERR: Db Error: Unknown column 'goods_ext_spec' in 'field list'
+select goods_ext_spec from zmkj_goods where goods_id = 103116
+[2018-04-15 11:57:53] /shop/index.php?act=store_goods_add&op=extendSpec&goods_id=103116 ( act=store_goods_add&op=extendspec ) 
+ERR: Db Error: Table 'api.zmkj_type1' doesn't exist
+select * from zmkj_type1 where type_id = 59
+[2018-04-15 12:26:55] /shop/index.php?act=goods&op=extendSpec&goods_id=102837&store_id=51&vr=0 ( act=goods&op=extendspec ) 
+ERR: Db Error: Unknown column 'goods_ext_spec' in 'field list'
+select goods_ext_spec from zmkj_goods where goods_id = 102837
+[2018-04-15 13:51:15] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=103116 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: Unknown column 'title_sort' in 'order clause'
+select goods_param,gc_id from zmkj_goods where goods_id = 103116 order by title_sort asc,title_id asc
+[2018-04-15 13:51:15] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=103116 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select * from zmkj_title where class_id = 
+[2018-04-15 13:52:41] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=103117 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: Unknown column 'title_sort' in 'order clause'
+select goods_param,gc_id from zmkj_goods where goods_id = 103117 order by title_sort asc,title_id asc
+[2018-04-15 13:52:41] /shop/index.php?act=store_goods_add&op=goodsParam&goods_id=103117 ( act=store_goods_add&op=goodsparam ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+select * from zmkj_title where class_id = 
+[2018-04-15 14:10:08] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";s:7:"'value'";s:6:"小型";}s:6:"包装";a:2:{s:6:"'name'";s' at line 1
+update zmkj_goods  set goods_ext_spec = 'a:2:{s:6:"主体";a:2:{s:6:"'name'";s:6:"主体";s:7:"'value'";s:6:"小型";}s:6:"包装";a:2:{s:6:"'name'";s:6:"包装";s:7:"'value'";s:3:"无";}}' where goods_id = 103117
+[2018-04-15 14:15:48] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";}s:6:"包装";a:1:{s:6:"'name'";s:6:"包装";}}' where goods' at line 1
+update zmkj_goods  set goods_param = 'a:2:{s:6:"主体";a:1:{s:6:"'name'";s:6:"主体";}s:6:"包装";a:1:{s:6:"'name'";s:6:"包装";}}' where goods_id = 103117
+[2018-04-15 14:16:56] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";s:7:"'value'";s:3:"小";}s:6:"包装";a:2:{s:6:"'name'";s:6:' at line 1
+update zmkj_goods set goods_param = 'a:2:{s:6:"主体";a:2:{s:6:"'name'";s:6:"主体";s:7:"'value'";s:3:"小";}s:6:"包装";a:2:{s:6:"'name'";s:6:"包装";s:7:"'value'";s:3:"无";}}' where goods_id = 103117
+[2018-04-15 14:19:30] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s' at line 1
+update zmkj_goods set goods_param = 'a:2:{s:6:"主体";a:2:{s:6:"'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s:6:"包装";s:7:"'value'";s:3:"无";}}' where goods_id = 103117
+[2018-04-15 14:19:56] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s' at line 1
+update zmkj_goods set goods_param = 'a:2:{s:6:"主体";a:2:{s:6:"'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s:6:"包装";s:7:"'value'";s:3:"无";}}' where goods_id = 103117
+[2018-04-15 14:20:07] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s' at line 1
+update zmkj_goods set goods_param = 'a:2:{s:6:"主体";a:2:{s:6:"'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s:6:"包装";s:7:"'value'";s:3:"无";}}' where goods_id = 103117
+[2018-04-15 14:24:50] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s' at line 1
+update zmkj_goods set goods_param = 'a:2:{s:6:"主体";a:2:{s:6:"'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s:6:"包装";s:7:"'value'";s:3:"无";}}' where goods_id = 103117
+[2018-04-15 14:24:57] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s' at line 1
+update zmkj_goods set goods_param = 'a:2:{s:6:"主体";a:2:{s:6:"'name'";s:6:"主体";s:7:"'value'";s:6:"白色";}s:6:"包装";a:2:{s:6:"'name'";s:6:"包装";s:7:"'value'";s:3:"无";}}' where goods_id = 103117
+[2018-04-15 14:26:07] /shop/index.php?act=store_goods_add&op=spec_save&goods_id=103117 ( act=store_goods_add&op=spec_save ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'":"\u4e3b\u4f53","'value'":"\u767d\u8272"},"\u5305\u88c5":{"'name'":"\u5305' at line 1
+update zmkj_goods set goods_param = '{"\u4e3b\u4f53":{"'name'":"\u4e3b\u4f53","'value'":"\u767d\u8272"},"\u5305\u88c5":{"'name'":"\u5305\u88c5","'value'":"\u65e0"}}' where goods_id = 103117
+[2018-04-15 16:33:40] /shop/index.php?act=goods&op=extendSpec&goods_id=103119&store_id=51&vr=0 ( act=goods&op=extendspec ) 
+ERR: Db Error: Unknown column 'goods_ext_spec' in 'field list'
+select goods_ext_spec from zmkj_goods where goods_id = 103119
+[2018-04-15 17:38:10] /shop/index.php?act=goods&op=comments_list&goods_id=101331 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101331' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 20:33:00] /shop/index.php?act=goods&goods_id=101061&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101061' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 20:33:03] /shop/index.php?act=goods&goods_id=102069&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102069' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 20:33:04] /shop/index.php?act=goods&goods_id=101949&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101949' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 20:33:11] /shop/index.php?act=goods&goods_id=101438&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101438' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 20:33:31] /shop/index.php?act=goods&goods_id=101354&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101354' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 20:33:32] /shop/index.php?act=goods&goods_id=100541&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '100541' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-15 23:43:59] /shop/index.php?act=goods&goods_id=102854&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102854' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

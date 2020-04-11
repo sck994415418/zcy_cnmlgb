@@ -1,0 +1,156 @@
+[2018-05-08 04:53:39] /shop/index.php?act=goods&op=comments_list&goods_id=103014 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103014' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 05:29:27] /shop/index.php?act=goods&op=comments_list&goods_id=103060 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103060' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 06:36:19] /shop/index.php?act=goods&op=comments_list&goods_id=103130 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103130' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 06:38:25] /shop/index.php?act=goods&op=comments_list&goods_id=103129 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103129' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 08:41:53] /shop/index.php?act=goods&op=comments_list&goods_id=103020 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103020' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 09:02:26] /shop/index.php?act=goods&op=comments_list&goods_id=103008 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103008' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 09:27:07] /shop/index.php?act=store_goods_online&op=edit_save_goods&inajax=1 ( act=store_goods_online&op=edit_save_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+UPDATE `zmkj_goods` SET goods_commonid='101795',goods_name='晨光 大号重型订书机 可订200/100页加长杠杆装订器 金属 黑色 ABS92815',goods_jingle='',store_id='51',store_name='河北诺融网络科技有限公司',gc_id='1318',gc_id_1='3',gc_id_2='1311',gc_id_3='1318',brand_id='374',goods_price='176.00',goods_marketprice='188.00',goods_serial='',goods_storage_alarm='0',goods_spec='a:3:{i:608;s:6:\"金属\";i:2604;s:6:\"黑色\";i:2605;s:8:\"ABS92815\";}',goods_storage='1000',goods_state='1',goods_verify='1',goods_edittime='1525742827',areaid_1='0',areaid_2='0',color_id='0',transport_id='0',goods_freight='0',goods_vat='0',goods_commend='1',goods_stcids='',is_virtual='0',virtual_indate='0',virtual_limit='0',virtual_invalid_refund='0',is_fcode='0',is_appoint='0',is_presell='0',vipprice='10',gjprice='12',is_own_shop='0' WHERE ( goods_id IN ('103633') )
+[2018-05-08 09:27:07] /shop/index.php?act=store_goods_online&op=edit_save_goods&inajax=1 ( act=store_goods_online&op=edit_save_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+UPDATE `zmkj_goods_common` SET goods_name='晨光 大号重型订书机 可订200/100页加长杠杆装订器',goods_jingle='',gc_id='1318',gc_id_1='3',gc_id_2='1311',gc_id_3='1318',gc_name='办公用品 &gt;桌面文具 &gt;订书机/订书钉/起订器',brand_id='374',brand_name='晨光',type_id='76',goods_image='2018/05/51_05788562838725606.png',goods_price='176',goods_marketprice='188',goods_costprice='0',goods_discount='93',goods_serial='',goods_storage_alarm='0',goods_attr='a:4:{i:278;a:2:{s:4:\"name\";s:12:\"商品名称\";i:3271;s:66:\"晨光 大号重型订书机 可订200/100页加长杠杆装订器\";}i:280;a:2:{s:4:\"name\";s:12:\"商品毛重\";i:3273;s:7:\"500.00g\";}i:281;a:2:{s:4:\"name\";s:12:\"商品产地\";i:3274;s:6:\"中国\";}i:407;a:2:{s:4:\"name\";s:12:\"适用场景\";i:3400;s:6:\"居家\";}}',goods_body='<img src=\"http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/05/51_05788563246279464_1280.jpg\" alt=\"image\" /><img src=\"http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/05/51_05788563249568173_1280.jpg\" alt=\"image\" /><img src=\"http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/05/51_05788563250874805_1280.jpg\" alt=\"image\" /><img src=\"http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/05/51_05788563248235393_1280.jpg\" alt=\"image\" /><img src=\"http://www.nrwspt.com/data/upload/shop/store/goods/51/2018/05/51_05788563252231685_1280.jpg\" alt=\"image\" />',mobile_body='',goods_commend='1',goods_state='1',goods_selltime='0',goods_verify='1',spec_name='a:3:{i:38;s:6:\"材质\";i:46;s:6:\"颜色\";i:55;s:6:\"型号\";}',spec_value='a:3:{i:38;a:1:{i:608;s:6:\"金属\";}i:46;a:1:{i:2604;s:6:\"黑色\";}i:55;a:1:{i:2605;s:8:\"ABS92815\";}}',goods_vat='0',areaid_1='0',areaid_2='0',transport_id='0',transport_title='',goods_freight='0',vipprice='10',gjprice='12',goods_stcids='',plateid_top='',plateid_bottom='',is_virtual='0',virtual_indate='0',virtual_limit='0',virtual_invalid_refund='0',is_fcode='0',is_appoint='0',appoint_satedate='',is_presell='0',presell_deliverdate='',is_own_shop='0' WHERE ( goods_commonid IN ('101795') )
+[2018-05-08 09:27:18] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:27:26] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:27:32] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101795 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101795' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:27:41] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101796 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101796' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:27:49] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101799 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101799' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:27:58] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101793 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101793' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:28:13] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101801 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101801' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:28:21] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101791 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101791' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:28:27] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101793 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101793' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:28:35] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101790 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101790' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:28:47] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101801 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101801' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:28:55] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:15] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101798 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101798' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:20] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:26] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:32] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101798 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101798' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:33] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:34] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101801 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101801' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:40] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101790 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101790' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:43] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101793 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101793' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:49] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101791 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101791' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:50] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101801 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101801' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:51] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101793 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101793' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:51] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101799 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101799' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:52] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101796 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101796' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:52] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101795 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101795' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:53] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:55] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101797 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101797' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:57] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101795 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101795' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:29:58] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101801 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101801' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:30:07] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101801 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101801' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:30:13] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101795 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101795' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:30:59] /shop/index.php?act=store_goods_online&op=edit_goods&commonid=101795 ( act=store_goods_online&op=edit_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+SELECT goods_id,goods_commonid,goods_marketprice,goods_price,goods_storage,goods_serial,goods_storage_alarm,goods_spec,vipprice,gjprice FROM `zmkj_goods` WHERE ( goods_commonid = '101795' ) AND ( store_id = '51' ) LIMIT 1000  
+[2018-05-08 09:41:44] /shop/index.php?act=store_goods_online&op=edit_save_goods&inajax=1 ( act=store_goods_online&op=edit_save_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+UPDATE `zmkj_goods_common` SET goods_name='测试商品',goods_jingle='',gc_id='1603',gc_id_1='662',gc_id_2='1602',gc_id_3='1603',gc_name='办公家具 &gt;办公桌 &gt;实木班台',brand_id='0',brand_name='',type_id='65',goods_image='2018/05/51_05790028928431799.png',goods_price='11',goods_marketprice='1000',goods_costprice='0',goods_discount='1',goods_serial='',goods_storage_alarm='0',goods_attr='N;',goods_body='',mobile_body='',goods_commend='1',goods_state='1',goods_selltime='0',goods_verify='1',spec_name='a:2:{i:51;s:6:\"规格\";i:53;s:6:\"材质\";}',spec_value='a:2:{i:51;a:2:{i:2618;s:7:\"测试1\";i:2619;s:7:\"测试2\";}i:53;a:2:{i:2620;s:7:\"测试3\";i:2621;s:7:\"测试4\";}}',goods_vat='0',areaid_1='0',areaid_2='0',transport_id='0',transport_title='',goods_freight='0',vipprice='12',gjprice='13',goods_stcids='',plateid_top='',plateid_bottom='',is_virtual='0',virtual_indate='0',virtual_limit='0',virtual_invalid_refund='0',is_fcode='0',is_appoint='0',appoint_satedate='',is_presell='0',presell_deliverdate='',is_own_shop='0' WHERE ( goods_commonid IN ('101802') )
+[2018-05-08 09:42:20] /shop/index.php?act=store_goods_online&op=edit_save_goods&inajax=1 ( act=store_goods_online&op=edit_save_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+UPDATE `zmkj_goods_common` SET goods_name='测试商品',goods_jingle='',gc_id='1603',gc_id_1='662',gc_id_2='1602',gc_id_3='1603',gc_name='办公家具 &gt;办公桌 &gt;实木班台',brand_id='0',brand_name='',type_id='65',goods_image='2018/05/51_05790028928431799.png',goods_price='11',goods_marketprice='1000',goods_costprice='0',goods_discount='1',goods_serial='',goods_storage_alarm='0',goods_attr='N;',goods_body='',mobile_body='',goods_commend='1',goods_state='1',goods_selltime='0',goods_verify='1',spec_name='a:2:{i:51;s:6:\"规格\";i:53;s:6:\"材质\";}',spec_value='a:2:{i:51;a:2:{i:2618;s:7:\"测试1\";i:2619;s:7:\"测试2\";}i:53;a:2:{i:2620;s:7:\"测试3\";i:2621;s:7:\"测试4\";}}',goods_vat='0',areaid_1='0',areaid_2='0',transport_id='0',transport_title='',goods_freight='0',vipprice='11',gjprice='12',goods_stcids='',plateid_top='',plateid_bottom='',is_virtual='0',virtual_indate='0',virtual_limit='0',virtual_invalid_refund='0',is_fcode='0',is_appoint='0',appoint_satedate='',is_presell='0',presell_deliverdate='',is_own_shop='0' WHERE ( goods_commonid IN ('101802') )
+[2018-05-08 09:47:53] /shop/index.php?act=store_goods_online&op=edit_save_goods&inajax=1 ( act=store_goods_online&op=edit_save_goods ) 
+ERR: Db Error: Unknown column 'vipprice' in 'field list'
+UPDATE `zmkj_goods_common` SET goods_name='测试商品',goods_jingle='',gc_id='1603',gc_id_1='662',gc_id_2='1602',gc_id_3='1603',gc_name='办公家具 &gt;办公桌 &gt;实木班台',brand_id='0',brand_name='',type_id='65',goods_image='2018/05/51_05790028928431799.png',goods_price='11',goods_marketprice='1000',goods_costprice='0',goods_discount='1',goods_serial='',goods_storage_alarm='0',goods_attr='N;',goods_body='',mobile_body='',goods_commend='1',goods_state='1',goods_selltime='0',goods_verify='1',spec_name='a:2:{i:51;s:6:\"规格\";i:53;s:6:\"材质\";}',spec_value='a:2:{i:51;a:2:{i:2618;s:7:\"测试1\";i:2619;s:7:\"测试2\";}i:53;a:2:{i:2620;s:7:\"测试3\";i:2621;s:7:\"测试4\";}}',goods_vat='0',areaid_1='0',areaid_2='0',transport_id='0',transport_title='',goods_freight='0',vipprice='10',gjprice='17',goods_stcids='',plateid_top='',plateid_bottom='',is_virtual='0',virtual_indate='0',virtual_limit='0',virtual_invalid_refund='0',is_fcode='0',is_appoint='0',appoint_satedate='',is_presell='0',presell_deliverdate='',is_own_shop='0' WHERE ( goods_commonid IN ('101802') )
+[2018-05-08 09:49:06] /shop/index.php?act=goods&op=comments_list&goods_id=103063 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103063' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 09:57:58] /shop/index.php?act=goods&op=comments_list&goods_id=103057 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103057' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 10:43:18] /shop/index.php?act=goods&op=comments_list&goods_id=103023 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103023' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 10:56:56] /shop/index.php?act=goods&op=comments_list&goods_id=103032 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103032' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 11:13:32] /shop/index.php?act=goods&op=comments_list&goods_id=102931 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102931' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 11:52:45] /shop/index.php?act=goods&op=comments_list&goods_id=103635 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103635' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 16:42:59] /shop/index.php?act=goods&op=comments_list&goods_id=102792 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102792' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-08 18:04:57] /shop/index.php?act=goods&goods_id=102610&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102610' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

@@ -1,0 +1,21 @@
+[2018-04-13 05:01:59] /shop/index.php?act=goods&op=comments_list&goods_id=101351 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101351' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-13 09:35:09] /shop/index.php?act=goods&goods_id=101354&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101354' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-13 11:37:30] /shop/index.php?act=goods&op=comments_list&goods_id=101777 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101777' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-13 13:09:17] /shop/index.php?act=goods&op=comments_list&goods_id=101574 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101574' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-13 14:34:09] /admin/index.php?act=type&op=type_add ( act=type&op=type_add ) 
+ERR: Db Error: Unknown column 'input_type' in 'field list'
+INSERT INTO `zmkj_attribute` (`attr_name`,`attr_value`,`type_id`,`attr_sort`,`attr_show`,`input_type`) VALUES('wewew','12','82','0','1','')
+[2018-04-13 14:34:09] /admin/index.php?act=type&op=type_add ( act=type&op=type_add ) 
+ERR: Db Error: Unknown column 'input_type' in 'field list'
+INSERT INTO `zmkj_attribute` (`attr_name`,`attr_value`,`type_id`,`attr_sort`,`attr_show`,`input_type`) VALUES('ewew','36','82','0','1','')
+[2018-04-13 15:19:50] /shop/index.php?act=goods&goods_id=102547&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102547' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

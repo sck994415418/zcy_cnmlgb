@@ -1,0 +1,81 @@
+[2016-07-23 11:24:11] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469244251','1126','1124','1125','1126')
+[2016-07-23 11:26:10] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-23 11:26:11] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=ddc0178f10ca714122fe38a5b5a76113 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469244371' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-23 11:57:28] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469246248','1126','1124','1125','1126')
+[2016-07-23 13:52:50] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469253170','1126','1124','1125','1126')
+[2016-07-23 14:04:48] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-23 14:04:49] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=ddc0178f10ca714122fe38a5b5a76113 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469253889' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-23 15:06:30] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-23 15:06:31] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=ddc0178f10ca714122fe38a5b5a76113 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469257591' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-23 15:07:30] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257650','1126','1124','1125','1126')
+[2016-07-23 15:07:54] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257674','1126','1124','1125','1126')
+[2016-07-23 15:08:37] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257717','1126','1124','1125','1126')
+[2016-07-23 15:09:46] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257786','1126','1124','1125','1126')
+[2016-07-23 15:10:31] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257831','1126','1124','1125','1126')
+[2016-07-23 15:10:33] /shop/index.php?act=mobile&op=storegoods ( act=mobile&op=storegoods ) 
+ERR: Db Error: Unknown column 'good_commend' in 'where clause'
+SELECT * FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( good_commend = '1' ) LIMIT 1000  
+[2016-07-23 15:11:03] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257863','1126','1124','1125','1126')
+[2016-07-23 15:11:37] /shop/index.php?act=mobile&op=storegoods ( act=mobile&op=storegoods ) 
+ERR: Db Error: Unknown column 'good_commend' in 'where clause'
+SELECT * FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( good_commend = '1' ) LIMIT 1000  
+[2016-07-23 15:12:24] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257944','1126','1124','1125','1126')
+[2016-07-23 15:12:28] /shop/index.php?act=mobile&op=storegoods ( act=mobile&op=storegoods ) 
+ERR: Db Error: Unknown column 'good_commend' in 'where clause'
+SELECT * FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( good_commend = '1' ) LIMIT 1000  
+[2016-07-23 15:13:18] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469257998','1126','1124','1125','1126')
+[2016-07-23 15:13:20] /shop/index.php?act=mobile&op=storegoods ( act=mobile&op=storegoods ) 
+ERR: Db Error: Unknown column 'good_commend' in 'where clause'
+SELECT * FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( good_commend = '1' ) LIMIT 1000  
+[2016-07-23 15:13:47] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469258027','1126','1124','1125','1126')
+[2016-07-23 15:13:49] /shop/index.php?act=mobile&op=storegoods ( act=mobile&op=storegoods ) 
+ERR: Db Error: Unknown column 'good_commend' in 'where clause'
+SELECT * FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( good_commend = '1' ) LIMIT 1000  
+[2016-07-23 15:14:42] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469258082','1126','1124','1125','1126')
+[2016-07-23 15:14:46] /shop/index.php?act=mobile&op=storegoods ( act=mobile&op=storegoods ) 
+ERR: Db Error: Unknown column 'good_commend' in 'where clause'
+SELECT * FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( good_commend = '1' ) LIMIT 1000  
+[2016-07-23 15:15:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-19' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','19','1469258143','1126','1124','1125','1126')
+[2016-07-23 15:15:50] /shop/index.php?act=mobile&op=storegoods ( act=mobile&op=storegoods ) 
+ERR: Db Error: Unknown column 'good_commend' in 'where clause'
+SELECT * FROM `zmkj_goods` WHERE ( store_id = '1' ) AND ( good_commend = '1' ) LIMIT 1000  

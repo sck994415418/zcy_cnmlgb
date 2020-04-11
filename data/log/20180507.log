@@ -1,0 +1,144 @@
+[2018-05-07 11:36:15] /shop/index.php?act=goods&goods_id=103581&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103581' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 12:25:04] /shop/index.php?act=goods&op=comments_list&goods_id=103007 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103007' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 12:25:07] /shop/index.php?act=goods&op=comments_list&goods_id=102931 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102931' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 13:38:16] /shop/index.php?act=goods&goods_id=103575&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103575' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 15:46:39] /admin/index.php?act=member_shenfen&op=index ( act=member_shenfen&op=index ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 1  
+[2018-05-07 15:46:39] /admin/index.php?act=member_shenfen&op=index ( act=member_shenfen&op=index ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT * FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 0,10  
+[2018-05-07 15:48:27] /admin/index.php?act=member_shenfen&op=index ( act=member_shenfen&op=index ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 1  
+[2018-05-07 15:48:27] /admin/index.php?act=member_shenfen&op=index ( act=member_shenfen&op=index ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT * FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 0,10  
+[2018-05-07 15:51:48] /shop/index.php?act=goods&goods_id=103582&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103582' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 15:57:46] /admin/index.php?act=member_shenfen&op=index ( act=member_shenfen&op=index ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 1  
+[2018-05-07 15:57:46] /admin/index.php?act=member_shenfen&op=index ( act=member_shenfen&op=index ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT * FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 0,10  
+[2018-05-07 15:57:50] /admin/index.php?act=member_shenfen&op=member_shenfen ( act=member_shenfen&op=member_shenfen ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 1  
+[2018-05-07 15:57:50] /admin/index.php?act=member_shenfen&op=member_shenfen ( act=member_shenfen&op=member_shenfen ) 
+ERR: Db Error: Table 'api.zmkj_mshenfen' doesn't exist
+SELECT * FROM `zmkj_mshenfen` ORDER BY mshenfen_sort asc LIMIT 0,10  
+[2018-05-07 16:16:37] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=-2 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_member` WHERE ( mshenfen_id = '0' ) LIMIT 1  
+[2018-05-07 16:16:37] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=-2 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( mshenfen_id = '0' ) ORDER BY member_id desc LIMIT 0,10  
+[2018-05-07 16:18:11] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=-2 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_member` WHERE ( mshenfen_id = '0' ) LIMIT 1  
+[2018-05-07 16:18:11] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=-2 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( mshenfen_id = '0' ) ORDER BY member_id desc LIMIT 0,10  
+[2018-05-07 16:22:32] /admin/index.php?act=member_shenfen&op=shenfen_add ( act=member_shenfen&op=shenfen_add ) 
+ERR: Db Error: Duplicate entry '0' for key 'PRIMARY'
+INSERT  INTO `zmkj_mshenfen` (mshenfen_name,mshenfen_sort,is_show,mshenfen_time) VALUES ('VIP会员','0','1','1525681352')
+[2018-05-07 16:22:39] /admin/index.php?act=member_shenfen&op=shenfen_add ( act=member_shenfen&op=shenfen_add ) 
+ERR: Db Error: Duplicate entry '0' for key 'PRIMARY'
+INSERT  INTO `zmkj_mshenfen` (mshenfen_name,mshenfen_sort,is_show,mshenfen_time) VALUES ('高级会员','0','1','1525681359')
+[2018-05-07 16:22:45] /admin/index.php?act=member_shenfen&op=shenfen_add ( act=member_shenfen&op=shenfen_add ) 
+ERR: Db Error: Duplicate entry '0' for key 'PRIMARY'
+INSERT  INTO `zmkj_mshenfen` (mshenfen_name,mshenfen_sort,is_show,mshenfen_time) VALUES ('高级会员','0','1','1525681365')
+[2018-05-07 16:28:25] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=1 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_member` WHERE ( mshenfen_id = '1' ) LIMIT 1  
+[2018-05-07 16:28:25] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=1 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( mshenfen_id = '1' ) ORDER BY member_id desc LIMIT 0,10  
+[2018-05-07 16:28:28] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=-2 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_member` WHERE ( mshenfen_id = '0' ) LIMIT 1  
+[2018-05-07 16:28:28] /admin/index.php?act=member&op=member&search_field_name=member_name&search_field_value=&search_sort=&search_state=&search_grade=-1&is_master=-1&mshenfen_id=-2 ( act=member&op=member ) 
+ERR: Db Error: Unknown column 'mshenfen_id' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( mshenfen_id = '0' ) ORDER BY member_id desc LIMIT 0,10  
+[2018-05-07 17:59:54] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=3 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_price='15.60',goods_num='6' WHERE ( goods_id = '102817' )
+[2018-05-07 18:00:24] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=3 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_price='15.60',goods_num='6' WHERE ( goods_id = '102817' )
+[2018-05-07 18:00:32] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=3 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_price='15.60',goods_num='6' WHERE ( goods_id = '102817' )
+[2018-05-07 18:02:04] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=1 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_price='15.60',goods_num='4' WHERE ( goods_id = '273' )
+[2018-05-07 18:02:18] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=2 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_price='15.60',goods_num='5' WHERE ( goods_id = '273' )
+[2018-05-07 18:02:24] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=3 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_price='15.60',goods_num='6' WHERE ( goods_id = '273' )
+[2018-05-07 18:03:23] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=1 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_num='4' WHERE ( goods_id = '273' )
+[2018-05-07 18:03:29] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=1 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_num='4' WHERE ( goods_id = '273' )
+[2018-05-07 18:04:34] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=1 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_num='4' WHERE ( cart_id = '273' )
+[2018-05-07 18:04:41] /shop/index.php?act=cart&op=add&goods_id=102817&quantity=4 ( act=cart&op=add ) 
+ERR: Db Error: Table 'api.zmkj_' doesn't exist
+UPDATE `zmkj_` SET goods_num='7' WHERE ( cart_id = '273' )
+[2018-05-07 20:06:22] /shop/index.php?act=goods&goods_id=103589&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103589' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:33:19] /shop/index.php?act=goods&op=comments_list&goods_id=103032 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103032' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:33:24] /shop/index.php?act=goods&op=comments_list&goods_id=103063 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103063' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:33:43] /shop/index.php?act=goods&op=comments_list&goods_id=103008 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103008' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:33:51] /shop/index.php?act=goods&op=comments_list&goods_id=103020 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103020' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:33:58] /shop/index.php?act=goods&op=comments_list&goods_id=103035 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103035' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:34:06] /shop/index.php?act=goods&op=comments_list&goods_id=102983 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102983' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:34:11] /shop/index.php?act=goods&op=comments_list&goods_id=103060 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103060' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:34:14] /shop/index.php?act=goods&op=comments_list&goods_id=103005 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103005' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:34:19] /shop/index.php?act=goods&op=comments_list&goods_id=103068 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103068' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:34:21] /shop/index.php?act=goods&op=comments_list&goods_id=103023 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103023' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:34:24] /shop/index.php?act=goods&op=comments_list&goods_id=102825 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '102825' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 20:34:28] /shop/index.php?act=goods&op=comments_list&goods_id=103014 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103014' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-05-07 21:44:04] /shop/index.php?act=goods&op=comments_list&goods_id=103635 ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '103635' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

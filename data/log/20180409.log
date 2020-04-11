@@ -1,0 +1,9 @@
+[2018-04-09 15:39:29] /admin/index.php?act=type&op=type_add ( act=type&op=type_add ) 
+ERR: Db Error: Unknown column 'input_type' in 'field list'
+INSERT INTO `zmkj_attribute` (`attr_name`,`attr_value`,`type_id`,`attr_sort`,`attr_show`,`input_type`) VALUES('ceshi1','shi,fou','80','0','1','')
+[2018-04-09 17:08:21] /shop/index.php?act=goods&goods_id=101433&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101433' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  
+[2018-04-09 17:08:21] /shop/index.php?act=goods&goods_id=101034&op=comments_list ( act=goods&op=comments_list ) 
+ERR: Db Error: Unknown column 'geval_image_again' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_evaluate_goods` WHERE ( geval_goodsid = '101034' ) AND ( (geval_image <> '') OR (geval_image_again <> '') ) LIMIT 1  

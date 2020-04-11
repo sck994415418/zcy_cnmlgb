@@ -1,0 +1,57 @@
+[2016-07-01 08:54:41] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=48c519f91ca6f566877929202a63b095 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467334481' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-01 08:54:49] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=48c519f91ca6f566877929202a63b095 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467334489' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-01 09:04:40] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 09:04:40] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'96804468460e540d7c76763af5b8a36e','1467335080',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'96804468460e540d7c76763af5b8a36e','1467335080',NULL)
+[2016-07-01 09:06:05] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 09:06:05] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'b7273d331fd05395e1d4dd1448b8312a','1467335165',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'b7273d331fd05395e1d4dd1448b8312a','1467335165',NULL)
+[2016-07-01 09:13:27] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 09:13:27] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'850b6a42b210f8103cf1bda6f65ece5b','1467335607',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'850b6a42b210f8103cf1bda6f65ece5b','1467335607',NULL)
+[2016-07-01 16:12:54] /mobile/index.php?act=goods&op=goods_detail&goods_id=100058&key=48c519f91ca6f566877929202a63b095 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1467360774' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-01 16:47:01] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 16:47:01] /shop/index.php?act=mobile&op=register ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'9de0421951ebdb2866a24ffedef5d22c','1467362821',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'9de0421951ebdb2866a24ffedef5d22c','1467362821',NULL)
+[2016-07-01 16:52:59] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 16:52:59] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'5825475e370f05217b6e616937ac1626','1467363179',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'5825475e370f05217b6e616937ac1626','1467363179',NULL)
+[2016-07-01 16:55:33] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 16:55:33] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'c22005fc5410faa0d85bbbc96cae94fb','1467363333',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'c22005fc5410faa0d85bbbc96cae94fb','1467363333',NULL)
+[2016-07-01 16:55:35] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 16:55:35] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'9123ec9c740af5b3303a7e462d193ee3','1467363335',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'9123ec9c740af5b3303a7e462d193ee3','1467363335',NULL)
+[2016-07-01 16:55:36] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: Column 'member_name' cannot be null
+INSERT  INTO `zmkj_member` (member_name,member_passwd,member_email) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e',NULL)
+[2016-07-01 16:55:36] /shop/index.php?act=mobile&op=register&username=11 ( act=mobile&op=register ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,'f6b9138dde397208facb5179769f0b6e','1467363336',NULL)' at line 1
+INSERT  INTO `zmkj_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (,NULL,'f6b9138dde397208facb5179769f0b6e','1467363336',NULL)

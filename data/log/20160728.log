@@ -1,0 +1,45 @@
+[2016-07-28 09:14:45] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=990cd6bb645e42077a3f48efd5698847 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469668485' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-28 09:14:50] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-28 09:31:43] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-28 09:46:15] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-28 09:47:26] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=990cd6bb645e42077a3f48efd5698847 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469670446' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-28 10:02:32] /mobile/index.php?act=voucher&op=voucher_tpl_list ( act=voucher&op=voucher_tpl_list ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_store_id = '1' ) AND ( voucher_t_gettype = '3' ) ORDER BY voucher_t_id asc LIMIT 1000  
+[2016-07-28 11:13:13] /mobile/index.php?act=member_voucher&op=voucher_freeex ( act=member_voucher&op=voucher_freeex ) 
+ERR: Db Error: Column 'voucher_owner_name' cannot be null
+INSERT  INTO `zmkj_voucher` (voucher_t_id,voucher_title,voucher_desc,voucher_start_date,voucher_end_date,voucher_price,voucher_store_id,voucher_limit,voucher_state,voucher_active_date,voucher_owner_id,voucher_owner_name) VALUES ('1','11','111','1469612843','1472140800','10','1','11.00','1','1469675593','4',NULL)
+[2016-07-28 11:13:42] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=36571d3757b9c5191ab064f2d247572b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469675622' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-28 11:13:49] /mobile/index.php?act=member_voucher&op=voucher_freeex ( act=member_voucher&op=voucher_freeex ) 
+ERR: Db Error: Column 'voucher_owner_name' cannot be null
+INSERT  INTO `zmkj_voucher` (voucher_t_id,voucher_title,voucher_desc,voucher_start_date,voucher_end_date,voucher_price,voucher_store_id,voucher_limit,voucher_state,voucher_active_date,voucher_owner_id,voucher_owner_name) VALUES ('1','11','111','1469612843','1472140800','10','1','11.00','1','1469675629','4',NULL)
+[2016-07-28 11:15:41] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=36571d3757b9c5191ab064f2d247572b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469675741' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-28 11:15:48] /mobile/index.php?act=member_voucher&op=voucher_freeex ( act=member_voucher&op=voucher_freeex ) 
+ERR: Db Error: Column 'voucher_owner_name' cannot be null
+INSERT  INTO `zmkj_voucher` (voucher_t_id,voucher_title,voucher_desc,voucher_start_date,voucher_end_date,voucher_price,voucher_store_id,voucher_limit,voucher_state,voucher_active_date,voucher_owner_id,voucher_owner_name) VALUES ('2','11','111','1469670663','1469894400','10','1','11.00','1','1469675748','4',NULL)
+[2016-07-28 11:17:21] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=36571d3757b9c5191ab064f2d247572b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469675841' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-28 11:31:54] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=36571d3757b9c5191ab064f2d247572b ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469676714' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-28 15:03:01] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '4' ) LIMIT 1  
+[2016-07-28 15:03:01] /mobile/index.php?act=member_order&op=order_list&page=10&curpage=1 ( act=member_order&op=order_list ) 
+ERR: Db Error: Unknown column 'order_type' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE ( order_type = '3' ) AND ( order_state = '30' ) AND ( buyer_id = '4' ) ORDER BY order_id desc LIMIT 0,20  

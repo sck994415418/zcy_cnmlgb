@@ -1,0 +1,21 @@
+[2016-10-19 12:00:23] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'buyer_email' cannot be null
+INSERT  INTO `zmkj_order` (pay_sn,order_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,goods_amount,order_amount,shipping_fee) VALUES ('590530193623954075','8000000000112501','','诺融科技','75','18632175503',NULL,'1476849623','online','','0','0.00')
+[2016-10-19 12:00:23] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_address` WHERE address_id= LIMIT 1  
+[2016-10-19 12:00:23] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";' at line 1
+INSERT  INTO `zmkj_order_common` (store_id,order_id,order_message,voucher_price,voucher_code,reciver_info,reciver_name,daddress_id,invoice_info) VALUES ('',,'',NULL,'','a:5:{s:5:\"phone\";N;s:9:\"mob_phone\";N;s:7:\"address\";s:2:\"  \";s:4:\"area\";N;s:6:\"street\";N;}',NULL,'','不需要发票')
+[2016-10-19 12:00:23] /shop/index.php ( act=mobile&op=buystep2 ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jp' at line 1
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,goods_type,gc_id) VALUES (,'100124','得力（DELI）牛皮纸档案袋','0.10','1','1_05222615987505932.jpg',NULL,'','75','0','1098')
+[2016-10-19 14:45:35] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1476859535' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-19 15:23:34] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1476861814' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-10-19 15:23:34] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1476861814' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  

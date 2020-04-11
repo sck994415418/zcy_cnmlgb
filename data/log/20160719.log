@@ -1,0 +1,12 @@
+[2016-07-19 03:54:20] /shop/index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1468871660' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 1000  
+[2016-07-19 15:12:40] /shop/index.php?act=master&op=login ( act=master&op=login ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( member_name = '11' ) AND ( member_passwd = '96e79218965eb72c92a549dd5a330112' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-07-19 19:04:54] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: Unknown column 'master_id' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE master_id=3 LIMIT 1000  
+[2016-07-19 19:05:05] /shop/index.php?act=master&op=orderlist ( act=master&op=orderlist ) 
+ERR: Db Error: Unknown column 'master_id' in 'where clause'
+SELECT * FROM `zmkj_order` WHERE master_id=3 LIMIT 1000  

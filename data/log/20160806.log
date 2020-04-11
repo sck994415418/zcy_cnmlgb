@@ -1,0 +1,54 @@
+[2016-08-06 09:19:23] /mobile/index.php?act=goods&op=goods_detail&goods_id=100059&key=c17a29ff7e709c893d76a9f8acf1f416 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1470446363' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-08-06 14:50:23] /shop/index.php?act=repair&op=doorcost ( act=repair&op=doorcost ) 
+ERR: Db Error: Unknown column 'smcost' in 'where clause'
+SELECT * FROM `zmkj_setting` WHERE name=smcost LIMIT 1  
+[2016-08-06 14:50:25] /shop/index.php?act=repair&op=doorcost ( act=repair&op=doorcost ) 
+ERR: Db Error: Unknown column 'smcost' in 'where clause'
+SELECT * FROM `zmkj_setting` WHERE name=smcost LIMIT 1  
+[2016-08-06 14:50:26] /shop/index.php?act=repair&op=doorcost ( act=repair&op=doorcost ) 
+ERR: Db Error: Unknown column 'smcost' in 'where clause'
+SELECT * FROM `zmkj_setting` WHERE name=smcost LIMIT 1  
+[2016-08-06 14:50:27] /shop/index.php?act=repair&op=doorcost ( act=repair&op=doorcost ) 
+ERR: Db Error: Unknown column 'smcost' in 'where clause'
+SELECT * FROM `zmkj_setting` WHERE name=smcost LIMIT 1  
+[2016-08-06 14:50:27] /shop/index.php?act=repair&op=doorcost ( act=repair&op=doorcost ) 
+ERR: Db Error: Unknown column 'smcost' in 'where clause'
+SELECT * FROM `zmkj_setting` WHERE name=smcost LIMIT 1  
+[2016-08-06 15:05:45] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `zmkj_order` (buyer_id,goods_id,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES ('5',NULL,'1554414554','1470467145','1111','1','111','1','0','1')
+[2016-08-06 15:05:47] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `zmkj_order` (buyer_id,goods_id,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES ('5',NULL,'1554414554','1470467147','1111','1','111','1','0','1')
+[2016-08-06 15:05:47] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `zmkj_order` (buyer_id,goods_id,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES ('5',NULL,'1554414554','1470467147','1111','1','111','1','0','1')
+[2016-08-06 15:06:06] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `zmkj_order` (buyer_id,goods_id,apptime,add_time,address,type,tel,scost,wxstate,is_master) VALUES ('5',NULL,'1554414554','1470467166','1111','1','111','1','0','1')
+[2016-08-06 15:22:23] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','4','1470468143','1126','1124','1125','1126')
+[2016-08-06 15:39:12] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100070-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100070','4','1470469152','1126','1124','1125','1126')
+[2016-08-06 15:54:36] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'pay_sn' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES (NULL,'4')
+[2016-08-06 15:54:36] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'pay_sn' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES (NULL,'4')
+[2016-08-06 15:56:09] /shop/index.php?act=repair&op=setorder ( act=repair&op=setorder ) 
+ERR: Db Error: Column 'pay_sn' cannot be null
+INSERT  INTO `zmkj_order_pay` (pay_sn,buyer_id) VALUES (NULL,'4')
+[2016-08-06 17:41:26] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-06 19:06:12] /shop/index.php?act=master&op=myinfo ( act=master&op=myinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_member` WHERE member_id= LIMIT 1  
+[2016-08-06 20:06:21] /shop/index.php?act=promotion&gc_id=2&curpage=2 ( act=promotion&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-16,16' at line 1
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time <= '1470485181' ) AND ( end_time > '1470485181' ) AND ( gc_id_1 = '2' ) ORDER BY xianshi_goods_id desc LIMIT -16,16  

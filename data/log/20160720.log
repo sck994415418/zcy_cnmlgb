@@ -1,0 +1,93 @@
+[2016-07-20 10:33:35] /shop/index.php?act=master&op=login ( act=master&op=login ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( member_name = NULL ) AND ( member_passwd = 'd41d8cd98f00b204e9800998ecf8427e' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-07-20 10:33:57] /shop/index.php?act=master&op=login ( act=master&op=login ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( member_name = NULL ) AND ( member_passwd = 'd41d8cd98f00b204e9800998ecf8427e' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-07-20 10:36:39] /shop/index.php?act=master&op=login ( act=master&op=login ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( member_name = NULL ) AND ( member_passwd = 'd41d8cd98f00b204e9800998ecf8427e' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-07-20 10:36:40] /shop/index.php?act=master&op=login ( act=master&op=login ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( member_name = NULL ) AND ( member_passwd = 'd41d8cd98f00b204e9800998ecf8427e' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-07-20 10:47:50] /shop/index.php?act=master&op=login ( act=master&op=login ) 
+ERR: Db Error: Unknown column 'is_master' in 'where clause'
+SELECT * FROM `zmkj_member` WHERE ( member_name = NULL ) AND ( member_passwd = 'd41d8cd98f00b204e9800998ecf8427e' ) AND ( is_master = '1' ) LIMIT 1  
+[2016-07-20 11:38:30] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 14:29:58] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 14:29:59] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 14:29:59] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 14:30:00] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 14:30:01] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 15:08:33] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 15:08:34] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 15:08:35] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 15:13:52] /shop/index.php?act=master&op=orderinfo ( act=master&op=orderinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order_id= LIMIT 1000' at line 1
+SELECT * FROM `zmkj_order` WHERE master_id=,order_id= LIMIT 1000  
+[2016-07-20 16:04:52] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469001892','1126','1124','1125','1126')
+[2016-07-20 16:29:00] /shop/index.php?act=mobile&op=storeinfo ( act=mobile&op=storeinfo ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `zmkj_store` WHERE store_id= LIMIT 1  
+[2016-07-20 16:39:22] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-20 17:16:43] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469006203','1126','1124','1125','1126')
+[2016-07-20 17:18:48] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469006328','1126','1124','1125','1126')
+[2016-07-20 17:18:52] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('34',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-20 17:18:53] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('35',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-20 17:18:53] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('36',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-20 17:18:53] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('37',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-20 17:18:53] /shop/index.php?act=mobile&op=buystep2 ( act=mobile&op=buystep2 ) 
+ERR: Db Error: Column 'goods_id' cannot be null
+INSERT  INTO `zmkj_order_goods` (order_id,goods_id,goods_name,goods_price,goods_num,goods_image,goods_pay_price,store_id,buyer_id,gc_id) VALUES ('38',NULL,NULL,NULL,NULL,NULL,NULL,'1','4',NULL)
+[2016-07-20 17:19:21] /shop/index.php?act=mobile&op=addbrowse ( act=mobile&op=addbrowse ) 
+ERR: Db Error: Duplicate entry '100075-4' for key 'PRIMARY'
+INSERT  INTO `zmkj_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100075','4','1469006361','1126','1124','1125','1126')
+[2016-07-20 17:24:35] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-20 17:24:37] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=0f9180f0ca5a864b9ad53c073b6defcd ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469006677' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  
+[2016-07-20 17:24:42] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-20 17:24:50] /mobile/index.php?act=goods&op=goods_list&gc_id=1126&page=10&curpage=1&gc_id=1126 ( act=goods&op=goods_list ) 
+ERR: Db Error: Unknown column 'goods_id' in 'order clause'
+SELECT COUNT(*) AS nc_count FROM `zmkj_goods_common` WHERE ( store_id = '1' ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) GROUP BY nc_distinct ORDER BY is_own_shop desc,goods_id desc LIMIT 1  
+[2016-07-20 17:24:53] /mobile/index.php?act=goods&op=goods_detail&goods_id=100075&key=0f9180f0ca5a864b9ad53c073b6defcd ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'voucher_t_gettype' in 'where clause'
+SELECT * FROM `zmkj_voucher_template` WHERE ( voucher_t_gettype = '3' ) AND ( voucher_t_state = '1' ) AND ( voucher_t_end_date > '1469006693' ) AND ( voucher_t_store_id IN ('1') ) LIMIT 1000  

@@ -1,0 +1,9 @@
+[2016-09-05 04:49:43] /shop/index.php?act=promotion&curpage=2&gc_id=1124 ( act=promotion&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-16,16' at line 1
+SELECT * FROM `zmkj_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time <= '1473022183' ) AND ( end_time > '1473022183' ) AND ( gc_id_1 = '1124' ) ORDER BY xianshi_goods_id desc LIMIT -16,16  
+[2016-09-05 08:29:02] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '696' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '696' ) AND ( buyer_id = '4' )
+[2016-09-05 08:29:24] /shop/index.php ( act=repair&op=qxorder ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( order_id = '696' ) AND ( buyer_id = '4' )' at line 1
+UPDATE `zmkj_order` SET  WHERE ( order_id = '696' ) AND ( buyer_id = '4' )
