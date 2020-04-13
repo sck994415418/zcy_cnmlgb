@@ -7,7 +7,7 @@ defined('InShopNC') or exit('Access Invalid!');
 class zcy_goodsControl extends BaseSellerControl {
 	//需要对接政采云的店铺store_id
 	private $zcy_store = array(51,61,1);
-
+    private $nrzcy = null;
     public function __construct() {
         parent::__construct();
         Language::read('member_store_goods_index');
@@ -15,9 +15,14 @@ class zcy_goodsControl extends BaseSellerControl {
 		if(! in_array($_SESSION["store_id"] , $this->zcy_store)){
 			exit("当前店铺没有此权限！请<a href=\"/shop/index.php?act=seller_center&op=index\">返回</a>");
 		}
+
     }
 
     public function indexOp() {
+        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
+        $zcy = $this->nrzcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
+        $zcy = $zcy->get_category(0,4);
+        var_dump(json_decode($zcy));die;
         $this->zcy_goods_listOp();
     }
 	
@@ -82,8 +87,21 @@ class zcy_goodsControl extends BaseSellerControl {
         Tpl::output ( 'member_menu', $menu_array );
         Tpl::output ( 'menu_key', $menu_key );
     }
-	
-			
+	//添加商品
+    public function add_goods()
+    {
+
+    }
+    // 编辑商品
+    public function edit_goods()
+    {
+
+    }
+    //删除商品
+    public function del_goods()
+    {
+
+    }
 	
 }
 ?>

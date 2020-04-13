@@ -8,7 +8,6 @@
 </style>
 <div id="content">
 
-    12345645645
 <?php
 	$pageNo = $_GET["page"];
 	if(is_numeric($pageNo)){
@@ -41,7 +40,7 @@
 			break;
 	}
 	require_once(BASE_PATH.'/../zcy/nr_zcy.php');
-	$zcy = new nr_zcy;
+	$zcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
 	$rs = $zcy->goods_list($status,$pageNo,20,11);
 	if($rs["success"]){
 		$total = $rs["data_response"]["total"];
