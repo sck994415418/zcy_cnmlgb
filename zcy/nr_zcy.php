@@ -8,10 +8,11 @@ class nr_zcy {
 	private $appKey = null;
 	private $appSecret = null;
 	private $gate_way = "http://121.196.217.18:9002/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
-    public function __construct($appkey,$appSecret)
+    public function __construct()
     {
-        $this->appKey = $appkey;
-        $this->appSecret = $appSecret;
+        $session = $_SESSION['zcy_user_config'];
+        $this->appKey = $session['appkey'];
+        $this->appSecret = $session['appSecret'];
     }
 
     /*

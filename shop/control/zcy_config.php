@@ -35,6 +35,9 @@ class zcy_configControl extends BaseSellerControl
      */
     public function zcy_configOp()
     {
+        if(empty($_GET['type'])){
+            $_GET['type'] = 'zcy_update_category';
+        }
         switch ($_GET['type']) {
             case 'zcy_update_category':
                 $this->profile_menu('zcy_update_category');
@@ -58,6 +61,7 @@ class zcy_configControl extends BaseSellerControl
 
         switch ($_GET['type']) {
             case 'zcy_update_category'://更新商品类目
+                $this->get_categoryOp();
                 Tpl::showpage('zcy_update_category');
                 break;
             case 'zcy_update_category_attrs':// 更新类目属性
@@ -120,7 +124,8 @@ class zcy_configControl extends BaseSellerControl
             require_once(BASE_PATH . '/../zcy/nr_zcy.php');
             $zcy = new nr_zcy;
             $rs = $zcy->get_category($root, $depth);
-            echo $rs;
+            Tpl::output('outputs',$rs);
+//            echo $rs;
         }
     }
 

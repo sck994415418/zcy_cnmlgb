@@ -19,6 +19,7 @@ class zcy_commonControl extends Model {
         }elseif($data['status'] != 1){
             $res = false;
         }else{
+            $_SESSION['zcy_user_config'] = $data;
             return $data;
         }
         if($res==false){
