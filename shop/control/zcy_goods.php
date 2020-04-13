@@ -19,10 +19,10 @@ class zcy_goodsControl extends BaseSellerControl {
     }
 
     public function indexOp() {
-        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
-        $zcy = $this->nrzcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
-        $zcy = $zcy->get_category(0,4);
-        var_dump(json_decode($zcy));die;
+//        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
+//        $zcy = $this->nrzcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
+//        $zcy = $zcy->get_category(0,4);
+//        var_dump(json_decode($zcy));die;
         $this->zcy_goods_listOp();
     }
 	
@@ -88,17 +88,21 @@ class zcy_goodsControl extends BaseSellerControl {
         Tpl::output ( 'menu_key', $menu_key );
     }
 	//添加商品
-    public function add_goods()
+    public function add_goodsOp()
     {
+        if(!empty($_GET)){
 
+        }else if(!empty($_POST)){
+            echo 456;
+        }
     }
     // 编辑商品
-    public function edit_goods()
+    public function edit_goodsOp()
     {
 
     }
     //删除商品
-    public function del_goods()
+    public function del_goodsOp()
     {
 
     }
