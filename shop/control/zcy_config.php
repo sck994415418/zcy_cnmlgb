@@ -21,6 +21,7 @@ class zcy_configControl extends BaseSellerControl
         //验证是否有政采云操作权限
         include_once 'zcy_common.php';
         $res = new zcy_commonControl();
+        var_dump($res);die;
         $res->aa();
     }
 
