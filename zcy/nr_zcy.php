@@ -7,7 +7,7 @@
 class nr_zcy {
 	private $appKey = null;
 	private $appSecret = null;
-	private $gate_way = "http://api.zcygov.cn/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
+	private $gate_way = "http://121.196.217.18:9002/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
     public function __construct($appkey,$appSecret)
     {
         $this->appKey = $appkey;
