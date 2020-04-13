@@ -31,7 +31,6 @@
                         <div id="class_div_1" class="category_list">
                             <ul>
 <?php
-    var_dump($outputs);die;
     $sql = "select * from `zcy_category` where `level` =1";
     $rs = $con->select_data($sql);
 

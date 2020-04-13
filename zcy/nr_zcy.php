@@ -7,12 +7,12 @@
 class nr_zcy {
 	private $appKey = null;
 	private $appSecret = null;
-	private $gate_way = "http://121.196.217.18:9002/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
+	private $gate_way = "http://api.zcygov.cn/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
     public function __construct()
     {
         $session = $_SESSION['zcy_user_config'];
         $this->appKey = $session['appkey'];
-        $this->appSecret = $session['appSecret'];
+        $this->appSecret = $session['appsecret'];
     }
 
     /*
@@ -31,7 +31,7 @@ class nr_zcy {
 		$strs['_data_']=json_encode($strs['_data_']);
 		$p= new ZcyOpenClient();
 		$str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
-//		return json_decode($str,true);
+		return json_decode($str,true);
         return $str;
 	}
 
