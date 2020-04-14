@@ -61,7 +61,6 @@ class zcy_configControl extends BaseSellerControl
 
         switch ($_GET['type']) {
             case 'zcy_update_category'://更新商品类目
-                $this->get_categoryOp();
                 Tpl::showpage('zcy_update_category');
                 break;
             case 'zcy_update_category_attrs':// 更新类目属性
@@ -124,8 +123,9 @@ class zcy_configControl extends BaseSellerControl
             require_once(BASE_PATH . '/../zcy/nr_zcy.php');
             $zcy = new nr_zcy;
             $rs = $zcy->get_category($root, $depth);
-            Tpl::output('outputs',$rs);
-//            echo $rs;
+//            Tpl::output('outputs',$rs);
+
+            echo $rs;
         }
     }
 
@@ -153,11 +153,11 @@ class zcy_configControl extends BaseSellerControl
             if ((!is_null($id)) and (!is_null($name)) and (!is_null($pid)) and (!is_null($level)) and (!is_null($hasChildren)) and (!is_null($status)) and (!is_null($hasSpu))) {
                 if (!@include(BASE_PATH . '/control/zcy_connect_data.php')) exit('zcy_connect_data.php isn\'t exists!');
                 $zcy_data = new zcy_data();
-                $sql = "select `id` from `zcy_category` where `id` = $id";
+                $sql = "select `id` from `zmkj_zcy_category` where `id` = $id";
                 $rs = $zcy_data->select_data($sql);
                 if (is_array($rs)) {
                     if (empty($rs)) {
-                        $sql = "insert into `zcy_category` (`id`,`pid`,`name`,`level`,`hasChildren`,`status`,`hasSpu`,`update_time`) values($id,$pid,\"$name\",$level," . (int)$hasChildren . ",$status," . (int)$hasSpu . ",now())";
+                        $sql = "insert into `zmkj_zcy_category` (`id`,`pid`,`name`,`level`,`hasChildren`,`status`,`hasSpu`,`update_time`) values($id,$pid,\"$name\",$level," . (int)$hasChildren . ",$status," . (int)$hasSpu . ",now())";
                         $rs = $zcy_data->execute_data_return_affected_rows($sql);
                         if ($rs["isSuccess"] and ($rs["affectedRows"] == 1)) {
                             exit(json_encode(array('resultMsg' => "添加成功", "isSuccess" => true)));
@@ -165,7 +165,7 @@ class zcy_configControl extends BaseSellerControl
                             exit(json_encode(array('resultMsg' => $rs["resultMsg"], "isSuccess" => false)));
                         }
                     } else {
-                        $sql = "update `zcy_category` set `pid` = " . $pid . ",`name` = \"" . $name . "\",`level` = " . $level . ",`hasChildren` = " . (int)$hasChildren . ",`status` = " . $status . ",`hasSpu` = " . (int)$hasSpu . ",`update_time` = now() where `id` = " . $id;
+                        $sql = "update `zmkj_zcy_category` set `pid` = " . $pid . ",`name` = \"" . $name . "\",`level` = " . $level . ",`hasChildren` = " . (int)$hasChildren . ",`status` = " . $status . ",`hasSpu` = " . (int)$hasSpu . ",`update_time` = now() where `id` = " . $id;
                         $rs = $zcy_data->execute_data_return_affected_rows($sql);
                         if (($rs["isSuccess"]) and ($rs["affectedRows"] == 1)) {
                             exit(json_encode(array('resultMsg' => "更新成功", "isSuccess" => true)));
@@ -198,7 +198,7 @@ class zcy_configControl extends BaseSellerControl
         }
         if (!@include(BASE_PATH . '/control/zcy_connect_data.php')) exit(json_encode(array('isSuccess' => false, 'resultMsg' => 'zcy_connect_data.php isn\'t exists!')));
         $zcy_data = new zcy_data();
-        $sql = "select * from `zcy_category` where `pid` = $id";
+        $sql = "select * from `zmkj_zcy_category` where `pid` = $id";
         $rs = $zcy_data->select_data($sql);
         if (is_array($rs)) {
             exit(json_encode(array('isSuccess' => true, 'response_data' => $rs, 'resultMsg' => '成功')));
@@ -223,18 +223,18 @@ class zcy_configControl extends BaseSellerControl
             if (!@include(BASE_PATH . '/control/zcy_connect_data.php')) exit(json_encode(array('isSuccess' => false, 'resultMsg' => 'zcy_connect_data.php isn\'t exists!')));
             $zcy_data = new zcy_data();
             if ($id == 0) {    //$id==0,更新全部
-                $sql = "select `id` , `name` from `zcy_category` where `level` = 3";
+                $sql = "select `id` , `name` from `zmkj_zcy_category` where `level` = 3";
             } else {
-                $sql = "select `id` , `name` , `level` from `zcy_category` where `id` = $id";
+                $sql = "select `id` , `name` , `level` from `zmkj_zcy_category` where `id` = $id";
                 $rs = $zcy_data->select_data($sql);
                 if (is_array($rs)) {
                     if (!empty($rs)) {
                         switch ($rs[0]["level"]) {
                             case 1:
-                                $sql = "select `id` , `name` from `zcy_category` where `pid` in (select `id` from `zcy_category` where `pid` = $id)";
+                                $sql = "select `id` , `name` from `zmkj_zcy_category` where `pid` in (select `id` from `zmkj_zcy_category` where `pid` = $id)";
                                 break;
                             case 2:
-                                $sql = "select `id` , `name` from `zcy_category` where `pid`  = $id";
+                                $sql = "select `id` , `name` from `zmkj_zcy_category` where `pid`  = $id";
                                 break;
                             case 3:
                                 exit(json_encode(array('isSuccess' => true, 'response_data' => array(array('id' => "$id", 'name' => $rs[0]["name"])), 'resultMsg' => '成功')));

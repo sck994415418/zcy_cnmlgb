@@ -31,7 +31,7 @@
                         <div id="class_div_1" class="category_list">
                             <ul>
 <?php
-    $sql = "select * from `zcy_category` where `level` =1";
+    $sql = "select * from `zmkj_zcy_category` where `level` =1";
     $rs = $con->select_data($sql);
 
     foreach($rs as $cat){
