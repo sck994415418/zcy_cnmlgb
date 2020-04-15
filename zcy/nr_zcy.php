@@ -192,7 +192,7 @@ class nr_zcy {
 		$strs['_data_'] = json_encode($strs['_data_']);
 		$p= new ZcyOpenClient();
 		$str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
-		return json_decode($str,true);	
+		return json_decode($str,true);
 	}
 
 /**
@@ -230,7 +230,34 @@ class nr_zcy {
 		$p= new ZcyOpenClient();
 		$str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
 		return json_decode($str,true);	
-	}	
+	}
+
+    /**
+     * 参数名	说明	必填	类型	长度	备注
+    *fields	字段列表	可选	array		【默认为order】需要返回的字段列表，多个字段用半角逗号分隔；可选值：delivery:收货信息；invoice:发票信息；order:订单基本信息；returnOrder:退换货信息；orderItems:订单商品信息
+    *orderCodes	订单外部编码列表	可选	array	<=80个字符	【orderIds优先】
+    *statuses	订单状态列表	可选	array		0：待接单；1：已接单待发货；2：已部分发货待确认；3：全部发货,待确认收货；4：已确认收货,待验收；5：已验收待结算；6：启动结算；7：交易完成；-4：采购人申请取消订单；10：退换货中； -2：供应商拒绝接单；-5： 供应商同意取消订单；-6：全部退货、订单关闭
+    *orderIds	订单ID列表	可选	array	1 ~ 2^64-1
+    *pageSize	每页大小	可选	number	1 ~ 10	默认为5
+    *pageNo	当前页	可选	number	1 ~ 2^32-1	默认为1
+     * @param $itemCode
+     * @param $itemId
+     * @return mixed
+     */
+    public function order_list($status,$pageNo,$pageSize){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.trade.orders.find";//必须以/开头
+        $strs=array();
+        $strs['_data_']["fields"] = ['orderItems','order'];
+        $strs['_data_']["statuses"][] = $status;
+        $strs['_data_']["pageSize"] = $pageSize;
+        $strs['_data_']["pageNo"] = $pageNo;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        return json_decode($str,true);
+    }
 }
 
 ?>

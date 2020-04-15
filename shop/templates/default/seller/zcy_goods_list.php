@@ -91,7 +91,7 @@
       <td><div class="pic-thumb"><img src="<?php echo $goods_detail["item"]["mainImage"];?>"/></div></td>
       <td class="tl"><dl class="goods-name">
           <dt style="max-width: 450px !important;"><?php echo $goods["name"]; ?></dt>
-          <dd>商家货号：<?php echo "aa";?></dd>
+          <dd>商家货号：<?php echo $goods["itemCode"]?$goods["itemCode"]:'暂无';?></dd>
         </dl></td>
       <td><span>¥<?php echo number_format($goods_detail["skus"][0]["price"]/100,2); ?></span></td>
       <td><span <?php if ($output['storage_array'][$val['goods_commonid']]['alarm']) { echo 'style="color:red;"';}?>><?php echo $stock_all.$lang['piece']; ?></span></td>
