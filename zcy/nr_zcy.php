@@ -244,20 +244,53 @@ class nr_zcy {
      * @param $itemId
      * @return mixed
      */
-    public function order_list($status,$pageNo,$pageSize){
+    public function order_list($status,$orderId,$pageNo,$pageSize){
         require_once('ZcyOpenClient.php');
         error_reporting(E_ERROR | E_WARNING | E_PARSE);
         $uri = "/supplier/zcy.mall.trade.orders.find";//必须以/开头
         $strs=array();
-        $strs['_data_']["fields"] = ['orderItems','order'];
+        $strs['_data_']["fields"] = ['orderItems','order','delivery'];
         $strs['_data_']["statuses"][] = $status;
+        $strs['_data_']["orderIds"] = $orderId?$orderId:null;
         $strs['_data_']["pageSize"] = $pageSize;
         $strs['_data_']["pageNo"] = $pageNo;
         $strs['_data_'] = json_encode($strs['_data_']);
+//        echo '<pre>';
+//        var_dump($strs);die;
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
-        return json_decode($str,true);
+        $str = json_decode($str,true);
+
+//        if(!empty($str["data_response"]["data"])){
+//            foreach ($str["data_response"]["data"] as $k=>$v){
+//                $str["data_response"]["data"][$k]['order']['createdAt'] = number_format($str["data_response"]["data"][$k]['order']['createdAt'].'',0,'','');
+////                $str["data_response"]["data"][$k]['order']['id'] = number_format($str["data_response"]["data"][$k]['order']['id'].'',0,'','');
+//                $Y = substr($str["data_response"]["data"][$k]['order']['createdAt'],0,4);
+//                $m = substr($str["data_response"]["data"][$k]['order']['createdAt'],4,2);
+//                $d = substr($str["data_response"]["data"][$k]['order']['createdAt'],6,2);
+//                $H = substr($str["data_response"]["data"][$k]['order']['createdAt'],8,2);
+//                $i = substr($str["data_response"]["data"][$k]['order']['createdAt'],10,2);
+//                $str["data_response"]["data"][$k]['order']['create_time'] = $Y.'-'.$m.'-'.$d.' '.$H.':'.$i;
+//                $str["data_response"]["data"][$k]['order']['fee'] = round(floor($str["data_response"]["data"][$k]['order']['fee'])/100,2);
+//            }
+//        }
+
+        $num = floor(1.5097920000026E+18);
+        echo $str["data_response"]["data"][0]['order']['id'];
+        echo '<hr>';
+        echo $num;
+        echo '<hr>';
+        echo '<pre>';
+        print_r($str["data_response"]["data"][0]['order']);
+        echo '<hr>';
+        echo number_format($num);die;
+
+        echo '<pre>';
+        var_dump($str);die;
+        return $str;
     }
+
+
 }
 
 ?>
