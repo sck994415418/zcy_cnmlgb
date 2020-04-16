@@ -23,7 +23,7 @@
                 <?php
                 $zf_class=$output['goods_class'];
                 ?>
-                <select name="zf_class" class="w150">
+                <select name="zcy_class" class="w150">
                     <option value="0"><?php echo $lang['nc_please_choose'];?></option>
                     <?php foreach($zf_class as $key=>$val){?><option value="<?php echo $val['id']; ?>" <?php if ($_GET['zf_class'] == $val['id']){ echo 'selected=selected';}?>><?php echo $val['name']; ?></option>
                     <?php }?>
@@ -65,69 +65,12 @@
         <th class="w80"><?php echo $lang['store_goods_index_price'];?></th>
         <th class="w70">政府采购网链接</th>
         <th class="w80">上架时间</th>
-        <th class="w80"><?php //echo $lang['nc_handle'];?>最后修改时间</th>
+        <th class="w80"><?php echo $lang['nc_handle'];?>最后修改时间</th>
     </tr>
     </thead>
     <tbody>
-    <?php
-    $tj = "`store_id` = ".$_SESSION['store_id']." and `goods_state` = 1 and `goods_verify` = 1";
-    if (intval($_GET['zf_class']) > 0) {
-        $tj = $tj." and `zf_class_id` = ".intval($_GET['zf_class']);
-    }
-    if(trim($_GET['is_bind']) == 'true'){
-        $tj = $tj." and `is_bind` > 0";
-    }
-    if (trim($_GET['keyword']) != '') {
-        switch ($_GET['search_type']) {
-            case "0":
-                $keyword = str_replace(" ","%",trim($_GET["keyword"]));
-                $tj=$tj." and `goods_name` like '%".$keyword."%'";
-                break;
-            case "1":
-                $tj=$tj." and `goods_id` = ".intval(trim($_GET['keyword']));
-                break;
-            case "2":
-                $tj=$tj." and `goods_commonid` = ".intval($_GET['keyword']);
-                break;
-            case "3":
-                $tj=$tj." and (`goods_id` IN (select DISTINCT `skuid` from `zmkj_goods_orm` where `productId` like '%".trim($_GET['keyword'])."%') or `goods_id` IN (select DISTINCT `goods_id` from `zmkj_zf_url` where `zf_product_id` like '%".trim($_GET['keyword'])."%'))";
-        }
-    }
-    if(trim($_GET['order']) != ''){
-        switch (trim($_GET['order'])){
-            case "1":
-                $tj = $tj." order by `goods_id` desc";
-                break;
-            case "2":
-                $tj = $tj." order by `goods_id` asc";
-                break;
-            case "3":
-                $tj = $tj." order by `goods_commonid` desc";
-                break;
-            case "4":
-                $tj = $tj." order by `goods_commonid` asc";
-                break;
-            case "5":
-                $tj = $tj." order by `goods_edittime` desc";
-                break;
-            case "6":
-                $tj = $tj." order by `goods_edittime` asc";
-                break;
-            default:
-                $tj = $tj." order by `goods_id` desc";
-        }
-    }else{
-        $tj = $tj." order by `goods_id` desc";
-    }
-    $sqlall = "select count(*) from `zmkj_goods` where {$tj}" ;//获取总条数
-    $resultall = $zf_url->select_data($sqlall);
-    $c = $resultall[0]["count(*)"];//获取总条数
-    $page = new page($c,50);//一共多少条 每页显示多少条
-    $sql="select * from `zmkj_goods` where {$tj} " .$page->limit;
-    $rs_array = $zf_url->select_data($sql);
-    ?>
-    <?php if (!empty($rs_array)) { ?>
-        <?php foreach ($rs_array as $val) { ?>
+    <?php if (!empty($output['rs_array'])) { ?>
+        <?php foreach ($output['rs_array'] as $val)  { ?>
             <tr class="goodslist">
                 <td class="nscs-table-handle">
           <span>
@@ -138,7 +81,7 @@
           </span>
                 </td>
                 <td><span class="zf_class" goods_id="<?php echo $val["goods_id"] ?>"><?php
-                        if($val["is_bind"]==1 and $val["zf_class_id"]>0){
+                        if($val["is_cloud"]==1 and $val["zf_class_id"]>0){
                             foreach($zf_class as $key){
                                 if($key['id']==$val['zf_class_id']){
                                     if($key['class_type']==1){
@@ -186,7 +129,7 @@
                         foreach($ys_goods as $ys_good){
                             ?>
                             <p class="yslist"><a class="olink" href="<?php echo $ys_good["productUrl"];?>" target="_blank"><?php echo $ys_good["productName"];?></a></p>
-                        <?php 	}
+                        <?php  }
                     }
                     ?>
                 </td>
@@ -198,7 +141,7 @@
         </tr>
     <?php } ?>
     </tbody>
-    <?php  if (!empty($rs_array)) { ?>
+    <?php  if (!empty($output['rs_array'])) { ?>
         <tfoot>
         <tr>
             <td colspan="20"><div class="pagination"> <?php echo $page->fpage();?> </div></td>
