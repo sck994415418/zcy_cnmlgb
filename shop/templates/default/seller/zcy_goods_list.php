@@ -1,7 +1,7 @@
 <?php defined('InShopNC') or exit('Access Invalid!');?>
 <div class="tabmenu">
   <?php include template('layout/submenu');?>
-  <a href="<?php echo urlShop('zcy_goods','add_goods');?>" class="ncsc-btn ncsc-btn-green" title="<?php echo $lang['store_goods_index_add_goods'];?>"> <?php echo $lang['store_goods_index_add_goods'];?></a>
+  <a href="<?php echo urlShop('store_goods_add');?>" class="ncsc-btn ncsc-btn-green" title="<?php echo $lang['store_goods_index_add_goods'];?>"> <?php echo $lang['store_goods_index_add_goods'];?></a>
 </div>
 <style type="text/css">
   @import url("<?php echo SHOP_TEMPLATES_URL; ?>/css/zcy.css");
@@ -40,7 +40,7 @@
 			break;
 	}
 	require_once(BASE_PATH.'/../zcy/nr_zcy.php');
-	$zcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
+	$zcy = new nr_zcy();
 	$rs = $zcy->goods_list($status,$pageNo,20,11);
 ?>
 <table class="ncsc-default-table">

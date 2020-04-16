@@ -59,6 +59,7 @@
   </thead>
   <tbody>
 <?php
+
 	$zf_url = new zf_url();
     $tj = "`store_id` = ".$_SESSION['store_id']." and `goods_id` in (SELECT DISTINCT `skuid` FROM `zmkj_goods_orm` WHERE 1) and `is_bind` = 0";
     if (trim($_GET['keyword']) != '') {

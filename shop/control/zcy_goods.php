@@ -19,10 +19,6 @@ class zcy_goodsControl extends BaseSellerControl {
     }
 
     public function indexOp() {
-//        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
-//        $zcy = $this->nrzcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
-//        $zcy = $zcy->get_category(0,4);
-//        var_dump(json_decode($zcy));die;
         $this->zcy_goods_listOp();
     }
 	
@@ -48,6 +44,9 @@ class zcy_goodsControl extends BaseSellerControl {
 			case 'refuse':
                 $this->profile_menu('zcy_goods_refuse');
                 break;
+            case 'zcy_addgoods':
+                $this->profile_menu('zcy_goods_cloud');
+                break;
             default:
                 $this->profile_menu('zcy_goods_onshelf');
                 break;
@@ -62,6 +61,12 @@ class zcy_goodsControl extends BaseSellerControl {
                 break;
 			case 'update_productid':// 主动映射的商品改价
                 Tpl::showpage('store_goods.update_productid');
+                break;
+            case 'zcy_addgoods':// 主动映射的商品改价
+                $model= Model("zcy_category");
+                $spu= $model->where(['pid'=>0])->limit(false)->select();
+                Tpl::output("goods_class",$spu);
+                Tpl::showpage('zcy_addgoods');
                 break;
             default://使用模版zcy_goods_list.php
                 Tpl::showpage('zcy_goods_list');
@@ -82,7 +87,8 @@ class zcy_goodsControl extends BaseSellerControl {
 			array('menu_key' => 'zcy_goods_verify', 'menu_name' => "待审核商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'verify'))),
             array('menu_key' => 'zcy_goods_offshelf', 'menu_name' => "已下架商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'off_shelf'))),
             array('menu_key' => 'zcy_goods_freez', 'menu_name' => "已冻结商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'freez'))),
-			array('menu_key' => 'zcy_goods_refuse', 'menu_name' => "审核不通过商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'refuse')))
+			array('menu_key' => 'zcy_goods_refuse', 'menu_name' => "审核不通过商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'refuse'))),
+			array('menu_key' => 'zcy_goods_cloud', 'menu_name' => "上传商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'zcy_addgoods')))
         );
         Tpl::output ( 'member_menu', $menu_array );
         Tpl::output ( 'menu_key', $menu_key );
@@ -90,12 +96,10 @@ class zcy_goodsControl extends BaseSellerControl {
 	//添加商品
     public function add_goodsOp()
     {
-        if(!empty($_GET)){
 
-        }else if(!empty($_POST)){
-            echo 456;
-        }
     }
+
+
     // 编辑商品
     public function edit_goodsOp()
     {
