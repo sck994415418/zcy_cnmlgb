@@ -127,18 +127,20 @@ class zcy_orderControl extends BaseSellerControl {
 
         Language::read('member_member_index');
         $orderId = array($_GET['orderId']);
+        $status = $_GET['status'];
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
-        $orderId = 1509792000002605151;
-        $rs = $zcy->take_order($orderId);
-
-
-        echo '<pre>';
-        print_r($orderId);
-        echo "<hr>";
-        print_r($rs);
-        exit();
-        Tpl::showpage('zcy_order.show');
+        $rs = $zcy->order_list($status,$orderId,1,1);
+//        echo '<pre>';
+//        print_r($rs);
+//        exit();
+        if($rs['success'] == 1 && $rs['data_response']['total']>=1){
+            Tpl::output('order_details',$rs['data_response']['data'][0]);
+            Tpl::showpage('zcy_order.show');
+        }else{
+            echo '订单不存在！';
+            die;
+        }
     }
 
 }

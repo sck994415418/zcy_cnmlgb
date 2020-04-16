@@ -114,7 +114,7 @@
                             <dd>
                             </dd>
                         </dl></td>
-                    <td><?php echo round($g['skuPrice']/100,2); ?></td>
+                    <td><?php echo number_format($g['skuPrice']*.01,2); ?></td>
                     <td><?php echo $g['quantity']; ?></td>
 
                     <!-- S 合并TD -->
@@ -138,14 +138,14 @@
                                 </div>
                             </div>
                         </div></td>
-                    <td class="bdl" rowspan="1"><p class="ncsc-order-amount"><?php echo $v['order']['fee'];?></p>
+                    <td class="bdl" rowspan="1"><p class="ncsc-order-amount"><?php echo number_format($v['order']['fee'],2);?></p>
 <!--                        <p class="goods-freight">-->
 <!--                            （免运费）                  </p>-->
                         <p class="goods-pay" title="支付方式：在线付款">在线付款</p></td>
                     <td class="bdl bdr" rowspan="1"><p></p>
 
                         <!-- 订单查看 -->
-                        <p><a href="index.php?act=zcy_order&amp;op=show_order&amp;orderId=<?php echo $v['order']['id']?>" target="_blank">订单详情</a></p>
+                        <p><a href="index.php?act=zcy_order&amp;op=show_order&amp;orderId=<?php echo $v['order']['id']?>&amp;status=<?php echo $status?>" target="_blank">订单详情</a></p>
 
                         <!-- 物流跟踪 -->
                         <p>

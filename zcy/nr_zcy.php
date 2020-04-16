@@ -249,9 +249,9 @@ class nr_zcy {
         error_reporting(E_ERROR | E_WARNING | E_PARSE);
         $uri = "/supplier/zcy.mall.trade.orders.find";//必须以/开头
         $strs=array();
-        $strs['_data_']["fields"] = ['orderItems','order','delivery'];
+        $strs['_data_']["fields"] = ['orderItems','order','delivery','invoice'];
         $strs['_data_']["statuses"][] = $status;
-//        $strs['_data_']["orderIds"] = $orderId?$orderId:null;
+        $strs['_data_']["orderIds"] = $orderId?$orderId:null;
         $strs['_data_']["pageSize"] = $pageSize;
         $strs['_data_']["pageNo"] = $pageNo;
         $strs['_data_'] = json_encode($strs['_data_']);
@@ -259,10 +259,9 @@ class nr_zcy {
 //        var_dump($strs);die;
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
-        print_r($str);
-        $str = json_decode($str,true);
-        echo '<hr>';
-        print_r($str);die;
+        $str = json_decode($str,true,512,JSON_BIGINT_AS_STRING);
+//        echo '<pre>';
+//        var_dump($str);
         if(!empty($str["data_response"]["data"])){
             foreach ($str["data_response"]["data"] as $k=>$v){
                 $str["data_response"]["data"][$k]['order']['createdAt'] = number_format($str["data_response"]["data"][$k]['order']['createdAt'].'',0,'','');

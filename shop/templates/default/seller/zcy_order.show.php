@@ -7,33 +7,33 @@
       <div class="content">
         <dl>
           <dt><?php echo $lang['store_show_order_receiver'].$lang['nc_colon'];?></dt>
-          <dd><?php echo $output['order_info']['extend_order_common']['reciver_name'];?>&nbsp; <?php echo @$output['order_info']['extend_order_common']['reciver_info']['phone'];?>&nbsp; <?php echo @$output['order_info']['extend_order_common']['reciver_info']['address'];?><?php echo $output['order_info']['extend_order_common']['reciver_info']['dlyp'] ? '[自提服务站]' : '';?></dd>
+          <dd><?php echo $output['order_details']['delivery']['receiverName'];?>&nbsp; <?php echo @$output['order_info']['extend_order_common']['reciver_info']['phone'];?>&nbsp; <?php echo @$output['order_info']['extend_order_common']['reciver_info']['address'];?><?php echo $output['order_info']['extend_order_common']['reciver_info']['dlyp'] ? '[自提服务站]' : '';?></dd>
         </dl>
         <dl>
           <dt>发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;票：</dt>
           <dd>
-            <?php foreach ((array)$output['order_info']['extend_order_common']['invoice_info'] as $key => $value){?>
-            <span><?php echo $key;?> (<strong><?php echo $value;?></strong>)</span>
-            <?php } ?>
+              <?php if(!empty($output['order_details']['invoice'])){?>
+                <span>类型:<strong><?php echo $output['order_details']['invoice']['type']=1?'(增值税普通发票)':'';$output['order_details']['invoice']['type']=2?'(增值税专用发票)':'';?></strong>抬头:<strong>(<?php echo $output['order_details']['invoice']['title'];?>)内容:<strong>(<?php echo $output['order_details']['invoice']['content'];?>)</span>
+              <?php }?>
           </dd>
         </dl>
         <dl>
           <dt><?php echo $lang['store_show_order_buyer_message'].$lang['nc_colon'];?></dt>
-          <dd><?php echo $output['order_info']['extend_order_common']['order_message']; ?></dd>
+          <dd><?php echo $output['order_details']['order']['comment']; ?></dd>
         </dl>
         <dl class="line">
           <dt><?php echo $lang['store_order_order_sn'].$lang['nc_colon'];?></dt>
-          <dd><?php echo $output['order_info']['order_sn']; ?><a href="javascript:void(0);">更多<i class="icon-angle-down"></i>
+          <dd><?php echo $output['order_details']['order']['id']; ?><a href="javascript:void(0);">更多<i class="icon-angle-down"></i>
             <div class="more"><span class="arrow"></span>
               <ul>
-                <?php if($output['order_info']['payment_name']) { ?>
+                <?php if($output['order_details']['order']['payMode']) { ?>
                 <li><?php echo $lang['store_order_pay_method'].$lang['nc_colon'];?><span><?php echo $output['order_info']['payment_name']; ?>
                   <?php if($output['order_info']['payment_code'] != 'offline' && !in_array($output['order_info']['order_state'],array(ORDER_STATE_CANCEL,ORDER_STATE_NEW))) { ?>
                   (<?php echo '付款单号'.$lang['nc_colon'];?><?php echo $output['order_info']['pay_sn']; ?>)
                   <?php } ?>
                   </span></li>
                 <?php } ?>
-                <li><?php echo $lang['store_order_add_time'].$lang['nc_colon'];?><span><?php echo date("Y-m-d H:i:s",$output['order_info']['add_time']); ?></span></li>
+                <li><?php echo $lang['store_order_add_time'].$lang['nc_colon'];?><span><?php echo $output['order_details']['order']['create_time']; ?></span></li>
                 <?php if(intval($output['order_info']['payment_time'])) { ?>
                 <li><?php echo $lang['store_show_order_pay_time'].$lang['nc_colon'];?><span><?php echo date("Y-m-d H:i:s",$output['order_info']['payment_time']); ?></span></li>
                 <?php } ?>
@@ -53,17 +53,43 @@
         </dl>
       </div>
     </div>
-    <?php if ($output['order_info']['order_state'] == ORDER_STATE_CANCEL) { ?>
     <div class="ncsc-order-condition">
       <dl>
-        <dt><i class="icon-off orange"></i>订单状态：</dt>
-        <dd>交易关闭</dd>
+        <dt><i class=""></i>订单状态：</dt>
+          <dd>
+            <?php if ($output['order_details']['order']['status'] == -5) { ?>
+                交易关闭
+            <?php }elseif($output['order_details']['order']['status'] == 0){?>
+                待接单
+            <?php }elseif($output['order_details']['order']['status'] == 1){?>
+                已接单待发货
+            <?php }elseif($output['order_details']['order']['status'] == 2){?>
+                已部分发货待确认
+            <?php }elseif($output['order_details']['order']['status'] == 3){?>
+                全部发货,待确认收货
+            <?php }elseif($output['order_details']['order']['status'] == 4){?>
+                已确认收货,待验收
+            <?php }elseif($output['order_details']['order']['status'] == 5){?>
+                已验收待结算
+            <?php }elseif($output['order_details']['order']['status'] == 6){?>
+                启动结算
+            <?php }elseif($output['order_details']['order']['status'] == 7){?>
+                交易完成
+            <?php }elseif($output['order_details']['order']['status'] == -4){?>
+                采购人申请取消订单
+            <?php }elseif($output['order_details']['order']['status'] == 10){?>
+                退换货中
+            <?php }elseif($output['order_details']['order']['status'] == -2){?>
+                供应商拒绝接单
+            <?php }elseif($output['order_details']['order']['status'] == -6){?>
+                全部退货、订单关闭
+            <?php }?>
+          </dd>
       </dl>
-      <ul>
-        <li><?php echo $output['order_info']['close_info']['log_role'];?> 于 <?php echo date('Y-m-d H:i:s',$output['order_info']['close_info']['log_time']);?> <?php echo $output['order_info']['close_info']['log_msg'];?></li>
-      </ul>
+<!--      <ul>-->
+<!--        <li>--><?php //echo $output['order_info']['close_info']['log_role'];?><!-- 于 --><?php //echo date('Y-m-d H:i:s',$output['order_info']['close_info']['log_time']);?><!-- --><?php //echo $output['order_info']['close_info']['log_msg'];?><!--</li>-->
+<!--      </ul>-->
     </div>
-    <?php } ?>
     <?php if ($output['order_info']['order_state'] == ORDER_STATE_NEW) { ?>
     <div class="ncsc-order-condition">
       <dl>
