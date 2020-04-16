@@ -124,17 +124,23 @@ class zcy_orderControl extends BaseSellerControl {
      *
      */
     public function show_orderOp() {
+
         Language::read('member_member_index');
         $orderId = array($_GET['orderId']);
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
-        $rs = $zcy->order_list(3,$orderId,1,1);
+//        $rs = $zcy->order_list(3,$orderId,1,1);
+
+
+
+
+
+        $rs = $zcy->take_order($orderId);
         echo '<pre>';
         print_r($rs);
         exit();
-        Tpl::output('data',$rs);
         Tpl::showpage('zcy_order.show');
     }
-	
+
 }
 ?>

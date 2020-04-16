@@ -275,21 +275,87 @@ class nr_zcy {
             }
         }
 
-        $num = floor(1.5097920000026E+18);
-//        echo $str["data_response"]["data"][0]['order']['id'];
-//        echo '<hr>';
-//        echo $num;
-//        echo '<hr>';
-//        echo '<pre>';
-//        print_r($str["data_response"]["data"][0]['order']);
-//        echo '<hr>';
-//        echo number_format($num);die;
-//
-//        echo '<pre>';
-//        var_dump($str);die;
         return $str;
     }
 
+    /**
+     * 接受订单
+     * 参数名	说明	必填	类型	长度	备注
+    *orderId	订单ID	可选	number	1 ~ 2^64-1	【orderId和orderCode两者选其一，orderId优先】
+    *orderCode	外部订单编号	可选	string	<=80个字符	【orderId和orderCode两者选其一，orderId优先】
+     * @param $orderId
+     * @return bool|mixed|string|null
+     */
+    public function take_order($orderId){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.order.receive";//必须以/开头
+        $strs=array();
+        $strs['_data_']["orderId"] = $orderId;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+
+    /**
+     * 拒绝订单
+     * 参数名	说明	必填	类型	长度	备注
+    *orderId	订单ID	可选	number	1 ~ 2^64-1	【orderId和orderCode两者选其一，orderId优先】
+    *comment	拒单理由	必填	string	<=120个字符
+    *orderCode	外部订单编号	可选	string	<=80个字符	【orderId和orderCode两者选其一，orderId优先】
+     */
+    public function refuse_order($orderId,$comment){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.order.reject";//必须以/开头
+        $strs=array();
+        $strs['_data_']["orderId"] = $orderId;
+        $strs['_data_']["comment"] = $comment;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+    /**
+     * 订单发货
+     * 参数名	说明	必填	类型	长度	备注
+    *skus	发货sku商品	必填	array
+    *└quantity	发货数量	必填	number	1 ~ 2^32-1
+    *└skuId	  skuID	可选	number	1 ~ 2^64-1	【skuId和skuCode两者选填一个，优先skuId】
+    *└skuCode	外部SKU编码	可选	string	<=80个字符	【skuId和skuCode两者选填一个，优先skuId】
+    *shipmentType	发货方式	必填	number		1：物流发货；2：送货上门
+    *shipmentNo	物流单号	必填	number	<=32个字符
+    *expressCode	发货物流公司代码	可选	string	<=32个字符	【发货方式为物流发货时，必填】
+    *orderId	订单ID	可选	number	1 ~ 2^64-1	【orderId和orderCode两者选其一，orderId优先】
+    *shipmentCode	外部发货单号	可选	string	<=64个字符
+    *orderCode	外部订单编号	可选	string	<=80个字符	【orderId和orderCode两者选其一，orderId优先】
+     * @param $orderId
+     * @param $comment
+     * @return bool|mixed|string|null
+     */
+    public function send_order($skus,$quantity,$skuId,$shipmentType,$shipmentNo,$expressCode,$orderId){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.order.shipment.create";//必须以/开头
+        $strs=array();
+        $strs['_data_']["skus"] = $skus;
+        $strs['_data_']["skus"]['quantity'] = $quantity;
+        $strs['_data_']["skus"]['skuId'] = $skuId;
+        $strs['_data_']["shipmentType"] = $shipmentType;
+        $strs['_data_']["shipmentNo"] = $shipmentNo;
+        $strs['_data_']["expressCode"] = $expressCode;
+        $strs['_data_']["orderId"] = $orderId;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
 
 }
 

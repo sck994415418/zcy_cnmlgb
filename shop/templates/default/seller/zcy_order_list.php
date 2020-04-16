@@ -98,7 +98,7 @@
                     <td colspan="20" class="sep-row"></td>
                 </tr>
                 <tr>
-                    <th colspan="20"><span class="ml10">订单编号：<em><?php echo number_format($v['order']['id'].'',0,'','');?></em>
+                    <th colspan="20"><span class="ml10">订单编号：<em><?php echo $v['order']['id'];?></em>
         </span> <span>下单时间：<em class="goods-time"><?php echo $v['order']['create_time']; ?></em></span>
 <!--                        <span class="fr mr5"> <a href="index.php?act=store_order_print&amp;order_id=577" class="ncsc-btn-mini" target="_blank" title="打印发货单"><i class="icon-print"></i>打印发货单</a></span>-->
                     </th>
