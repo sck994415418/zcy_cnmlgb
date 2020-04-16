@@ -36,7 +36,7 @@
 
     foreach($rs as $cat){
 ?>
-                                <li class="" nctype="selClass" data-param="{id:<?php echo $cat["id"];?>,deep:1}"><a class="" href="javascript:void(0)"><i class="icon-double-angle-right"></i><?php echo $cat["name"];?></a></li>
+        <li class="" nctype="selClass" data-param="{id:<?php echo $cat["id"];?>,deep:1}"><a class="" href="javascript:void(0)"><i class="icon-double-angle-right"></i><?php echo $cat["name"];?></a></li>
 <?php        
    }    
 ?>

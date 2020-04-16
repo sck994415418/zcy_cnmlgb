@@ -131,7 +131,14 @@
     <?php if (!empty($rs_array)) { ?>
     <?php foreach ($rs_array as $val) { ?>
     <tr class="goodslist">
-      <td class="nscs-table-handle"><span><a href="<?php echo urlShop('store_goods_online', 'edit_goods', array('commonid' => $val['goods_commonid']));?>" class="btn-blue"><i class="icon-edit"></i><p><?php echo $lang['nc_edit'];?></p></a></span><span><a href="javascript:void(0)" onclick="addyingshe(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>);" class="btn-green"><i class="icon-external-link"></i><p>映射</p></a></span></td>
+      <td class="nscs-table-handle">
+          <span>
+              <a href="<?php echo urlShop('store_goods_online', 'edit_goods', array('commonid' => $val['goods_commonid']));?>" class="btn-blue"><i class="icon-edit"></i><p><?php echo $lang['nc_edit'];?></p></a>
+          </span>
+          <span>
+              <a href="javascript:void(0)" onclick="addyingshe(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>);" class="btn-green"><i class="icon-external-link"></i><p>映射</p></a>
+          </span>
+      </td>
       <td><span class="zf_class" goods_id="<?php echo $val["goods_id"] ?>"><?php
 	  if($val["is_bind"]==1 and $val["zf_class_id"]>0){
 		  foreach($zf_class as $key){
