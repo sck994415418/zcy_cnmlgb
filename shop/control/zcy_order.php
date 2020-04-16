@@ -129,14 +129,13 @@ class zcy_orderControl extends BaseSellerControl {
         $orderId = array($_GET['orderId']);
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
-//        $rs = $zcy->order_list(3,$orderId,1,1);
-
-
-
-
-
+        $orderId = 1509792000002605151;
         $rs = $zcy->take_order($orderId);
+
+
         echo '<pre>';
+        print_r($orderId);
+        echo "<hr>";
         print_r($rs);
         exit();
         Tpl::showpage('zcy_order.show');

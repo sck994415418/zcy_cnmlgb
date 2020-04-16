@@ -1,127 +1,127 @@
 <?php defined('InShopNC') or exit('Access Invalid!');?>
 <style type="text/css">
-    tr.goodslist:hover td{ background-color:#AFF;}
-    input.pricetxt{border:dotted 1px #00FF00;}
-    a.olink:visited{color:#5F20F0;}
-    .toDisplay {position:fixed;background:#FFFFFF;display:none;width:40%;height:230px;top:200px;left:30%;right:30%;z-Index:3;text-align:center;padding:50px 50px 50px 50px;}
-    .mask {display:none;z-index:2;position:fixed;width:100%; height:100%;top:0;left:0;background:#000;opacity:0.5;}
-    #errinfo{color:#FF0000;line-height:25px;text-align:center;mini-height:25px;display:inline-block;}
-    .yslist{margin-left:200px;text-align:left;line-height:25px;padding-left:35px; background-image:url(../../../../list-bg.png); background-position:left; background-repeat:no-repeat;}
+	tr.goodslist:hover td{ background-color:#AFF;}
+	input.pricetxt{border:dotted 1px #00FF00;}
+	a.olink:visited{color:#5F20F0;}
+	.toDisplay {position:fixed;background:#FFFFFF;display:none;width:40%;height:230px;top:200px;left:30%;right:30%;z-Index:3;text-align:center;padding:50px 50px 50px 50px;}
+	.mask {display:none;z-index:2;position:fixed;width:100%; height:100%;top:0;left:0;background:#000;opacity:0.5;}
+	#errinfo{color:#FF0000;line-height:25px;text-align:center;mini-height:25px;display:inline-block;}
+	.yslist{margin-left:200px;text-align:left;line-height:25px;padding-left:35px; background-image:url(../../../../list-bg.png); background-position:left; background-repeat:no-repeat;}
 </style>
 <div class="tabmenu">
-    <?php include template('layout/submenu');?>
-    <a href="<?php echo urlShop('store_goods_add');?>" class="ncsc-btn ncsc-btn-green" title="<?php echo $lang['store_goods_index_add_goods'];?>"> <?php echo $lang['store_goods_index_add_goods'];?></a>
+  <?php include template('layout/submenu');?>
+  <a href="<?php echo urlShop('store_goods_add');?>" class="ncsc-btn ncsc-btn-green" title="<?php echo $lang['store_goods_index_add_goods'];?>"> <?php echo $lang['store_goods_index_add_goods'];?></a>
 </div>
 <form method="get" action="index.php">
-    <table class="search-form">
-        <input type="hidden" name="act" value="store_goods_change_price" />
-        <input type="hidden" name="op" value="index" />
-        <tr>
-            <td>&nbsp;</td>
-            <td class="w100"><?php echo '政府采购网分类';?></td>
-            <td class="w160" id="zf_class">
-                <?php
-                $zf_url = new zf_url();
-                $sql="select `id`,`class_name`,`class_type` from `zmkj_zf_class`";
-                $zf_class=$zf_url->select_data($sql);
-                ?>
-                <select name="zf_class" class="w150">
-                    <option value="0"><?php echo $lang['nc_please_choose'];?></option>
-                    <?php foreach($zf_class as $key=>$val){?><option value="<?php echo $val['id']; ?>" <?php if ($_GET['zf_class'] == $val['id']){ echo 'selected=selected';}?>><?php echo $val['class_name']; ?></option>
-                    <?php }?>
-                </select>
-            </td>
-            <td class="w120"><label><input type="checkbox" <?php if ($_GET['zf_class'] != 0 or $_GET['is_bind'] == 'true') echo "checked=\"checked\" ";?>class="checkbox" name="is_bind" value="true"/>已绑定政府分类</label></td>
-            <th>
-                <select name="search_type">
-                    <option value="0" <?php if (intval($_GET['search_type']) == 0) {?>selected="selected"<?php }?>><?php echo $lang['store_goods_index_goods_name'];?></option>
-                    <option value="1" <?php if (intval($_GET['search_type']) == 1) {?>selected="selected"<?php }?>><?php echo "商品ID";?></option>
-                    <option value="2" <?php if (intval($_GET['search_type']) == 2) {?>selected="selected"<?php }?>>平台货号</option>
-                    <option value="3" <?php if (intval($_GET['search_type']) == 3) {?>selected="selected"<?php }?>>政府采购网ID</option>
-                </select>
-            </th>
-            <td class="w160"><input type="text" class="text" name="keyword" value="<?php echo $_GET['keyword']; ?>"/></td>
-            <td class="w120" align="center">&nbsp;&nbsp;
-                <select name="order" class="w100">
-                    <option value="1" <?php if (intval($_GET['order']) == 1) {?>selected="selected"<?php }?>>商品ID降序</option>
-                    <option value="2" <?php if (intval($_GET['order']) == 2) {?>selected="selected"<?php }?>>商品ID升序</option>
-                    <option value="3" <?php if (intval($_GET['order']) == 3) {?>selected="selected"<?php }?>>平台货号降序</option>
-                    <option value="4" <?php if (intval($_GET['order']) == 4) {?>selected="selected"<?php }?>>平台货号升序</option>
-                    <option value="5" <?php if (intval($_GET['order']) == 5) {?>selected="selected"<?php }?>>修改时间降序</option>
-                    <option value="6" <?php if (intval($_GET['order']) == 6) {?>selected="selected"<?php }?>>修改时间升序</option>
-                </select>
-            </td>
-            <td class="tc w70"><label class="submit-border"><input type="submit" class="submit" value="<?php echo $lang['nc_search'];?>" /></label></td>
-        </tr>
-    </table>
+  <table class="search-form">
+    <input type="hidden" name="act" value="store_goods_change_price" />
+    <input type="hidden" name="op" value="index" />
+    <tr>
+      <td>&nbsp;</td>
+      <td class="w100"><?php echo '政府采购网分类';?></td>
+      <td class="w160" id="zf_class">
+<?php
+	 $zf_url = new zf_url();
+     $sql="select `id`,`class_name`,`class_type` from `zmkj_zf_class`";
+	 $zf_class=$zf_url->select_data($sql);
+?>
+        <select name="zf_class" class="w150">
+          <option value="0"><?php echo $lang['nc_please_choose'];?></option>
+          <?php foreach($zf_class as $key=>$val){?><option value="<?php echo $val['id']; ?>" <?php if ($_GET['zf_class'] == $val['id']){ echo 'selected=selected';}?>><?php echo $val['class_name']; ?></option>
+          <?php }?>
+        </select>
+      </td>
+      <td class="w120"><label><input type="checkbox" <?php if ($_GET['zf_class'] != 0 or $_GET['is_bind'] == 'true') echo "checked=\"checked\" ";?>class="checkbox" name="is_bind" value="true"/>已绑定政府分类</label></td>
+      <th>
+        <select name="search_type">
+          <option value="0" <?php if (intval($_GET['search_type']) == 0) {?>selected="selected"<?php }?>><?php echo $lang['store_goods_index_goods_name'];?></option>
+          <option value="1" <?php if (intval($_GET['search_type']) == 1) {?>selected="selected"<?php }?>><?php echo "商品ID";?></option>
+          <option value="2" <?php if (intval($_GET['search_type']) == 2) {?>selected="selected"<?php }?>>平台货号</option>
+          <option value="3" <?php if (intval($_GET['search_type']) == 3) {?>selected="selected"<?php }?>>政府采购网ID</option>
+        </select>
+      </th>
+      <td class="w160"><input type="text" class="text" name="keyword" value="<?php echo $_GET['keyword']; ?>"/></td>
+      <td class="w120" align="center">&nbsp;&nbsp;
+      	<select name="order" class="w100">
+      		<option value="1" <?php if (intval($_GET['order']) == 1) {?>selected="selected"<?php }?>>商品ID降序</option>
+            <option value="2" <?php if (intval($_GET['order']) == 2) {?>selected="selected"<?php }?>>商品ID升序</option>
+      		<option value="3" <?php if (intval($_GET['order']) == 3) {?>selected="selected"<?php }?>>平台货号降序</option>
+            <option value="4" <?php if (intval($_GET['order']) == 4) {?>selected="selected"<?php }?>>平台货号升序</option>
+            <option value="5" <?php if (intval($_GET['order']) == 5) {?>selected="selected"<?php }?>>修改时间降序</option>
+            <option value="6" <?php if (intval($_GET['order']) == 6) {?>selected="selected"<?php }?>>修改时间升序</option>
+        </select>
+      </td>
+      <td class="tc w70"><label class="submit-border"><input type="submit" class="submit" value="<?php echo $lang['nc_search'];?>" /></label></td>
+    </tr>
+  </table>
 </form>
 <table class="ncsc-default-table">
-    <thead>
+  <thead>
     <tr nc_type="table_header">
-        <th class="w105">操作</th>
-        <th class="w90">商品品目</th>
-        <th><?php echo $lang['store_goods_index_goods_name'];?></th>
-        <!--
+      <th class="w105">操作</th>
+      <th class="w90">商品品目</th>
+      <th><?php echo $lang['store_goods_index_goods_name'];?></th>
+<!--
 	  <th class="w50"><?php //echo $lang['store_goods_index_show'];?>上下架</th>
 -->
-        <th class="w80"><?php echo $lang['store_goods_index_price'];?></th>
-        <th class="w70">政府采购网链接</th>
-        <th class="w80">上架时间</th>
-        <th class="w80"><?php //echo $lang['nc_handle'];?>最后修改时间</th>
+      <th class="w80"><?php echo $lang['store_goods_index_price'];?></th>
+      <th class="w70">政府采购网链接</th>
+      <th class="w80">上架时间</th>
+      <th class="w80"><?php //echo $lang['nc_handle'];?>最后修改时间</th>
     </tr>
-    </thead>
-    <tbody>
-    <?php
-    $tj = "`store_id` = ".$_SESSION['store_id']." and `goods_state` = 1 and `goods_verify` = 1";
-    if (intval($_GET['zf_class']) > 0) {
-        $tj = $tj." and `zf_class_id` = ".intval($_GET['zf_class']);
-    }
-    if(trim($_GET['is_bind']) == 'true'){
-        $tj = $tj." and `is_bind` > 0";
-    }
-    if (trim($_GET['keyword']) != '') {
-        switch ($_GET['search_type']) {
-            case "0":
-                $keyword = str_replace(" ","%",trim($_GET["keyword"]));
-                $tj=$tj." and `goods_name` like '%".$keyword."%'";
-                break;
-            case "1":
-                $tj=$tj." and `goods_id` = ".intval(trim($_GET['keyword']));
-                break;
-            case "2":
-                $tj=$tj." and `goods_commonid` = ".intval($_GET['keyword']);
-                break;
-            case "3":
-                $tj=$tj." and (`goods_id` IN (select DISTINCT `skuid` from `zmkj_goods_orm` where `productId` like '%".trim($_GET['keyword'])."%') or `goods_id` IN (select DISTINCT `goods_id` from `zmkj_zf_url` where `zf_product_id` like '%".trim($_GET['keyword'])."%'))";
+  </thead>
+  <tbody>
+  	<?php
+        $tj = "`store_id` = ".$_SESSION['store_id']." and `goods_state` = 1 and `goods_verify` = 1";
+        if (intval($_GET['zf_class']) > 0) {
+            $tj = $tj." and `zf_class_id` = ".intval($_GET['zf_class']);
         }
-    }
-    if(trim($_GET['order']) != ''){
-        switch (trim($_GET['order'])){
-            case "1":
-                $tj = $tj." order by `goods_id` desc";
-                break;
-            case "2":
-                $tj = $tj." order by `goods_id` asc";
-                break;
-            case "3":
-                $tj = $tj." order by `goods_commonid` desc";
-                break;
-            case "4":
-                $tj = $tj." order by `goods_commonid` asc";
-                break;
-            case "5":
-                $tj = $tj." order by `goods_edittime` desc";
-                break;
-            case "6":
-                $tj = $tj." order by `goods_edittime` asc";
-                break;
-            default:
-                $tj = $tj." order by `goods_id` desc";
+		if(trim($_GET['is_bind']) == 'true'){
+			$tj = $tj." and `is_bind` > 0";
+		}
+		if (trim($_GET['keyword']) != '') {
+            switch ($_GET['search_type']) {
+                case "0":
+					$keyword = str_replace(" ","%",trim($_GET["keyword"]));
+                    $tj=$tj." and `goods_name` like '%".$keyword."%'";
+                    break;
+                case "1":
+                    $tj=$tj." and `goods_id` = ".intval(trim($_GET['keyword']));
+                    break;
+                case "2":
+                    $tj=$tj." and `goods_commonid` = ".intval($_GET['keyword']);
+                    break;
+				case "3":
+               $tj=$tj." and (`goods_id` IN (select DISTINCT `skuid` from `zmkj_goods_orm` where `productId` like '%".trim($_GET['keyword'])."%') or `goods_id` IN (select DISTINCT `goods_id` from `zmkj_zf_url` where `zf_product_id` like '%".trim($_GET['keyword'])."%'))";
+            }
         }
-    }else{
-        $tj = $tj." order by `goods_id` desc";
-    }
-    $sqlall = "select count(*) from `zmkj_goods` where {$tj}" ;//获取总条数
+		if(trim($_GET['order']) != ''){
+			switch (trim($_GET['order'])){
+				case "1":
+					$tj = $tj." order by `goods_id` desc";
+					break;
+				case "2":
+					$tj = $tj." order by `goods_id` asc";
+					break;
+				case "3":
+					$tj = $tj." order by `goods_commonid` desc";
+					break;
+				case "4":
+					$tj = $tj." order by `goods_commonid` asc";
+					break;
+				case "5":
+					$tj = $tj." order by `goods_edittime` desc";
+					break;
+				case "6":
+					$tj = $tj." order by `goods_edittime` asc";
+					break;
+				default:
+					$tj = $tj." order by `goods_id` desc";
+			}
+		}else{
+   			$tj = $tj." order by `goods_id` desc";
+		}
+	$sqlall = "select count(*) from `zmkj_goods` where {$tj}" ;//获取总条数
     $resultall = $zf_url->select_data($sqlall);
     $c = $resultall[0]["count(*)"];//获取总条数
     $page = new page($c,50);//一共多少条 每页显示多少条

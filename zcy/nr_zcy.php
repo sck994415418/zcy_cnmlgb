@@ -259,8 +259,10 @@ class nr_zcy {
 //        var_dump($strs);die;
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        print_r($str);
         $str = json_decode($str,true);
-
+        echo '<hr>';
+        print_r($str);die;
         if(!empty($str["data_response"]["data"])){
             foreach ($str["data_response"]["data"] as $k=>$v){
                 $str["data_response"]["data"][$k]['order']['createdAt'] = number_format($str["data_response"]["data"][$k]['order']['createdAt'].'',0,'','');
@@ -334,9 +336,6 @@ class nr_zcy {
     *orderId	订单ID	可选	number	1 ~ 2^64-1	【orderId和orderCode两者选其一，orderId优先】
     *shipmentCode	外部发货单号	可选	string	<=64个字符
     *orderCode	外部订单编号	可选	string	<=80个字符	【orderId和orderCode两者选其一，orderId优先】
-     * @param $orderId
-     * @param $comment
-     * @return bool|mixed|string|null
      */
     public function send_order($skus,$quantity,$skuId,$shipmentType,$shipmentNo,$expressCode,$orderId){
         require_once('ZcyOpenClient.php');
@@ -350,6 +349,153 @@ class nr_zcy {
         $strs['_data_']["shipmentNo"] = $shipmentNo;
         $strs['_data_']["expressCode"] = $expressCode;
         $strs['_data_']["orderId"] = $orderId;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+
+    /**
+     * 同意退换货
+     * 参数名	说明	必填	类型	长度	备注
+    *checkComment	审核备注	否	String	<=200个字符	备注信息
+    *pickupBeginTime	预计取件开始时间	否	String	<=21个字符	精确到天，上门取件必填，格式为：2017-10-01
+    *pickupEndTime	预计取件结束时间	否	String	<=21个字符	精确到天，上门取件必填，格式为：2017-10-01
+    *returnOrderId	退换货单ID	是	Long	1 ~ 2^64-1	政采云平台的退换货单ID
+    *addressId	地址ID	否	Long	1 ~ 2^64-1	供应商在政采云平台录入地址ID，如果获取不到可在address中直接填详细地址，如果是物流发货需要和address二选一
+    *address	寄送地址	否	String	<=128个字符	详细地址信息，如果是物流发货需要和addressId二选一
+    *mobile	联系方式	否	String	<=20个字符	供应商联系方式，物流发货必填
+    *receiverName	联系人名称	否	String	<=50个字符	收件人姓名，物流发货必填
+     */
+    public function agree_return($checkComment='',$pickupBeginTime='',$pickupEndTime='',$returnOrderId,$addressId='',$address='',$mobile='',$receiverName=''){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.returnOrder.agree";//必须以/开头
+        $strs=array();
+        $strs['_data_']["checkComment"] = $checkComment;
+        $strs['_data_']["pickupBeginTime"] = $pickupBeginTime;
+        $strs['_data_']["pickupEndTime"] = $pickupEndTime;
+        $strs['_data_']["returnOrderId"] = $returnOrderId;
+        $strs['_data_']["addressId"] = $addressId;
+        $strs['_data_']["address"] = $address;
+        $strs['_data_']["mobile"] = $mobile;
+        $strs['_data_']["receiverName"] = $receiverName;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+
+    /**
+     * 发送退换货商品
+     * 参数名	说明	必填	类型	长度	备注
+    *skus	发货sku商品	必填	array
+    *└skuCode	外部SKU编码	可选	string	<=80个字符	【skuId和skuCode两者选填一个，优先skuId】
+    *└quantity	发货数量	必填	number	1 ~ 2^32-1
+    *└skuId	 skuID	可选	number	1 ~ 2^64-1	【skuId和skuCode两者选填一个，优先skuId】
+    *returnOrderId	退换货单ID	必填	number	1 ~ 2^64-1
+    *expressCode	发货物流公司代码	必填	string	<=32个字符
+    *shipmentNo	物流单号	必填	number	<=32个字符
+     */
+    public function send_good($skus,$skuCode='',$quantity,$skuId='',$returnOrderId,$expressCode,$shipmentNo){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.returnOrder.shipment.create";//必须以/开头
+        $strs=array();
+        $strs['_data_']["skus"] = $skus;
+        $strs['_data_']["skus"]['skuCode'] = $skuCode;
+        $strs['_data_']["skus"]['quantity'] = $quantity;
+        $strs['_data_']["skus"]['skuId'] = $skuId;
+        $strs['_data_']["returnOrderId"] = $returnOrderId;
+        $strs['_data_']["expressCode"] = $expressCode;
+        $strs['_data_']["shipmentNo"] = $shipmentNo;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+
+    /**
+     * 确认收到退换货商品
+     * 参数名	说明	必填	类型	长度	备注
+    *confirmComment	备注信息	可选	string	<=200个字符
+    *returnOrderId	退换货单ID	必填	number	1 ~ 2^64-1
+     */
+    public function is_getgood($confirmComment = '',$returnOrderId){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.returnOrder.receive";//必须以/开头
+        $strs=array();
+        $strs['_data_']["confirmComment"] = $confirmComment;
+        $strs['_data_']['returnOrderId'] = $returnOrderId;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+
+    /**
+     * 不同意退换货
+     * 参数名	说明	必填	类型	长度	备注
+    *checkComment	审核备注	可选	string	<=200个字符	备注
+    *returnOrderId	退换货单ID	必填	number	1 ~ 2^64-1
+     */
+    public function disagree_return($confirmComment = '',$returnOrderId){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.returnOrder.disAgree";//必须以/开头
+        $strs=array();
+        $strs['_data_']["confirmComment"] = $confirmComment;
+        $strs['_data_']['returnOrderId'] = $returnOrderId;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+
+    /**
+     * 获取物流公司列表
+     */
+    public function logistics_list(){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.logistics.companies.get";//必须以/开头
+        $strs=array();
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+        return $str;
+    }
+
+
+
+    /**
+     * 同意或拒绝取消订单
+     * 参数名	说明	必填	类型	备注
+    *orderId	订单id	和orderCode至少一个不为空	number	1 ~ 2^64-1
+    *isAgree	是否同意取消订单	是	boolean	true同意取消，false不同意
+    *orderCode	外部订单号	和orderId至少一个不为空	String	-
+    *comment	理由	拒绝取消订单时，必须不为空, max=120	String	-
+     */
+    public function is_agree_order($orderId,$isAgree,$comment){
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/supplier/zcy.mall.order.cancel.isAgree";//必须以/开头
+        $strs=array();
+        $strs['_data_']["orderId"] = $orderId;
+        $strs['_data_']["isAgree"] = $isAgree;
+        $strs['_data_']["comment"] = $comment;
         $strs['_data_'] = json_encode($strs['_data_']);
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
