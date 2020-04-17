@@ -119,8 +119,8 @@ class zcy_orderControl extends BaseSellerControl {
 			array('menu_key' => '-5', 'menu_name' => "供应商同意取消订单", 'menu_url' => urlShop('zcy_order', 'index', array('status' => '-5','type'=>'list'))),
 			array('menu_key' => '-6', 'menu_name' => "全部退货、订单关闭", 'menu_url' => urlShop('zcy_order', 'index', array('status' => '-6','type'=>'list'))),
         );
-        Tpl::output ( 'member_menu', $menu_array );
-        Tpl::output ( 'menu_key', $menu_key );
+        Tpl::output ('member_menu', $menu_array );
+        Tpl::output ('menu_key', $menu_key );
     }
     /**
      * 政采云买家订单详情

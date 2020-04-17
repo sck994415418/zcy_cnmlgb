@@ -137,7 +137,8 @@
                                     </dl>
                                 </div>
                             </div>
-                        </div></td>
+                        </div>
+                    </td>
                     <td class="bdl" rowspan="1"><p class="ncsc-order-amount"><?php echo number_format($v['order']['fee'],2);?></p>
 <!--                        <p class="goods-freight">-->
 <!--                            （免运费）                  </p>-->

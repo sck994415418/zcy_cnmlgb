@@ -249,7 +249,7 @@ class nr_zcy {
         error_reporting(E_ERROR | E_WARNING | E_PARSE);
         $uri = "/supplier/zcy.mall.trade.orders.find";//必须以/开头
         $strs=array();
-        $strs['_data_']["fields"] = ['orderItems','order','delivery','invoice'];
+        $strs['_data_']["fields"] = ['orderItems','order','delivery','invoice','returnOrder'];
         $strs['_data_']["statuses"][] = $status;
         $strs['_data_']["orderIds"] = $orderId?$orderId:null;
         $strs['_data_']["pageSize"] = $pageSize;
