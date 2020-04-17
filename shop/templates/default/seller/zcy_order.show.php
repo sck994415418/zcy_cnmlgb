@@ -230,7 +230,7 @@
                 </ul>
               </div>
               </a></span> </div></th>
-          <th colspan="3" style=" border-left: 0;"><?php if(!empty($output['daddress_info'])) { ?>
+          <th colspan="3" style=" border-left: 0;"><?php if(!empty($output['order_details']['delivery'])) { ?>
             <dl class="daddress-info">
               <dt>发&nbsp;&nbsp;货&nbsp;&nbsp;人：</dt>
               <dd><?php echo $output['daddress_info']['seller_name']; ?><a href="javascript:void(0);">更多<i class="icon-angle-down"></i>

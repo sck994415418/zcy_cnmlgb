@@ -23,6 +23,9 @@ class zcy_orderControl extends BaseSellerControl {
 //        $zcy = $this->nrzcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
 //        $zcy = $zcy->get_category(0,4);
 //        var_dump(json_decode($zcy));die;
+        include_once 'zcy_common.php';
+        $res = new zcy_commonControl();
+        $res->aa();
         $this->zcy_order_listOp();
     }
 	
