@@ -110,7 +110,7 @@
                     <td class="bdl"></td>
                     <td class="w70"><div class="ncsc-goods-thumb"><a href="http://www.xlshop.com/shop/index.php?act=goods&amp;op=index&amp;goods_id=<?php echo $v['shipmentItems']?>" target="_blank"><img src="http://www.xlshop.com/data/upload/shop/common/default_goods_image_60.gif" onmouseover="toolTip('<img src=http://www.xlshop.com/data/upload/shop/common/default_goods_image_240.gif>')" onmouseout="toolTip()"></a></div></td>
                     <td class="tl"><dl class="goods-name">
-                            <dt><a target="_blank" href="http://www.xlshop.com/shop/index.php?act=goods&op=index&goods_id=<?php echo $v['delivery']['shipmentItems']['itemCode']?>"><?php echo $g['itemName']; ?></a></dt>
+                            <dt><a target="_blank" href="https://www.zcygov.cn/items/<?php echo $g['itemId']?>"><?php echo $g['itemName']; ?></a></dt>
                             <dd>
                             </dd>
                         </dl></td>

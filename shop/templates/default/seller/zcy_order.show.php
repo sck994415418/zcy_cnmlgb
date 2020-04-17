@@ -215,15 +215,15 @@
           <th colspan="2"><?php echo $lang['store_show_order_goods_name'];?></th>
           <th class="w120"><?php echo $lang['store_show_order_price'];?></th>
           <th class="w60"><?php echo $lang['store_show_order_amount'];?></th>
-          <th class="w100">优惠活动</th>
-          <th class=""><strong>实付 * 佣金比 = 应付佣金(元)</strong></th>
-          <th>交易操作</th>
+<!--          <th class="w100">优惠活动</th>-->
+<!--          <th class=""><strong>实付 * 佣金比 = 应付佣金(元)</strong></th>-->
+<!--          <th>交易操作</th>-->
         </tr>
       </thead>
       <tbody>
-        <?php if (!empty($output['order_info']['shipping_code'])) { ?>
+        <?php if (!empty($output['order_details']['delivery'])) { ?>
         <tr>
-          <th colspan="6" style="border-right: 0;"> <div class="order-deliver"> <span>物流公司： <a target="_blank" href="<?php echo $output['order_info']['express_info']['e_url'];?>"><?php echo $output['order_info']['express_info']['e_name'];?></a></span> <span><?php echo $lang['store_order_shipping_no'].$lang['nc_colon'];?> <?php echo $output['order_info']['shipping_code']; ?></span><span><a href="javascript:void(0);" id="show_shipping">物流跟踪<i class="icon-angle-down"></i>
+          <th colspan="6" style="border-right: 0;"> <div class="order-deliver"> <span>物流公司： <a target="_blank" href="<?php echo null;?>"><?php echo $output['order_details']['delivery']['shipments'][0]['expressName'];?></a></span> <span><?php echo $lang['store_order_shipping_no'].$lang['nc_colon'];?> <?php echo $output['order_details']['delivery']['shipments'][0]['shipmentNo']; ?></span><span style="display: none"><a href="javascript:void(0);" id="show_shipping">物流跟踪<i class="icon-angle-down"></i>
               <div class="more"><span class="arrow"></span>
                 <ul id="shipping_ul">
                   <li>加载中...</li>
@@ -248,13 +248,13 @@
         </tr>
         <?php } ?>
         <?php $i = 0;?>
-        <?php foreach($output['order_info']['goods_list'] as $k => $goods) { ?>
+        <?php foreach($output['order_details']['orderItems'] as $k => $goods) { ?>
         <?php $i++;?>
         <tr class="bd-line">
           <td>&nbsp;</td>
           <td class="w50"><div class="pic-thumb"><a target="_blank" href="<?php echo $goods['goods_url'];?>"><img src="<?php echo $goods['image_60_url']; ?>" /></a></div></td>
           <td class="tl"><dl class="goods-name">
-              <dt><a target="_blank" href="<?php echo $goods['goods_url']; ?>"><?php echo $goods['goods_name']; ?></a></dt>
+              <dt><a target="_blank" href="https://www.zcygov.cn/items/<?php echo $goods['itemId']; ?>"><?php echo $goods['itemName']; ?></a></dt>
               <dd>
                 <?php if (is_array($output['refund_all']) && !empty($output['refund_all'])) {?>
                 退款单号：<a target="_blank" href="index.php?act=store_refund&op=view&refund_id=<?php echo $output['refund_all']['refund_id'];?>"><?php echo $output['refund_all']['refund_sn'];?></a>
@@ -265,7 +265,7 @@
               </dd>
               <?php } ?>
             </dl></td>
-          <td><?php echo $goods['goods_price']; ?>
+          <td><?php echo number_format($goods['skuPrice']*.01,2); ?>
             <p class="green">
               <?php if (is_array($output['refund_all']) && !empty($output['refund_all']) && $output['refund_all']['admin_time'] > 0) {?>
               <?php echo $goods['goods_pay_price'];?><span>退</span>
@@ -273,13 +273,13 @@
               <?php echo $goods['extend_refund']['refund_amount'];?><span>退</span>
               <?php } ?>
             </p></td>
-          <td><?php echo $goods['goods_num']; ?></td>
+          <td><?php echo $goods['quantity']; ?></td>
           <td><?php echo $goods['goods_type_cn']; ?></td>
-          <td class="commis bdl bdr">
-          <?php if ($goods['commis_rate'] != 200) { ?>
-          <?php echo ncPriceFormat($goods['goods_pay_price']); ?> * <?php echo $goods['commis_rate']; ?>% = <b><?php echo ncPriceFormat($goods['goods_pay_price']*$goods['commis_rate']/100); ?></b>
-          <?php } ?>
-          </td>
+<!--          <td class="commis bdl bdr">-->
+<!--          --><?php //if ($goods['commis_rate'] != 200) { ?>
+<!--          --><?php //echo ncPriceFormat($goods['goods_pay_price']); ?><!-- * --><?php //echo $goods['commis_rate']; ?><!--% = <b>--><?php //echo ncPriceFormat($goods['goods_pay_price']*$goods['commis_rate']/100); ?><!--</b>-->
+<!--          --><?php //} ?>
+<!--          </td>-->
 
           <!-- S 合并TD -->
           <?php if (($output['order_info']['goods_count'] > 1 && $k ==0) || ($output['order_info']['goods_count'] == 1)){?>
@@ -337,7 +337,7 @@
         <?php } ?>
         <tr>
           <td colspan="20"><dl class="freight">
-              <dd>
+              <dd style="display: none">
                 <?php if(!empty($output['order_info']['shipping_fee']) && $output['order_info']['shipping_fee'] != '0.00'){ ?>
                 <?php echo $lang['store_show_order_tp_fee'];?>: <span><?php echo $lang['currency'];?><?php echo $output['order_info']['shipping_fee']; ?></span>
                 <?php }else{?>
@@ -350,7 +350,7 @@
             </dl>
             <dl class="sum">
               <dt><?php echo $lang['store_order_sum'].$lang['nc_colon'];?></dt>
-              <dd><em><?php echo $output['order_info']['order_amount']; ?></em>元</dd>
+              <dd><em><?php echo number_format($output['order_details']['order']['fee'],2); ?></em>元</dd>
             </dl></td>
         </tr>
       </tfoot>
