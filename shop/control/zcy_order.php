@@ -84,11 +84,11 @@ class zcy_orderControl extends BaseSellerControl {
             case 'zcy_order'://订单列表
                 Tpl::showpage('zcy_order_list');
                 break;
-            case 'take_order':// 主动映射的商品改价
-                Tpl::showpage('take_order');
+            case 'send_order':// 主动映射的商品改价
+                Tpl::showpage('zcy_send_order');
                 break;
-			case 'update_productid':// 主动映射的商品改价
-                Tpl::showpage('store_goods.update_productid');
+			case 'is_agree_order':// 主动映射的商品改价
+                Tpl::showpage('zcy_is_agree_order');
                 break;
             default://订单列表
                 Tpl::showpage('zcy_order_list');
@@ -185,7 +185,7 @@ class zcy_orderControl extends BaseSellerControl {
         $rs = $zcy->refuse_order($orderId);
         if ($rs['success'] == true) {
             // 添加操作日志
-            $this->recordSellerLog('订单接单，政采云订单ID：' . $orderId);
+            $this->recordSellerLog('订单拒单，政采云订单ID：' . $orderId);
             showDialog(L('store_goods_index_goods_del_success'), 'reload', 'succ');
         } else {
             showDialog(L('store_goods_index_goods_del_fail'), '', 'error');
@@ -201,16 +201,15 @@ class zcy_orderControl extends BaseSellerControl {
     {
         $order_info = $_POST;
         $skus = $order_info['skus'];
-        $quantity = $order_info['quantity'];
-        $skuId = $order_info['skuId'];
         $shipmentType = $order_info['shipmentType'];
         $shipmentNo = $order_info['shipmentNo'];
         $expressCode = $order_info['expressCode'];
         $orderId = $order_info['orderId'];
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
-
-        $rs = $zcy->send_order($skus,$quantity,$skuId,$shipmentType,$shipmentNo,$expressCode,$orderId);
+        $rs = $zcy->send_order($skus,$shipmentType,$shipmentNo,$expressCode,$orderId);
+//        var_dump($rs);
+//        die;
         return $rs;
     }
 
@@ -232,6 +231,25 @@ class zcy_orderControl extends BaseSellerControl {
         $zcy = new nr_zcy();
         $rs = $zcy->send_order($checkComment,$pickupBeginTime,$pickupEndTime,$returnOrderId,$addressId,$address,$mobile,$receiverName);
 //        return $rs;
+    }
+
+
+    /**
+     * 同意|拒绝取消订单
+     * @return bool|mixed|string|nulld
+     */
+    public function is_agree_orderOp()
+    {
+        $order_info = $_POST;
+        $orderId = $order_info['orderId'];
+        $isAgree = $order_info['isAgree'];
+        $comment = $order_info['comment'];
+        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
+        $zcy = new nr_zcy();
+        $rs = $zcy->is_agree_order($orderId,$isAgree,$comment);
+//        var_dump($rs);
+//        die;
+        return $rs;
     }
 }
 ?>

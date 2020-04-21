@@ -336,14 +336,14 @@ class nr_zcy {
     *shipmentCode	外部发货单号	可选	string	<=64个字符
     *orderCode	外部订单编号	可选	string	<=80个字符	【orderId和orderCode两者选其一，orderId优先】
      */
-    public function send_order($skus,$quantity,$skuId,$shipmentType,$shipmentNo,$expressCode,$orderId){
+    public function send_order($skus,$shipmentType,$shipmentNo,$expressCode,$orderId){
         require_once('ZcyOpenClient.php');
         error_reporting(E_ERROR | E_WARNING | E_PARSE);
         $uri = "/supplier/zcy.mall.order.shipment.create";//必须以/开头
         $strs=array();
         $strs['_data_']["skus"] = $skus;
-        $strs['_data_']["skus"]['quantity'] = $quantity;
-        $strs['_data_']["skus"]['skuId'] = $skuId;
+//        $strs['_data_']["skus"]['quantity'] = $quantity;
+//        $strs['_data_']["skus"]['skuId'] = $skuId;
         $strs['_data_']["shipmentType"] = $shipmentType;
         $strs['_data_']["shipmentNo"] = $shipmentNo;
         $strs['_data_']["expressCode"] = $expressCode;

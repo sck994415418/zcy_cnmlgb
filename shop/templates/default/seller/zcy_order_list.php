@@ -144,16 +144,34 @@
 
                         <!-- 订单查看 -->
                         <p><a href="index.php?act=zcy_order&amp;op=show_order&amp;orderId=<?php echo $v['order']['id']?>&amp;status=<?php echo $status?>" target="_blank">订单详情</a></p>
-                        <p>
-                            <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要接受订单吗?','<?php echo urlShop('zcy_order', 'take_order', array('orderId' => $v['order']['id']));?>');" class="">
-                                接单
-                            </a>
-                            |
-                            <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要拒绝订单吗?','<?php echo urlShop('zcy_order', 'refuse_order', array('orderId' => $v['order']['id']));?>');" class="">
-                                拒单
-                            </a>
-                        <p>
-                        </p>
+
+
+
+                        <?php if($status == 0){?>
+                            <p>
+                                <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要接受订单吗?','<?php echo urlShop('zcy_order', 'take_order', array('orderId' => $v['order']['id']));?>');" class="">
+                                    接单
+                                </a>
+                                |
+                                <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要拒绝订单吗?','<?php echo urlShop('zcy_order', 'refuse_order', array('orderId' => $v['order']['id']));?>');" class="">
+                                    拒单
+                                </a>
+                            </p>
+                        <?php }elseif($status == 1){?>
+                            <p>
+                                <a href="<?php echo urlShop('zcy_order', 'index', array('orderId' => $v['order']['id'],'type'=>'send_order','status'=>$status));?>" class="">
+                                    订单发货
+                                </a>
+                            </p>
+                        <?php }elseif($status == -4 /*-4*/){?>
+                            <p>
+                                <a href="<?php echo urlShop('zcy_order', 'index', array('orderId' => $v['order']['id'],'type'=>'is_agree_order','status'=>$status));?>" class="">
+                                    同意|拒绝取消订单
+                                </a>
+                            </p>
+                        <?php }?>
+
+
 
 
                     </td>
