@@ -149,7 +149,7 @@
                                 接单
                             </a>
                             |
-                            <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要拒绝订单吗?','<?php echo urlShop('zcy_order', 'refuse_orderOp', array('orderId' => $v['order']['id']));?>');" class="">
+                            <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要拒绝订单吗?','<?php echo urlShop('zcy_order', 'refuse_order', array('orderId' => $v['order']['id']));?>');" class="">
                                 拒单
                             </a>
                         <p>

@@ -43,6 +43,7 @@ use OSS\Model\ListPartsInfo;
  * 用户通过OssClient实例可以进行Bucket，Object，MultipartUpload, ACL等操作，具体
  * 的接口规则可以参考官方OSS API文档
  */
+require_once('../src/OSS/Core/OssUtil.php');
 class OssClient
 {
     /**
@@ -66,7 +67,7 @@ class OssClient
      */
     public function __construct($accessKeyId, $accessKeySecret, $endpoint, $isCName = false, $securityToken = NULL)
     {
-        var_dump(1);die;
+//        var_dump(1);die;
         $accessKeyId = trim($accessKeyId);
         $accessKeySecret = trim($accessKeySecret);
         $endpoint = trim(trim($endpoint), "/");
