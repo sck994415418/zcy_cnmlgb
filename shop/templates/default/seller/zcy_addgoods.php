@@ -63,7 +63,6 @@
 	  <th class="w50"><?php //echo $lang['store_goods_index_show'];?>上下架</th>
 -->
         <th class="w80"><?php echo $lang['store_goods_index_price'];?></th>
-        <th class="w70">政府采购网链接</th>
         <th class="w80">上架时间</th>
         <th class="w80"><?php echo $lang['nc_handle'];?>最后修改时间</th>
     </tr>
@@ -76,8 +75,11 @@
           <span>
               <a href="<?php echo urlShop('store_goods_online', 'edit_goods', array('commonid' => $val['goods_commonid']));?>" class="btn-blue"><i class="icon-edit"></i><p><?php echo $lang['nc_edit'];?></p></a>
           </span>
-                    <span>
-              <a href="javascript:void(0)" onclick="addyingshe(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>);" class="btn-green"><i class="icon-external-link"></i><p>映射</p></a>
+          <span>
+              <a href="javascript:void(0)" onclick="addyingshe(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>);" class="btn-green"><i class="icon-external-link"></i><p>更新</p></a>
+          </span>
+          <span>
+              <a href="javascript:void(0)" onclick="" class="btn-green"><i class="icon-external-link"></i><p>上传</p></a>
           </span>
                 </td>
                 <td><span class="zf_class" goods_id="<?php echo $val["goods_id"] ?>"><?php
@@ -109,22 +111,12 @@
                 }?></td>
 -->
                 <td><span class="price" id="<?php echo $val["goods_id"];?>"><?php echo $lang['currency'].$val['goods_promotion_price']; ?></span></td>
-                <td><?php $url=$zf_url->get_zf_url($val["goods_id"]);
-                    if($url=="未录入"){
-                        echo "未录入";
-                    }elseif($url=="不存在"){
-                        echo "<font color='#FF0000'>商品链接不存在</font>";
-                    }else{
-                        echo "<a href=\"http://www.hebzfcgwssc.com/Mall/HeBei/detail.aspx?product_id=$url\" target=\"_blank\" class=\"olink\">打开链接</a>";
-                    }
-                    ?></td>
                 <td><span><?php echo date("Y-m-d H:i",$val['goods_addtime']); ?></span></td>
                 <td><?php echo date("Y-m-d H:i",$val["goods_edittime"]); ?></td>
             </tr>
             <tr class="goodslist">
                 <td colspan="8" class="ystd" id="ys<?php echo $val["goods_id"];?>">
                     <?php
-                    $ys_goods=$zf_url->get_yingshe_goods($val["goods_id"]);
                     if(!empty($ys_goods)){
                         foreach($ys_goods as $ys_good){
                             ?>
@@ -144,7 +136,7 @@
     <?php  if (!empty($output['rs_array'])) { ?>
         <tfoot>
         <tr>
-            <td colspan="20"><div class="pagination"> <?php echo $page->fpage();?> </div></td>
+            <td colspan="20"><div class="pagination"> <?php echo $output['page']->fpage();?> </div></td>
         </tr>
         </tfoot>
     <?php } ?>
@@ -155,7 +147,7 @@
     <form name="yingshe" id="yingshe" action="#" method="post">
         <table width="450" height="200" border="0" style="margin:auto;">
             <tr>
-                <th colspan="2" align="center"><h2 align="center">添加商品映射关系</h2></th>
+                <th colspan="2" align="center"><h2 align="center">添加商品图片</h2></th>
             </tr>
             <tr>
                 <td colspan="2" height="30"><input type="hidden" name="goods_id" id="goods_id" value="" /><input type="text" name="goods_name" id="goods_name" value="" style="border:none;width:100%;text-align:center" contenteditable="false" /></td>

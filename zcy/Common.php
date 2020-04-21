@@ -22,6 +22,7 @@ class Common
     public static function getOssClientSTS($accessKeyId, $accessKeySecret, $endpoint, $securityToken)
     {
         try {
+            include_once ('../src/OSS/OssClient.php');
             $ossClient = new OssClient($accessKeyId, $accessKeySecret, $endpoint, false,$securityToken);
         } catch (OssException $e) {
             printf(__FUNCTION__ . "creating OssClient instance: FAILED\n");

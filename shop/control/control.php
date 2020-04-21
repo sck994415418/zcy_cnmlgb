@@ -1150,7 +1150,8 @@ class BaseSellerControl extends Control {
 			'zcy' => array('name' => '政采云', 'child' => array(
 				array('name' => '基本配置', 'act'=>'zcy_config', 'op'=>'index'),
 				array('name' => '商品管理', 'act'=>'zcy_goods', 'op'=>'index'),
-				array('name' => '订单管理', 'act'=>'zcy_order', 'op'=>'index')
+				array('name' => '订单管理', 'act'=>'zcy_order', 'op'=>'index'),
+                array('name' => '上传图片', 'act'=>'zcy_image', 'op'=>'index'),
 			)),
 
             'order' => array('name' => '订单物流', 'child' => array(
