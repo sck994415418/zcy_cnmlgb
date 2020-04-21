@@ -81,7 +81,7 @@
     </thead>
 <?php
 	if($rs["success"]){
-	    echo "<pre>";
+//	    echo "<pre>";
 //	    var_dump($rs["data_response"]["data"]);
 		$total = $rs["data_response"]["total"];
 		if($total > 0){
@@ -89,9 +89,6 @@
 <?php
 			foreach($rs["data_response"]["data"] as $v){
 ?>
-
-
-
 
                 <tbody>
                 <tr>
@@ -147,8 +144,14 @@
 
                         <!-- 订单查看 -->
                         <p><a href="index.php?act=zcy_order&amp;op=show_order&amp;orderId=<?php echo $v['order']['id']?>&amp;status=<?php echo $status?>" target="_blank">订单详情</a></p>
-
-                        <!-- 物流跟踪 -->
+                        <p>
+                            <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要接受订单吗?','<?php echo urlShop('zcy_order', 'take_order', array('orderId' => $v['order']['id']));?>');" class="">
+                                接单
+                            </a>
+                            |
+                            <a href="javascript:void(0);" onclick="ajax_get_confirm('您确定要拒绝订单吗?','<?php echo urlShop('zcy_order', 'refuse_orderOp', array('orderId' => $v['order']['id']));?>');" class="">
+                                拒单
+                            </a>
                         <p>
                         </p>
 

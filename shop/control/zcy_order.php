@@ -81,16 +81,16 @@ class zcy_orderControl extends BaseSellerControl {
         }
 
         switch ($_GET['type']) {
-            case 'zcy_order_list':// 商品批量改价
-                Tpl::showpage('store_goods_list.change_price_change_all');
+            case 'zcy_order'://订单列表
+                Tpl::showpage('zcy_order_list');
                 break;
-            case 'change_yingshe':// 主动映射的商品改价
-                Tpl::showpage('store_goods_yingshe.change_price');
+            case 'take_order':// 主动映射的商品改价
+                Tpl::showpage('take_order');
                 break;
 			case 'update_productid':// 主动映射的商品改价
                 Tpl::showpage('store_goods.update_productid');
                 break;
-            default://使用模版zcy_order_list.php
+            default://订单列表
                 Tpl::showpage('zcy_order_list');
                 break;
         }
@@ -128,11 +128,18 @@ class zcy_orderControl extends BaseSellerControl {
      */
     public function show_orderOp() {
 
-        Language::read('member_member_index');
         $orderId = array($_GET['orderId']);
         $status = $_GET['status'];
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
+//        $orderId = 1509792000002605151;
+//        $res = $zcy->take_order($orderId);
+//        echo '<pre>';
+//        print_r($res);
+//        die;
+
+
+
         $rs = $zcy->order_list($status,$orderId,1,1);
 //        echo '<pre>';
 //        print_r($rs);
@@ -146,5 +153,85 @@ class zcy_orderControl extends BaseSellerControl {
         }
     }
 
+
+
+    /**
+     * 接受订单
+     *
+     */
+    public function take_orderOp() {
+        $orderId = array($_GET['orderId']);
+        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
+        $zcy = new nr_zcy();
+        $rs = $zcy->take_order($orderId);
+//        var_dump($rs);die;
+        if ($rs['success'] == true) {
+            // 添加操作日志
+            $this->recordSellerLog('订单接单，政采云订单ID：' . $orderId);
+            showDialog(L('store_goods_index_goods_del_success'), 'reload', 'succ');
+        } else {
+            showDialog(L('store_goods_index_goods_del_fail'), '', 'error');
+        }
+        return $rs;
+    }
+    /**
+     * 拒绝订单
+     */
+    public function refuse_orderOp()
+    {
+        $orderId = array($_GET['orderId']);
+        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
+        $zcy = new nr_zcy();
+        $rs = $zcy->refuse_order($orderId);
+        if ($rs['success'] == true) {
+            // 添加操作日志
+            $this->recordSellerLog('订单接单，政采云订单ID：' . $orderId);
+            showDialog(L('store_goods_index_goods_del_success'), 'reload', 'succ');
+        } else {
+            showDialog(L('store_goods_index_goods_del_fail'), '', 'error');
+        }
+        return $rs;
+    }
+
+    /**
+     * 订单发货
+     * @return bool|mixed|string|nulld
+     */
+    public function send_orderOp()
+    {
+        $order_info = $_POST;
+        $skus = $order_info['skus'];
+        $quantity = $order_info['quantity'];
+        $skuId = $order_info['skuId'];
+        $shipmentType = $order_info['shipmentType'];
+        $shipmentNo = $order_info['shipmentNo'];
+        $expressCode = $order_info['expressCode'];
+        $orderId = $order_info['orderId'];
+        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
+        $zcy = new nr_zcy();
+
+        $rs = $zcy->send_order($skus,$quantity,$skuId,$shipmentType,$shipmentNo,$expressCode,$orderId);
+        return $rs;
+    }
+
+    /**
+     * 同意退换货
+     */
+    public function agree_returnOp()
+    {
+        $return_info = $_POST;
+        $checkComment = $return_info['checkComment'];
+        $pickupBeginTime = $return_info['pickupBeginTime'];
+        $pickupEndTime = $return_info['pickupEndTime'];
+        $returnOrderId = $return_info['returnOrderId'];
+        $addressId = $return_info['addressId'];
+        $address = $return_info['address'];
+        $mobile = $return_info['mobile'];
+        $receiverName = $return_info['receiverName'];
+        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
+        $zcy = new nr_zcy();
+        $rs = $zcy->send_order($checkComment,$pickupBeginTime,$pickupEndTime,$returnOrderId,$addressId,$address,$mobile,$receiverName);
+//        return $rs;
+    }
 }
 ?>

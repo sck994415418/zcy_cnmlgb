@@ -256,7 +256,7 @@ class nr_zcy {
         $strs['_data_']["pageNo"] = $pageNo;
         $strs['_data_'] = json_encode($strs['_data_']);
 //        echo '<pre>';
-//        var_dump($strs);die;
+//        var_dump($strs);
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
         $str = json_decode($str,true,512,JSON_BIGINT_AS_STRING);
