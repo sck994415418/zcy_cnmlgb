@@ -36,15 +36,16 @@
     <ul class="flex-container">
         <?php foreach ($output['img'] as $v){ ?>
         <li class="flex-item click">
-            <input type="checkbox" class="input" value="<?php echo cthumb($v['apic_cover'], 240, $_SESSION['store_id']);?>">
+            <input type="checkbox" class="input" value="<?php echo $v['apic_cover'];?>">
         <img src="<?php echo cthumb($v['apic_cover'], 240, $_SESSION['store_id']);?>" alt="" width="100%" height="100%">
         </li>
         <?php }?>
     </ul>
+
     <tr>
         <td colspan="20"><div class="pagination"> <?php echo $output['show_page'] ?> </div></td>
     </tr>
-
+    
 </div>
 <script src="<?php echo RESOURCE_SITE_URL;?>/js/jquery.poshytip.min.js"></script>
 

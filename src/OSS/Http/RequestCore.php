@@ -12,6 +12,7 @@ namespace OSS\Http;
  * @copyright 2008-2011 Contributors
  * @license http://opensource.org/licenses/bsd-license.php Simplified BSD License
  */
+require_once('../src/OSS/Http/RequestCore_Exception.php');
 class RequestCore
 {
     /**
@@ -800,7 +801,6 @@ class RequestCore
 
         $curl_handle = $this->prep_request();
         $this->response = curl_exec($curl_handle);
-
         if ($this->response === false) {
             throw new RequestCore_Exception('cURL resource: ' . (string)$curl_handle . '; cURL error: ' . curl_error($curl_handle) . ' (' . curl_errno($curl_handle) . ')');
         }
