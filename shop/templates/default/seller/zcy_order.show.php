@@ -223,13 +223,25 @@
       <tbody>
         <?php if (!empty($output['order_details']['delivery'])) { ?>
         <tr>
-          <th colspan="6" style="border-right: 0;"> <div class="order-deliver"> <span>物流公司： <a target="_blank" href="<?php echo null;?>"><?php echo $output['order_details']['delivery']['shipments'][0]['expressName'];?></a></span> <span><?php echo $lang['store_order_shipping_no'].$lang['nc_colon'];?> <?php echo $output['order_details']['delivery']['shipments'][0]['shipmentNo']; ?></span><span style="display: none"><a href="javascript:void(0);" id="show_shipping">物流跟踪<i class="icon-angle-down"></i>
+          <th colspan="6" style="border-right: 0;">
+              <div class="order-deliver"> 
+                  <span>物流公司： 
+                      <a target="_blank" href="<?php echo null;?>"><?php echo $output['order_details']['delivery']['shipments'][0]['expressName'];?></a>
+                  </span> 
+                  <span>
+                      <?php echo $lang['store_order_shipping_no'].$lang['nc_colon'];?> <?php echo $output['order_details']['delivery']['shipments'][0]['shipmentNo']; ?>
+                  </span>
+                  <span>
+                      <a href="<?php echo urlShop('zcy_order', 'index', array('orderId' => $output['order_details']['order']['id'],'type'=>'order_other_info'));?>">订单附加信息</a>
+                  </span>
+                  <span style="display: none"><a href="javascript:void(0);" id="show_shipping">物流跟踪<i class="icon-angle-down"></i>
               <div class="more"><span class="arrow"></span>
                 <ul id="shipping_ul">
                   <li>加载中...</li>
                 </ul>
               </div>
-              </a></span> </div></th>
+              </a></span> </div>
+          </th>
           <th colspan="3" style=" border-left: 0;"><?php if(!empty($output['daddress_info'])) { ?>
             <dl class="daddress-info">
               <dt>发&nbsp;&nbsp;货&nbsp;&nbsp;人：</dt>
