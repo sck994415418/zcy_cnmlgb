@@ -19,6 +19,8 @@ class ZcyItemUtil
         $fileFullPath = "";//商品图片全路径,示例:http://xxx-bucket.oss-cn-hangzhou.aliyuncs.com/3816471/8dcabe35-878c-4d2a-996a-5e1d3ee0ca34.png
         $fileId = "";//OSS中文件id
         $httpResponse=json_decode($stsTokenResponse,true);//json串化
+        echo '<pre>';
+//        print_r($httpResponse);die;
         if($httpResponse['data_response']['success']=="true"){
             //获取OSS STS临时凭证
             $credentials = $httpResponse['data_response']['result'];
@@ -30,7 +32,7 @@ class ZcyItemUtil
             $endPoint = $credentials['endPoint'];
             try{
                 $fileSuffix = "";
-                
+
                 $tempArr = explode(".",json_encode($filePath));
                 if(count($tempArr)>1){
                     $fileSuffix = $tempArr[count($tempArr)-1];//得到文件后缀
@@ -39,13 +41,10 @@ class ZcyItemUtil
                 $realFilePath = $bucket."/".substr($data[0],0,$pos);
                 $fileId = $data[0].".".$fileSuffix;
                 $ossClient = Common::getOssClientSTS($accessKeyId, $accessKeySecret, $endPoint, $securityToken);
-
                 // 上传本地文件,$response是一个ResponseCore类型
                 $response = $ossClient->uploadFile($bucket, $fileId, $filePath);
-                var_dump($response);die;
-
                 if($response&&$response->status==200){
-                    $rtn['result'] = $fileId;
+                    $rtn['result'] = $realFilePath.'/'.$fileId;
                     $rtn['success'] = true;
                     $rtn['error'] = "";
                     $header = $response->header;

@@ -1726,7 +1726,6 @@ class OssClient
         if ($this->connectTimeout !== 0) {
             $request->connect_timeout = $this->connectTimeout;
         }
-        print_r( $request->send_request());die;
         try {
             $request->send_request();
         } catch (RequestCore_Exception $e) {
