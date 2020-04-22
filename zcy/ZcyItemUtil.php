@@ -44,7 +44,7 @@ class ZcyItemUtil
                 // 上传本地文件,$response是一个ResponseCore类型
                 $response = $ossClient->uploadFile($bucket, $fileId, $filePath);
                 if($response&&$response->status==200){
-                    $rtn['result'] = $realFilePath.'/'.$fileId;
+                    $rtn['result'] = $fileId;
                     $rtn['success'] = true;
                     $rtn['error'] = "";
                     $header = $response->header;
