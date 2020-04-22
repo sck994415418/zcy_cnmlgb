@@ -505,7 +505,6 @@ class nr_zcy {
     //图片上传
     public function zcyimage($filePath,$fileName,$description='商品描述',$fileContentType='img/png',$size='23009'){
         require_once('ZcyItemUtil.php');//商品图片上传OSS组件
-
         error_reporting(E_ERROR | E_WARNING | E_PARSE);
         $itemImgUtil = new ZcyItemUtil();
         $result = $itemImgUtil->uploadZcyItemImg($this->gate_way,$this->appKey,$this->appSecret,$filePath,$fileName,$size,$fileContentType,$description);

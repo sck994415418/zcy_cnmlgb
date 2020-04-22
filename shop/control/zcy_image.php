@@ -48,7 +48,12 @@ class zcy_imageControl extends BaseSellerControl
         if($_POST){
             require_once(BASE_PATH . '/../zcy/nr_zcy.php');
             $zcy = new nr_zcy();
-            $data = $zcy->zcyimage($_POST['path'],time());
+//            $_POST['path'][0] = 'avatar_45.jpg';
+//            unset($_POST['path'][1]);
+//            $_POST['path'] = implode(',',$_POST['path']);
+            $img = 'F:\phpstudy_pro/WWW/zcy/data/upload/shop/store/goods/51/'.implode(',',$_POST['path']);
+
+            $data = $zcy->zcyimage($img,time());
             print_r($data);
         }
     }

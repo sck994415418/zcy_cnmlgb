@@ -1,6 +1,11 @@
 <?php
 namespace OSS;
 
+require_once('../src/OSS/Core/MimeTypes.php');
+require_once('../src/OSS/Core/OssException.php');
+require_once('../src/OSS/Http/RequestCore.php');
+require_once('../src/OSS/Http/RequestCore_Exception.php');
+require_once('../src/OSS/Http/ResponseCore.php');
 use OSS\Core\MimeTypes;
 use OSS\Core\OssException;
 use OSS\Http\RequestCore;
@@ -44,6 +49,7 @@ use OSS\Model\ListPartsInfo;
  * 的接口规则可以参考官方OSS API文档
  */
 require_once('../src/OSS/Core/OssUtil.php');
+require_once('../src/OSS/Core/OssException.php');
 class OssClient
 {
     /**
@@ -67,7 +73,6 @@ class OssClient
      */
     public function __construct($accessKeyId, $accessKeySecret, $endpoint, $isCName = false, $securityToken = NULL)
     {
-//        var_dump(1);die;
         $accessKeyId = trim($accessKeyId);
         $accessKeySecret = trim($accessKeySecret);
         $endpoint = trim(trim($endpoint), "/");
@@ -772,6 +777,7 @@ class OssClient
         if (!file_exists($file)) {
             throw new OssException($file . " file does not exist");
         }
+
         $options[self::OSS_FILE_UPLOAD] = $file;
         $file_size = filesize($options[self::OSS_FILE_UPLOAD]);
         $is_check_md5 = $this->isCheckMD5($options);
@@ -787,6 +793,8 @@ class OssClient
         $options[self::OSS_OBJECT] = $object;
         $options[self::OSS_CONTENT_LENGTH] = $file_size;
         $response = $this->auth($options);
+//        var_dump(!file_exists($file));
+//        die;
         return $response;
     }
 
@@ -1627,10 +1635,10 @@ class OssClient
             $conjunction = '&';
         }
         $this->requestUrl = $scheme . $hostname . $resource_uri . $signable_query_string . $non_signable_resource;
-
         //创建请求
         $request = new RequestCore($this->requestUrl);
         $request->set_useragent($this->generateUserAgent());
+
         // Streaming uploads
         if (isset($options[self::OSS_FILE_UPLOAD])) {
             if (is_resource($options[self::OSS_FILE_UPLOAD])) {
@@ -1718,7 +1726,7 @@ class OssClient
         if ($this->connectTimeout !== 0) {
             $request->connect_timeout = $this->connectTimeout;
         }
-
+        print_r( $request->send_request());die;
         try {
             $request->send_request();
         } catch (RequestCore_Exception $e) {

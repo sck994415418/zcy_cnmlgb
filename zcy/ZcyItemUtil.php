@@ -14,7 +14,7 @@ class ZcyItemUtil
         require_once('ZcyOpenClient.php');//政采云开放平台SDK组件
         $p= new ZcyOpenClient();
         $fileTokenStrs=array();
-        $fileTokenStrs['_data_']="{\"quatity\":\"2\"}";
+        $fileTokenStrs['_data_']="{\"quatity\":\"1\"}";
         $stsTokenResponse= $p->sendPost($gate_way,"/open/zcy.zoss.filetoken.get","POST",$app_key,$secret,$fileTokenStrs);
         $fileFullPath = "";//商品图片全路径,示例:http://xxx-bucket.oss-cn-hangzhou.aliyuncs.com/3816471/8dcabe35-878c-4d2a-996a-5e1d3ee0ca34.png
         $fileId = "";//OSS中文件id
@@ -38,11 +38,12 @@ class ZcyItemUtil
                 $pos = strrpos($data[0],"/");
                 $realFilePath = $bucket."/".substr($data[0],0,$pos);
                 $fileId = $data[0].".".$fileSuffix;
-
                 $ossClient = Common::getOssClientSTS($accessKeyId, $accessKeySecret, $endPoint, $securityToken);
-                var_dump($ossClient);die;
+
                 // 上传本地文件,$response是一个ResponseCore类型
                 $response = $ossClient->uploadFile($bucket, $fileId, $filePath);
+                var_dump($response);die;
+
                 if($response&&$response->status==200){
                     $rtn['result'] = $fileId;
                     $rtn['success'] = true;
