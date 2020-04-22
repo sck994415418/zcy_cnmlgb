@@ -7,12 +7,15 @@
 class nr_zcy {
 	private $appKey = null;
 	private $appSecret = null;
-	private $gate_way = "http://api.zcygov.cn/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
+//	private $gate_way = "http://api.zcygov.cn/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
+	private $gate_way = "http://sandbox.zcygov.cn/";//http://121.196.217.18:9002/测试   http://api.zcygov.cn/
     public function __construct()
     {
         $session = $_SESSION['zcy_user_config'];
-        $this->appKey = $session['appkey'];
-        $this->appSecret = $session['appsecret'];
+//        $this->appKey = $session['appkey'];
+//        $this->appSecret = $session['appsecret'];
+        $this->appKey = '721278';
+        $this->appSecret = '1iTzAYkS0q4k';
     }
 
     /*
@@ -348,10 +351,14 @@ class nr_zcy {
         $strs['_data_']["shipmentNo"] = $shipmentNo;
         $strs['_data_']["expressCode"] = $expressCode;
         $strs['_data_']["orderId"] = $orderId;
+//        echo '<pre>';
+//        var_dump($strs);die;
         $strs['_data_'] = json_encode($strs['_data_']);
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
         $str = json_decode($str,true);
+        echo '<pre>';
+        var_dump($str);die;
         return $str;
     }
 
@@ -499,6 +506,27 @@ class nr_zcy {
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
         $str = json_decode($str,true);
+        return $str;
+    }
+
+
+    /**
+     *订单附加信息查询
+     * 参数名	说明	必填	类型	长度	备注
+    *orderIds	订单id列表	是	array	最大5
+     */
+    public function order_other_info($orderId)
+    {
+        require_once('ZcyOpenClient.php');
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        $uri = "/zcy.mall.trade.orders.extra.get";//必须以/开头
+        $strs=array();
+        $strs['_data_']["orderIds"] = $orderId;
+        $strs['_data_'] = json_encode($strs['_data_']);
+        $p= new ZcyOpenClient();
+        $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
+        $str = json_decode($str,true);
+//        var_dump($str);die;
         return $str;
     }
 

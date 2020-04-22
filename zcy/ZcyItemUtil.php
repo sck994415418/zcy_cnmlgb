@@ -39,6 +39,7 @@ class ZcyItemUtil
                 }
                 $pos = strrpos($data[0],"/");
                 $realFilePath = $bucket."/".substr($data[0],0,$pos);
+
                 $fileId = $data[0].".".$fileSuffix;
                 $ossClient = Common::getOssClientSTS($accessKeyId, $accessKeySecret, $endPoint, $securityToken);
                 // 上传本地文件,$response是一个ResponseCore类型

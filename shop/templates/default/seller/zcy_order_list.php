@@ -143,7 +143,7 @@
                     <td class="bdl bdr" rowspan="1"><p></p>
 
                         <!-- 订单查看 -->
-                        <p><a href="index.php?act=zcy_order&amp;op=show_order&amp;orderId=<?php echo $v['order']['id']?>&amp;status=<?php echo $status?>" target="_blank">订单详情</a></p>
+                        <p><a href="index.php?act=zcy_order&amp;op=show_order&amp;orderId=<?php echo $v['order']['id']?>&amp;status=<?php echo $status?>" target="_self">订单详情</a></p>
 
 
 

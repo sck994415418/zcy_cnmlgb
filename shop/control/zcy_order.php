@@ -90,6 +90,9 @@ class zcy_orderControl extends BaseSellerControl {
 			case 'is_agree_order':// 主动映射的商品改价
                 Tpl::showpage('zcy_is_agree_order');
                 break;
+            case 'order_other_info':// 主动映射的商品改价
+                Tpl::showpage('zcy_order_other_info');
+                break;
             default://订单列表
                 Tpl::showpage('zcy_order_list');
                 break;
@@ -208,8 +211,10 @@ class zcy_orderControl extends BaseSellerControl {
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
         $rs = $zcy->send_order($skus,$shipmentType,$shipmentNo,$expressCode,$orderId);
-//        var_dump($rs);
-//        die;
+        echo '<pre>';
+//        var_dump($order_info);
+        var_dump($rs);
+        die;
         return $rs;
     }
 
@@ -230,7 +235,7 @@ class zcy_orderControl extends BaseSellerControl {
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
         $rs = $zcy->send_order($checkComment,$pickupBeginTime,$pickupEndTime,$returnOrderId,$addressId,$address,$mobile,$receiverName);
-//        return $rs;
+        return $rs;
     }
 
 
