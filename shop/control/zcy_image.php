@@ -55,6 +55,8 @@ class zcy_imageControl extends BaseSellerControl
             $zcy = new nr_zcy();
             $path_rel = $_SERVER['DOCUMENT_ROOT'].DS.'data/upload'.DS.ATTACH_GOODS.DS.$_SESSION['store_id'];
             $img = $path_rel.DS.$path['apic_cover'];
+//            var_dump($img);
+//            die;
             $data = $zcy->zcyimage($img,time());
             $img = new model('zcy_img');
             $arr = $img->insert(['fileid'=>$data['result'],'add_time'=>time()]);
