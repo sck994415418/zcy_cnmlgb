@@ -24,6 +24,9 @@ class zcy_imageControl extends BaseSellerControl
 
     public function indexOp()
     {
+        include_once 'zcy_common.php';
+        $res = new zcy_commonControl();
+        $res->aa();
         /**
          * 分页类
          */

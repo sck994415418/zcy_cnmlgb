@@ -23,7 +23,7 @@ class zcy_commonControl extends Model {
             return $data;
         }
         if($res==false){
-            exit("当前店铺没有此权限！请<a href=\"/shop/index.php?act=seller_center&op=index\">返回</a>");
+            exit("当前店铺没有此权限！请<a href=\"/shop/index.php?act=zcy_user_info&op=index\">完善信息</a>进行申请");
         }
     }
 }

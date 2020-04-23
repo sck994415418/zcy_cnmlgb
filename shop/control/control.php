@@ -1148,6 +1148,7 @@ class BaseSellerControl extends Control {
 				array('name' => '河北政采商品管理', 'act'=>'store_goods_change_price', 'op'=>'index'),
             )),
 			'zcy' => array('name' => '政采云', 'child' => array(
+				array('name' => '完善信息', 'act'=>'zcy_user_info', 'op'=>'index'),
 				array('name' => '基本配置', 'act'=>'zcy_config', 'op'=>'index'),
 				array('name' => '商品管理', 'act'=>'zcy_goods', 'op'=>'index'),
 				array('name' => '订单管理', 'act'=>'zcy_order', 'op'=>'index'),
