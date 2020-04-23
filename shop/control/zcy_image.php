@@ -53,7 +53,8 @@ class zcy_imageControl extends BaseSellerControl
             $path = $model->table('album_pic')->where(['apic_id'=>$_POST['path'][0]])->field("apic_cover")->find();
             require_once(BASE_PATH . '/../zcy/nr_zcy.php');
             $zcy = new nr_zcy();
-            $img = 'F:\phpstudy_pro/WWW/zcy/data/upload/shop/store/goods/51/'.$path['apic_cover'];
+            $path_rel = $_SERVER['DOCUMENT_ROOT'].DS.'data/upload'.DS.ATTACH_GOODS.DS.$_SESSION['store_id'];
+            $img = $path_rel.DS.$path['apic_cover'];
             $data = $zcy->zcyimage($img,time());
             $img = new model('zcy_img');
             $arr = $img->insert(['fileid'=>$data['result'],'add_time'=>time()]);
