@@ -5,6 +5,10 @@
     a.olink:visited{color:#5F20F0;}
     .toDisplay {position:fixed;background:#FFFFFF;display:none;width:40%;height:230px;top:200px;left:30%;right:30%;z-Index:3;text-align:center;padding:50px 50px 50px 50px;}
     .mask {display:none;z-index:2;position:fixed;width:100%; height:100%;top:0;left:0;background:#000;opacity:0.5;}
+    .zcyadd{
+        position:fixed;background:#FFFFFF;display:none;width:40%;height:230px;top:200px;left:30%;right:30%;z-Index:3;text-align:center;padding:50px 50px 50px 50px;}
+    .mask {display:none;z-index:2;position:fixed;width:100%; height:100%;top:0;left:0;background:#000;opacity:0.5;
+    }
     #errinfo{color:#FF0000;line-height:25px;text-align:center;mini-height:25px;display:inline-block;}
     .yslist{margin-left:200px;text-align:left;line-height:25px;padding-left:35px; background-image:url(../../../../list-bg.png); background-position:left; background-repeat:no-repeat;}
 </style>
@@ -79,7 +83,7 @@
               <a href="javascript:void(0)" onclick="addyingshe(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>);" class="btn-green"><i class="icon-external-link"></i><p>更新</p></a>
           </span>
           <span>
-              <a href="javascript:void(0)" onclick="" class="btn-green"><i class="icon-external-link"></i><p>上传</p></a>
+              <a href="javascript:void(0)" onclick="zcygoodsadd(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>)" class="btn-green"><i class="icon-external-link"></i><p>上传</p></a>
           </span>
                 </td>
                 <td><span class="zf_class" goods_id="<?php echo $val["goods_id"] ?>"><?php
@@ -136,7 +140,7 @@
     <?php  if (!empty($output['rs_array'])) { ?>
         <tfoot>
         <tr>
-            <td colspan="20"><div class="pagination"> <?php echo $output['page'];?> </div></td>
+            <td colspan="20"><div class="pagination"> <?php echo $output['page']?> </div></td>
         </tr>
         </tfoot>
     <?php } ?>
@@ -164,8 +168,35 @@
                 <td colspan="2"><span id="errinfo"></span></td>
             </tr>
             <tr>
-                <td align="right"><input type="button" name="cancle" class="submit" id="cancle" value="取消" /></td>
+                <td align="right"><input type="button" name="cancle" class="submit cancle" value="取消" /></td>
                 <td align="center"><input type="button" name="submit" class="submit" id="addyingshe" value="添加" /></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="zcyadd">
+    <form action="#" method="post">
+        <table width="450" height="200" border="0" style="margin: auto;">
+            <tr>
+                <th colspan="2" align="center"><h2 align="center">商品上传至政采云</h2></th>
+            </tr>
+            <tr>
+                <td colspan="2" height="30"><input type="hidden" name="good_id" id="good_id" value="" /><input type="text" name="goods_name" id="good_name" value="" style="border:none;width:100%;text-align:center" contenteditable="false" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" height="30">
+                    <select name="" id="">
+                        <option value=""></option>
+                        <?php foreach($zf_class as $key=>$val){?>
+                            <option value="<?php echo $val['id']; ?>" <?php if ($_GET['zf_class'] == $val['id']){ echo 'selected=selected';}?><?php echo $val['name']; ?></option>
+                        <?php }?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><input type="button" name="cancle" class="submit cancle" value="取消" /></td>
+                <td align="center"><input type="button" name="submit" class="submit" id="zcyadd" value="添加" /></td>
             </tr>
         </table>
     </form>
@@ -252,8 +283,14 @@
         $(".mask").fadeIn();
         $(".toDisplay").fadeIn();
     }
-
-    $("#cancle").click(function() {
+    function zcygoodsadd(goods_id,goods_name){
+        console.log(goods_name);
+        $("#good_name").val(goods_name.trim());
+        $("#good_id").val(goods_id);
+        $(".mask").fadeIn();
+        $(".zcyadd").fadeIn();
+    }
+    $(".cancle").click(function() {
         $("#goods_name").val("");
         $("#goods_id").val("");
         $("#goods_yingshe_id").val("");
@@ -261,6 +298,7 @@
         $("#errinfo").text("");
         $(".mask").fadeOut();
         $(".toDisplay").fadeOut();
+        $(".zcyadd").fadeOut();
     });
 
     $("#addyingshe").click(function() {
@@ -310,6 +348,65 @@
         }else{
             $("#errinfo").text("政府采购网商品ID不正确！");
             $("#goods_yingshe_id").focus();
+            return;
+        }
+        $("#errinfo").text("正在创建商品映射……");
+        var parms = {};
+        parms.goods_id = goods_id;
+        parms.goods_name = goods_name;
+        parms.goods_yingshe_id = goods_yingshe_id;
+        parms.goods_yingshe_name = goods_yingshe_name;
+        $.ajax({
+            url:"/shop/index.php?act=store_goods_change_price&op=addyingshe",
+            type: "POST",
+            timeout: 2000,
+            dataType: "JSON",
+            data: JSON.stringify(parms),
+            contentType: "application/json;charset=utf-8",
+            success:function(msg) {
+                if(msg.isSuccess){
+                    $("#errinfo").html(msg.returnMsg);
+                    setTimeout(function xx(){
+                        $("#goods_name").val("");
+                        $("#goods_id").val("");
+                        $("#goods_yingshe_id").val("");
+                        $("#goods_yingshe_name").val("");
+                        $("#errinfo").html("");
+                        $(".mask").fadeOut();
+                        $(".toDisplay").fadeOut();},1000);
+                    listyingshe(goods_id);
+                }else{
+                    $("#errinfo").html(msg.returnMsg);
+                }
+            },
+            error : function(xhr) {
+                $("#errinfo").html(xhr.status + ":" + xhr.statusText);
+            }
+        });
+    });
+    $("#zcyadd").click(function() {
+        var goods_id = $("#good_id").val();
+        var goods_name = $("#good_name").val();
+        if(goods_id==""){
+            $("#errinfo").text("goods_id不能为空");
+            return;
+        }
+        if(goods_name==""){
+            $("#errinfo").text("goods_name不能为空");
+            return;
+        }
+        if(goods_yingshe_name==""){
+            $("#errinfo").text("政府采购网商品名称不能为空");
+            $("#goods_yingshe_name").focus();
+            return;
+        }
+        if(goods_yingshe_id==""){
+            $("#errinfo").text("政府采购网商品id不能为空");
+            $("#goods_yingshe_id").focus();
+            return;
+        }
+        if(isNaN(goods_id)){
+            $("#errinfo").text("goods_id只能是数字");
             return;
         }
         $("#errinfo").text("正在创建商品映射……");

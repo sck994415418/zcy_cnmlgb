@@ -111,9 +111,6 @@ class zcy_goodsControl extends BaseSellerControl
     //添加商品
     public function add_goodsOp()
     {
-        include_once "store_goods_change_price.php";
-        $zf_url = new zf_url();
-        $tj = "`store_id` = " . $_SESSION['store_id'] . " and `goods_state` = 1 and `goods_verify` = 1";
         $where = [
             'store_id'=>$_SESSION['store_id'],
             'goods_state'=>1,
@@ -167,16 +164,9 @@ class zcy_goodsControl extends BaseSellerControl
             $order = "goods_id desc";
         }
         $model = Model();
-//        $sqlall = "select count(*) from `zmkj_goods` where {$tj}";//获取总条数
-//        $resultall = $zf_url->select_data($sqlall);
-//        $c = $resultall[0]["count(*)"];//获取总条数
-//        $page = new page($c, 50);//一共多少条 每页显示多少条
-//        $sql = "select * from `zmkj_goods` where {$tj} " . $page->limit;
-//        print_r($where);die;
-        $rs_array = $model->table('goods')->where($where)->order($order)->select();
-//        print_r($rs_array);die;
+        $rs_array = $model->table('goods')->where($where)->page(10)->order($order)->select();
         Tpl::output("rs_array", $rs_array);
-//        Tpl::output("page",$model->showpage());
+        Tpl::output("page",$model->showpage(2));
         $this->profile_menu("zcy_goods_cloud");
         Tpl::showpage("zcy_addgoods");
 
@@ -195,7 +185,7 @@ class zcy_goodsControl extends BaseSellerControl
         $_GET['goods_id'];
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
-        $attr = $zcy->get_category_attrs('1174');
+        $attr = $zcy->get_category_attrs('2891');
         echo '<pre>';
         print_r($attr);
         die;
