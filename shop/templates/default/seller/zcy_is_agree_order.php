@@ -63,16 +63,15 @@ $rs = $zcy->order_list($_GET['status'],array($_GET['orderId']),1,1);
             success:function(msg) {
                 // alert(msg);
                 // return false;
-                if(msg.success = true){
-                    alert(msg.error_response.resultMsg)
-                    return false;
-                    $("#errinfo").html(msg.error_response.resultMsg);
+                if(msg.code == 1){
+                    alert(msg.msg);
+                    location.reload()
+                    $("#errinfo").html(msg.msg);
                     // listyingshe(goods_id);
 
                 }else{
-                    alert(msg.error_response.resultMsg)
-                    return false;
-                    $("#errinfo").html(msg.error_response.resultMsg);
+                    aalert(msg.msg)
+                    $("#errinfo").html(msg.msg);
                 }
             },
             error : function(xhr) {

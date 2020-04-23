@@ -203,6 +203,28 @@ class zcy_orderControl extends BaseSellerControl {
     public function send_orderOp()
     {
         $order_info = $_POST;
+//        echo '<pre>';
+//        print_r($order_info);die;
+        if(empty($order_info['skus']['quantity'])){
+            $res['code'] = -1;
+            $res['msg'] = '请输入发货数量';
+            $res = json_encode($res);
+            exit($res);
+        }elseif(empty($order_info['shipmentNo'])){
+            $res['code'] = -1;
+            $res['msg'] = '请输入物流单号';
+            $res = json_encode($res);
+            exit($res);
+        }
+
+        if($order_info['expressCode'] == 1){
+            if(empty($order_info['expressCode'])){
+                $res['code'] = -1;
+                $res['msg'] = '发货方式为物流发货时，发货物流公司代码不能为空';
+                $res = json_encode($res);
+                exit($res);
+            }
+        }
         $skus = $order_info['skus'];
         $shipmentType = $order_info['shipmentType'];
         $shipmentNo = $order_info['shipmentNo'];
@@ -211,11 +233,20 @@ class zcy_orderControl extends BaseSellerControl {
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
         $rs = $zcy->send_order($skus,$shipmentType,$shipmentNo,$expressCode,$orderId);
-        echo '<pre>';
+        if($rs['success']==true){
+            $res['code'] =1;
+            $res['msg'] = $rs['error_response']['resultMsg'];
+        }else{
+            $res['code'] =-1;
+            $res['msg'] = $rs['error_response']['resultMsg'];
+        }
+        $res = json_encode($res);
+        exit($res);
 //        var_dump($order_info);
-        var_dump($rs);
-        die;
-        return $rs;
+//        echo '<pre>';
+//        print_r($rs);
+//        die;
+//        return $rs;
     }
 
     /**
@@ -252,9 +283,18 @@ class zcy_orderControl extends BaseSellerControl {
         require_once(BASE_PATH.'/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
         $rs = $zcy->is_agree_order($orderId,$isAgree,$comment);
+        if($rs['success']==true){
+            $res['code'] =1;
+            $res['msg'] = $rs['error_response']['resultMsg'];
+        }else{
+            $res['code'] =-1;
+            $res['msg'] = $rs['error_response']['resultMsg'];
+        }
+        $res = json_encode($res);
+        exit($res);
 //        var_dump($rs);
 //        die;
-        return $rs;
+//        return $rs;
     }
 }
 ?>

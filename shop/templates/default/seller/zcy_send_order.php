@@ -61,54 +61,6 @@ $rs = $zcy->order_list($_GET['status'],array($_GET['orderId']),1,1);
     });
 </script>
 <script language="javascript">
-    $(".price").click(function(){
-        var span = $(this);
-        var goods_id = span.attr('id');
-        if(span.html().indexOf("input") >= 0)return;
-        var txt = $.trim(span.text()).replace("¥","");
-        var input = $("<input type='text' class='pricetxt' value='" + txt + "'/>");
-        input.width(span.width());
-        input.height(span.height());
-        span.html(input);
-        input.trigger("focus");
-        input.blur(function(){
-            var newtxt = $(this).val();
-            var inputtxt = $(this);
-            if(isNaN(newtxt)){
-                alert("价格只能是数字");
-                input.focus();
-            }else{
-                if (newtxt!=txt) {
-                    span.html("修改中……");
-                    $.ajax({
-                        url:"/shop/index.php?act=store_goods_change_price&op=changPrice",
-                        timeout:2000,
-                        type:"post",
-                        data:{
-                            "goods_id" : goods_id,
-                            "new_price" : newtxt
-                        },
-                        success:function(data) {
-                            if(trim(data)=="success"){
-                                span.html("¥"+newtxt);
-                            }else{
-                                alert(trim(data));
-                                input.trigger("focus");
-                            }
-                        },
-                        error : function(msg) {
-                            alert(msg.responseText);
-                            span.html("¥"+txt);
-                        }
-                    })
-                }else{
-                    span.html("¥"+txt);
-                }
-            }
-        })
-    })
-</script>
-<script language="javascript">
     function in_array(stringToSearch, arrayToSearch) {
         for (s = 0; s < arrayToSearch.length; s++) {
             thisEntry = arrayToSearch[s].toString();
@@ -147,12 +99,15 @@ $rs = $zcy->order_list($_GET['status'],array($_GET['orderId']),1,1);
             success:function(msg) {
                 // alert(msg);
                 // return false;
-                if(msg.success){
-                    $("#errinfo").html(msg.returnMsg);
+                if(msg.code == 1){
+                    alert(msg.msg);
+                    location.reload()
+                    $("#errinfo").html(msg.msg);
                     // listyingshe(goods_id);
 
                 }else{
-                    $("#errinfo").html(msg.returnMsg);
+                    alert(msg.msg)
+                    $("#errinfo").html(msg.msg);
                 }
             },
             error : function(xhr) {
