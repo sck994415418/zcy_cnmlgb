@@ -19,6 +19,9 @@ class zcy_orderControl extends BaseSellerControl {
     }
 
     public function indexOp() {
+        $path = $_SERVER['DOCUMENT_ROOT'].DS.'data/upload'.DS.ATTACH_GOODS.DS.$_SESSION['store_id'];
+        var_dump($path);
+        die;
 //        require_once(BASE_PATH.'/../zcy/nr_zcy.php');
 //        $zcy = $this->nrzcy = new nr_zcy("314930527","rCT3MqDWnuSvYUhQfkzN");
 //        $zcy = $zcy->get_category(0,4);
