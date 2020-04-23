@@ -49,17 +49,25 @@ class zcy_imageControl extends BaseSellerControl
 
     public function upgoodsOp(){
         if($_POST){
+            $model = Model();
+            $path = $model->table('album_pic')->where(['apic_id'=>$_POST['path'][0]])->field("apic_cover")->find();
             require_once(BASE_PATH . '/../zcy/nr_zcy.php');
             $zcy = new nr_zcy();
-//            $path = __FILE__;
-//            var_dump($path);die;
-//            $_POST['path'][0] = 'avatar_45.jpg';
-//            unset($_POST['path'][1]);
-//            $_POST['path'] = implode(',',$_POST['path']);
-            $img = 'E:\phpStudys\PHPTutorial\WWW\git\zcy\data\upload\shop\store\goods\51/'.implode(',',$_POST['path']);
-
+            $img = 'F:\phpstudy_pro/WWW/zcy/data/upload/shop/store/goods/51/'.$path['apic_cover'];
             $data = $zcy->zcyimage($img,time());
-            print_r($data);
+            $img = new model('zcy_img');
+            $arr = $img->insert(['fileid'=>$data['result'],'add_time'=>time()]);
+            if($arr){
+                $model->table('album_pic')->where(['apic_id'=>$_POST['path'][0]])->update(['is_oss'=>1]);
+                $res['code'] = 1;
+                $res['msg'] = '成功';
+                exit(json_encode($res));
+            }else{
+                $res['code'] = 0;
+                $res['msg'] = '失败';
+                exit(json_encode($res));
+            }
+
         }
     }
     

@@ -344,7 +344,9 @@ class nr_zcy {
         error_reporting(E_ERROR | E_WARNING | E_PARSE);
         $uri = "/supplier/zcy.mall.order.shipment.create";//必须以/开头
         $strs=array();
-        $strs['_data_']["skus"][] = $skus;
+        $strs['_data_']["skus"] = $skus;
+//        $strs['_data_']["skus"]['quantity'] = $quantity;
+//        $strs['_data_']["skus"]['skuId'] = $skuId;
         $strs['_data_']["shipmentType"] = $shipmentType;
         $strs['_data_']["shipmentNo"] = $shipmentNo;
         $strs['_data_']["expressCode"] = $expressCode;
@@ -353,8 +355,6 @@ class nr_zcy {
         $p= new ZcyOpenClient();
         $str= $p->sendPost($this->gate_way,$uri,"POST",$this->appKey,$this->appSecret,$strs);
         $str = json_decode($str,true);
-//        echo '<pre>';
-//        var_dump($str);die;
         return $str;
     }
 

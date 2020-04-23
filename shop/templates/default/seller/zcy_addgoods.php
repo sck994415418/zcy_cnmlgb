@@ -23,13 +23,13 @@
                 <?php
                 $zf_class=$output['goods_class'];
                 ?>
-                <select name="zcy_class" class="w150">
+                <select name="zcy_category" class="w150">
                     <option value="0"><?php echo $lang['nc_please_choose'];?></option>
                     <?php foreach($zf_class as $key=>$val){?><option value="<?php echo $val['id']; ?>" <?php if ($_GET['zf_class'] == $val['id']){ echo 'selected=selected';}?>><?php echo $val['name']; ?></option>
                     <?php }?>
                 </select>
             </td>
-            <td class="w120"><label><input type="checkbox" <?php if ($_GET['zf_class'] != 0 or $_GET['is_cloud'] == 'true') echo "checked=\"checked\" ";?>class="checkbox" name="is_bind" value="true"/>已绑定政府分类</label></td>
+            <td class="w120"><label><input type="checkbox" <?php if ($_GET['is_cloud'] != 0 or $_GET['is_cloud'] == 'true') echo "checked=\"checked\" ";?>class="checkbox" name="is_colud" value="true"/>已绑定政府分类</label></td>
             <th>
                 <select name="search_type">
                     <option value="0" <?php if (intval($_GET['search_type']) == 0) {?>selected="selected"<?php }?>><?php echo $lang['store_goods_index_goods_name'];?></option>
@@ -136,7 +136,7 @@
     <?php  if (!empty($output['rs_array'])) { ?>
         <tfoot>
         <tr>
-            <td colspan="20"><div class="pagination"> <?php echo $output['page']->fpage();?> </div></td>
+            <td colspan="20"><div class="pagination"> <?php echo $output['page'];?> </div></td>
         </tr>
         </tfoot>
     <?php } ?>

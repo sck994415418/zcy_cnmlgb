@@ -72,9 +72,13 @@ class zcy_goodsControl extends BaseSellerControl
                 Tpl::showpage('store_goods.update_productid');
                 break;
             case 'zcy_addgoods':// 主动映射的商品改价
-                $model = Model("zcy_category");
-                $spu = $model->where(['pid' => 0])->limit(false)->select();
+                $model = Model();
+                $spu = $model->table("zcy_category")->where(['pid' => 0])->limit(false)->select();
+                $goods = $model->table('goods')->where(['store_id'=>$_SESSION["store_id"]])->page(20)->order('goods_id desc')->select();
+
                 Tpl::output("goods_class", $spu);
+                Tpl::output("rs_array", $goods);
+                Tpl::output("page", $goods);
                 Tpl::showpage('zcy_addgoods');
                 break;
             default://使用模版zcy_goods_list.php
@@ -110,63 +114,69 @@ class zcy_goodsControl extends BaseSellerControl
         include_once "store_goods_change_price.php";
         $zf_url = new zf_url();
         $tj = "`store_id` = " . $_SESSION['store_id'] . " and `goods_state` = 1 and `goods_verify` = 1";
-//        die;
+        $where = [
+            'store_id'=>$_SESSION['store_id'],
+            'goods_state'=>1,
+            'goods_verify'=>1,
+        ];
         if (intval($_GET['zcy_category']) > 0) {
-            $tj = $tj . " and `zcy_category` = " . intval($_GET['zcy_category']);
+            $where['zcy_category']=intval($_GET['zcy_category']);
         }
-        if (trim($_GET['is_cloud']) == 'true') {
-            $tj = $tj . " and `is_cloud` > 0";
+        if (trim($_GET['is_colud']) == 'true') {
+            $where['is_cloud']=1;
         }
         if (trim($_GET['keyword']) != '') {
             switch ($_GET['search_type']) {
                 case "0":
                     $keyword = str_replace(" ", "%", trim($_GET["keyword"]));
-                    $tj = $tj . " and `goods_name` like '%" . $keyword . "%'";
+                    $where['goods_name']= ['like', '%'.$keyword.'%'];
                     break;
                 case "1":
-                    $tj = $tj . " and `goods_id` = " . intval(trim($_GET['keyword']));
+                    $where['goods_id']=intval(trim($_GET['keyword']));
                     break;
                 case "2":
-                    $tj = $tj . " and `goods_commonid` = " . intval($_GET['keyword']);
+                    $where['goods_commonid']=intval($_GET['keyword']);
                     break;
-                case "3":
-                    $tj = $tj . " and (`goods_id` IN (select DISTINCT `skuid` from `zmkj_goods_orm` where `productId` like '%" . trim($_GET['keyword']) . "%') or `goods_id` IN (select DISTINCT `goods_id` from `zmkj_zf_url` where `zf_product_id` like '%" . trim($_GET['keyword']) . "%'))";
             }
         }
         if (trim($_GET['order']) != '') {
             switch (trim($_GET['order'])) {
                 case "1":
-                    $tj = $tj . " order by `goods_id` desc";
+
+                    $order =  " goods_id desc";
                     break;
                 case "2":
-                    $tj = $tj . " order by `goods_id` asc";
+                    $order =  " goods_id asc";
                     break;
                 case "3":
-                    $tj = $tj . " order by `goods_commonid` desc";
+                    $order =  "goods_commonid desc";
                     break;
                 case "4":
-                    $tj = $tj . " order by `goods_commonid` asc";
+                    $order =  "goods_commonid asc";
                     break;
                 case "5":
-                    $tj = $tj . " order by `goods_edittime` desc";
+                    $order = "goods_edittime desc";
                     break;
                 case "6":
-                    $tj = $tj . " order by `goods_edittime` asc";
+                    $order = "goods_edittime asc";
                     break;
                 default:
-                    $tj = $tj . " order by `goods_id` desc";
+                    $order = "goods_id desc";
             }
         } else {
-            $tj = $tj . " order by `goods_id` desc";
+            $order = "goods_id desc";
         }
-        $sqlall = "select count(*) from `zmkj_goods` where {$tj}";//获取总条数
-        $resultall = $zf_url->select_data($sqlall);
-        $c = $resultall[0]["count(*)"];//获取总条数
-        $page = new page($c, 50);//一共多少条 每页显示多少条
-        $sql = "select * from `zmkj_goods` where {$tj} " . $page->limit;
-        $rs_array = $zf_url->select_data($sql);
+        $model = Model();
+//        $sqlall = "select count(*) from `zmkj_goods` where {$tj}";//获取总条数
+//        $resultall = $zf_url->select_data($sqlall);
+//        $c = $resultall[0]["count(*)"];//获取总条数
+//        $page = new page($c, 50);//一共多少条 每页显示多少条
+//        $sql = "select * from `zmkj_goods` where {$tj} " . $page->limit;
+//        print_r($where);die;
+        $rs_array = $model->table('goods')->where($where)->order($order)->select();
+//        print_r($rs_array);die;
         Tpl::output("rs_array", $rs_array);
-        Tpl::output("page", $page);
+//        Tpl::output("page",$model->showpage());
         $this->profile_menu("zcy_goods_cloud");
         Tpl::showpage("zcy_addgoods");
 

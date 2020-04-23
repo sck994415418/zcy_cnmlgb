@@ -19,8 +19,6 @@ class ZcyItemUtil
         $fileFullPath = "";//商品图片全路径,示例:http://xxx-bucket.oss-cn-hangzhou.aliyuncs.com/3816471/8dcabe35-878c-4d2a-996a-5e1d3ee0ca34.png
         $fileId = "";//OSS中文件id
         $httpResponse=json_decode($stsTokenResponse,true);//json串化
-        echo '<pre>';
-//        print_r($httpResponse);die;
         if($httpResponse['data_response']['success']=="true"){
             //获取OSS STS临时凭证
             $credentials = $httpResponse['data_response']['result'];
