@@ -61,12 +61,12 @@
         <div class="alert">
             <p id="cat"><span>正在更新： </span><span id="c1"></span><span id="c2"></span><span id="c3"></span></p><p id="cc"></p>
         </div>
-        <div class="wp_confirm">
-            <div class="bottom tc">
-				<input type="hidden" name="root" id="root" value="" />
-                <label class="submit-border"><input disabled="disabled" nctype="buttonNextStep" value="更新当前类目属性" type="submit" class="submit" style=" width: 200px;" /></label>
-            </div>
-        </div>
+<!--        <div class="wp_confirm">-->
+<!--            <div class="bottom tc">-->
+<!--				<input type="hidden" name="root" id="root" value="" />-->
+<!--                <label class="submit-border"><input disabled="disabled" nctype="buttonNextStep" value="更新当前类目属性" type="submit" class="submit" style=" width: 200px;" /></label>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 	<div id="error_info"></div>
     <script src="<?php echo SHOP_RESOURCE_SITE_URL;?>/js/zcy_update_brand.js"></script> 

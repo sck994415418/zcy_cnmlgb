@@ -93,39 +93,60 @@ function get_brand(categoryId,pageSize,pageNo,beginModifiedDate,endModifiedDate)
 			$('#dataLoading').hide();
 		},
 		success:function(data){
+			// console.log(data.response_data.data);
+			// return false;
 			if(data.isSuccess){
 				allc = data.response_data.total;		//所有品牌数量
 				allp = Math.ceil(allc/pageSize);		//所有品牌页数
 				cc = data.response_data.data.length;	//当前页品牌数量
 				if(confirm("即将更新"+ allc +"条品牌信息,请耐心等待！")){
+
 					$('#dataLoading').show();
 					$("#c1").text("第"+pageNo+"页: ");
 					$("#c2").text(((pageNo-1)*pageSize+1)+"~"+((pageNo-1)*pageSize+cc));
 					for(i=0;i<cc;i++){
 						parms1 = {};
 						parms1.id = data.response_data.data[i].id;
-						parms1.fullName = data.response_data.data.fullName;
-						parms1.logo = data.response_data.data.logo;
-						parms1.status = data.response_data.data.status;
-						parms1.createdAt = data.response_data.data.createdAt;
-						parms1.updatedAt = data.response_data.data.updatedAt;
-						parms1.auditStatus = data.response_data.data.auditStatus;
+						parms1.fullName = data.response_data.data[i].fullName;
+						parms1.logo = data.response_data.data[i].logo;
+						parms1.status = data.response_data.data[i].status;
+						parms1.createdAt = data.response_data.data[i].createdAt;
+						parms1.updatedAt = data.response_data.data[i].updatedAt;
+						parms1.auditStatus = data.response_data.data[i].auditStatus;
 						$.ajax({
 							url:"/shop/index.php?act=zcy_config&op=update_brand",
 							type:"post",
 							async:false,
 							dataType: "JSON",
 							data: JSON.stringify(parms1),
-							success:function(data){
-								if(data.isSuccess){
+							// beforeSend:function(){
+							// 	$('#dataLoading').show();
+							// },
+							// complete:function(){
+							// 	$('#dataLoading').hide();
+							// },
+							success:function(datas){
+								// console.log(datas)
+								if(datas.isSuccess){
+									// console.log('datas_success')
+									// console.log(datas)
+									// alert(datas)
 									$("#c3").text(parms1.fullName);
+									// console.log(parms1.fullName)
 									$("#cc").text("("+(i+1)+'/'+allc+")"+Math.round((i+1) / allc * 10000) / 100.00 + "%");
 								}else{
-									$("#error_info").append("<p style='color:#FF0000;'>"+parms1.fullName+"(" + parms1.id + "): "+data.resultMsg.resultMsg+"</p>");
+									// console.log('datas_error')
+									// console.log(datas)
+									// alert(datas)
+									// return false;
+									// console.log(parms1.fullName)
+									$("#error_info").append("<p style='color:#FF0000;'>"+parms1.fullName+"(" + parms1.id + "): "+datas.resultMsg+"</p>");
 								}
 							},
 							error : function(msg) {
-								$("#error_info").append("<p>"+msg.responseText+"</p>");
+								// console.log('msg_success'+msg)
+								// alert(msg.responseText)
+								$("#error_info").append("<p>"+msg.resultMsg+"</p>");
 							}
 						})
 					}
@@ -140,7 +161,7 @@ function get_brand(categoryId,pageSize,pageNo,beginModifiedDate,endModifiedDate)
 			}
 		},
 		error : function(msg) {
-			alert(msg.responseText);
+			alert(msg.resultMsg);
 		}
 	})
 }
