@@ -70,10 +70,7 @@
     </div>
 	<div id="error_info"></div>
     <script src="<?php echo SHOP_RESOURCE_SITE_URL;?>/js/zcy_update_category_attrs.js"></script> 
-    <script>
-        SEARCHKEY = '<?php echo $lang['store_goods_step1_search_input_text'];?>';
-        RESOURCE_SITE_URL = '<?php echo RESOURCE_SITE_URL;?>';
-    </script>
+
 </div>
 <script src="<?php echo RESOURCE_SITE_URL;?>/js/jquery.poshytip.min.js"></script>
 <script>

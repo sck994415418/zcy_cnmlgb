@@ -7,8 +7,8 @@
 <?php
 //	require_once(BASE_PATH.'/../zcy/nr_zcy.php');
 //	$zcy = new nr_zcy;
-	if (!@include(BASE_PATH.'/control/zcy_connect_data.php')) exit('zcy_connect_data.php isn\'t exists!');
-	$con = new zcy_data();
+//	if (!@include(BASE_PATH.'/control/zcy_connect_data.php')) exit('zcy_connect_data.php isn\'t exists!');
+//	$con = new zcy_data();
 ?>
 <div id="content">
     <!--S 分类选择区域-->
@@ -28,13 +28,13 @@
                         <div id="class_div_1" class="category_list">
                             <ul>
 <?php
-    $sql = "select * from `zcy_category` where `level` =1";
-    $rs = $con->select_data($sql);
-    foreach($rs as $cat){
+//    $sql = "select * from `zcy_category` where `level` =1";
+//    $rs = $con->select_data($sql);
+//    foreach($rs as $cat){
 ?>
-                                <li class="" nctype="selClass" data-param="{id:<?php echo $cat["id"];?>,deep:1}"><a class="" href="javascript:void(0)"><i class="icon-double-angle-right"></i><?php echo $cat["name"];?></a></li>
+<!--                                <li class="" nctype="selClass" data-param="{id:--><?php //echo $cat["id"];?><!--,deep:1}"><a class="" href="javascript:void(0)"><i class="icon-double-angle-right"></i>--><?php //echo $cat["name"];?><!--</a></li>-->
 <?php
-   }
+//   }
 ?>
                             </ul>
                         </div>

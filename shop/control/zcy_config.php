@@ -469,6 +469,49 @@ class zcy_configControl extends BaseSellerControl
         }
     }
 
+
+
+
+    public function update_brand_allOp()
+    {
+//        $have = Model('zcy_brand')->clear();
+//        die;
+//        $success = 1;
+//        $error = 1;
+//        exit(json_encode(array('resultMsg' => "$success".'条更新成功，'.$error.'条更新失败!', 'response_data' => '', "isSuccess" => true)));
+        $data = $_POST;
+        ini_set('max_execution_time', '0');
+        if (!empty($data['pages']) and !empty($data['pageSize']) and $data['pageSize']>0) {
+            $data['pages'] = (int)$data['pages'];
+            $success = 0;
+            $error = 0;
+//            Model('zcy_brand')->clear();
+            for ($i=1;$i<=$data['pages'];$i++){
+                require_once(BASE_PATH . '/../zcy/nr_zcy.php');
+                $zcy = new nr_zcy();
+                $brands = $zcy->query_brand('', $data['pageSize'], $i, '', '');
+                if(!empty($brands['result']['data'])){
+                    foreach ($brands['result']['data'] as $k=>$v){
+                        $have = Model('zcy_brand')->getSellerInfo(array('id'=>$v['id']));
+                        if($have){
+                            $res = Model('zcy_brand')->where(array('id'=>$v['id']))->update($v);
+                        }else{
+                            $res = Model('zcy_brand')->insert($v);
+                        }
+                        if($res){
+                            $success++;
+                        }else{
+                            $error++;
+                        }
+                    }
+                }
+            }
+            exit(json_encode(array('resultMsg' => "$success".'条更新成功，'.$error.'条更新失败!', 'response_data' => '', "isSuccess" => true)));
+        } else {
+            exit(json_encode(array('resultMsg' => "参数丢失", 'response_data' => '', "isSuccess" => false)));
+        }
+    }
+
 }
 
 
