@@ -29,15 +29,15 @@ class ZcyItemUtil
             $data = $credentials['data'];//文件ID数组
             $endPoint = $credentials['endPoint'];
             try{
-                $fileSuffix = "";
+//                $fileSuffix = "";
 
                 $tempArr = explode(".",json_encode($filePath));
                 if(count($tempArr)>1){
                     $fileSuffix = $tempArr[count($tempArr)-1];//得到文件后缀
                 }
+                $fileSuffix = substr($fileSuffix,0,strlen($fileSuffix)-1);
                 $pos = strrpos($data[0],"/");
                 $realFilePath = $bucket."/".substr($data[0],0,$pos);
-
                 $fileId = $data[0].".".$fileSuffix;
                 $ossClient = Common::getOssClientSTS($accessKeyId, $accessKeySecret, $endPoint, $securityToken);
                 // 上传本地文件,$response是一个ResponseCore类型

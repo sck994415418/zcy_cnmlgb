@@ -189,7 +189,11 @@ class zcy_goodsControl extends BaseSellerControl
     {
         $model = Model();
         $spu = $model->table("zcy_category")->where(['pid'=>0])->limit(false)->select();
+        $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
+
         Tpl::output("goods_class", $spu);
+        Tpl::output("imgdata", $img);
+//        Tpl::output('page',$model->showpage(2));
         Tpl::showpage('zcy_goods');
         die;
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');

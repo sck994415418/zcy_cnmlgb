@@ -101,6 +101,17 @@
 
             <div class="upimg">
 
+                <div id="demo">
+                    <div class="goods-gallery add-step2"><a class="sample_demo" id="select_submit" href="index.php?act=store_album&amp;op=pic_list&amp;item=goods" style="display:none;">提交</a>
+                        <ul class="list">
+                            <?php foreach($output['imgdata'] as $k=>$v){ ?>
+<!--                                --><?php //echo $v['fileid'];?>
+                                <li onclick=""><a href="JavaScript:void(0);"><img src='https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>' title=""></a></li>
+                            <?php }?>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="bottom tc hr32">
                 <label class="submit-border">
