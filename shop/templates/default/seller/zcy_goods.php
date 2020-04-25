@@ -186,18 +186,6 @@
                                         <li class="flex-item click">
                                             <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
                                             <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
-                                        </li><li class="flex-item click">
-                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
-                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
-                                        </li><li class="flex-item click">
-                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
-                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
-                                        </li><li class="flex-item click">
-                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
-                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
-                                        </li><li class="flex-item click">
-                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
-                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
                                         </li>
                                     <?php }?>
                                 </ul>
