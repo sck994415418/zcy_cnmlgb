@@ -6,6 +6,46 @@
     .ncsc-form-goods h3 { font-size: 14px; font-weight: 600; line-height: 22px; color: #000; clear: both; background-color: #F5F5F5; padding: 5px 0 5px 12px; border-bottom: solid 1px #E7E7E7;}
     .ncsc-form-goods dl { font-size: 0; *word-spacing:-1px/*IE6、7*/; line-height: 20px; clear: both; padding: 0; margin: 0; border-bottom: solid 1px #E6E6E6; overflow: hidden;}
 
+    .ncsc-form-goods dl dt {
+        font-size: 12px;
+        line-height: 30px;
+        color: #333;
+        vertical-align: top;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-align: right;
+        display: inline-block;
+        width: 20%;
+        padding: 8px 1% 8px 0;
+        margin: 0;
+    }
+    .spec li {
+        font-size: 12px;
+        vertical-align: top;
+        letter-spacing: normal;
+        word-spacing: normal;
+        display: inline-block;
+        *display: inline;
+        width: 40%;
+        margin-bottom: 6px;
+        zoom: 1;
+    }
+    .ncsc-form-goods dl dd {
+        font-size: 12px;
+        line-height: 30px;
+        vertical-align: top;
+        letter-spacing: normal;
+        word-spacing: normal;
+        display: inline-block;
+        width: 65%;
+        padding: 8px 0 8px 1%;
+        border-left: solid 1px #E6E6E6;
+    }
+    .w60 {
+        width: 70% !important;
+        text-align: center;
+    }
+
 </style>
 <div id="content">
     <div id="dataLoading" class="wp_data_loading">
@@ -132,7 +172,7 @@
                 $.each(data.data_reponse,function(k,v) {
                     var str = ' <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">\n' +
                         '                        <dt>\n' +
-                        '                            <input name="attrName[]" type="text" class="text w60 tip2 tr" value="'+ v.attrName +'" nctype="spec_name">\n' +
+                        '                            <input readonly name="attrName[]" type="text" class="text w60 tip2 tr" value="'+ v.attrName +'" nctype="spec_name">\n' +
                         '                        </dt>\n' +
                         '                        <dd>\n' +
                         '                            <ul class="spec">\n';
