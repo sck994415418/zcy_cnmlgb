@@ -126,7 +126,7 @@
                                     <div class="ncsc-upload-btn"> <a href="javascript:void(0);"><span>
                                             <input type="file" hidefocus="true" size="1" class="input-file" name="goods_image" id="goods_image">
                                         </span>
-                                            <p><i class="icon-upload-alt"></i>图片上传</p>
+<!--                                            <p><i class="icon-upload-alt"></i>图片上传</p>-->
                                         </a> </div>
                                     <a class="ncsc-btn mt5" nctype="show_image" href="<?php echo urlShop('store_album', 'zcy_pic_list', array('item' => 'goods')); ?>"><i class="icon-picture"></i>从图片空间选择</a> <a href="javascript:void(0);" nctype="del_goods_demo" class="ncsc-btn mt5" style="display: none;"><i class="icon-circle-arrow-up"></i>关闭相册</a></div>
                             </div>
@@ -228,6 +228,7 @@
             </div>
 
 
+
             <div class="bottom tc hr32">
                 <label class="submit-border">
                     <input type="submit" class="submit" value="下一步，上传商品图片">
@@ -239,7 +240,7 @@
 <script type="text/javascript">
     var provinceId = null;//纪录共同的数组下标值
 
-    $("#one").change(function(){//当省级下拉菜单被改变触发change事件
+    $("#one").change(function () {//当省级下拉菜单被改变触发change事件
         // $('#dataLoading').show();
         $("#two").html("<option>--请选择--</option>");
         $("#three").html("<option>--请选择--</option>");
@@ -247,17 +248,17 @@
         $.ajax({
             type: "GET",
             url: "/shop/index.php?act=zcy_goods&op=linkage",
-            data:{id:provinceId},
+            data: {id: provinceId},
             dataType: "json",
-            beforeSend:function(){
+            beforeSend: function () {
                 $('#dataLoading').show();
             },
-            complete:function(){
+            complete: function () {
                 $('#dataLoading').hide();
             },
-            success: function(data){
-                $.each(data,function(k,v){
-                    var str = "<option value="+ v.id +">" + v.name + "</option>"
+            success: function (data) {
+                $.each(data, function (k, v) {
+                    var str = "<option value=" + v.id + ">" + v.name + "</option>"
                     $("#two").append(str);//添加option标签
                 })
             }
@@ -266,76 +267,79 @@
 
 
     //----------------------------联动第三级-------------------------------------------------------
-    $("#two").change(function(){
+    $("#two").change(function () {
         $("#three").html("<option>--请选择--</option>");
         provinceId = $("#two").val();
         $.ajax({
             type: "GET",
             url: "/shop/index.php?act=zcy_goods&op=linkage",
-            data:{id:provinceId},
+            data: {id: provinceId},
             dataType: "json",
-            beforeSend:function(){
+            beforeSend: function () {
                 $('#dataLoading').show();
             },
-            complete:function(){
+            complete: function () {
                 $('#dataLoading').hide();
             },
-            success: function(data){
-                $.each(data,function(k,v){
-                    var str = "<option value="+ v.id +">" + v.name + "</option>"
+            success: function (data) {
+                $.each(data, function (k, v) {
+                    var str = "<option value=" + v.id + ">" + v.name + "</option>"
                     $("#three").append(str);//添加option标签
                 })
             }
         });
     })
-    $("#three").change(function(){
+    $("#three").change(function () {
         provinceId = $("#three").val();//获取到省和市的共同数组下标
         $.ajax({
             type: "GET",
             url: "/shop/index.php?act=zcy_goods&op=category",
-            data:{goods_id:provinceId},
+            data: {goods_id: provinceId},
             dataType: "json",
-            beforeSend:function(){
+            beforeSend: function () {
                 $('#dataLoading').show();
             },
-            complete:function(){
+            complete: function () {
                 $('#dataLoading').hide();
             },
-            success: function(data){
+            success: function (data) {
                 $("#sku").html("");
-                $.each(data.data_reponse,function(k,v) {
+                $.each(data.data_reponse, function (k, v) {
                     var str = ' <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">\n' +
                         '                        <dt>\n' +
-                        '                            <input readonly name="'+v.propertyId+'" type="text" class="text w60 tip2 tr" value="'+ v.attrName +'" nctype="spec_name">\n' +
+                        '                            <input readonly name="' + v.propertyId + '" type="text" class="text w60 tip2 tr" value="' + v.attrName + '" nctype="spec_name">\n' +
                         '                        </dt>\n' +
                         '                        <dd>\n' +
                         '                            <ul class="spec">\n';
-                        var str2 ="";
-                        if(v.attrVals == '' || v.attrVals == [] || v.attrVals == null){
-                            str2 =  ' <li>                           <span nctype="input_checkbox">\n' +
-                                '                                        <input type="text" value="'+ v.attrVals+'" name="'+v.propertyId+'">\n' +
-                                '                                    </span>\n' +
-                                '                                    <span nctype="pv_name">'+ v.group +'</span>\n'+
+                    var str2 = "";
+                    if (v.attrVals == '' || v.attrVals == [] || v.attrVals == null) {
+                        str2 = ' <li>                           <span nctype="input_checkbox">\n' +
+                            '                                        <input type="text" value="' + v.attrVals + '" name="' + v.propertyId + '">\n' +
+                            '                                    </span>\n' +
+                            '                                    <span nctype="pv_name">' + v.group + '</span>\n' +
+                            '                                </li>\n';
+                    } else {
+                        $.each(v.attrVals, function (key, val) {
+                            str2 += '<li> <span nctype="input_checkbox">\n' +
+                                '     <input type="radio" value="' + val + '" name="' + v.propertyId + '">\n' +
+                                '        </span>\n' +
+                                '        <span nctype="pv_name">' + val + '</span>\n ' +
                                 '                                </li>\n';
-                        }else{
-                            $.each(v.attrVals,function (key,val) {
-                                str2 +=  '<li> <span nctype="input_checkbox">\n' +
-                                    '     <input type="radio" value="'+ val+'" name="'+v.propertyId+'">\n' +
-                                    '        </span>\n' +
-                                    '        <span nctype="pv_name">'+ val +'</span>\n '+
-                                    '                                </li>\n';
-                            })
-                        }
+                        })
+                    }
 
                     var str3 = '          </ul>\n' +
                         '                        </dd>\n' +
                         '                    </dl>\n';
-                    $("#sku").append(str+str2+str3);
+                    $("#sku").append(str + str2 + str3);
                 })
 
 
             }
         });
     })
-
+    $(function(){
+        //电脑端手机端tab切换
+        $(".tabs").tabs();
+    });
 </script>
