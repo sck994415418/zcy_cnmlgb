@@ -349,27 +349,6 @@ class store_albumControl extends BaseSellerControl {
                 Tpl::output('color_id', $_GET['color_id']);
                 Tpl::showpage('store_goods_add.step3_goods_image', 'null_layout');
                 break;
-            case 'zcy_goods_image':
-//                Tpl::output('color_id', $_GET['color_id']);
-                $page = new Page();
-                if (in_array($_GET['item'], array('goods_image'))) {
-                    $page->setEachNum(12);
-                } else {
-                    $page->setEachNum(14);
-                }
-                $page->setStyle('admin');
-
-                /**
-                 * 实例化相册类
-                 */
-                $model = Model();
-                $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
-//        Tpl::output("imgdata", $img);
-//        Tpl::output('page',$model->showpage(2));
-                Tpl::output('pic_list', $img);
-                Tpl::output('show_page', $model->showpage(2));
-                Tpl::showpage('store_goods_add.step3_goods_image_zcy', 'null_layout');
-                break;
             case 'mobile':
                 Tpl::output('type', $_GET['type']);
                 Tpl::showpage('store_goods_add.step2_mobile_image', 'null_layout');
