@@ -423,9 +423,9 @@ class zcy_configControl extends BaseSellerControl
                 $data = (array)$data;
             }
             $id = $data["id"];
-            $fullName = $data["fullName"];
-            $logo = $data["logo"];
-            $status = $data["status"];
+            $fullName = $data["fullName"]?$data["fullName"]:0;
+            $logo = $data["logo"]?$data["logo"]:0;
+            $status = $data["status"]?$data['status']:0;
             $createdAt = $data["createdAt"]?$data["createdAt"]:0;
             $updatedAt = $data["updatedAt"]?$data["updatedAt"]:0;
             $auditStatus = $data["auditStatus"]?$data["auditStatus"]:0;
@@ -439,7 +439,7 @@ class zcy_configControl extends BaseSellerControl
                 $rs = $zcy_data->select_data($sql);
 
 
-                if (empty($rs)) {            //添加表zcy_brand品牌表
+                if (empty($rs)) {//添加表zcy_brand品牌表
                     $fullName = "'".$data["fullName"]."'";
                     $sql = "insert into `zcy_brand` (`id`,`fullName`,`logo`,`status`,`createdAt`,`updatedAt`,`auditStatus`) values(".$id. ",". $fullName . ",'" . $logo . "','" . $status . "','" . $createdAt . "','" .$updatedAt. "','" . $auditStatus. "')";
                     $rs = $zcy_data->execute_data_return_affected_rows($sql);
@@ -448,7 +448,7 @@ class zcy_configControl extends BaseSellerControl
                     }else{
                         exit(json_encode(array('resultMsg' => '成功', "isSuccess" =>true)));
                     }
-                } else {                    //更新表zcy_brand品牌表
+                } else {//更新表zcy_brand品牌表
                     $fullName = "".$data["fullName"]."";
                     $sql = "update `zcy_brand` set `fullName` = '" . $fullName . "', `logo` = '" . $logo . "', `status` = '" . $status . "', `createdAt` = " . $createdAt . ", `updatedAt` = " . $updatedAt . ", `auditStatus` = " . $auditStatus. " where `id` = " . $id;
                     $rs = $zcy_data->execute_data_return_affected_rows($sql);
@@ -464,6 +464,49 @@ class zcy_configControl extends BaseSellerControl
             } else {
                 exit(json_encode(array('resultMsg' => "参数错误", 'response_data' => '', "isSuccess" => false)));
             }
+        } else {
+            exit(json_encode(array('resultMsg' => "参数丢失", 'response_data' => '', "isSuccess" => false)));
+        }
+    }
+
+
+
+
+    public function update_brand_allOp()
+    {
+//        $have = Model('zcy_brand')->clear();
+//        die;
+//        $success = 1;
+//        $error = 1;
+//        exit(json_encode(array('resultMsg' => "$success".'条更新成功，'.$error.'条更新失败!', 'response_data' => '', "isSuccess" => true)));
+        $data = $_POST;
+        ini_set('max_execution_time', '0');
+        if (!empty($data['pages']) and !empty($data['pageSize']) and $data['pageSize']>0) {
+            $data['pages'] = (int)$data['pages'];
+            $success = 0;
+            $error = 0;
+//            Model('zcy_brand')->clear();
+            for ($i=1;$i<=$data['pages'];$i++){
+                require_once(BASE_PATH . '/../zcy/nr_zcy.php');
+                $zcy = new nr_zcy();
+                $brands = $zcy->query_brand('', $data['pageSize'], $i, '', '');
+                if(!empty($brands['result']['data'])){
+                    foreach ($brands['result']['data'] as $k=>$v){
+                        $have = Model('zcy_brand')->getSellerInfo(array('id'=>$v['id']));
+                        if($have){
+                            $res = Model('zcy_brand')->where(array('id'=>$v['id']))->update($v);
+                        }else{
+                            $res = Model('zcy_brand')->insert($v);
+                        }
+                        if($res){
+                            $success++;
+                        }else{
+                            $error++;
+                        }
+                    }
+                }
+            }
+            exit(json_encode(array('resultMsg' => "$success".'条更新成功，'.$error.'条更新失败!', 'response_data' => '', "isSuccess" => true)));
         } else {
             exit(json_encode(array('resultMsg' => "参数丢失", 'response_data' => '', "isSuccess" => false)));
         }
