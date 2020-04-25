@@ -81,7 +81,7 @@ class zcy_goodsControl extends BaseSellerControl
 //                print_r($spu);die;
                 Tpl::output("goods_class", $spu);
                 Tpl::output("rs_array", $goods);
-                Tpl::output("page", $goods);
+                Tpl::output("page", $model->showpage(2));
                 Tpl::showpage('zcy_addgoods');
                 break;
             default://使用模版zcy_goods_list.php
@@ -106,7 +106,6 @@ class zcy_goodsControl extends BaseSellerControl
             array('menu_key' => 'zcy_goods_freez', 'menu_name' => "已冻结商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'freez'))),
             array('menu_key' => 'zcy_goods_refuse', 'menu_name' => "审核不通过商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'refuse'))),
             array('menu_key' => 'zcy_goods_cloud', 'menu_name' => "未上传新品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'zcy_addgoods'))),
-
         );
         Tpl::output('member_menu', $menu_array);
         Tpl::output('menu_key', $menu_key);
@@ -171,6 +170,7 @@ class zcy_goodsControl extends BaseSellerControl
         $model = Model();
         $rs_array = $model->table('goods')->where($where)->page(10)->order($order)->select();
         Tpl::output("rs_array", $rs_array);
+
         Tpl::output("page",$model->showpage(2));
         $this->profile_menu("zcy_goods_cloud");
         Tpl::showpage("zcy_addgoods");
@@ -187,6 +187,11 @@ class zcy_goodsControl extends BaseSellerControl
     //上传政采云商品
     public function zcy_goodsOp()
     {
+        $model = Model();
+        $spu = $model->table("zcy_category")->where(['pid'=>0])->limit(false)->select();
+        Tpl::output("goods_class", $spu);
+        Tpl::showpage('zcy_goods');
+
         $_GET['goods_id'];
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
@@ -201,6 +206,14 @@ class zcy_goodsControl extends BaseSellerControl
         $model = Model();
         $spu = $model->table("zcy_category")->where(['pid'=>$_GET['id']])->limit(false)->select();
         die(json_encode($spu));
+    }
+
+    public function categoryOp(){
+        $_GET['goods_id'];
+        require_once(BASE_PATH . '/../zcy/nr_zcy.php');
+        $zcy = new nr_zcy();
+        $attr = $zcy->get_category_attrs($_GET['goods_id']);
+        die(json_encode($attr));
     }
 }
 
