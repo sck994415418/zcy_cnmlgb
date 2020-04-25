@@ -22,7 +22,9 @@ class zcy_goodsControl extends BaseSellerControl
         $model = Model("zcy_category");
         $spu = $model->where(['pid' => 0])->limit(false)->select();
         Tpl::output("goods_class", $spu);
-
+        include_once 'zcy_common.php';
+        $res = new zcy_commonControl();
+        $res->aa();
     }
 
     public function indexOp()
