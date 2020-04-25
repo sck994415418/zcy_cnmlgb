@@ -423,9 +423,9 @@ class zcy_configControl extends BaseSellerControl
                 $data = (array)$data;
             }
             $id = $data["id"];
-            $fullName = $data["fullName"];
-            $logo = $data["logo"];
-            $status = $data["status"];
+            $fullName = $data["fullName"]?$data["fullName"]:0;
+            $logo = $data["logo"]?$data["logo"]:0;
+            $status = $data["status"]?$data['status']:0;
             $createdAt = $data["createdAt"]?$data["createdAt"]:0;
             $updatedAt = $data["updatedAt"]?$data["updatedAt"]:0;
             $auditStatus = $data["auditStatus"]?$data["auditStatus"]:0;
@@ -439,7 +439,7 @@ class zcy_configControl extends BaseSellerControl
                 $rs = $zcy_data->select_data($sql);
 
 
-                if (empty($rs)) {            //添加表zcy_brand品牌表
+                if (empty($rs)) {//添加表zcy_brand品牌表
                     $fullName = "'".$data["fullName"]."'";
                     $sql = "insert into `zcy_brand` (`id`,`fullName`,`logo`,`status`,`createdAt`,`updatedAt`,`auditStatus`) values(".$id. ",". $fullName . ",'" . $logo . "','" . $status . "','" . $createdAt . "','" .$updatedAt. "','" . $auditStatus. "')";
                     $rs = $zcy_data->execute_data_return_affected_rows($sql);
@@ -448,7 +448,7 @@ class zcy_configControl extends BaseSellerControl
                     }else{
                         exit(json_encode(array('resultMsg' => '成功', "isSuccess" =>true)));
                     }
-                } else {                    //更新表zcy_brand品牌表
+                } else {//更新表zcy_brand品牌表
                     $fullName = "".$data["fullName"]."";
                     $sql = "update `zcy_brand` set `fullName` = '" . $fullName . "', `logo` = '" . $logo . "', `status` = '" . $status . "', `createdAt` = " . $createdAt . ", `updatedAt` = " . $updatedAt . ", `auditStatus` = " . $auditStatus. " where `id` = " . $id;
                     $rs = $zcy_data->execute_data_return_affected_rows($sql);
