@@ -119,14 +119,12 @@ class nr_zcy {
  *参数名 							说明 			必填 	类型 		长度 			备注
  *otherAttributes 				其他属性信息 		必填 	array 						包括关键属性、绑定属性、商品属性
  * └otherAttributes.attrVal 	属性值 			必填 	string 		<=64个字符 	
- * └otherAttributes.attrKey 	属性名 			可选 	string 		<=20个字符 		【propertyId和attrKey两者选其一，propertyId优先】，
- 																					如果属性名为品牌或者型号这个为必填
+ * └otherAttributes.attrKey 	属性名 			可选 	string 		<=20个字符 		【propertyId和attrKey两者选其一，propertyId优先】，如果属性名为品牌或者型号这个为必填
  * └otherAttributes.propertyId 	属性ID 			可选 	number 		1 ~ 2^64-1 		【propertyId和attrKey两者选其一，propertyId优先】
  *layer 						商品来源			否 		整形 		32 				默认值为11，11代表普通网超，21代表企采网超（企业购）
  *skus 							sku信息 			必填 	array 		
  * └skus.price 					商品单价 			必填 	number 		0 ~ 2^32-1 		单位：分
- * └skus.attrs 					属性 			必选 	object 		<=512个字符 		即使该结构里面键值对为空，仍然需要该结构json对象，
- 																					键：销售属性名称；值：销售属性值；
+ * └skus.attrs 					属性 			必选 	object 		<=512个字符 即使该结构里面键值对为空，仍然需要该结构json对象，键：销售属性名称；值：销售属性值；
  * └skus.platformPrice 			平台价 			必填 	number 		1 ~ 2^32-1 		单位：分
  * └skus.quantity 				数量 			必选 	number 		0 ~ 2^32-1 		库存数量
  * └skus.skuCode 				外部SKU编号 		必填 	string 		<=80个字符 		这个作为主键，做政采云sku与供应商sku做关联
@@ -137,16 +135,8 @@ class nr_zcy {
  * └item.limit 					境内或境外 		必填 	number 		2个字符 			0：境内；1：境外
  * └item.selfPlatformLink 		自营平台链接 		必填 	string 		<=1024个字符 	
  * └item.itemCode 				外部商品编号 		必填 	string 		<=80个字符 		这个作为主键，做政采云商品与供应商商品做关联
- * └item.mainImage 				主图 			必填 	string 		<=128个字符 		1.只能传入的一张图片，如果要传入多个轮播图请放入
- 																					  itemDetail.images字段中;
-																					2.商品图片只能使用政采云的商品图片链接，必须要先调用
-																					  图片上传接口把商品上传至oss，生成
-																				“https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/“
-																					  域名开头的图片链接才可以上传成功，否则会报
-																					  item.mainimage.not.valid错误
- * └item.origin 				产地 			必填 	string 		<=80个字符 		格式：XX省XX市XX区；XX省XX市XX市；XX省XX市XX县；XX市
- 																					XX区；XX市XX县；origin和（产地国家ID，产地省ID，产地城
-																					市ID，产地区ID）两种方式二选一即可
+ * └item.mainImage 				主图 			必填 	string 		<=128个字符 		1.只能传入的一张图片，如果要传入多个轮播图请放入itemDetail.images字段中;2.商品图片只能使用政采云的商品图片链接，必须要先调用图片上传接口把商品上传至oss，生成“https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/“域名开头的图片链接才可以上传成功，否则会报item.mainimage.not.valid错误
+ * └item.origin 				产地 			必填 	string 		<=80个字符 		格式：XX省XX市XX区；XX省XX市XX市；XX省XX市XX县；XX市 XX区；XX市XX县；origin和（产地国家ID，产地省ID，产地城市ID，产地区ID）两种方式二选一即可
  * └item.countryId 				产地国家ID 		是 		字符串 		10 				可以通过文档地址编码 获取
  * └item.provinceId 			产地省ID 		是 		字符串 		10 				可以通过文档地址编码 获取
  * └item.cityId 				产地城市ID 		是 		字符串 		10 				可以通过文档地址编码获取
@@ -155,13 +145,7 @@ class nr_zcy {
  * └item.categoryId 			后台类目ID 		必填 		number 		1 ~ 2^64-1 	
  *itemDetail 					商品详细信息 		必填	 object 		
  * └itemDetail.detail 			富文本 		必填 		string 		<=2048个字符 	
- * └itemDetail.images 			轮播图 		必填 		array 		每张图<=1000个字符1.该图片为商品主图轮播图，至少要传入一张，最多传入
- 																					四张，两张图片链接之间用逗号隔开；
-																					2.商品图片只能使用政采云的商品图片链接，必须要先调用
-																					图片上传接口把商品上传至oss，生成
-																				“https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/“
-																					域名开头的图片链接才可以上传成功，否则会报
-																					item.mainimage.not.valid错误 
+ * └itemDetail.images 			轮播图 		必填 		array 		每张图<=1000个字符1.该图片为商品主图轮播图，至少要传入一张，最多传入四张，两张图片链接之间用逗号隔开；2.商品图片只能使用政采云的商品图片链接，必须要先调用图片上传接口把商品上传至oss，生成“https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/“域名开头的图片链接才可以上传成功，否则会报item.mainimage.not.valid错误
  */
 	public function create_goods($goods_info){	//$goods_info需包含以上参数
 		require_once('ZcyOpenClient.php');

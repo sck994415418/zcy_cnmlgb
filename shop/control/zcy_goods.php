@@ -73,9 +73,10 @@ class zcy_goodsControl extends BaseSellerControl
                 break;
             case 'zcy_addgoods':// 主动映射的商品改价
                 $model = Model();
-                $spu = $model->table("zcy_category")->where(['pid' => 0])->limit(false)->select();
+                $spu = $model->table("zcy_category")->where(['pid'=>0])->limit(false)->select();
                 $goods = $model->table('goods')->where(['store_id'=>$_SESSION["store_id"]])->page(20)->order('goods_id desc')->select();
-
+//                echo '<pre>';
+//                print_r($spu);die;
                 Tpl::output("goods_class", $spu);
                 Tpl::output("rs_array", $goods);
                 Tpl::output("page", $goods);
@@ -98,10 +99,12 @@ class zcy_goodsControl extends BaseSellerControl
     {
         $menu_array = array(
             array('menu_key' => 'zcy_goods_onshelf', 'menu_name' => "已上架商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'on_shelf'))),
-            array('menu_key' => 'zcy_goods_cloud', 'menu_name' => "待审核商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'zcy_addgoods'))),
+            array('menu_key' => 'zcy_goods_verify', 'menu_name' => "待审核商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'verify'))),
             array('menu_key' => 'zcy_goods_offshelf', 'menu_name' => "已下架商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'off_shelf'))),
             array('menu_key' => 'zcy_goods_freez', 'menu_name' => "已冻结商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'freez'))),
             array('menu_key' => 'zcy_goods_refuse', 'menu_name' => "审核不通过商品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'refuse'))),
+            array('menu_key' => 'zcy_goods_cloud', 'menu_name' => "未上传新品", 'menu_url' => urlShop('zcy_goods', 'index', array('type' => 'zcy_addgoods'))),
+
         );
         Tpl::output('member_menu', $menu_array);
         Tpl::output('menu_key', $menu_key);
@@ -185,47 +188,18 @@ class zcy_goodsControl extends BaseSellerControl
         $_GET['goods_id'];
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
-        $attr = $zcy->get_category_attrs('2891');
+        $attr = $zcy->get_category_attrs($_GET['goods_id']);
         echo '<pre>';
         print_r($attr);
         die;
-        $goods = [
-            'otherAttributes' => [
-                'attrVal' => '',
-                'attrKey' => '',
-                'propertyId' => '',
-            ],
-            'layer' => 11,
-            "skus" => [
-                [
-                    "quantity" => 100000,
-                    "price" => 10000,
-                    "platformPrice" => 20000,
-                    "skuCode" => "123456",
-                    "attrs" => [
-                        "颜色分类" => "白"
-                    ],
 
-                ],
-                'item' => [
-                    'limit' => 0,
-                    'selfPlatformLink' => $url,
-                    'itemCode' => $goodsid,
-                    'mainImage' => $img,
-                    'origin' => "",
-                    'countryId' => "",//国家编码
-                    'provinceId' => "",//省份编码
-                    'cityId' => "",//城市编码
-                    'regionId' => "",//地区编码
-                    'name' => "",
-                    'categoryId' => "",
-
-                ],
-            ],
-        ];
         $rs = $zcy->create_goods($goods);
     }
-
+    public function linkageOp(){
+        $model = Model();
+        $spu = $model->table("zcy_category")->where(['pid'=>$_GET['id']])->limit(false)->select();
+        die(json_encode($spu));
+    }
 }
 
 ?>

@@ -6,7 +6,7 @@
     .toDisplay {position:fixed;background:#FFFFFF;display:none;width:40%;height:230px;top:200px;left:30%;right:30%;z-Index:3;text-align:center;padding:50px 50px 50px 50px;}
     .mask {display:none;z-index:2;position:fixed;width:100%; height:100%;top:0;left:0;background:#000;opacity:0.5;}
     .zcyadd{
-        position:fixed;background:#FFFFFF;display:none;width:40%;height:230px;top:200px;left:30%;right:30%;z-Index:3;text-align:center;padding:50px 50px 50px 50px;}
+        position:fixed;background:#FFFFFF;display:none;width:40%;height:500px;top:200px;left:30%;right:30%;z-Index:3;text-align:center;padding:50px 50px 50px 50px;}
     .mask {display:none;z-index:2;position:fixed;width:100%; height:100%;top:0;left:0;background:#000;opacity:0.5;
     }
     #errinfo{color:#FF0000;line-height:25px;text-align:center;mini-height:25px;display:inline-block;}
@@ -76,9 +76,6 @@
         <?php foreach ($output['rs_array'] as $val)  { ?>
             <tr class="goodslist">
                 <td class="nscs-table-handle">
-          <span>
-              <a href="<?php echo urlShop('store_goods_online', 'edit_goods', array('commonid' => $val['goods_commonid']));?>" class="btn-blue"><i class="icon-edit"></i><p><?php echo $lang['nc_edit'];?></p></a>
-          </span>
           <span>
               <a href="javascript:void(0)" onclick="addyingshe(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>);" class="btn-green"><i class="icon-external-link"></i><p>更新</p></a>
           </span>
@@ -184,16 +181,38 @@
             <tr>
                 <td colspan="2" height="30"><input type="hidden" name="good_id" id="good_id" value="" /><input type="text" name="goods_name" id="good_name" value="" style="border:none;width:100%;text-align:center" contenteditable="false" /></td>
             </tr>
+                <tr>
+                    <td alig n="right"><font color="#FF0000">*</font>政采云商品一级属性：</td>
+                    <td colspan="2" height="30">
+                        <select name="one" id="one">
+                            <option value=""></option>
+                            <?php foreach($zf_class as $key=>$val){?>
+                                <?php if($val['level'] == 1){ ?>
+                                    <option value="<?php echo $val['id']; ?>"><?php echo $val['name']; ?></option>
+                                <?php }?>
+                            <?php }?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><font color="#FF0000">*</font>政采云商品二级属性：</td>
+                    <td colspan="2" height="30">
+                        <select name="two" id="two">
+                            <option value="">--请选择--</option>
+                        </select>
+                    </td>
+                </tr>
             <tr>
+                <td align="right"><font color="#FF0000">*</font>政采云商品二级属性：</td>
                 <td colspan="2" height="30">
-                    <select name="" id="">
-                        <option value=""></option>
-                        <?php foreach($zf_class as $key=>$val){?>
-                            <option value="<?php echo $val['id']; ?>" <?php if ($_GET['zf_class'] == $val['id']){ echo 'selected=selected';}?><?php echo $val['name']; ?></option>
-                        <?php }?>
+                    <select name="three" id="three">
+                        <option value="">--请选择--</option>
                     </select>
                 </td>
             </tr>
+            <div>
+
+            </div>
             <tr>
                 <td align="right"><input type="button" name="cancle" class="submit cancle" value="取消" /></td>
                 <td align="center"><input type="button" name="submit" class="submit" id="zcyadd" value="添加" /></td>
@@ -531,4 +550,56 @@
             })
         })
     })
+
+        var provinceId = null;//纪录共同的数组下标值
+
+    $("#one").change(function(){//当省级下拉菜单被改变触发change事件
+        $("#two").html("<option>--请选择--</option>");
+        $("#three").html("<option>--请选择--</option>");
+        provinceId = $("#one").val();
+        $.ajax({
+                type: "GET",
+                url: "/shop/index.php?act=zcy_goods&op=linkage",
+                data:{id:provinceId},
+                dataType: "json",
+                success: function(data){
+                    $.each(data,function(k,v){
+                        var str = "<option value="+ v.id +">" + v.name + "</option>"
+                        $("#two").append(str);//添加option标签
+                    })
+                }
+            });
+        });
+
+
+        //----------------------------联动第三级-------------------------------------------------------
+        $("#two").change(function(){
+            $("#three").html("<option>--请选择--</option>");
+            provinceId = $("#two").val();
+            $.ajax({
+                type: "GET",
+                url: "/shop/index.php?act=zcy_goods&op=linkage",
+                data:{id:provinceId},
+                dataType: "json",
+                success: function(data){
+                    $.each(data,function(k,v){
+                        var str = "<option value="+ v.id +">" + v.name + "</option>"
+                        $("#three").append(str);//添加option标签
+                    })
+                }
+            });
+        })
+    $("#three").change(function(){
+        provinceId = $("#three").val();//获取到省和市的共同数组下标
+        $.ajax({
+            type: "GET",
+            url: "/shop/index.php?act=zcy_goods&op=zcy_goods",
+            data:{goods_id:provinceId},
+            dataType: "json",
+            success: function(data){
+               conlose.log(data);
+            }
+        });
+    })
+
 </script>
