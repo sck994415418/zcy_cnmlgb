@@ -192,7 +192,7 @@ class zcy_goodsControl extends BaseSellerControl
         $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
 
         Tpl::output("goods_class", $spu);
-            Tpl::output("imgdata", $img);
+        Tpl::output("imgdata", $img);
         Tpl::output('page',$model->showpage(2));
         Tpl::showpage('zcy_goods');
         die;
