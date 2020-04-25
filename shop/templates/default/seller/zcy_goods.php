@@ -58,9 +58,11 @@
                     <th colspan="2" align="center"><h2 align="center">商品上传至政采云</h2></th>
                 </tr>
 
+                    <input type="hidden" name="good_id" id="good_id" value="" /><input type="hidden" name="goods_name" id="good_name" value="" style="border:none;width:100%;text-align:center" contenteditable="false" />
+
                 <tr>
-                    <td width="35%" align="right"><font color="#FF0000">*</font>政采云商品一级属性：</td>
-                    <td width="35%">
+                    <td alig n="right"><font color="#FF0000">*</font>政采云商品一级属性：</td>
+                    <td colspan="2" height="30">
                         <select name="one" id="one">
                             <option value=""></option>
                             <?php foreach($output['goods_class'] as $key=>$val){?>
