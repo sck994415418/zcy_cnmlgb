@@ -134,6 +134,145 @@
                         <div id="demo"></div>
                     </dd>
                 </dl>
+
+                <dl>
+                    <dt><i class="required">*</i>商品附图</dt>
+                    <dd>
+                        <?php if (!empty($output['imgdata'])) { ?>
+                            <style type="text/css">
+
+                                .flex-container {
+                                    display: -webkit-flex;
+                                    display: flex;
+                                    width: 100%;
+                                    /*background-color: lightgrey;*/
+                                    flex-wrap:wrap;
+                                    margin: 0 auto;
+                                }
+
+                                .flex-item {
+                                    /*background-color: cornflowerblue;*/
+                                    width: 100px;
+                                    height: 100px;
+                                    margin: 10px;
+                                    /*border: 1px solid grey;*/
+                                }
+                                .click{
+                                    position: relative;
+                                }
+                                .shang{
+                                    position: absolute;
+                                    /*top: 100px;*/
+                                    /*left: 70px;*/
+                                    left: 0;
+                                    top: 0;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    border: 1px solid black;
+                                    border-radius: 10px;
+                                    width: 100%;
+                                    height: 100%;
+                                    color: white;
+                                    text-align: center;
+                                    line-height: 180px;
+                                    background-color: rgba(0,0,0,0.3);
+                                }
+                                @import url("<?php echo SHOP_TEMPLATES_URL; ?>/css/zcy.css");
+                            </style>
+
+                            <div id="content" style="height: 100%; overflow: auto" >
+                                <ul class="flex-container">
+                                    <?php foreach ($output['imgdata'] as $v){ ?>
+                                        <li class="flex-item click">
+                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
+                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
+                                        </li><li class="flex-item click">
+                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
+                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
+                                        </li><li class="flex-item click">
+                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
+                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
+                                        </li><li class="flex-item click">
+                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
+                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
+                                        </li><li class="flex-item click">
+                                            <input type="checkbox" class="input" value="<?php echo $v['apic_id'];?>">
+                                            <img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" alt="" width="100%" height="100%">
+                                        </li>
+                                    <?php }?>
+                                </ul>
+
+                                <tr>
+                                    <td colspan="20"><div class="pagination"> <?php echo $output['show_page'] ?> </div></td>
+                                </tr>
+
+                            </div>
+                            <script>
+                                function count_radio()
+                                {
+                                    var len = $('.input:checked').length;
+                                    // console.log(len)
+                                    return len;
+                                }
+                                $(".click").click(function () {
+                                    if($(this).find("input").attr("checked") == 'checked'){
+                                        $(this).find("input").removeAttr("checked");
+                                    }else{
+                                        $(this).find("input").attr("checked", "checked");
+                                    }
+                                    var len = count_radio();
+                                    console.log(len)
+                                    if(len>4){
+                                        alert('最多选择四张附图!')
+                                        $(this).find("input").removeAttr("checked");
+                                        return false;
+                                    }
+
+                                })
+
+                                // $('.all').click(function () {
+                                //     if($(this).attr("checked") == 'checked'){
+                                //         $('.input').attr("checked", "checked");
+                                //     }else{
+                                //         $('.input').removeAttr("checked");
+                                //     }
+                                // })
+
+                                $('#open_uploaders').click(function(){
+                                    var test_list = [];
+                                    $('input:checkbox:checked').each(function () {
+                                        test_list.push($(this).val())
+                                    })
+                                    // var test_str = JSON.stringify(test_list );
+                                    if(test_list == null || test_list == [] || test_list== ""){
+                                        alert('请选择图片后上传')
+                                    }else{
+                                        $.ajax({
+                                            url:"/shop/index.php?act=zcy_image&op=upgoods",
+                                            type:"POST",
+                                            dataType: "JSON",
+                                            data:{path:test_list},
+                                            success:function (res) {
+                                                if(res.code == 1){
+                                                    location.reload();
+                                                }else{
+                                                    alert(res.msg)
+                                                }
+                                            },
+                                            error:function(e)
+                                            {
+                                                console.log(e);
+                                            }
+                                        })
+                                    }
+
+                                })
+
+                            </script>
+                        <?php } ?>
+                        <div id="demo"></div>
+                    </dd>
+                </dl>
                 <dl>
                     <dt><?php echo $lang['store_goods_index_goods_desc'] . $lang['nc_colon']; ?></dt>
                     <dd id="ncProductDetails">
