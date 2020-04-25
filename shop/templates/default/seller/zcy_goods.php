@@ -11,6 +11,9 @@
 
 </style>
 <div id="content">
+    <div id="dataLoading" class="wp_data_loading">
+        <div class="data_loading">加载中...</div>
+    </div>
     <div class="zcyadd">
         <form action="#" method="post">
             <table width="450" height="200" border="0" style="margin: auto;">
@@ -66,6 +69,7 @@
     var provinceId = null;//纪录共同的数组下标值
 
     $("#one").change(function(){//当省级下拉菜单被改变触发change事件
+        // $('#dataLoading').show();
         $("#two").html("<option>--请选择--</option>");
         $("#three").html("<option>--请选择--</option>");
         provinceId = $("#one").val();
@@ -74,6 +78,12 @@
             url: "/shop/index.php?act=zcy_goods&op=linkage",
             data:{id:provinceId},
             dataType: "json",
+            beforeSend:function(){
+                $('#dataLoading').show();
+            },
+            complete:function(){
+                $('#dataLoading').hide();
+            },
             success: function(data){
                 $.each(data,function(k,v){
                     var str = "<option value="+ v.id +">" + v.name + "</option>"
@@ -93,6 +103,12 @@
             url: "/shop/index.php?act=zcy_goods&op=linkage",
             data:{id:provinceId},
             dataType: "json",
+            beforeSend:function(){
+                $('#dataLoading').show();
+            },
+            complete:function(){
+                $('#dataLoading').hide();
+            },
             success: function(data){
                 $.each(data,function(k,v){
                     var str = "<option value="+ v.id +">" + v.name + "</option>"
@@ -108,6 +124,12 @@
             url: "/shop/index.php?act=zcy_goods&op=category",
             data:{goods_id:provinceId},
             dataType: "json",
+            beforeSend:function(){
+                $('#dataLoading').show();
+            },
+            complete:function(){
+                $('#dataLoading').hide();
+            },
             success: function(data){
                 $.each(data.data_reponse,function(k,v) {
                     var str = ' <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">\n' +
