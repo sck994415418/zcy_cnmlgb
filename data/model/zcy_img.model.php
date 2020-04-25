@@ -8,7 +8,7 @@
  * by 33hao 好商城V3  www.haoid.cn 开发
  */
 defined('InShopNC') or exit('Access Invalid!');
-class zcy_configModel extends Model{
+class zcy_imgModel extends Model{
 
     public function __construct(){
         parent::__construct('zcy_img');

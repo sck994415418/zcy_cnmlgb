@@ -355,6 +355,51 @@ class store_albumControl extends BaseSellerControl {
                 break;
         }
     }
+    /**
+     * 图片列表，外部调用
+     */
+    public function zcy_pic_listOp() {
+        $page = new Page();
+        if (in_array($_GET['item'], array('goods_image'))) {
+            $page->setEachNum(12);
+        } else {
+            $page->setEachNum(14);
+        }
+        $page->setStyle('admin');
+
+        /**
+         * 实例化相册类
+         */
+        $model = Model();
+        $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
+//        Tpl::output("imgdata", $img);
+//        Tpl::output('page',$model->showpage(2));
+        Tpl::output('pic_list', $img);
+        Tpl::output('show_page', $model->showpage(2));
+
+        switch ($_GET['item']) {
+            case 'goods':
+                Tpl::showpage('zcy_send_good.select_image', 'null_layout');
+                break;
+            case 'des':
+                Tpl::showpage('zcy_send_good.select_image_desc', 'null_layout');
+                break;
+            case 'groupbuy':
+                Tpl::showpage('store_groupbuy.album', 'null_layout');
+                break;
+            case 'store_sns_normal':
+                Tpl::showpage('store_sns_add.album', 'null_layout');
+                break;
+            case 'goods_image':
+                Tpl::output('color_id', $_GET['color_id']);
+                Tpl::showpage('store_goods_add.step3_goods_image', 'null_layout');
+                break;
+            case 'mobile':
+                Tpl::output('type', $_GET['type']);
+                Tpl::showpage('store_goods_add.step2_mobile_image', 'null_layout');
+                break;
+        }
+    }
 
     /**
      * 修改相册封面

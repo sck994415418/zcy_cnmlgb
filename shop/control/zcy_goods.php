@@ -193,7 +193,7 @@ class zcy_goodsControl extends BaseSellerControl
 
         Tpl::output("goods_class", $spu);
         Tpl::output("imgdata", $img);
-//        Tpl::output('page',$model->showpage(2));
+        Tpl::output('page',$model->showpage(2));
         Tpl::showpage('zcy_goods');
         die;
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');
