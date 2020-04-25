@@ -1,9 +1,6 @@
 <?php defined('InShopNC') or exit('Access Invalid!');?>
 
-<div class="tabmenu">
-    <?php include template('layout/submenu');?>
-    <a href="<?php echo urlShop('store_goods_add');?>" class="ncsc-btn ncsc-btn-green" title="<?php echo $lang['store_goods_index_add_goods'];?>"> <?php echo $lang['store_goods_index_add_goods'];?></a>
-</div>
+
 <style>
     .ncsc-form-goods { border: solid #E6E6E6; border-width: 1px 1px 0 1px;}
     .ncsc-form-goods h3 { font-size: 14px; font-weight: 600; line-height: 22px; color: #000; clear: both; background-color: #F5F5F5; padding: 5px 0 5px 12px; border-bottom: solid 1px #E7E7E7;}
@@ -131,23 +128,38 @@
                 $('#dataLoading').hide();
             },
             success: function(data){
+
                 $.each(data.data_reponse,function(k,v) {
                     var str = ' <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">\n' +
                         '                        <dt>\n' +
                         '                            <input name="attrName[]" type="text" class="text w60 tip2 tr" value="'+ v.attrName +'" nctype="spec_name">\n' +
                         '                        </dt>\n' +
                         '                        <dd>\n' +
-                        '                            <ul class="spec">\n' +
-                        '                                <li>\n' +
-                        '                                    <span nctype="input_checkbox">\n' +
-                        '                                        <input type="text" value="2" nc_type="2004" name="sp_val[36][2004]">\n' +
-                        '                                    </span>\n' +
-                        '                                    <span nctype="pv_name">2</span>\n' +
-                        '                                </li>\n' +
-                        '                            </ul>\n' +
+                        '                            <ul class="spec">\n';
+                        var str2 ="";
+                        if(v.attrVals == '' || v.attrVals == [] || v.attrVals == null){
+                            str2 =  ' <li>                           <span nctype="input_checkbox">\n' +
+                                '                                        <input type="text" value="'+ v.attrVals+'" name="attrVals[]">\n' +
+                                '                                    </span>\n' +
+                                '                                    <span nctype="pv_name">'+ v.group +'</span>\n'+
+                                '                                </li>\n';
+                        }else{
+
+                            $.each(v.attrVals,function (key,val) {
+                                str2 +=  '<li> <span nctype="input_checkbox">\n' +
+                                    '     <input type="checkbox" value="'+ val+'" name="attrVals[]">\n' +
+                                    '        </span>\n' +
+                                    '        <span nctype="pv_name">'+ val +'</span>\n '+
+                                    '                                </li>\n';
+
+                            })
+                        }
+
+                    var str3 = '          </ul>\n' +
                         '                        </dd>\n' +
-                        '                    </dl>';
-                    $("#sku").append(str);
+                        '                    </dl>' +
+                        '<input type="hidden" name="propertyId[]" value="'+ v.propertyId +'">';
+                    $("#sku").append(str+str2+str3);
                 })
 
 

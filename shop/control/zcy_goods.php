@@ -191,16 +191,11 @@ class zcy_goodsControl extends BaseSellerControl
         $spu = $model->table("zcy_category")->where(['pid'=>0])->limit(false)->select();
         Tpl::output("goods_class", $spu);
         Tpl::showpage('zcy_goods');
-
-        $_GET['goods_id'];
+        die;
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
-        $attr = $zcy->get_category_attrs($_GET['goods_id']);
-        echo '<pre>';
-        print_r($attr);
-        die;
 
-        $rs = $zcy->create_goods($goods);
+        $rs = $zcy->create_goods();
     }
     public function linkageOp(){
         $model = Model();
