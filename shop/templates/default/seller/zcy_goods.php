@@ -17,12 +17,10 @@
                 <tr>
                     <th colspan="2" align="center"><h2 align="center">商品上传至政采云</h2></th>
                 </tr>
+
                 <tr>
-                    <td colspan="2" height="30"><input type="hidden" name="good_id" id="good_id" value="" /><input type="text" name="goods_name" id="good_name" value="" style="border:none;width:100%;text-align:center" contenteditable="false" /></td>
-                </tr>
-                <tr>
-                    <td alig n="right"><font color="#FF0000">*</font>政采云商品一级属性：</td>
-                    <td colspan="2" height="30">
+                    <td width="35%" align="right"><font color="#FF0000">*</font>政采云商品一级属性：</td>
+                    <td width="35%">
                         <select name="one" id="one">
                             <option value=""></option>
                             <?php foreach($output['goods_class'] as $key=>$val){?>
@@ -35,7 +33,7 @@
                 </tr>
                 <tr>
                     <td align="right"><font color="#FF0000">*</font>政采云商品二级属性：</td>
-                    <td colspan="2" height="30">
+                    <td>
                         <select name="two" id="two">
                             <option value="">--请选择--</option>
                         </select>
@@ -43,7 +41,7 @@
                 </tr>
                 <tr>
                     <td align="right"><font color="#FF0000">*</font>政采云商品二级属性：</td>
-                    <td colspan="2" height="30">
+                    <td>
                         <select name="three" id="three">
                             <option value="">--请选择--</option>
                         </select>

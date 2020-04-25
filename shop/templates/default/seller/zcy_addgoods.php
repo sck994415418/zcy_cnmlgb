@@ -172,7 +172,54 @@
     </form>
 </div>
 
+<div class="zcyadd">
+    <form action="#" method="post">
+        <table width="450" height="200" border="0" style="margin: auto;">
+            <tr>
+                <th colspan="2" align="center"><h2 align="center">商品上传至政采云</h2></th>
+            </tr>
+            <tr>
+                <td colspan="2" height="30"><input type="hidden" name="good_id" id="good_id" value="" /><input type="text" name="goods_name" id="good_name" value="" style="border:none;width:100%;text-align:center" contenteditable="false" /></td>
+            </tr>
+                <tr>
+                    <td align="right"><font color="#FF0000">*</font>政采云商品一级属性：</td>
+                    <td colspan="2" height="30">
+                        <select name="one" id="one">
+                            <option value=""></option>
+                            <?php foreach($zf_class as $key=>$val){?>
+                                <?php if($val['level'] == 1){ ?>
+                                    <option value="<?php echo $val['id']; ?>"><?php echo $val['name']; ?></option>
+                                <?php }?>
+                            <?php }?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><font color="#FF0000">*</font>政采云商品二级属性：</td>
+                    <td colspan="2" height="30">
+                        <select name="two" id="two">
+                            <option value="">--请选择--</option>
+                        </select>
+                    </td>
+                </tr>
+            <tr>
+                <td align="right"><font color="#FF0000">*</font>政采云商品二级属性：</td>
+                <td colspan="2" height="30">
+                    <select name="three" id="three">
+                        <option value="">--请选择--</option>
+                    </select>
+                </td>
+            </tr>
+            <div>
 
+            </div>
+            <tr>
+                <td align="right"><input type="button" name="cancle" class="submit cancle" value="取消" /></td>
+                <td align="center"><input type="button" name="submit" class="submit" id="zcyadd" value="添加" /></td>
+            </tr>
+        </table>
+    </form>
+</div>
 <script src="<?php echo RESOURCE_SITE_URL;?>/js/jquery.poshytip.min.js"></script>
 <script src="<?php echo SHOP_RESOURCE_SITE_URL;?>/js/store_goods_list.js"></script>
 <script>
@@ -255,13 +302,13 @@
         $(".mask").fadeIn();
         $(".toDisplay").fadeIn();
     }
-    // function zcygoodsadd(goods_id,goods_name){
-    //     console.log(goods_name);
-    //     $("#good_name").val(goods_name.trim());
-    //     $("#good_id").val(goods_id);
-    //     $(".mask").fadeIn();
-    //     $(".zcyadd").fadeIn();
-    // }
+    function zcygoodsadd(goods_id,goods_name){
+        console.log(goods_name);
+        $("#good_name").val(goods_name.trim());
+        $("#good_id").val(goods_id);
+        $(".mask").fadeIn();
+        $(".zcyadd").fadeIn();
+    }
     $(".cancle").click(function() {
         $("#goods_name").val("");
         $("#goods_id").val("");
