@@ -98,6 +98,10 @@
             <div class="ncsc-form-goods" id="sku">
 
             </div>
+
+            <div class="upimg">
+
+            </div>
             <div class="bottom tc hr32">
                 <label class="submit-border">
                     <input type="submit" class="submit" value="下一步，上传商品图片">
@@ -172,37 +176,34 @@
                 $('#dataLoading').hide();
             },
             success: function(data){
-
+                $("#sku").html("");
                 $.each(data.data_reponse,function(k,v) {
                     var str = ' <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">\n' +
                         '                        <dt>\n' +
-                        '                            <input readonly name="attrName[]" type="text" class="text w60 tip2 tr" value="'+ v.attrName +'" nctype="spec_name">\n' +
+                        '                            <input readonly name="'+v.propertyId+'" type="text" class="text w60 tip2 tr" value="'+ v.attrName +'" nctype="spec_name">\n' +
                         '                        </dt>\n' +
                         '                        <dd>\n' +
                         '                            <ul class="spec">\n';
                         var str2 ="";
                         if(v.attrVals == '' || v.attrVals == [] || v.attrVals == null){
                             str2 =  ' <li>                           <span nctype="input_checkbox">\n' +
-                                '                                        <input type="text" value="'+ v.attrVals+'" name="attrVals[]">\n' +
+                                '                                        <input type="text" value="'+ v.attrVals+'" name="'+v.propertyId+'">\n' +
                                 '                                    </span>\n' +
                                 '                                    <span nctype="pv_name">'+ v.group +'</span>\n'+
                                 '                                </li>\n';
                         }else{
-
                             $.each(v.attrVals,function (key,val) {
                                 str2 +=  '<li> <span nctype="input_checkbox">\n' +
-                                    '     <input type="checkbox" value="'+ val+'" name="attrVals[]">\n' +
+                                    '     <input type="radio" value="'+ val+'" name="'+v.propertyId+'">\n' +
                                     '        </span>\n' +
                                     '        <span nctype="pv_name">'+ val +'</span>\n '+
                                     '                                </li>\n';
-
                             })
                         }
 
                     var str3 = '          </ul>\n' +
                         '                        </dd>\n' +
-                        '                    </dl>' +
-                        '<input type="hidden" name="propertyId[]" value="'+ v.propertyId +'">';
+                        '                    </dl>\n';
                     $("#sku").append(str+str2+str3);
                 })
 
