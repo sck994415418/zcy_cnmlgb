@@ -187,21 +187,32 @@ class zcy_goodsControl extends BaseSellerControl
     //上传政采云商品
     public function zcy_goodsOp()
     {
-
             $model = Model();
             $spu = $model->table("zcy_category")->where(['pid'=>0])->limit(false)->select();
-            $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
-            $sql = "select * from `zmkj_zcy_brand`";
-            $res = $model->query($sql);
-            Tpl::output("goods_brand", json_encode($res));
             Tpl::output("goods_class", $spu);
-            Tpl::output("imgdata", $img);
-            Tpl::output('page',$model->showpage(2));
-
             Tpl::showpage('zcy_goods');
 
     }
-
+    public function zcy_goods2Op(){
+        require_once(BASE_PATH . '/../zcy/nr_zcy.php');
+        $zcy = new nr_zcy();
+        $attr = $zcy->get_category_attrs($_POST['three']);
+//        echo '<pre>';
+//        print_r($attr);die;
+        $model = Model();
+        $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
+        $brand = $model->table('zcy_brand')->page(20)->select();
+        Tpl::output("imgdata", $img);
+        Tpl::output("brand", $brand);
+        Tpl::output("brand_page", $model->showpage(2));
+        Tpl::output('page',$model->showpage(2));
+        Tpl::output("category", $attr);
+        Tpl::showpage('zcy_goods2');
+    }
+    public function zcy_goods3Op(){
+                echo '<pre>';
+        var_dump($_POST);die;
+    }
     public function zcy_goodsdataOp(){
         $model = Model();
         echo "<pre>";
