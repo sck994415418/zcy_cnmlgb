@@ -8,7 +8,7 @@
   <?php if(!empty($output['pic_list'])){?>
   <ul class="list">
     <?php foreach ($output['pic_list'] as $v){?>
-    <li onclick="insert_img('<?php echo $v['fileid'];?>','https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>');"><a href="JavaScript:void(0);"><img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" title='<?php echo $v['fileid']?>'/></a></li>
+    <li onclick="insert_imgs('<?php echo $v['fileid'];?>','https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>');"><a href="JavaScript:void(0);"><img src="https://zcy-gov-item.oss-cn-north-2-gov-1.aliyuncs.com/<?php echo $v['fileid'];?>" title='<?php echo $v['fileid']?>'/></a></li>
     <?php }?>
   </ul>
   <?php }else{?>

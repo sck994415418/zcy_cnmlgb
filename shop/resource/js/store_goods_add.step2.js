@@ -720,6 +720,10 @@ function insert_img(name, src) {
     $('input[nctype="goods_image"]').val(name);
     $('img[nctype="goods_image"]').attr('src',src);
 }
+function insert_imgs(name, src) {
+    $('input[name="image_path"]').val(src);
+    $('img[nctype="goods_image"]').attr('src',src);
+}
 
 /* 插入编辑器 */
 function insert_editor(file_path) {

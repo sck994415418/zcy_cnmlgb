@@ -435,7 +435,7 @@ class zcy_configControl extends BaseSellerControl
             if ($id != "" and $fullName != "" and $logo != "" and $status != "") {
                 if (!@include(BASE_PATH . '/control/zcy_connect_data.php')) exit(json_encode(array('isSuccess' => false, 'resultMsg' => 'zcy_connect_data.php isn\'t exists!')));
                 $zcy_data = new zcy_data();
-                $sql = "select * from `zcy_brand` where `id` = " . $id;
+                $sql = "select * from `zmkj_zcy_brand` where `id` = " . $id;
                 $rs = $zcy_data->select_data($sql);
 
 
@@ -469,7 +469,14 @@ class zcy_configControl extends BaseSellerControl
         }
     }
 
-
+    public function get_brand_myselfOp()
+    {
+        if (!@include(BASE_PATH . '/control/zcy_connect_data.php')) exit(json_encode(array('isSuccess' => false, 'resultMsg' => 'zcy_connect_data.php isn\'t exists!')));
+        $zcy_data = new zcy_data();
+        $sql = "select * from `zmkj_zcy_brand`";
+        $rs = $zcy_data->select_data($sql);
+        exit(json_encode($rs));
+    }
 
 
     public function update_brand_allOp()
