@@ -80,7 +80,7 @@
               <a href="javascript:void(0)" onclick="addyingshe(<?php echo $val["goods_id"].",'".$val["goods_name"]."'"; ?>);" class="btn-green"><i class="icon-external-link"></i><p>更新</p></a>
           </span>
           <span>
-              <a href="<?php echo urlShop('zcy_goods','zcy_goods');?>" class="btn-green"><i class="icon-external-link"></i><p>上传</p></a>
+              <a href="<?php echo urlShop('zcy_goods','zcy_goods', array('goods_id' => $val['goods_id']));?>" class="btn-green"><i class="icon-external-link"></i><p>上传</p></a>
           </span>
                 </td>
                 <td><span class="zf_class" goods_id="<?php echo $val["goods_id"] ?>"><?php

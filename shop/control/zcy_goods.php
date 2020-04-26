@@ -203,8 +203,16 @@ class zcy_goodsControl extends BaseSellerControl
     }
 
     public function zcy_goodsdataOp(){
+        $model = Model();
         echo "<pre>";
+        $_POST['layer'] = 11;
+        $goods = $model->table('goods')->where(["goods_id"=>$_POST['goods_id']])->field("goods_name,goods_price,goods_marketprice,goods_storage")->find();
+        $_POST['skus'] =[
+            'price'=>$goods['goods_price']*100,
+            'attrs'=>['']
+        ];
         print_r($_POST);die;
+
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
 

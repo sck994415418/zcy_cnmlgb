@@ -1,6 +1,9 @@
 <?php defined('InShopNC') or exit('Access Invalid!'); ?>
 
 <meta name="referrer" content="no-referrer">
+<!--<link href="--><?php //echo SHOP_TEMPLATES_URL;?><!--/select2.min.css" rel="stylesheet" type="text/css">-->
+<!--<script src="--><?php //echo RESOURCE_SITE_URL; ?><!--/js/select2.min.js"></script>-->
+
 <script src="<?php echo RESOURCE_SITE_URL; ?>/js/jquery.ajaxContent.pack.js"></script>
 <script src="<?php echo RESOURCE_SITE_URL; ?>/js/jquery-ui/i18n/zh-CN.js"></script>
 <script src="<?php echo RESOURCE_SITE_URL; ?>/js/common_select.js"></script>
@@ -98,7 +101,7 @@
     </div>
     <div class="zcyadd">
         <form method="post" action="<?php echo urlShop('zcy_goods', 'zcy_goodsdata');?>">
-<!--            <input type="hidden" name="good_id" id="good_id" value=""/>-->
+            <input type="hidden" name="good_id" id="good_id" value="<?php $_GET['goods_id']?>"/>
 <!--            <input type="hidden" name="goods_name" id="good_name" value=""/>-->
             <table width="450" height="200" border="0" style="margin: auto;">
                 <tr>
@@ -526,9 +529,6 @@
             },
             success: function (data) {
                 // console.log(data)
-
-                // str_sck_1 = '<select name="otherAttributes['+k+'][attrVals]">';
-                // str_sck_2 = '</select>';
                 $.each(data,function(ks,vs){
                     str_sck_3 += '<option value="'+vs.fullName+'">'+vs.fullName+'</option>';
                 })
@@ -559,12 +559,19 @@
                 $("#sku").html("");
                 $.each(data.data_reponse, function (k, v) {
                     // console.log(v);
-                    var str = ' <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">\n' +
-                        '                        <dt>\n' +
-                        '                            <input readonly name="" type="text" class="text w60 tip2 tr" value="' + v.attrName + '" nctype="spec_name">\n' +
-                        '                        </dt>\n' +
-                        '                        <dd>\n' +
-                        '                            <ul class="spec">\n';
+                     str = ' <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">\n';
+                    if(v.attrMetas.isKey == true){
+                        str +=' <dt>\n' +
+                        '     <span style="color: red;">*</span><input disabled name="" type="text" class="text w60 tip2 tr" value="' + v.attrName + '" nctype="spec_name">\n' +
+                        '   </dt>\n';
+                    }else{
+                        str +='                        <dt>\n' +
+                            '                            <input disabled name="" type="text" class="text w60 tip2 tr" value="' + v.attrName + '" nctype="spec_name">\n' +
+                            '                        </dt>\n' ;
+                    }
+
+                    str += '  <dd>\n' +
+                         '                            <ul class="spec">\n';
                     var str2 = "";
                     if (v.attrVals == '' || v.attrVals == [] || v.attrVals == null) {
                         if(v.attrName == '品牌'){
@@ -572,8 +579,9 @@
                                 '<select class="'+k+'" id="get_brand" name="otherAttributes['+k+'][attrVals]">' +
                                 '<option value="">请选择品牌</option>' +
                                 '</select>' +
-                                '<input type="hidden" name="otherAttributes['+k+'][propertyId]" value="'+v.propertyId+'">'+
-                                '       </spantext>\n' +
+                                '<input type="hidden" name="otherAttributes['+k+'][propertyId]" value="'+v.propertyId+'">\n' +
+                                '<input type="hidden" name="otherAttributes['+k+'][attrKey]" value="'+v.attrName+'">\n'+
+                                '       </span>\n' +
                                 '   <span nctype="pv_name">' + v.group + '</span>\n' +
                                 '                                </li>\n';
                             get_brand(k)
@@ -581,6 +589,7 @@
                             str2 = ' <li>                           <span nctype="input_checkbox">\n' +
                                 '                                        <input type="text" value="' + v.attrVals + '"  name="otherAttributes['+k+'][attrVals]">\n' +
                                 '<input type="hidden" name="otherAttributes['+k+'][propertyId]" value="'+v.propertyId+'"/> \n' +
+                                '<input type="hidden" name="otherAttributes['+k+'][attrKey]" value="'+v.attrName+'"/> \n' +
                                 '                                    </span>\n' +
                                 '                                    <span nctype="pv_name">' + v.group + '</span>\n' +
                                 '                                </li>\n';
@@ -588,9 +597,14 @@
 
                     }else {
                         $.each(v.attrVals, function (key, val) {
-                            str2 += '<li> <span nctype="input_checkbox">\n' +
-                                '     <input type="radio" value="' + val + '" name="otherAttributes['+k+'][attrVals]">\n' +
-                                '<input type="hidden" name="otherAttributes['+k+'][propertyId]" value="'+v.propertyId+'"/> \n' +
+                            str2 += '<li> <span nctype="input_checkbox">\n';
+                            if(v.attrMetas.multi == true){
+                                str2 +='     <input type="checkbox" value="' + val + '" name="otherAttributes['+k+'][attrVals][]">\n';
+                            }else{
+                                str2 +='     <input type="radio" value="' + val + '" name="otherAttributes['+k+'][attrVals]">\n';
+                            }
+                                str2 +='<input type="hidden" name="otherAttributes['+k+'][propertyId]" value="'+v.propertyId+'"/> \n' +
+                                '<input type="hidden" name="otherAttributes['+k+'][attrKey]" value="'+v.attrName+'"/> \n' +
                                 '        </span>\n' +
                                 '        <span nctype="pv_name">' + val + '</span>\n ' +
                                 '                                </li>\n';
