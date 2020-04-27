@@ -101,7 +101,7 @@
     </div>
     <div class="zcyadd">
         <form method="post" action="<?php echo urlShop('zcy_goods', 'zcy_goods2');?>">
-            <input type="hidden" name="good_id" id="good_id" value="<?php $_GET['goods_id']?>"/>
+            <input type="hidden" name="good_id" id="good_id" value="<?php echo $_GET['goods_id']?>"/>
 <!--            <input type="hidden" name="goods_name" id="good_name" value=""/>-->
             <table width="450" height="200" border="0" style="margin: auto;">
                 <tr>

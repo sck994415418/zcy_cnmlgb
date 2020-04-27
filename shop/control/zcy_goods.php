@@ -211,24 +211,63 @@ class zcy_goodsControl extends BaseSellerControl
         Tpl::showpage('zcy_goods2');
     }
     public function zcy_goods3Op(){
-                echo '<pre>';
-        print_r($_POST);die;
-    }
-    public function zcy_goodsdataOp(){
         $model = Model();
-        echo "<pre>";
         $_POST['layer'] = 11;
         $goods = $model->table('goods')->where(["goods_id"=>$_POST['goods_id']])->field("goods_name,goods_price,goods_marketprice,goods_storage")->find();
         $_POST['skus'] =[
             'price'=>$goods['goods_price']*100,
-            'attrs'=>['']
+            'attrs'=>[''],
+            'platformPrice'=>$goods['goods_marketprice']*100,
+            'quantity'=>$goods['goods_storage'],
+            'skuCode'=>$_POST['goods_id']
         ];
-        print_r($_POST);die;
+        $_POST['item'] = [
+            'limit'=>0,
+            'selfPlatformLink'=>$_POST['goodsurl'],
+            'itemCode'=>$_POST['goods_id'],
+            'mainImage'=>$_POST['image_path'],
+            'countryId'=>  $_POST['provinceId'],
+            'cityId'=>$_POST['cityId'],
+            'regionId'=>$_POST['regionId'],
+            'name'=>$goods['goods_name'],
+            'categoryId'=>$_POST['categoryId'],
+        ];
+        $_POST['itemDetail'] = [
+            'detail'=>$_POST['goods_body'],
+            'images'=>implode(",",$_POST['images']),
+        ];
+        unset($_POST['goods_id']);
+        unset($_POST['image_path']);
+        unset($_POST['provinceId']);
+        unset($_POST['cityId']);
+        unset($_POST['regionId']);
+        unset($_POST['categoryId']);
+        unset($_POST['goods_body']);
+        unset($_POST['goods_image']);
+        unset($_POST['images']);
+        unset($_POST['goodsurl']);
+        foreach($_POST['otherAttributes'] as $k =>$v){
 
+            if(empty($_POST['otherAttributes'][$k]['attrVal'])){
+                $_POST['otherAttributes'][$k]['attrVal'] = "无";
+            }
+        }
+        echo '<pre>';
+//        $data = json_encode($_POST);
+        print_r($_POST);die;
         require_once(BASE_PATH . '/../zcy/nr_zcy.php');
         $zcy = new nr_zcy();
+        $rs = $zcy->create_goods($_POST);
+        print_r($rs);
+    }
+    public function zcy_goodsdataOp(){
+        $model = Model();
+        echo "<pre>";
 
-        $rs = $zcy->create_goods();
+
+        print_r($_POST);die;
+
+
     }
     public function linkageOp(){
         $model = Model();

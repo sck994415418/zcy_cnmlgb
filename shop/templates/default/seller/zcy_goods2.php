@@ -111,6 +111,9 @@
 
 <form method="post" action="<?php echo urlShop('zcy_goods', 'zcy_goods3');?>">
 <div class="ncsc-form-goods" id="sku">
+    <input type="hidden" name="goods_id" value="<?php echo $_POST['good_id'];?>">
+    <input type="hidden" name="goodsurl" value="<?php echo urlShop('goods', 'index', array('goods_id' => $_POST['good_id']));?>">
+    <input type="hidden" name="categoryId" value="<?php echo $_POST['three'];?>">
     <?php foreach($output['category']['data_reponse'] as $key=>$v){?>
     <dl nc_type="spec_group_dl_0" nctype="spec_group_dl" class="spec-bg">
         <dt>
@@ -159,8 +162,8 @@
                     <?php }else{?>
 
 
-                        <input type="text" disabled class="sck_brand_class" value="请点击下方品牌进行选择" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>">
-                        <input type="text" placeholder="输入关键词搜索" value="" name="sck_search_brand_text" class="sck_search_brand_text" style="width: 50%">
+                        <input type="text" readonly value="" class="sck_brand_class" placeholder="请点击下方品牌进行选择" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>">
+                        <input type="text" placeholder="输入关键词搜索" value="" name="" class="sck_search_brand_text" style="width: 50%">
                         <input type="button" placeholder="" value="搜索" style="height: 30px;padding:0 10px;text-align: center" class="sck_search_brand_btn">
                         <div class="sck_brand">
                             <?php foreach($output['brand'] as $vv){?>
@@ -168,13 +171,8 @@
                             <?php }?>
 <!--                            <p class="sck_to_loading">点击加载更多...</p>-->
                         </div>
-                        <select style="display: none" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" id="">
-                            <option value="">选择品牌</option>
-                            <?php foreach($output['brand'] as $vv){?>
-                                <option value="<?php echo $vv['fullName']?>"><?php echo $vv['fullName']?></option>
-                            <?php }?>
-                        </select>
-
+                        <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrKey".']':'otherAttributes'.'['.$key.']'.'['."attrKey".']' ?>" value="<?php echo $v['attrName'];?>"/>
+                        <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."propertyId".']':'otherAttributes'.'['.$key.']'.'['."propertyId".']'; ?>" value="<?php echo $v['propertyId'];?>"/>
 
 <!--                        <tr>-->
 <!--                            <td colspan="20">-->
@@ -511,6 +509,7 @@
         $(".tabs").tabs();
         var html = "";
         $.each(pdata, function (idx, item) {
+            // console.log(item);
             if (parseInt(item.level) == 0) {
                 html += "<option value=" + item.code + ">" + item.names + "</option>"
             }
@@ -585,7 +584,9 @@
     }
     $(document).on('click','.sck_brand span',function () {
         var str = $(this).text()
-        $('.sck_brand_class').val(str)
+        $('.sck_brand_class').removeAttr('readonly')
+        $('.sck_brand_class').attr('value',str)
+        $('.sck_brand_class').attr('readonly','readonly')
 
     })
 </script>
