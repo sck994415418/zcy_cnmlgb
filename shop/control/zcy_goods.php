@@ -201,7 +201,7 @@ class zcy_goodsControl extends BaseSellerControl
 //        print_r($attr);die;
         $model = Model();
         $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
-        $brand = $model->table('zcy_brand')->page(20)->select();
+        $brand = $model->table('zcy_brand')->page(100)->select();
 //        print_r($brand);die;
         Tpl::output("imgdata", $img);
         Tpl::output("brand", $brand);

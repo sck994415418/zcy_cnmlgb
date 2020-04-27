@@ -471,11 +471,20 @@ class zcy_configControl extends BaseSellerControl
 
     public function get_brand_myselfOp()
     {
-        if (!@include(BASE_PATH . '/control/zcy_connect_data.php')) exit(json_encode(array('isSuccess' => false, 'resultMsg' => 'zcy_connect_data.php isn\'t exists!')));
-        $zcy_data = new zcy_data();
-        $sql = "select * from `zmkj_zcy_brand`";
-        $rs = $zcy_data->select_data($sql);
-        exit(json_encode($rs));
+        if(!empty($_POST['keywords'])){
+            $where = [
+                'fullName'=>['like','%'.$_POST['keywords'].'%'],
+            ];
+        }
+        $model = Model();
+        $brand = $model->table('zcy_brand')->where($where)->page(100)->select();
+        if(!empty($brand)){
+            $res['code'] = 1;
+            $res['data'] = $brand;
+        }else{
+            $res['code'] = 0;
+        }
+        exit(json_encode($res));
     }
 
 

@@ -89,7 +89,24 @@
         width: 70% !important;
         text-align: center;
     }
-
+    .sck_brand{
+        width: 100%;
+        height: 250px;
+        border: 1px solid red;
+        overflow: auto;
+    }
+    .sck_brand span{
+        cursor: pointer;
+        padding: 0 10px;
+        width: auto;
+        line-height: 30px;
+        display: block;
+        font-size: 15px;
+        border: 1px solid green;
+    }
+    .sck_brand span:active{
+        font-weight: bold;
+    }
 </style>
 
 <form method="post" action="<?php echo urlShop('zcy_goods', 'zcy_goods3');?>">
@@ -140,12 +157,25 @@
                             </li>
                         <?php }?>
                     <?php }else{?>
-                        <select name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" id="">
+
+
+                        <input type="text" disabled class="sck_brand_class" value="请点击下方品牌进行选择" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>">
+                        <input type="text" placeholder="输入关键词搜索" value="" name="sck_search_brand_text" class="sck_search_brand_text" style="width: 50%">
+                        <input type="button" placeholder="" value="搜索" style="height: 30px;padding:0 10px;text-align: center" class="sck_search_brand_btn">
+                        <div class="sck_brand">
+                            <?php foreach($output['brand'] as $vv){?>
+                                <span><?php echo $vv['fullName']?></span>
+                            <?php }?>
+<!--                            <p class="sck_to_loading">点击加载更多...</p>-->
+                        </div>
+                        <select style="display: none" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" id="">
                             <option value="">选择品牌</option>
                             <?php foreach($output['brand'] as $vv){?>
                                 <option value="<?php echo $vv['fullName']?>"><?php echo $vv['fullName']?></option>
                             <?php }?>
                         </select>
+
+
 <!--                        <tr>-->
 <!--                            <td colspan="20">-->
 <!--                                <div class="pagination"> --><?php //echo $output['brand_page'] ?><!-- </div>-->
@@ -516,4 +546,46 @@
             $("#regionId").append(html);
         });
     });
+</script>
+
+<script>
+    $('.sck_search_brand_text').bind('input propertychange', function() {
+        searchProductClassbyName();
+    });
+    $('.sck_search_brand_btn').click(function() {
+        searchProductClassbyName();
+    });
+    function searchProductClassbyName() {
+        var keywords = $('.sck_search_brand_text').val()
+        var htmls ='';
+        $.ajax({
+            url:"/shop/index.res?act=zcy_config&op=get_brand_myself",
+            data:{keywords:keywords},
+            type:'post',
+            dataType: "json",
+            beforeSend: function () {
+                $('#dataLoading').show();
+            },
+            complete: function () {
+                $('#dataLoading').hide();
+            },
+            success:function(res) {
+                if(res.code == 0){
+                    htmls = '<p style="text-align: center;line-height: 40px;font-size: 20px;">暂无匹配数据</p>';
+                }else{
+                    $.each(res.data,function (k,v) {
+                        htmls+='<span>'+v.fullName+'</span>';
+                    })
+                }
+
+                $('.sck_brand').html(htmls)
+            }
+        })
+
+    }
+    $(document).on('click','.sck_brand span',function () {
+        var str = $(this).text()
+        $('.sck_brand_class').val(str)
+
+    })
 </script>
