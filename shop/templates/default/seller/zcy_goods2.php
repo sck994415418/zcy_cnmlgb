@@ -102,28 +102,56 @@
             <?php }?>
             <input disabled name="" type="text" class="text w60 tip2 tr" value="<?php echo $v['attrName']; ?>" nctype="spec_name">
         </dt>
+
         <dd>
             <ul class="spec">
                 <?php if($v['attrMetas']['isUserDefined']== true){?>
-                <li>
-                    <span nctype="input_checkbox">
-                        <input type="text" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" value="">
-                        <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'attrKey':'otherAttributes'.'['.$key.']'.'['."attrKey".']' ?>" value=""/>
-                        <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."propertyId".']':'otherAttributes'.'['.$key.']'.'['."propertyId".']'; ?>" value=""/>
-                    </span>
-                    <span nctype="pv_name"><?php echo $v['group']?></span>
-                </li>
-                <?php }else{?>
-                    <?php foreach($v['attrVals'] as $val){ ?>
-                    <li>
-                    <span nctype="input_checkbox">
-                        <input type="<?php echo $v['attrMetas']['multi']?'checkbox':'radio'; ?>" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" value="<?php echo $val;?>"/>
-                        <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'attrKey':'otherAttributes'.'['.$key.']'.'['."attrKey".']' ?>" value=""/>
-                        <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."propertyId".']':'otherAttributes'.'['.$key.']'.'['."propertyId".']'; ?>" value=""/>
-                    </span>
-                        <span nctype="pv_name"><?php echo $val;?></span>
-                    </li>
+                <?php if(!empty($v['attrVals'])){?>
+                        <?php foreach($v['attrVals'] as $val){ ?>
+                            <li>
+                                <span nctype="input_checkbox">
+                                    <input type="<?php echo $v['attrMetas']['multi']?'checkbox':'radio'; ?>" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" value="<?php echo $val;?>"/>
+                                    <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrKey".']':'otherAttributes'.'['.$key.']'.'['."attrKey".']' ?>" value="<?php echo $v['attrName'];?>"/>
+                                    <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."propertyId".']':'otherAttributes'.'['.$key.']'.'['."propertyId".']'; ?>" value="<?php echo $v['propertyId'];?>"/>
+                                </span>
+                                <span nctype="pv_name"><?php echo $val;?></span>
+                            </li>
+                        <?php }?>
+                    <?php }else{?>
+                        <li>
+                        <span nctype="input_checkbox">
+                            <input type="text" <?php echo $v['attrMetas']['isRequired']?"required=required":"";?> name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" value="">
+                            <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrKey".']':'otherAttributes'.'['.$key.']'.'['."attrKey".']' ?>" value="<?php echo $v['attrName'];?>"/>
+                            <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."propertyId".']':'otherAttributes'.'['.$key.']'.'['."propertyId".']'; ?>" value="<?php echo $v['propertyId'];?>"/>
+                        </span>
+                            <span nctype="pv_name"><?php echo $v['group']?></span>
+                        </li>
                 <?php }?>
+                <?php }else{?>
+                    <?php if(!empty($v['attrVals'])){?>
+                        <?php foreach($v['attrVals'] as $val){ ?>
+                            <li>
+                            <span nctype="input_checkbox">
+                                <input type="<?php echo $v['attrMetas']['multi']?'checkbox':'radio'; ?>" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" value="<?php echo $val;?>"/>
+                                <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrKey".']':'otherAttributes'.'['.$key.']'.'['."attrKey".']' ?>" value="<?php echo $v['attrName'];?>"/>
+                                <input type="hidden" name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."propertyId".']':'otherAttributes'.'['.$key.']'.'['."propertyId".']'; ?>" value="<?php echo $v['propertyId'];?>"/>
+                            </span>
+                                <span nctype="pv_name"><?php echo $val;?></span>
+                            </li>
+                        <?php }?>
+                    <?php }else{?>
+                        <select name="<?php echo $v['attrMetas']['isSkuCandidate']?'skuAttributes'.'['.$key.']'.'['."attrVal".']':'otherAttributes'.'['.$key.']'.'['."attrVal".']'; ?>" id="">
+                            <option value="">选择品牌</option>
+                            <?php foreach($output['brand'] as $vv){?>
+                                <option value="<?php echo $vv['fullName']?>"><?php echo $vv['fullName']?></option>
+                            <?php }?>
+                        </select>
+<!--                        <tr>-->
+<!--                            <td colspan="20">-->
+<!--                                <div class="pagination"> --><?php //echo $output['brand_page'] ?><!-- </div>-->
+<!--                            </td>-->
+<!--                        </tr>-->
+                    <?php }?>
                 <?php }?>
             </ul>
         </dd>

@@ -202,6 +202,7 @@ class zcy_goodsControl extends BaseSellerControl
         $model = Model();
         $img = $model->table("zcy_img")->order("id desc")->page(20)->select();
         $brand = $model->table('zcy_brand')->page(20)->select();
+//        print_r($brand);die;
         Tpl::output("imgdata", $img);
         Tpl::output("brand", $brand);
         Tpl::output("brand_page", $model->showpage(2));
@@ -211,7 +212,7 @@ class zcy_goodsControl extends BaseSellerControl
     }
     public function zcy_goods3Op(){
                 echo '<pre>';
-        var_dump($_POST);die;
+        print_r($_POST);die;
     }
     public function zcy_goodsdataOp(){
         $model = Model();
